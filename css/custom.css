@@ -1,0 +1,909 @@
+
+
+/* Put your custom styles here */
+
+.container
+{
+    min-width: 320px;
+    max-width: 1280px;
+}
+
+#header-3 .hero h1
+{
+    margin-bottom: -10px;
+    margin-top: 120px;
+}
+
+@media (min-width:658px) and (max-width:1330px)
+{
+    h1, .h1
+    {
+        font-size: 38px;
+    }
+}
+
+.call
+{
+    margin-bottom: 50px;
+    padding-top: 0px;
+    margin-top: -10px;
+}
+
+@media (max-width:991px)
+{
+    .btn
+    {
+    }
+}
+
+@media (max-width:657px)
+{
+    h2, .h2
+    {
+        font-size: 27px;
+    }
+}
+
+@media (max-width:610px)
+{
+    #header-3 .hero h1
+    {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:659px)
+{
+    h2, .h2
+    {
+        font-size: 27px;
+    }
+}
+
+@media (max-width:992px)
+{
+    h1, .h1
+    {
+        font-size: 34px;
+    }
+    h1, .h1
+    {
+        font-size: 40px;
+    }
+}
+
+.main-title h1
+{
+    font-size: 44px;
+    font-weight: 500;
+}
+
+.center-image
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.laptop
+{
+    position: relative;
+}
+
+.main-title h2
+{
+    font-weight: 400;
+    color: #95a5a6;
+    text-transform: none;
+}
+
+.main-title h3
+{
+    font-weight: 300;
+    font-size: 27px;
+}
+
+#header-1 .brand-img
+{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    max-width: none;
+}
+
+#header-1 .container
+{
+    background-image: url('../images/background.svg');
+    width: 100%;
+}
+
+#header-1 .main-nav
+{
+    background-image: url('../images/background.svg');
+    background-color: transparent;
+}
+
+@media (max-width: 870px)
+{
+    .navbar-header
+    {
+        float: none;
+    }
+    .navbar-left,.navbar-right
+    {
+        float: none !important;
+    }
+    .navbar-toggle
+    {
+        display: block;
+    }
+@media (max-width: 870px)
+{
+    .navbar-collapse
+    {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+}
+
+    .navbar-fixed-top
+    {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse
+    {
+        display: none!important;
+    }
+    .navbar-nav
+    {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li
+    {
+        float: none;
+    }
+    .navbar-nav>li>a
+    {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in
+    {
+        display: block !important;
+    }
+}
+
+@media (max-width: 767px)
+{
+    #header-1 .navbar-collapse
+    {
+
+        background: transparent;
+        background-image: url('../images/background.svg');
+    }
+}
+
+/* Put your custom styles here */
+
+.pricing-table-1 .price-figure {
+    text-transform: none;
+}
+
+.pricing-table-1 .features li
+{
+    font-size: 15px;
+}
+
+
+/* FREE y GRATIS inicio */
+
+.free {
+    min-height: 133px;
+    padding-top: 25px;
+}
+
+.upto,
+.facturas2 {
+    min-height: 59px;
+    padding-top: 18px !important;
+}
+
+.self {
+    min-height: 57px;
+    padding-top: 0px !important;
+    line-height: 48px;
+}
+
+.invoicing {
+    min-height: 105px;
+    padding-top: 0px !important;
+    line-height: 96px;
+}
+
+.extras {
+    min-height: 105px;
+    padding-top: 38px !important;
+}
+.addand {
+    min-height: 105px;
+}
+
+.sin {
+    min-height: 105px;
+    padding-top: 40px !important;
+}
+
+
+/* FREE y GRATIS fin */
+
+
+/* A LA CARTA inicio*/
+
+.facturas {
+    min-height: 59px;
+    padding-top: 18px !important;
+}
+
+.upto2 {
+    min-height: 59px;
+    padding-top: 18px !important;
+}
+
+.locations {
+    min-height: 84px;
+}
+
+.pay {
+    min-height: 65px !important;
+    padding-top: 5px !important;
+    padding-left: 0px !important;
+}
+
+.ancho {
+    max-width: 300px;
+}
+
+.h4 {
+    padding: 0px 3px 5px 3px;
+    font-size: 23px;
+}
+
+h6 {
+    margin-top: 10px;
+}
+
+.email {
+    min-height: 57px !important;
+    padding-top: 15px !important;
+}
+
+.select {
+    min-height: 105px;
+}
+
+.porcobrar {
+    min-height: 123px;
+}
+
+.porcobrar p {
+    padding-top: 28px !important;
+}
+
+.pay2 {
+    min-height: 85px;
+}
+
+.agregue {
+    min-height: 105px;
+}
+
+
+/* A LA CARTA fin*/
+
+
+/* PREMIUM inicio */
+
+.unlimited {
+    min-height: 59px;
+    padding-top: 18px !important;
+}
+
+.dedicated {
+    min-height: 57px !important;
+    padding: 5px 10px 0px 10px !important;
+    font-size: 15px;
+}
+
+.extras2 {
+    min-height: 105px;
+    padding-top: 8px !important;
+}
+
+.extras2 p {
+    padding-top: 30px !important;
+}
+
+.extras3 {
+    min-height: 105px;
+    padding-top: 10px !important;
+}
+
+.extras3 p {
+    padding-top: 28px !important;
+}
+
+
+/* PREMIUM fin */
+
+
+/* ASESOR inicio */
+
+.collect {
+    min-height: 175px;
+    padding-top: 45px !important;
+}
+
+.more {
+    min-height: 121px !important;
+    padding-top: 30px !important;
+    text-align: center;
+    line-height: normal;
+}
+
+.website2 {
+    min-height: 123px;
+    padding-top: 40px !important;
+}
+
+.collect2 {
+    min-height: 195px;
+    padding-top: 55px !important;
+}
+
+
+/* ASESOR fin */
+
+
+/* PRIMIUM y ADVISOR inicio*/
+
+.website {
+    min-height: 105px;
+    padding-top: 30px !important;
+}
+
+.core {
+    min-height: 105px;
+    padding-top: 38px !important;
+}
+
+
+/* PREMIUM y ADVISOR fin*/
+
+
+/* GRATIS y PREMIUM inicio */
+
+.invoicing2,
+.core2 {
+    min-height: 123px;
+    padding-top: 40px !important;
+}
+
+.user1 {
+    min-height: 85px;
+    padding-top: 30px !important;
+}
+
+.todos {
+    min-height: 85px;
+    padding-top: 20px !important;
+}
+
+
+/* GRATIS y PREMIUM fin */
+
+
+/* GRATIS, PREMIUM Y ASESOR inicio */
+
+.all {
+    min-height: 84px;
+    padding-top: 23px !important;
+}
+
+.can {
+    min-height: 84px;
+    padding-top: 20px !important;
+}
+
+.location {
+    min-height: 84px;
+    padding-top: 28px !important;
+}
+
+
+/* GRATIS, PREMIUM Y ASESOR fin */
+
+
+/* FREE y PREMIUM inicio */
+
+.user,
+.need {
+    min-height: 65px;
+    padding-top: 23px !important;
+    line-height: 10px;
+}
+
+
+/* FREE y PREMIUM fin */
+
+
+/* A LA CARTA, PREMIUM y ASESOR inicio */
+
+.features p {
+    padding: 10px 0px 0px 0px;
+    margin-top: 0px;
+    margin-bottom: -4px;
+    font-size: 13px;
+}
+
+
+/* A LA CARTA, PREMIUM y ASESOR fin */
+
+
+/* Medium devices (desktops, 992px and up) */
+
+
+/* >= 992px y <= 1200px inicio */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    /* FREE inicio */
+    .upto {
+        min-height: 69px !important;
+    }
+    .self {
+        min-height: 65px;
+        padding-top: 0px !important;
+        line-height: 48px;
+    }
+    .extras {
+        min-height: 103px;
+    }
+    /* FREE fin */
+    /* GRATIS inicio */
+    .facturas2 {
+        min-height: 57px;
+    }
+    .invoicing2 {
+        min-height: 127px !important;
+    }
+    .user1 {
+        min-height: 85px !important;
+    }
+    .sin {
+        min-height: 126px;
+        padding-top: 50px !important;
+    }
+    /* GRATIS fin */
+    /*A LA CARTE inicio */
+    .h6 {
+        padding-top: 10px;
+        margin-bottom: -10px;
+    }
+    .upto2 {
+        min-height: 69px;
+    }
+    .email {
+        min-height: 65px !important;
+    }
+    .pay {
+        min-height: 101px !important;
+        padding-top: 10px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    /*A LA CARTE fin */
+    /* A LA CARTA inicio */
+    .h62 {
+        padding-top: 10px;
+        margin-bottom: -10px;
+    }
+    .porcobrar {
+        min-height: 127px;
+    }
+    .porcobrar p {
+        padding-top: 10px !important;
+    }
+    .agregue {
+        min-height: 126px;
+    }
+    /* A LA CARTA inicio */
+    /*FEE y GRATIS inicio */
+    .free {
+        min-height: 123px;
+    }
+    /*FEE y GRATIS fin */
+    /* A LA CARTE Y A LA CARTA inicio */
+    .pastel-red {
+        min-height: 123px;
+    }
+    .h4 {
+        padding: 12px 0px 0px 0px!important;
+        margin-top: 0px !important;
+        margin-bottom: -4px;
+        font-size: 20px;
+    }
+    /* A LA CARTE Y A LA CARTA fin */
+    /* PREMIUM inicio */
+    .unlimited {
+        min-height: 69px;
+        padding-top: 18px !important;
+    }
+    .dedicated {
+        min-height: 65px !important;
+        padding: 0px 10px 0px 10px !important;
+        font-size: 15px;
+    }
+    .core2 {
+        padding-top: 35px !important;
+        min-height: 127px;
+    }
+    .all {}
+    .extras3 {
+        min-height: 124px;
+    }
+    /* PREMIUM fin */
+    /* ADVISOR inicio */
+    .website2 {
+        padding-top: 30px !important;
+        min-height: 127px;
+    }
+    .collect {
+        min-height: 216px;
+        padding-top: 50px !important;
+    }
+    /* ADVISOR fin */
+    /* ASESOR inicio */
+    .collect2 {
+        min-height: 216px;
+        padding-top: 50px !important;
+    }
+    /* ASESOR fin */
+    /* FREE, A LA CARTE y PREMIUM inicio */
+    .extras,
+    .addand,
+    .extras2 {
+        min-height: 110px;
+    }
+    /* FREE, A LA CARTE y PREMIUM fin */
+    /* FREE y PREMIUM inicio */
+    .user,
+    .need {
+        min-height: 101px;
+    }
+    .user,
+    .need {
+        padding-top: 40px !important;
+    }
+    /* FREE y PREMIUM fin */
+    /* GRATIS, PREMIUM y ASESOR inicio */
+    .extras3 {
+        min-height: 126px;
+    }
+    /* GRATIS, PREMIUM y ASESOR fin */
+    /* A LA CARTE, PREMIUM y ADVISOR inicio */
+    h6 {
+        margin-bottom: -10px;
+    }
+    .features p {
+        padding: 10px 0px 0px 0px;
+        margin-top: 0px;
+        margin-bottom: -4px;
+        font-size: 13px;
+    }
+    /* A LA CARTE, PREMIUM y ADVISOR fin */
+    /* ADVISOR y ASESOR inicio */
+    .more {
+        min-height: 139px !important;
+        padding: 8px 9px 10px 9px;
+    }
+    .more p {
+        padding: 10px 7px 10px 7px;
+    }
+    .website {
+        min-height: 105px;
+        padding-top: 25px !important;
+    }
+    /* ADVISOR y ASESOR fin */
+}
+
+
+/* >= 992px y <= 1200px fin */
+
+
+/* <= 992px y >= 767px */
+
+@media (max-width: 992px) and (min-width: 767px) {
+    /* FREE inicio */
+    .extras {
+        min-height: 105px !important;
+        padding-top: 38px !important;
+    }
+
+    /* FREE fin */
+    /* GRATIS inicio */
+    .invoicing2 {
+        min-height: 123px !important;
+    }
+    .user1 {
+        min-height: 85px;
+    }
+    /* GRATIS fin */
+    /* A LA CARTE inicio */
+    .select {
+        min-height: 104px !important;
+    }
+    .pay {
+        min-height: 65px !important;
+    }
+    .addand {
+        min-height: 105px;
+    }
+    /* A LA CARTE fin */
+    /* A LA CARTE y A LA CARTA inicio */
+    .locations {
+        min-height: 84px;
+    }
+    /* A LA CARTE y A LA CARTA fin */
+    /* ADVISOR y ASESOR inicio */
+    .more {
+        padding-top: 20px !important;
+    }
+    /* ADVISOR y ASESOR fin */
+}
+
+
+/* <= 766px y >= 385px (Movil) */
+
+@media (max-width: 766px) and (min-width: 385px) {
+    /* FREE y GRATIS inicio */
+    .free {
+        min-height: 75px;
+        padding-top: 0px;
+    }
+    .invoicing {
+        min-height: 50px !important;
+        padding-top: 10px !important;
+    }
+    .upto,
+    .self,
+    .invoicing,
+    .location,
+    .user,
+    .extras {
+        min-height: 40px !important;
+        padding-top: 5px !important;
+    }
+    /* FREE y GRATIS fin */
+    /* GRATIS inicio */
+    .invoicing2 {
+        min-height: 70px !important;
+        padding-top: 10px !important;
+    }
+    .user1 {
+        min-height: 50px !important;
+        padding-top: 10px !important;
+    }
+    .sin {
+        min-height: 50px !important;
+        padding-top: 10px !important;
+    }
+    /* GRATIS fin */
+    /* A LA CARTE inicio */
+    .select {
+        min-height: 120px;
+    }
+    /* A LA CARTE fin */
+    /* TODAS inicio */
+    .free h4,
+    .pastel-red h4,
+    .pastel-green h4,
+    .pastel-blue h4 {
+        font-size: 30px;
+    }
+    .features li {
+        font-size: 20px;
+    }
+    /* TODAS fin */
+    /* A LA CARTE y A LA CARTA inicio */
+    .upto2,
+    .email {
+        min-height: 40px !important;
+        padding-top: 5px !important;
+    }
+    /* A LA CARTE y A LA CARTA fin */
+    /* PREMIUN inicio */
+    .core,
+    .all,
+    .need {
+        min-height: 60px !important;
+        padding-top: 14px !important;
+    }
+    .core2,
+    .todos {
+        min-height: 70px !important;
+        padding-top: 10px !important;
+    }
+    .core2,
+    .todos {
+        min-height: 70px !important;
+        padding-top: 10px !important;
+    }
+    .extras3 {
+        min-height: 100px !important;
+        padding-top: 10px !important;
+    }
+    .extras3 p {
+        padding-top: 10px !important;
+    }
+    /* PREMIUN fin */
+    /* ADVISOR inicio */
+    li.website {
+        padding-top: 20px !important;
+    }
+    .collect {
+        padding-top: 40px;
+    }
+    /* ADVISOR fin */
+    /* ASESOR inicio */
+    .website2 {
+        min-height: 80px !important;
+        padding-top: 10px !important;
+    }
+    .collect2 {
+        min-height: 130px;
+        padding-top: 10px !important;
+    }
+    /* ASESOR fin */
+    /* ADVISOR y ASESOR inicio */
+    .can {
+        padding-top: 10px !important;
+    }
+    /* ADVISOR y ASESOR fin */
+}
+
+
+/* <= 384px y >= 0*/
+
+@media (max-width: 384px) and (min-width: 0px) {
+    /* FREE y GRATIS inicio */
+    .free {
+        min-height: 75px;
+        padding-top: 0px;
+    }
+    .invoicing {
+        min-height: 50px !important;
+        padding-top: 10px !important;
+    }
+    .upto,
+    .self,
+    .invoicing,
+    .location,
+    .user,
+    .extras {
+        min-height: 40px !important;
+        padding-top: 5px !important;
+    }
+    /* FREE y GRATIS fin */
+    /* GRATIS inicio */
+    .invoicing2 {
+        min-height: 70px !important;
+        padding-top: 10px !important;
+    }
+    .user1 {
+        min-height: 50px !important;
+        padding-top: 10px !important;
+    }
+    .sin {
+        min-height: 50px !important;
+        padding-top: 10px !important;
+    }
+    /* GRATIS fin */
+    /* A LA CARTE inicio */
+    .select {
+        min-height: 120px;
+    }
+    /* A LA CARTE fin */
+    /* TODAS inicio */
+    .free h4,
+    .pastel-red h4,
+    .pastel-green h4,
+    .pastel-blue h4 {
+        font-size: 30px;
+    }
+    .features li {
+        font-size: 20px;
+    }
+    /* TODAS fin */
+    /* A LA CARTE y A LA CARTA inicio */
+    .upto2,
+    .email {
+        min-height: 40px !important;
+        padding-top: 5px !important;
+    }
+    /* A LA CARTE y A LA CARTA fin */
+    /* PREMIUN inicio */
+    .core,
+    .all,
+    .need {
+        min-height: 60px !important;
+        padding-top: 14px !important;
+    }
+    .core2,
+    .todos {
+        min-height: 70px !important;
+        padding-top: 10px !important;
+    }
+    .extras3 {
+        min-height: 100px !important;
+        padding-top: 10px !important;
+    }
+    .extras3 p {
+        padding-top: 10px !important;
+    }
+    /* PREMIUN fin */
+    /* ADVISOR inicio */
+    li.website {
+        padding-top: 20px !important;
+    }
+    .collect {
+        padding-top: 40px;
+    }
+    /* ADVISOR fin */
+    /* ASESOR inicio */
+    .website2 {
+        min-height: 80px !important;
+        padding-top: 10px !important;
+    }
+    .collect2 {
+        min-height: 130px;
+        padding-top: 10px !important;
+    }
+    /* ASESOR fin */
+    /* ADVISOR y ASESOR inicio */
+    .can {
+        padding-top: 10px !important;
+    }
+    /* ADVISOR y ASESOR fin */
+}
+
+/*Footer*/
+
+footer {
+  background-color: #000000;
+  min-height:374px;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+
+footer .row { margin-top: 18.5px; padding: 0px 50px 0 50px; }
+
+/* Clase para el título cabeza de las columnas del footer */
+.footer-col-heading { font-size:20px; font-weight:700; color:#B8B8B8; margin-bottom: 15px;}
+
+.footer-ul { list-style-type:none;  padding-left:1px; margin-left:2px;}
+
+.footer-ul li { line-height:26px; font-size:14px; background-color: #212121; border: 0.5px solid #000000; padding-left: 12px; }
+
+.footer-ul li a { color:#B8B8B8; transition: color 0.2s linear 0s, background 0.2s linear 0s; text-decoration:none; }
+
+.footer-ul li a:hover {transition: color 0.2s linear 0s, background 0.2s linear 0s; color:#FFFFFF; text-decoration:none;}
+
+
+@media screen and (max-width: 767px) {
+
+  footer .row { text-align: center; }
+
+  .footer-col-heading { font-size:22px;}
+
+  .footer-ul li { line-height:26px; font-size:16px;}
+
+}
