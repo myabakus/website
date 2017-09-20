@@ -907,3 +907,9 @@ footer .row { margin-top: 18.5px; padding: 0px 50px 0 50px; }
   .footer-ul li { line-height:26px; font-size:16px;}
 
 }
+
+ .navbar-nav > li.active a
+{
+    color: #3498DB !important;
+    background: none;
+}
