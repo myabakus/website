@@ -1,10 +1,11 @@
-<!doctype html>
-<html lang="es" style="height:100%;" data-pgc-master="master-col.html">
+<!DOCTYPE html>
+<html lang="es" style="height:100%;" data-pgc-set-master>
     <head>
+        <base href="/website/">
         <meta charset="utf-8">
-        <title data-pgc-field="page_title">Software Contable y Administrativo para Pymes</title>
+        <title data-pgc-edit="page_title">Software Contable y Administrativo para Pymes</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="myAbakus es un software contable intuitivo y diseñado para quien quiere tener las cuentas de su negocio claras y al día sin tener que depender de los conocimientos, disponibilidad o preferencias de su contador" data-pgc-field="page_description" />
+        <meta name="description" content="myAbakus es un software contable intuitivo y diseñado para quien quiere tener las cuentas de su negocio claras y al día sin tener que depender de los conocimientos, disponibilidad o preferencias de su contador" data-pgc-edit="page_description[content, no_content]" />
         <link rel="shortcut icon" href="images/favicon.png">
         <!-- Core CSS -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -16,13 +17,18 @@
         <link href="css/plugins.css" rel="stylesheet">
         <link href="css/blocks.css" rel="stylesheet">
         <link href="css/custom.css" rel="stylesheet">
+        <link rel="alternate" hreflang="x-default" href="https://www.myabakus.com/" data-pgc-optional="hreflang_default" />
+        <link rel="alternate" hreflang="en" href="https://www.myabakus.com/web/accounting-software.html" data-pgc-optional="hreflang_en" />
+        <link rel="alternate" hreflang="es" href="https://www.myabakus.com/web/software-contable.html" data-pgc-optional="hreflang_es" />
+        <link rel="alternate" hreflang="es-co" href="https://www.myabakus.com/web/software-contable-colombia.html" data-pgc-optional="hreflang_es-co" />
+        <link rel="alternate" hreflang="en-ph" href="https://www.myabakus.com/web/accounting-software-philippines.html" data-pgc-optional="hreflang_en-ph" />
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
         <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
         <script type="text/javascript" src="js/km.js"></script>
-        <script type="text/javascript" src="../help/js/drift-es.js"></script>
+        <script type="text/javascript" src="/../help/js/drift-es.js"></script>
     </head>
     <body data-spy="scroll" data-target="nav">
         <header id="header-1" class="soft-scroll header-1">
@@ -37,30 +43,33 @@
                             <span class="icon-bar bg-moonlight bg-deepocean-hover"></span>
                             <span class="icon-bar bg-moonlight bg-deepocean-hover"></span>
                         </button>
-                        <a href="#">
+                        <a href="colombia/inicio.html">
                             <img src="images/logo.svg" class="brand-img img-responsive">
                         </a>
                     </div>
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="nav-item">
-                                <a href="colombia-caracteristicas.html" class="moonlight deepocean-hover">Características</a>
+                            <li class="nav-item" data-pgc-edit="inicio[no_content]" data-pgc-edit-classes="active">
+                                <a href="colombia/inicio.html" class="moonlight river-hover">inicio</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="colombia-precio.html" class="moonlight deepocean-hover">Precio</a>
+                            <li class="nav-item" data-pgc-edit="caracteristicas[no_content]" data-pgc-edit-classes="active">
+                                <a href="colombia/caracteristicas.html" class="moonlight river-hover">Características</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="colombia-testimonios.html" class="moonlight deepocean-hover">Testimonios</a>
+                            <li class="nav-item" data-pgc-edit="precio[no_content]" data-pgc-edit-classes="active">
+                                <a href="colombia/precio.html" class="moonlight river-hover">Precio</a>
+                            </li>
+                            <li class="nav-item" data-pgc-edit="testimonios[no_content]" data-pgc-edit-classes="active">
+                                <a href="colombia/testimonios.html" class="moonlight river-hover">Testimonios</a>
                             </li>
                             <!--//dropdown-->
-                            <li class="nav-item">
-                                <a href="colombia-solicite-demo.html" class="moonlight deepocean-hover">Solicite Demo</a>
+                            <li class="nav-item" data-pgc-edit="demo[no_content]" data-pgc-edit-classes="active">
+                                <a href="colombia/solicite-demo.html" class="moonlight river-hover">Solicite Demo</a>
                             </li>
                             <li class="nav-item">
-                                <a class="asbestos moonlight-hover hidden" href="https://www.myabakus.com/web/registro.html?plan=0">Registro</a>
+                                <a class="asbestos river-hover hidden" href="https://www.myabakus.com/web/registro.html?plan=0">Registro</a>
                             </li>
                             <li class="nav-item">
-                                <a href="https://www.myabakus.com/app/ingrese" class="moonlight deepocean-hover">Ingrese</a>
+                                <a href="https://www.myabakus.com/app/ingrese" class="moonlight river-hover">Ingrese</a>
                             </li>
                         </ul>
                         <!--//nav-->
@@ -72,91 +81,7 @@
             </nav>
             <!--// End Navbar -->
         </header>
-        <section data-pgc-field="myabakus.section.contenido">
-            <section id="features" class="content-block-nopad content-3-1" data-pgc="myabakus.features-head-col">
-                <div class="overlay overlay-aqua">
-                    <div class="container text-center col-md-offset-1 col-lg-offset-2 col-lg-8 col-md-10">
-                        <h1 class="margin-top90 pad30">Software Contable Diseñado para No Contadores</h1>
-                        <div class="text-center col-md-10 col-md-offset-1">
-                            <div class="col-md-6">
-                                <a class="btn btn-outline btn-outline-lg outline-light btn-block" href="https://www.myabakus.com/web/registro.html?plan=0">Pruébelo Gratis</a>
-                            </div>
-                            <div class="col-md-6">
-                                <a class="btn btn-outline btn-outline-lg outline-light btn-block" href="../help/preguntas.html">Más información</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.container -->
-                </div>
-            </section>
-            <section class="content-1-9 content-block" data-pgc="myabakus.features-col">
-                <div class="container">
-                    <div class="underlined-title">
-                        <h1>Gestión Administrativa y Financiera</h1>
-                        <hr>
-                        <h2 class="text-center">Mantenga sus cuentas –y su negocio– en la trayectoria correcta</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 col-sm-12 col-xs-12 pad25">
-                            <div class="col-xs-2">
-                                <span class="fa fa-file-text-o"></span>
-                            </div>
-                            <div class="col-xs-10">
-                                <h4>Facturación</h4>
-                                <p>Cree y personalice sus facturas con el logo de su compañía, imprímalas o envíelas directamente por email a sus clientes.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12 col-xs-12 pad25">
-                            <div class="col-xs-2">
-                                <span class="fa fa-briefcase"></span>
-                            </div>
-                            <div class="col-xs-10">
-                                <h4>Cuentas por cobrar</h4>
-                                <p>Mantenga sus cuentas por cobrar al día para asegurarse que sus clientes le están pagando según lo acordado.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12 col-xs-12 pad25">
-                            <div class="col-xs-2">
-                                <span class="fa fa-money"></span>
-                            </div>
-                            <div class="col-xs-10">
-                                <h4>Control de efectivo</h4>
-                                <p>Asegúrese que todo (lo que debería) ha sido contabilizado manteniendo sus cuentas de efectivo actualizadas y reconciliadas.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12 col-xs-12 pad25">
-                            <div class="col-xs-2">
-                                <span class="fa fa-retweet"></span>
-                            </div>
-                            <div class="col-xs-10">
-                                <h4>Manejo de flujo de caja</h4>
-                                <p>Manténgase “en la jugada” y evite sorpresas desagradables registrando cobros y pagos pendientes, así como gastos recurrentes.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12 col-xs-12 pad25">
-                            <div class="col-xs-2">
-                                <span class="fa fa-cubes"></span>
-                            </div>
-                            <div class="col-xs-10">
-                                <h4>Control de inventario</h4>
-                                <p>Mantenga las unidades físicas sincronizadas con las del sistema, sepa cuándo ordenar sus productos y vea cómo estos contribuyen (o no) a su ganancia</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12 col-xs-12 pad25">
-                            <div class="col-xs-2">
-                                <span class="fa fa-bar-chart-o"></span>
-                            </div>
-                            <div class="col-xs-10">
-                                <h4>Rentabilidad</h4>
-                                <p>Una vez usted sepa con certeza cuál es la ganancia que deja su negocio, podrá ponerse metas, tomar acciones y evaluar los resultados.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.row -->
-                </div>
-                <!-- /.container -->
-            </section>
-        </section>
+        <section data-pgc-edit="myabakus.section.contenido"></section>
         <footer>
             <div class="container">
                 <div class="row">
@@ -222,7 +147,7 @@
                 <p class="pull-right small">Hecho con <i class="fa fa-heart pomegranate"></i> para PYMES</p>
             </div>
         </div>
-        <section data-pgc-field="myabakus.section.modelo">
+        <section data-pgc-edit="myabakus.section.modelo">
 </section>
         <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -244,10 +169,6 @@
             });
           }
         </script>
-        <!-- Google Code for Remarketing Tag -->
-        <!--------------------------------------------------
-        Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
-        --------------------------------------------------->
         <script type="text/javascript">
         /* <![CDATA[ */
         var google_conversion_id = 1042441796;
@@ -263,3 +184,4 @@
             </div>
         </noscript>
     </body>
+</html>
