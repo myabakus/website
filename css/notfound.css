@@ -8,7 +8,7 @@ img
 
 nav
 {
-    background-image: url('images/background.svg');
+    background-image: url('../images/background.svg');
     height: 80px;
 }
 
