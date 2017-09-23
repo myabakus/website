@@ -8,7 +8,6 @@ const ImageminPlugin = require('imagemin-webpack-plugin').default
 const CompressionWebpackPlugin = require('compression-webpack-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 
-
 module.exports = {
   entry: entries(),
   output: {
@@ -43,7 +42,7 @@ module.exports = {
         loader: 'url-loader',
         options: {
           limit: 10000,
-          name: 'images/[name].[hash:7].[ext]'
+          name: '/images/[name].[hash:7].[ext]'
         }
       },
       {
@@ -51,7 +50,7 @@ module.exports = {
         loader: 'url-loader',
         options: {
           limit: 10000,
-          name: 'fonts/[name].[hash:7].[ext]'
+          name: '/fonts/[name].[hash:7].[ext]'
         }
       },
       {
@@ -60,7 +59,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: 'css/[name].[hash:7].[ext]'
+              name: '/css/[name].[hash:7].[ext]'
             }
           },
           'extract-loader',
@@ -71,7 +70,7 @@ module.exports = {
         test: /\.js$/,
         loader: 'file-loader',
         options: {
-          name: 'js/[name].[hash:7].[ext]'
+          name: '/js/[name].[hash:7].[ext]'
         }
       }
     ]
@@ -116,11 +115,12 @@ module.exports = {
   ]
 }
 
+
 function entries () {
   return Object.entries(
-    entry(entry.basePath(), '*.html', 'colombia/*.html')
+    entry(entry.basePath(), '*.html', 'colombia/*.html', 'philippines/*.html')
   ).reduce((obj, [key, file]) => {
-    if (key.indexOf('mater-') === -1) obj[key] = file;
+    if (key.indexOf('master-') === -1) obj[key] = './' + file;
     return obj;
-  });
+  }, {});
 }
