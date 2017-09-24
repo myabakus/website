@@ -29,7 +29,7 @@ module.exports = {
           {
             loader: 'html-loader',
             options: {
-              attrs: ['img:src', 'link:href', 'script:src'],
+              attrs: ['img:src', 'link:href', 'script:src', 'form:action'],
               minimize: true,
               removeComments: true,
               preserveLineBreaks: true,
@@ -73,14 +73,19 @@ module.exports = {
         options: {
           name: '/js/[name].[hash:7].[ext]'
         }
+      },
+      {
+        test: /\.php$/,
+        loader: 'file-loader',
+        options: {
+          name: '/[path][name].[ext]'
+        }
       }
     ]
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new CopyWebpackPlugin([
-      { from: 'js/contact-en.php', to: 'js/contact-en.php' },
-      { from: 'js/contact-es.php', to: 'js/contact-es.php' },
       { from: 'js/km.js', to: 'js/km.js' }, // help use to km
       { from: 'images/favicon.png', to: 'images/favicon.png' } // other page use this file
     ]),
