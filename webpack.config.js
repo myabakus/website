@@ -80,7 +80,9 @@ module.exports = {
     new CleanWebpackPlugin(['dist']),
     new CopyWebpackPlugin([
       { from: 'js/contact-en.php', to: 'js/contact-en.php' },
-      { from: 'js/contact-es.php', to: 'js/contact-es.php' }
+      { from: 'js/contact-es.php', to: 'js/contact-es.php' },
+      { from: 'js/km.js', to: 'js/km.js' }, // help use to km
+      { from: 'images/favicon.png', to: 'images/favicon.png' } // other page use this file
     ]),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
