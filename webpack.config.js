@@ -30,9 +30,10 @@ module.exports = {
             loader: 'html-loader',
             options: {
               attrs: ['img:src', 'link:href', 'script:src'],
-              interpolate: true,
-              minimize: false,
-              removeComments: false
+              minimize: true,
+              removeComments: true,
+              preserveLineBreaks: true,
+              removeScriptTypeAttributes: true
             }
           }
         ],
@@ -96,10 +97,12 @@ module.exports = {
     }),
     new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i }),
     // split vendor js into its own file
+    /*
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
       filename: "vendor.js"
     }),
+    */
     new CompressionWebpackPlugin({
       asset: '[path].gz[query]',
       algorithm: 'gzip',
