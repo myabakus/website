@@ -43,7 +43,11 @@ module.exports = {
           {
             loader: 'html-ext-remove-loader',
             options: {
-              ignore: '/help/'
+              ignore: [
+                '/help/',
+                '/privacy.html',
+                '/terms.html'
+              ]
             }
           }
         ],
@@ -99,7 +103,6 @@ module.exports = {
       { from: 'js/km.js', to: 'js/km.js' }, // help use to km
       { from: 'images/favicon.png', to: 'images/favicon.png' } // other page use this file
     ]),
-    /*
     new webpack.optimize.UglifyJsPlugin({
       compress: {
         warnings: false
@@ -126,7 +129,6 @@ module.exports = {
       threshold: 10240,
       minRatio: 0.8
     }),
-    */
     new WebpackCleanPlugin(['dist/bundle'])
   ]
 }

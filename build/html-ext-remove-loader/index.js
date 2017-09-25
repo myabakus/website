@@ -7,16 +7,21 @@ module.exports = function (source) {
     ignore = [ignore]
   }
   return source.replace(
-    /href="(.+).\html"/img,
-    (match, p1) => {
+    /href="(.+)\.html(\?.+)?"/img,
+    (match, p1, p2) => {
       if (ignore.some(evaluate => {
-        return evaluate instanceof RegExp ?
-          evaluate.test(p1) :
-          p1.indexOf(evaluate) === 0
+        const isString = typeof evaluate === 'string'
+        let search = p1
+        if (isString && evaluate.includes('.html')) {
+          search += '.html'
+        }
+        return isString ?
+          search.indexOf(evaluate) === 0 :
+          evaluate.test(search)
       })) {
         return match
       } else {
-        return `href="${p1}"`
+        return `href="${p1}${p2 || ''}"`
       }
     }
   )
