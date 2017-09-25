@@ -1150,6 +1150,7 @@ jQuery(document).ready(function(){
                     email: $('#email').val(),
                     phone: $('#phone').val(),
                     comments: $('#comments').val(),
+                    lang: $('html[lang]').attr('lang'),
                     whatsapp: $('#whatsapp').is(':checked') ? 1 : 0
                 },
                 function(data){
