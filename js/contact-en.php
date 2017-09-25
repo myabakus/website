@@ -12,7 +12,6 @@ if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
 $name     = $_POST['name'];
 $email    = $_POST['email'];
 $phone   = $_POST['phone'];
-$comments = $_POST['comments'];
 $whatsapp = !empty($_POST['whatsapp']);
 
 if(trim($name) == '') {
@@ -57,9 +56,9 @@ $e_reply = "He/she can be contacted";
 if ($whatsapp) {
 	$e_reply .= " by WhatsApp";
 }
-$e_reply .= " at $phone"
+$e_reply .= " at $phone";
 
-$msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
+$msg = wordwrap( $e_body . $e_reply, 70 );
 
 $headers = "From: $email" . PHP_EOL;
 $headers .= "Reply-To: $email" . PHP_EOL;
