@@ -1,3 +1,4 @@
+const path = require('path')
 const webpack = require('webpack')
 const entry = require('webpack-glob-entry')
 const WebpackCleanPlugin = require('webpack-clean')
@@ -13,6 +14,9 @@ module.exports = {
   output: {
     path: __dirname + '/dist',
     filename: 'bundle/[name].js'
+  },
+  resolveLoader: {
+    modules: [path.resolve(__dirname, 'build'), 'node_modules']
   },
   module: {
     rules: [
@@ -34,6 +38,12 @@ module.exports = {
               removeComments: true,
               preserveLineBreaks: true,
               removeScriptTypeAttributes: true
+            }
+          },
+          {
+            loader: 'html-ext-remove-loader',
+            options: {
+              ignore: '/help/'
             }
           }
         ],
@@ -89,6 +99,7 @@ module.exports = {
       { from: 'js/km.js', to: 'js/km.js' }, // help use to km
       { from: 'images/favicon.png', to: 'images/favicon.png' } // other page use this file
     ]),
+    /*
     new webpack.optimize.UglifyJsPlugin({
       compress: {
         warnings: false
@@ -104,12 +115,6 @@ module.exports = {
     }),
     new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i }),
     // split vendor js into its own file
-    /*
-    new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendor',
-      filename: "vendor.js"
-    }),
-    */
     new CompressionWebpackPlugin({
       asset: '[path].gz[query]',
       algorithm: 'gzip',
@@ -121,6 +126,7 @@ module.exports = {
       threshold: 10240,
       minRatio: 0.8
     }),
+    */
     new WebpackCleanPlugin(['dist/bundle'])
   ]
 }
