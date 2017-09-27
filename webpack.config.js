@@ -60,7 +60,8 @@ module.exports = {
                 '/terms.html'
               ]
             }
-          }
+          },
+          'pinegrow-remove-properties-loader'
         ],
       },
       {
