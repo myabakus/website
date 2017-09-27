@@ -1,7 +1,7 @@
-const loaderUtils = require('loader-utils');
+const loaderUtils = require('loader-utils')
 
 module.exports = function (source) {
-  const options = loaderUtils.getOptions(this);
+  const options = loaderUtils.getOptions(this)
   let ignore = options.ignore || []
   if (!Array.isArray(ignore)) {
     ignore = [ignore]

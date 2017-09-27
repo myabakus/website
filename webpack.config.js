@@ -41,6 +41,17 @@ module.exports = {
             }
           },
           {
+            loader: 'html-merge-assets-loader',
+            options: {
+              js: {
+                inline: [
+                  'js/km.js',
+                  'js/drift.js'
+                ]
+              }
+            }
+          },
+          {
             loader: 'html-ext-remove-loader',
             options: {
               ignore: [
