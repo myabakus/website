@@ -4,5 +4,3 @@ dist/
 npm-debug.log
 package-lock.json
 yarn.lock
-test.js
-webpack.config2.js

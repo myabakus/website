@@ -1,4 +1,3 @@
-const path = require('path')
 const webpack = require('webpack')
 const entry = require('webpack-glob-entry')
 const WebpackCleanPlugin = require('webpack-clean')
@@ -14,9 +13,6 @@ module.exports = {
   output: {
     path: __dirname + '/dist',
     filename: 'bundle/[name].js'
-  },
-  resolveLoader: {
-    modules: [path.resolve(__dirname, 'build'), 'node_modules']
   },
   module: {
     rules: [
@@ -39,29 +35,7 @@ module.exports = {
               preserveLineBreaks: true,
               removeScriptTypeAttributes: true
             }
-          },
-          {
-            loader: 'html-merge-assets-loader',
-            options: {
-              js: {
-                inline: [
-                  'js/km.js',
-                  'js/drift.js'
-                ]
-              }
-            }
-          },
-          {
-            loader: 'html-ext-remove-loader',
-            options: {
-              ignore: [
-                '/help/',
-                '/privacy.html',
-                '/terms.html'
-              ]
-            }
-          },
-          'pinegrow-remove-properties-loader'
+          }
         ],
       },
       {
@@ -130,6 +104,12 @@ module.exports = {
     }),
     new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i }),
     // split vendor js into its own file
+    /*
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendor',
+      filename: "vendor.js"
+    }),
+    */
     new CompressionWebpackPlugin({
       asset: '[path].gz[query]',
       algorithm: 'gzip',
