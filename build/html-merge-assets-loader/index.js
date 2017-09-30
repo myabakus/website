@@ -10,10 +10,10 @@ const RGX_CONDITIONAL = /<!--\[if[^\]]+]>([^]+)<\!\[endif\]-->/im
 const RGX_SCRIPT = /((?:<script)[^>]+src="([^"]+)"[^>]*><\/script>)/img
 
 module.exports = function (content) {
-  return loader(content, loaderUtils.getOptions(this))
+  return loader(content, loaderUtils.getOptions(this), this)
 }
 
-function loader(content, options) {
+function loader(content, options, self) {
   options = options || {}
   options.css = options.css || {}
   options.js = options.js || {}
@@ -25,22 +25,22 @@ function loader(content, options) {
   headScripts = extractUnique(headScripts, headScriptsConditional)
   let scriptInline = options.js.inline || []
   if (scriptInline) {
-    scriptInline = copyAssets(headScripts, scriptInline)
+    scriptInline = copyAssets(headScripts, scriptInline, self)
     headScripts = extractUnique(headScripts, scriptInline)
   }
   const body = extractContent(RGX_BODY, content)
   const bodyScripts = extractAssets(RGX_SCRIPT, body)
-  content = replaceInlineScript(content, scriptInline)
+  content = replaceInlineScript(content, scriptInline, self)
   // content = replaceAssets(content, headLinks, options.css, replaceLink)
-  // console.log(content)
+  // console.log('context: ' + this.context)
   return content
 }
 
-function replaceInlineScript(html, scripts) {
+function replaceInlineScript(html, scripts, self) {
   const source = []
   let replace = ''
   for (const [src, script] of scripts) {
-    source.push(getContent(src))
+    source.push(getContent(self, src))
     if (!replace) {
       replace = script
     } else {
@@ -128,16 +128,18 @@ function findAsset(assets, entry) {
   })
 }
 
-function copyAssets (original, options) {
+function copyAssets (original, options, self) {
   return original.reduce((newArray, entry) => {
-    if (options.some(asset => asset === entry[0])) {
+    if (options.some(asset => {
+      return path.resolve(self._compiler.context, asset) === path.resolve(self.context, entry[0])
+    })) {
       newArray.push(entry)
     }
     return newArray
   }, [])
 }
 
-function getContent(filename) {
-  filename = path.resolve(filename)
+function getContent(self, filename) {
+  filename = path.resolve(self.context, filename)
   return fs.readFileSync(filename, {encoding: 'utf8'})
 }
