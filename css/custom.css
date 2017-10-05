@@ -928,3 +928,7 @@ footer .row { margin-top: 18.5px; padding: 0px 50px 0 50px; }
 .advisor {
     cursor: pointer;
 }
+
+#cf-submit {
+  white-space: normal;
+}
