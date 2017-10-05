@@ -23,6 +23,7 @@ Version: 1.0
     background-color: #193441;
     border: 0;
     height: 80px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
 }
 
 #header-1 .main-nav .navbar-toggle
