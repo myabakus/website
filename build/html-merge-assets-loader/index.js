@@ -2,6 +2,8 @@ const fs = require('fs')
 const uglify = require('uglify-es')
 const path = require('path')
 const loaderUtils = require('loader-utils')
+const ConcatSource = require('webpack-sources').ConcatSource
+const OriginalSource = require('webpack-sources').OriginalSource
 
 const RGX_HEAD = /<head>([^]+)<\/head>/im
 const RGX_BODY = /<(?:body[^>]*)>([^]+)<\/body>/im
@@ -10,11 +12,11 @@ const RGX_CONDITIONAL = /<!--\[if[^\]]+]>([^]+)<\!\[endif\]-->/im
 const RGX_SCRIPT = /((?:<script)[^>]+src="([^"]+)"[^>]*><\/script>)/img
 
 module.exports = function (content) {
-  return loader(content, loaderUtils.getOptions(this), this)
+  const options = Object.assign({}, loaderUtils.getOptions(this) || {})
+  return loader(content, options, this)
 }
 
 function loader(content, options, self) {
-  options = options || {}
   options.css = options.css || {}
   options.js = options.js || {}
   const head = extractContent(RGX_HEAD, content)
@@ -31,7 +33,16 @@ function loader(content, options, self) {
   const body = extractContent(RGX_BODY, content)
   const bodyScripts = extractAssets(RGX_SCRIPT, body)
   content = replaceInlineScript(content, scriptInline, self)
-  // content = replaceAssets(content, headLinks, options.css, replaceLink)
+
+  if (headScriptsConditional) {
+    content = replaceAssets(self, content, headScriptsConditional, options.js, replaceScript)
+  }
+
+  if (bodyScripts) {
+    content = replaceAssets(self, content, bodyScripts, options.js, replaceScript)
+  }
+
+  content = replaceAssets(self, content, headLinks, options.css, replaceLink)
   // console.log('context: ' + this.context)
   return content
 }
@@ -57,18 +68,26 @@ function replaceInlineScript(html, scripts, self) {
   return html
 }
 
+function replaceConditionalScript(content, scripts, self) {
+  return content
+}
+
 function replaceLink(main) {
   return `<link href="${main}" rel="stylesheet">`
 }
 
-function replaceAssets(html, assets, merge, callback) {
+function replaceScript(main) {
+  return `<script src="${main}"></script>`
+}
+
+function replaceAssets(self, html, assets, merge, callback) {
   if (merge) {
     let index
     const replace = {}
     Object.entries(merge).forEach(([main, entries]) => {
       replace[main] = []
       entries.forEach(entry => {
-        if ((index = findAsset(assets, entry)) !== -1) {
+        if ((index = findAsset(assets, entry, self)) !== -1) {
           replace[main].push(assets[index])
           assets.splice(index, 1)
         }
@@ -78,7 +97,12 @@ function replaceAssets(html, assets, merge, callback) {
       if (entries.length > 0) {
         entries.forEach(([, link], index) => {
           if (!index) {
-            html = html.replace(link, callback(main))
+            createSource(self, main, entries)
+            let replace = main
+            if (link.indexOf('../') !== -1) {
+              replace = '../' + main
+            }
+            html = html.replace(link, callback(replace))
           } else {
             html = html.replace(link, '')
           }
@@ -87,6 +111,24 @@ function replaceAssets(html, assets, merge, callback) {
     })
   }
   return html
+}
+
+function createSource (self, main, entries) {
+  if (!fs.existsSync(main)) {
+    const source = new ConcatSource()
+    for (const [path] of entries) {
+      const content = getContent(self, path)
+      const filename = resolveFilename(self, path)
+      source.add(new OriginalSource(content, filename))
+    }
+    let content = source.source()
+    if (main.indexOf('.js') !== -1) {
+      content = uglify.minify(content).code
+    }
+    fs.writeFileSync(main, content)
+  }
+  self.minimize = true
+  self.addDependency(main)
 }
 
 function extractContent(rgx, html) {
@@ -122,9 +164,9 @@ function extractUnique (original, optional) {
   }, [])
 }
 
-function findAsset(assets, entry) {
-  return assets.findIndex(([path]) => {
-    return path === entry
+function findAsset(assets, entry, self) {
+  return assets.findIndex(([url]) => {
+    return path.resolve(self.context, url) === path.resolve(self._compiler.context, entry)
   })
 }
 
@@ -140,6 +182,10 @@ function copyAssets (original, options, self) {
 }
 
 function getContent(self, filename) {
-  filename = path.resolve(self.context, filename)
+  filename = resolveFilename(self, filename)
   return fs.readFileSync(filename, {encoding: 'utf8'})
+}
+
+function resolveFilename(self, name) {
+  return path.resolve(self.context, name)
 }

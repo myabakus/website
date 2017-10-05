@@ -15,8 +15,20 @@ module.exports = {
     path: __dirname + '/dist',
     filename: 'bundle/[name].js'
   },
+  resolve: {
+    modules: [
+      path.resolve(__dirname, 'dist'),
+      'node_modules'
+    ],
+    alias: {
+      js: './dist/js'
+    }
+  },
   resolveLoader: {
-    modules: [path.resolve(__dirname, 'build'), 'node_modules']
+    modules: [
+      path.resolve(__dirname, 'build'),
+      'node_modules'
+    ]
   },
   module: {
     rules: [
@@ -47,6 +59,26 @@ module.exports = {
                 inline: [
                   'js/km.js',
                   'js/drift.js'
+                ],
+                'js/app-ie9.js': [
+                  'js/html5shiv.js',
+                  'js/respond.min.js'
+                ],
+                'js/app-main.js': [
+                  'js/jquery-1.11.1.min.js',
+                  'js/bootstrap.min.js',
+                  'js/plugins.js',
+                  'js/bskit-scripts.js'
+                ]
+              },
+              css: {
+                'css/app-main.css': [
+                  'bootstrap/css/bootstrap.min.css',
+                  'css/font-awesome.min.css',
+                  'css/style-library-1.css',
+                  'css/plugins.css',
+                  'css/blocks.css',
+                  'css/custom.css'
                 ]
               }
             }
@@ -141,7 +173,7 @@ module.exports = {
       threshold: 10240,
       minRatio: 0.8
     }),
-    new WebpackCleanPlugin(['dist/bundle'])
+    new WebpackCleanPlugin(['dist/bundle', 'js/app-main.js', 'js/app-ie9.js', 'css/app-main.css'])
   ]
 }
 
