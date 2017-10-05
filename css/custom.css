@@ -913,3 +913,7 @@ footer .row { margin-top: 18.5px; padding: 0px 50px 0 50px; }
     color: #3498DB !important;
     background: none;
 }
+
+.advisor {
+    cursor: pointer;
+}

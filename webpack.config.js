@@ -58,7 +58,8 @@ module.exports = {
               js: {
                 inline: [
                   'js/km.js',
-                  'js/drift.js'
+                  'js/drift.js',
+                  'js/advisor.js'
                 ],
                 'js/app-ie9.js': [
                   'js/html5shiv.js',
@@ -167,7 +168,7 @@ module.exports = {
       algorithm: 'gzip',
       test: new RegExp(
         '\\.(' +
-        ['js', 'css'].join('|') +
+        ['js', 'css', 'svg'].join('|') +
         ')$'
       ),
       threshold: 10240,
