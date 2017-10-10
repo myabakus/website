@@ -1,3 +1,4 @@
+const path = require('path')
 const webpack = require('webpack')
 const entry = require('webpack-glob-entry')
 const WebpackCleanPlugin = require('webpack-clean')
@@ -13,6 +14,21 @@ module.exports = {
   output: {
     path: __dirname + '/dist',
     filename: 'bundle/[name].js'
+  },
+  resolve: {
+    modules: [
+      path.resolve(__dirname, 'dist'),
+      'node_modules'
+    ],
+    alias: {
+      js: './dist/js'
+    }
+  },
+  resolveLoader: {
+    modules: [
+      path.resolve(__dirname, 'build'),
+      'node_modules'
+    ]
   },
   module: {
     rules: [
@@ -35,7 +51,50 @@ module.exports = {
               preserveLineBreaks: true,
               removeScriptTypeAttributes: true
             }
-          }
+          },
+          {
+            loader: 'html-merge-assets-loader',
+            options: {
+              js: {
+                inline: [
+                  'js/km.js',
+                  'js/drift.js',
+                  'js/advisor.js'
+                ],
+                'js/app-ie9.js': [
+                  'js/html5shiv.js',
+                  'js/respond.min.js'
+                ],
+                'js/app-main.js': [
+                  'js/jquery-1.11.1.min.js',
+                  'js/bootstrap.min.js',
+                  'js/plugins.js',
+                  'js/bskit-scripts.js'
+                ]
+              },
+              css: {
+                'css/app-main.css': [
+                  'bootstrap/css/bootstrap.min.css',
+                  'css/font-awesome.min.css',
+                  'css/style-library-1.css',
+                  'css/plugins.css',
+                  'css/blocks.css',
+                  'css/custom.css'
+                ]
+              }
+            }
+          },
+          {
+            loader: 'html-ext-remove-loader',
+            options: {
+              ignore: [
+                '/help/',
+                '/privacy.html',
+                '/terms.html'
+              ]
+            }
+          },
+          'pinegrow-remove-properties-loader'
         ],
       },
       {
@@ -104,24 +163,18 @@ module.exports = {
     }),
     new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i }),
     // split vendor js into its own file
-    /*
-    new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendor',
-      filename: "vendor.js"
-    }),
-    */
     new CompressionWebpackPlugin({
       asset: '[path].gz[query]',
       algorithm: 'gzip',
       test: new RegExp(
         '\\.(' +
-        ['js', 'css'].join('|') +
+        ['js', 'css', 'svg'].join('|') +
         ')$'
       ),
       threshold: 10240,
       minRatio: 0.8
     }),
-    new WebpackCleanPlugin(['dist/bundle'])
+    new WebpackCleanPlugin(['dist/bundle', 'js/app-main.js', 'js/app-ie9.js', 'css/app-main.css'])
   ]
 }
 
