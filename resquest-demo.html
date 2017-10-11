@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en" style="height:100%;" data-pgc-master="master-en.html">
     <head>
-        <base href="">
         <meta charset="utf-8">
         <title data-pgc-field="page_title">Accounting Software For Non-Accountants</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +9,8 @@
         <!-- Core CSS -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Lato:300,400,700" rel="stylesheet">
+
         <!-- Style Library -->
         <link href="css/style-library-1.css" rel="stylesheet">
         <link href="css/plugins.css" rel="stylesheet">
@@ -23,7 +22,7 @@
       <script src="js/respond.min.js"></script>
     <![endif]-->
         <script type="text/javascript" src="js/km.js"></script>
-        <script type="text/javascript" src="..//help/js/drift-en.js"></script>
+        <script type="text/javascript" src="js/drift.js"></script>
     </head>
     <body data-spy="scroll" data-target="nav">
         <header id="header-1" class="soft-scroll header-1">
@@ -39,7 +38,7 @@
                             <span class="icon-bar bg-moonlight bg-deepocean-hover"></span>
                         </button>
                         <a href="home.html">
-                            <img src="images/logo.svg" class="brand-img img-responsive">
+                            <img src="images/logo.svg" alt="Logo" class="brand-img img-responsive">
                         </a>
                     </div>
                     <div class="collapse navbar-collapse">
@@ -61,10 +60,10 @@
                                 <a href="resquest-demo.html" class="moonlight river-hover">Request&nbsp;Demo</a>
                             </li>
                             <li class="nav-item">
-                                <a class="asbestos river-hover hidden" href="https://www.myabakus.com/web/signup.html?plan=0">Signup</a>
+                                <a class="asbestos river-hover hidden" href="/signup.html?plan=0">Signup</a>
                             </li>
                             <li class="nav-item">
-                                <a href="https://www.myabakus.com/app/login" class="moonlight river-hover">Login</a>
+                                <a href="/app/login" class="moonlight river-hover">Login</a>
                             </li>
                         </ul>
                         <!--//nav-->
@@ -77,16 +76,16 @@
             <!--// End Navbar -->
         </header>
         <section data-pgc-field="myabakus.section.content">
-            <section id="contact" class="content-block-nopad content-3-2" data-pgc="myabakus.demo-head-en">
+            <section class="content-block-nopad content-3-2" data-pgc="myabakus.demo-head-en">
                 <div class="overlay overlay-orange">
                     <div class="container text-center col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                         <h1 class="margin-top90 pad30">14 days of free trial with personalized assistance</h1>
                         <div class="text-center col-md-10 col-md-offset-1">
                             <div class="col-md-6">
-                                <a href="https://www.myabakus.com/web/signup.html?plan=0" class="btn btn-block btn-outline btn-outline-lg outline-light">Try it Free</a>
+                                <a href="/signup.html?plan=0" class="btn btn-block btn-outline btn-outline-lg outline-light">Try it Free</a>
                             </div>
                             <div class="col-md-6">
-                                <a href="../help/faqs.html#trial" class="btn btn-outline btn-outline-lg outline-light btn-block">More Information</a>
+                                <a href="/help/faqs.html#trial" class="btn btn-outline btn-outline-lg outline-light btn-block">More Information</a>
                             </div>
                         </div>
                     </div>
@@ -120,21 +119,21 @@
                         </ul>
                         <div id="contact" class="form-container">
                             <div id="message"></div>
-                            <form method="post" action="js/contact-en.php" name="contactform" id="contactform">
+                            <form method="post" action="js/request-demo.php" name="contactform" id="contactform">
                                 <div class="row">
                                     <div class="col-sm-4">
                                         <div class="form-group">
-                                            <input name="name" id="name" type="text" value="" placeholder="Name" class="form-control" />
+                                            <input name="name" id="name" type="text" value="" placeholder="Name" aria-label="Name" class="form-control" />
                                         </div>
                                     </div>
                                     <div class="col-sm-4">
                                         <div class="form-group">
-                                            <input name="email" id="email" type="text" value="" placeholder="Email" class="form-control" />
+                                            <input name="email" id="email" type="text" value="" placeholder="Email" aria-label="Email" class="form-control" />
                                         </div>
                                     </div>
                                     <div class="col-sm-4">
                                         <div class="form-group">
-                                            <input name="phone" id="phone" type="text" value="" placeholder="Phone (+...)" class="form-control" />
+                                            <input name="phone" id="phone" type="text" value="" placeholder="Phone (+...)"  aria-label="Phone (+...)" class="form-control" />
                                         </div>
                                     </div>
                                 </div>
@@ -166,10 +165,10 @@
                         <h6 class="footer-col-heading">Language</h6>
                         <ul class="footer-ul">
                             <li>
-                                <a href="accounting-software.html"> English</a>
+                                <a href="home.html"> English</a>
                             </li>
                             <li>
-                                <a href="software-contable.html"> Spanish</a>
+                                <a href="inicio.html"> Spanish</a>
                             </li>
                         </ul>
                     </div>
@@ -177,10 +176,10 @@
                         <h6 class="footer-col-heading">Country</h6>
                         <ul class="footer-ul">
                             <li>
-                                <a href="software-contable-colombia.html"> Colombia</a>
+                                <a href="colombia/"> Colombia</a>
                             </li>
                             <li>
-                                <a href="accounting-software-philippines.html"> The Philippines</a>
+                                <a href="philippines/"> The Philippines</a>
                             </li>
                         </ul>
                     </div>
@@ -188,16 +187,16 @@
                         <h6 class="footer-col-heading">Process</h6>
                         <ul class="footer-ul">
                             <li>
-                                <a href="cash-flow-software.html"> Cash Flow</a>
+                                <a href="cash-flow.html"> Cash Flow</a>
                             </li>
                             <li>
-                                <a href="accounts-receivable-software.html"> Accounts Receivable</a>
+                                <a href="accounts-receivable.html"> Accounts Receivable</a>
                             </li>
                             <li>
-                                <a href="inventory-control-software.html"> Inventory</a>
+                                <a href="inventory-control.html"> Inventory</a>
                             </li>
                             <li>
-                                <a href="cash-control-software.html"> Cash and Banks</a>
+                                <a href="cash-and-banks.html"> Cash and Banks</a>
                             </li>
                         </ul>
                     </div>
@@ -205,13 +204,13 @@
                         <h6 class="footer-col-heading">Help</h6>
                         <ul class="footer-ul">
                             <li>
-                                <a href="../help/faqs.html"> FAQs</a>
+                                <a href="/help/faqs.html"> FAQs</a>
                             </li>
                             <li>
-                                <a href="../help/video-tutorials.html"> Video Tutorials</a>
+                                <a href="/help/video-tutorials.html"> Video Tutorials</a>
                             </li>
                             <li>
-                                <a href="../help/practical-accounting-course.html"> Getting Started Course</a>
+                                <a href="/help/practical-accounting-course.html"> Getting Started Course</a>
                             </li>
                         </ul>
                     </div>

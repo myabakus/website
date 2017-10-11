@@ -17,4 +17,5 @@ _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-2211383-1', 'auto');
+  ga('require', 'GTM-W5PT3GW');
   ga('send', 'pageview');

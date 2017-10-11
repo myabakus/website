@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="es" style="height:100%;" data-pgc-master="master-col.html">
     <head>
-        <base href="/website/">
         <meta charset="utf-8">
         <title data-pgc-field="page_title">Software Contable y Administrativo para Pymes</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +9,8 @@
         <!-- Core CSS -->
         <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Lato:300,400,700" rel="stylesheet">
+
         <!-- Style Library -->
         <link href="../css/style-library-1.css" rel="stylesheet">
         <link href="../css/plugins.css" rel="stylesheet">
@@ -19,11 +18,12 @@
         <link href="../css/custom.css" rel="stylesheet">
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
         <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
+      <script src="../js/html5shiv.js"></script>
+      <script src="../js/respond.min.js"></script>
     <![endif]-->
         <script type="text/javascript" src="../js/km.js"></script>
-        <script type="text/javascript" src="/../help/js/drift-es.js"></script>
+        <script type="text/javascript" src="../js/drift.js"></script>
+        <script type="text/javascript" src="../js/advisor.js"></script>
     </head>
     <body data-spy="scroll" data-target="nav">
         <header id="header-1" class="soft-scroll header-1">
@@ -38,14 +38,14 @@
                             <span class="icon-bar bg-moonlight bg-deepocean-hover"></span>
                             <span class="icon-bar bg-moonlight bg-deepocean-hover"></span>
                         </button>
-                        <a href="inicio.html">
+                        <a href="./">
                             <img src="../images/logo.svg" class="brand-img img-responsive">
                         </a>
                     </div>
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
                             <li class="nav-item" data-pgc-field="inicio">
-                                <a href="inicio.html" class="moonlight river-hover">inicio</a>
+                                <a href="./" class="moonlight river-hover">inicio</a>
                             </li>
                             <li class="nav-item" data-pgc-field="caracteristicas">
                                 <a href="caracteristicas.html" class="moonlight river-hover">Características</a>
@@ -61,10 +61,10 @@
                                 <a href="solicite-demo.html" class="moonlight river-hover">Solicite Demo</a>
                             </li>
                             <li class="nav-item">
-                                <a class="asbestos river-hover hidden" href="https://www.myabakus.com/web/registro.html?plan=0">Registro</a>
+                                <a class="asbestos river-hover hidden" href="/registro.html?plan=0">Registro</a>
                             </li>
                             <li class="nav-item">
-                                <a href="https://www.myabakus.com/app/ingrese" class="moonlight river-hover">Ingrese</a>
+                                <a href="/app/ingrese" class="moonlight river-hover">Ingrese</a>
                             </li>
                         </ul>
                         <!--//nav-->
@@ -83,10 +83,10 @@
                         <h1 class="margin-top90 pad30">Satisfacción total o la devolución de su dinero</h1>
                         <div class="text-center col-md-10 col-md-offset-1">
                             <div class="col-md-6">
-                                <a href="https://www.myabakus.com/web/registro.html?plan=0" class="btn btn-block btn-outline btn-outline-lg outline-light">Pruébelo Gratis</a>
+                                <a href="/registro.html?plan=0" class="btn btn-block btn-outline btn-outline-lg outline-light">Pruébelo Gratis</a>
                             </div>
                             <div class="col-md-6">
-                                <a href="../help/preguntas.html#garantia" class="btn btn-outline btn-outline-lg outline-light btn-block">Más Información</a>
+                                <a href="/help/preguntas.html#garantia" class="btn btn-outline btn-outline-lg outline-light btn-block">Más Información</a>
                             </div>
                         </div>
                     </div>
@@ -122,7 +122,7 @@
                                 <li class="sin">&nbsp;Sin extras</li>
                             </ul>
                             <div class="price-footer">
-                                <a href="https://www.myabakus.com/web/registro.html?plan=0" class="btn btn-info">Registro</a>
+                                <a href="/registro.html?plan=0" class="btn btn-info">Registro</a>
                             </div>
                         </div>
                         <div class="col-sm-6 price-block ancho col-md-4">
@@ -152,7 +152,7 @@
                                 </li>
                             </ul>
                             <div class="price-footer">
-                                <a href="https://www.myabakus.com/web/registro.html?plan=1" class="btn btn-info">Probar Este</a>
+                                <a href="/registro.html?plan=1" class="btn btn-info">Probar Este</a>
                             </div>
                         </div>
                         <div class="col-sm-6 price-block col-md-4">
@@ -181,7 +181,7 @@
                                 </li>
                             </ul>
                             <div class="price-footer">
-                                <a href="https://www.myabakus.com/web/registro.html?plan=2" class="btn btn-info">Probar Este</a>
+                                <a href="/registro.html?plan=2" class="btn btn-info">Probar Este</a>
                             </div>
                         </div>
                         <div class="col-sm-6 price-block col-md-4">
@@ -198,7 +198,7 @@
                             <ul class="features">
                                 <li class="more">Hasta 100 cuentas de myAbakus para usar con sus clientes
                                     <br>
-                                    <p>Necesita más? <a href="#contact" class="marina">Contáctenos</a></p>
+                                    <p>Necesita más? <a class="marina advisor">Contáctenos</a></p>
                                 </li>
                                 <li class="website2">Puede usar su propia marca y sitio web si lo prefiere</li>
                                 <li class="can">Puede determinar sus precios si lo prefiere</li>
@@ -207,7 +207,7 @@
                                 <!--                            <li>Free Goodies</li>-->
                             </ul>
                             <div class="price-footer">
-                                <a href="#contact" class="btn btn-info">Contáctenos</a>
+                                <a class="btn btn-info advisor">Contáctenos</a>
                             </div>
                         </div>
                     </div>
@@ -223,10 +223,10 @@
                         <h6 class="footer-col-heading">Idioma</h6>
                         <ul class="footer-ul">
                             <li>
-                                <a href="../accounting-software.html"> Inglés</a>
+                                <a href="/home.html"> Inglés</a>
                             </li>
                             <li>
-                                <a href="../software-contable.html"> Español</a>
+                                <a href="/inicio.html"> Español</a>
                             </li>
                         </ul>
                     </div>
@@ -234,10 +234,10 @@
                         <h6 class="footer-col-heading">País</h6>
                         <ul class="footer-ul">
                             <li>
-                                <a href="../software-contable-colombia.html"> Colombia</a>
+                                <a href="/colombia/"> Colombia</a>
                             </li>
                             <li>
-                                <a href="../accounting-software-philippines.html"> Filipinas</a>
+                                <a href="/philippines/"> Filipinas</a>
                             </li>
                         </ul>
                     </div>
@@ -245,16 +245,16 @@
                         <h6 class="footer-col-heading">Proceso</h6>
                         <ul class="footer-ul">
                             <li>
-                                <a href="../software-flujo-de-caja.html"> Flujo de Caja</a>
+                                <a href="/flujo-de-caja.html"> Flujo de Caja</a>
                             </li>
                             <li>
-                                <a href="../software-cuentas-por-cobrar.html"> Cuentas x Cobrar</a>
+                                <a href="/cuentas-por-cobrar.html"> Cuentas x Cobrar</a>
                             </li>
                             <li>
-                                <a href="../software-control-inventario.html"> Inventario</a>
+                                <a href="/control-de-inventario.html"> Inventario</a>
                             </li>
                             <li>
-                                <a href="../software-control-efectivo.html"> Efectivo y Bancos</a>
+                                <a href="/efectivo-y-bancos.html"> Efectivo y Bancos</a>
                             </li>
                         </ul>
                     </div>
@@ -262,13 +262,13 @@
                         <h6 class="footer-col-heading">Ayuda</h6>
                         <ul class="footer-ul">
                             <li>
-                                <a href="../help/preguntas.html"> Preguntas</a>
+                                <a href="/help/preguntas.html"> Preguntas</a>
                             </li>
                             <li>
-                                <a href="../help/video-tutoriales.html"> Video Tutoriales</a>
+                                <a href="/help/video-tutoriales.html"> Video Tutoriales</a>
                             </li>
                             <li>
-                                <a href="../help/curso-contabilidad-practica.html"> Curso de Arranque</a>
+                                <a href="/help/curso-contabilidad-practica.html"> Curso de Arranque</a>
                             </li>
                         </ul>
                     </div>
