@@ -21,6 +21,14 @@ module.exports = function (source) {
       })) {
         return match
       } else {
+        if (p1.indexOf('../') === 0) {
+          p1 = p1.replace('../', '/');
+        }
+        if (p1 === 'index') {
+          p1 = './';
+        } else {
+          p1 = p1.replace('index', '');
+        }
         return `href="${p1}${p2 || ''}"`
       }
     }
