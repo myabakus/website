@@ -21,6 +21,9 @@ module.exports = function (source) {
       })) {
         return match
       } else {
+        if (p1.indexOf('../') === 0) {
+          p1 = p1.replace('../', '/');
+        }
         return `href="${p1}${p2 || ''}"`
       }
     }
