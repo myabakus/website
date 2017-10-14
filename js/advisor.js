@@ -1,8 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const element = document.querySelector('#pricing + .content-block');
-  if (element !== null) {
-    element.scrollIntoView(true);
-  }
+  scroll(0, 400);
 }, false);
 
 drift.on('ready',function(api, payload) {
