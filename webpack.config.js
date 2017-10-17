@@ -59,7 +59,8 @@ module.exports = {
                 inline: [
                   'js/km.js',
                   'js/drift.js',
-                  'js/advisor.js'
+                  'js/advisor.js',
+                  'js/scroll.js'
                 ],
                 'js/app-ie9.js': [
                   'js/html5shiv.js',
