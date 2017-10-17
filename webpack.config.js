@@ -49,7 +49,7 @@ module.exports = {
               minimize: true,
               removeComments: true,
               preserveLineBreaks: true,
-              removeScriptTypeAttributes: true
+              removeScriptTypeAttributes: false
             }
           },
           {
