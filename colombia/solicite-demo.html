@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="es" style="height:100%;" data-pgc-master="master-col.html">
-    <head>
+    <head data-pgc-field="page_head">
         <meta charset="utf-8">
         <title data-pgc-field="page_title">Software Contable y de Facturación para administrar Pymes - Colombia</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -118,7 +118,7 @@
                         </ul>
                         <div id="contact" class="form-container">
                             <div id="message"></div>
-                            <form method="post" action="../js/request-demo.php" name="contactform" id="contactform">
+                            <form method="post" action="../js/request-demo.php" name="contactform" id="contactform" data-pgc-field="demo.form.action">
                                 <div class="row">
                                     <div class="col-sm-4">
                                         <div class="form-group">
@@ -143,7 +143,7 @@
                                         </label></p>
                                 </div>
                                 <div class="form-group hidden">
-                                    <textarea name="comments" id="comments" class="form-control" rows="3" placeholder="Mensaje" id="textArea"></textarea>
+                                    <textarea name="comments" id="comments" class="form-control" rows="3" placeholder="Mensaje"></textarea>
                                     <p class="small text-muted hidden"><span class="guardsman">* Todos los campos son requeridos</span> Una vez recibido su mensaje, le responderemos lo antes posible</p>
                                 </div>
                                 <div class="form-group">
