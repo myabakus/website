@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="myAbakus is an intuitive accounting software designed for those who want to keep their business accounts clear and up to date without having to depend on the knowledge, availability or preferences of their accountant" data-pgc-field="page_description" />
         <link rel="shortcut icon" href="images/favicon.png">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Lato:300,400,700" rel="stylesheet">
         <!-- Core CSS -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Lato:300,400,700" rel="stylesheet">
         <!-- Style Library -->
         <link href="css/style-library-1.css" rel="stylesheet">
         <link href="css/plugins.css" rel="stylesheet">
@@ -27,9 +27,10 @@
     <![endif]-->
         <script type="text/javascript" src="js/km.js"></script>
         <script type="text/javascript" src="js/drift.js"></script>
+        <script type="text/javascript" src="js/advisor.js" data-pgc-field="script.advisor"></script>
     </head>
     <body data-spy="scroll" data-target="nav">
-        <header id="header-1" class="soft-scroll header-1">
+        <header id="header-1" class="soft-scroll header-1" data-pgc-lock>
             <!-- Navbar -->
             <nav class="main-nav navbar-fixed-top headroom headroom--pinned">
                 <div class="container">
@@ -41,7 +42,7 @@
                             <span class="icon-bar bg-moonlight bg-deepocean-hover"></span>
                             <span class="icon-bar bg-moonlight bg-deepocean-hover"></span>
                         </button>
-                        <a href="home.html" aria-label="Home">
+                        <a href="home.html">
                             <img src="images/logo.svg" alt="Logo" class="brand-img img-responsive">
                         </a>
                     </div>
@@ -64,7 +65,7 @@
                                 <a href="resquest-demo.html" class="moonlight river-hover">Request&nbsp;Demo</a>
                             </li>
                             <li class="nav-item">
-                                <a class="asbestos river-hover hidden" href="pricing.html">Signup</a>
+                                <a class="asbestos river-hover hidden" href="signup.html?plan=0">Signup</a>
                             </li>
                             <li class="nav-item">
                                 <a href="/app/login" class="moonlight river-hover">Login</a>
@@ -217,6 +218,9 @@
                             <div class="ribbon"></div>
                             <!-- Ribbon -->
                             <h3>Free?</h3>
+                            <div class="signup-button">
+                                <a href="signup.html?plan=0" class="btn btn-info">Try This</a>
+                            </div>
                             <div class="price pastel-orange free">
                                 <div class="price-figure">
                                     <h4>$0</h4>
@@ -232,12 +236,15 @@
                                 <li class="extras">&nbsp;No extras</li>
                             </ul>
                             <div class="price-footer">
-                                <a href="signup.html?plan=0" class="btn btn-info">Sign Up</a>
+                                <a href="signup.html?plan=0" class="btn btn-info">Try This</a>
                             </div>
                         </div>
                         <div class="col-sm-6 price-block ancho col-md-4">
                             <!-- Ribbon -->
                             <h3>Á la Carte</h3>
+                            <div class="signup-button">
+                                <a href="signup.html?plan=1" class="btn btn-info">Try This</a>
+                            </div>
                             <div class="price pastel-red">
                                 <div class="price-figure">
                                     <h4 class="h4">Starts at U$16.9/mth </h4>
@@ -270,6 +277,9 @@
                         <div class="col-sm-6 price-block col-md-4">
                             <!-- Ribbon -->
                             <h3>Premium</h3>
+                            <div class="signup-button">
+                                <a href="signup.html?plan=2" class="btn btn-info">Try This</a>
+                            </div>
                             <div class="price pastel-green">
                                 <div class="price-figure">
                                     <h4>U$69/mth</h4>
@@ -296,6 +306,9 @@
                             <!-- Ribbon -->
                             <div class="ribbon"></div>
                             <h3>Advisor</h3>
+                            <div class="signup-button">
+                                <a class="btn btn-info advisor">Contact Us</a>
+                            </div>
                             <div class="price pastel-blue">
                                 <div class="price-figure">
                                     <h4>U$249/mth</h4>
@@ -306,7 +319,7 @@
                             <ul class="features">
                                 <li class="more">Up to 100 myAbakus accounts to use with your customers
                                     <br>
-                                    <p>Need more? <a href="#contact" class="marina">Contact us</a></p>
+                                    <p>Need more? <a class="marina advisor">Contact us</a></p>
                                 </li>
                                 <li class="website">Can use your own brand and website if you want to</li>
                                 <li class="can">Can set your own
@@ -316,7 +329,7 @@
                                 <!--                            <li>Free Goodies</li>-->
                             </ul>
                             <div class="price-footer">
-                                <a href="#contact" class="btn btn-info">Contact Us</a>
+                                <a class="btn btn-info advisor">Contact Us</a>
                             </div>
                         </div>
                     </div>
@@ -431,7 +444,7 @@
                         </ul>
                         <div id="contact" class="form-container">
                             <div id="message"></div>
-                            <form method="post" action="js/request-demo.php" name="contactform" id="contactform">
+                            <form method="post" action="js/request-demo.php" name="contactform" id="contactform" data-pgc-edit="demo.form.action[action]">
                                 <div class="row">
                                     <div class="col-sm-4">
                                         <div class="form-group">
@@ -470,7 +483,7 @@
                 <!-- /.container -->
             </section>
         </section>
-        <footer>
+        <footer data-pgc-lock>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
@@ -529,7 +542,7 @@
                 </div>
             </div>
         </footer>
-        <div class="copyright-bar bg-black">
+        <div class="copyright-bar bg-black" data-pgc-lock>
             <div class="container">
                 <p class="pull-left small">© Nomad Web Ventures Inc 2005-2017</p>
                 <p class="pull-right small">Made with <i class="fa fa-heart pomegranate"></i> for small businesses</p>
@@ -541,7 +554,7 @@
                     <div class="modal-content">
                         <div class="modal-body">
                             <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="" frameborder="0" allowfullscreen=""></iframe>
+                                <iframe class="embed-responsive-item" src="about:blank" frameborder="0" allowfullscreen=""></iframe>
                             </div>
                         </div>
                         <div class="modal-footer">

@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Software Contable para Pymes. Programa de contabilidad, facturación y administración para Gerentes. - Pruébelo Gratis" data-pgc-field="page_description" />
         <link rel="shortcut icon" href="images/favicon.png">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Lato:300,400,700" rel="stylesheet">
         <!-- Core CSS -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Lato:300,400,700" rel="stylesheet">
         <!-- Style Library -->
         <link href="css/style-library-1.css" rel="stylesheet">
         <link href="css/plugins.css" rel="stylesheet">
@@ -27,9 +27,10 @@
     <![endif]-->
         <script type="text/javascript" src="js/km.js"></script>
         <script type="text/javascript" src="js/drift.js"></script>
+        <script type="text/javascript" src="js/advisor.js" data-pgc-field="script.advisor"></script>
     </head>
     <body data-spy="scroll" data-target="nav">
-        <header id="header-1" class="soft-scroll header-1">
+        <header id="header-1" class="soft-scroll header-1" data-pgc-lock>
             <!-- Navbar -->
             <nav class="main-nav navbar-fixed-top headroom headroom--pinned">
                 <div class="container">
@@ -64,7 +65,7 @@
                                 <a href="solicite-demo.html" class="moonlight river-hover">Solicite Demo</a>
                             </li>
                             <li class="nav-item">
-                                <a class="asbestos river-hover hidden" href="precio.html">Registro</a>
+                                <a class="asbestos river-hover hidden" href="registro.html?plan=0">Registro</a>
                             </li>
                             <li class="nav-item" data-pgc-field="ingrese">
                                 <a href="/app/ingrese" class="moonlight river-hover">Ingrese</a>
@@ -204,7 +205,7 @@
                     <!-- /.container -->
                 </div>
             </section>
-            <section class="content-block pricing-table-1 pricing-table-1-1" data-pgc-define="myabakus.pricing-es">
+            <section class="content-block pricing-table-1 pricing-table-1-1" data-pgc-define="myabakus.pricing-es" data-pgc-edit-types="es.button.try_this" data-pgc-edit="es.section.pricing">
                 <!-- inicio container columnas precios en Español -->
                 <div class="container">
                     <div class="underlined-title">
@@ -218,6 +219,9 @@
                             <div class="ribbon"></div>
                             <!-- Ribbon -->
                             <h3>Gratis?</h3>
+                            <div class="signup-button">
+                                <a href="registro.html?plan=0" class="btn btn-info">Probar Este</a>
+                            </div>
                             <div class="price pastel-orange free">
                                 <div class="price-figure">
                                     <h4>$0</h4>
@@ -233,12 +237,15 @@
                                 <li class="sin">&nbsp;Sin extras</li>
                             </ul>
                             <div class="price-footer">
-                                <a href="registro.html?plan=0" class="btn btn-info">Registro</a>
+                                <a href="registro.html?plan=0" class="btn btn-info">Probar Este</a>
                             </div>
                         </div>
                         <div class="col-sm-6 price-block ancho col-md-4">
                             <!-- Ribbon -->
                             <h3>A la Carta</h3>
+                            <div class="signup-button">
+                                <a href="registro.html?plan=1" class="btn btn-info" data-pgc-define="es.button.try_this" data-pgc-edit="es.button.try_this.link[href]">Probar Este</a>
+                            </div>
                             <div class="price pastel-red">
                                 <div class="price-figure">
                                     <h4 class="h4">Desde U$16.9/mes</h4>
@@ -263,12 +270,15 @@
                                 </li>
                             </ul>
                             <div class="price-footer">
-                                <a href="registro.html?plan=1" class="btn btn-info">Probar Este</a>
+                                <a href="registro.html?plan=1" class="btn btn-info" data-pgc="es.button.try_this" data-pgc-field="es.button.try_this.link">Probar Este</a>
                             </div>
                         </div>
                         <div class="col-sm-6 price-block col-md-4">
                             <!-- Ribbon -->
                             <h3>Premium</h3>
+                            <div class="signup-button">
+                                <a href="registro.html?plan=2" class="btn btn-info" data-pgc="es.button.try_this" data-pgc-field="es.button.try_this.link">Probar Este</a>
+                            </div>
                             <div class="price pastel-green">
                                 <div class="price-figure">
                                     <h4>U$69/mes </h4>
@@ -292,13 +302,16 @@
                                 </li>
                             </ul>
                             <div class="price-footer">
-                                <a href="registro.html?plan=2" class="btn btn-info">Probar Este</a>
+                                <a href="registro.html?plan=2" class="btn btn-info" data-pgc="es.button.try_this" data-pgc-field="es.button.try_this.link">Probar Este</a>
                             </div>
                         </div>
                         <div class="col-sm-6 price-block col-md-4">
                             <div class="ribbon"></div>
                             <!-- Ribbon -->
                             <h3>Asesor</h3>
+                            <div class="signup-button">
+                                <a class="btn btn-info advisor" data-pgc-define="es.button.contact_us">Contáctenos</a>
+                            </div>
                             <div class="price pastel-blue">
                                 <div class="price-figure">
                                     <h4>U$249/mes</h4>
@@ -309,7 +322,7 @@
                             <ul class="features">
                                 <li class="more">Hasta 100 cuentas de myAbakus para usar con sus clientes
                                     <br>
-                                    <p>Necesita más? <a href="#contact" class="marina">Contáctenos</a></p>
+                                    <p>Necesita más? <a class="marina advisor">Contáctenos</a></p>
                                 </li>
                                 <li class="website2">Puede usar su propia marca y sitio web si lo prefiere</li>
                                 <li class="can">Puede determinar sus precios si lo prefiere</li>
@@ -318,7 +331,7 @@
                                 <!--                            <li>Free Goodies</li>-->
                             </ul>
                             <div class="price-footer">
-                                <a href="#contact" class="btn btn-info">Contáctenos</a>
+                                <a class="btn btn-info advisor" data-pgc="es.button.contact_us">Contáctenos</a>
                             </div>
                         </div>
                     </div>
@@ -432,7 +445,7 @@
                         </ul>
                         <div id="contact" class="form-container">
                             <div id="message"></div>
-                            <form method="post" action="js/request-demo.php" name="contactform" id="contactform">
+                            <form method="post" action="js/request-demo.php" name="contactform" id="contactform" data-pgc-edit="demo.form.action[action]">
                                 <div class="row">
                                     <div class="col-sm-4">
                                         <div class="form-group">
@@ -457,7 +470,7 @@
                                         </label></p>
                                 </div>
                                 <div class="form-group hidden">
-                                    <textarea name="comments" id="comments" class="form-control" rows="3" placeholder="Mensaje" id="textArea"></textarea>
+                                    <textarea name="comments" id="comments" class="form-control" rows="3" placeholder="Mensaje"></textarea>
                                     <p class="small text-muted hidden"><span class="guardsman">* Todos los campos son requeridos</span> Una vez recibido su mensaje, le responderemos lo antes posible</p>
                                 </div>
                                 <div class="form-group">
@@ -475,7 +488,7 @@
                 <!-- /.container -->
             </section>
         </section>
-        <footer>
+        <footer data-pgc-lock>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
@@ -534,7 +547,7 @@
                 </div>
             </div>
         </footer>
-        <div class="copyright-bar bg-black">
+        <div class="copyright-bar bg-black" data-pgc-lock>
             <div class="container">
                 <p class="pull-left small">© Nomad Web Ventures Inc 2005-2017</p>
                 <p class="pull-right small">Hecho con <i class="fa fa-heart pomegranate"></i> para PYMES</p>
@@ -546,7 +559,7 @@
                     <div class="modal-content">
                         <div class="modal-body">
                             <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="" frameborder="0" allowfullscreen=""></iframe>
+                                <iframe class="embed-responsive-item" src="about:blank" frameborder="0" allowfullscreen=""></iframe>
                             </div>
                         </div>
                         <div class="modal-footer">
