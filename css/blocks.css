@@ -3484,7 +3484,8 @@ Version: 1.0
     list-style-type: none;
 }
 
-.pricing-table-1 .price-footer
+.pricing-table-1 .price-footer,
+.pricing-table-1 .signup-button
 {
     display: block;
     background: #2c3e50;
@@ -3492,6 +3493,16 @@ Version: 1.0
     margin-top: -5px;
     padding: 10px 0;
 }
+
+.pricing-table-1 .signup-button {
+    padding: 0 0 20px 0;
+    border-radius: 0;
+}
+
+.pricing-table-1 .signup-button > .btn {
+    margin: 0 auto;
+}
+
 
 /* Hover Effects */
 

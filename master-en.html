@@ -6,11 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="myAbakus is an intuitive accounting software designed for those who want to keep their business accounts clear and up to date without having to depend on the knowledge, availability or preferences of their accountant" data-pgc-edit="page_description[content, no_content]" />
         <link rel="shortcut icon" href="images/favicon.png">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Lato:300,400,700" rel="stylesheet">
         <!-- Core CSS -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Lato:300,400,700" rel="stylesheet">
-        
         <!-- Style Library -->
         <link href="css/style-library-1.css" rel="stylesheet">
         <link href="css/plugins.css" rel="stylesheet">
@@ -28,9 +27,11 @@
     <![endif]-->
         <script type="text/javascript" src="js/km.js"></script>
         <script type="text/javascript" src="js/drift.js"></script>
+        <script type="text/javascript" src="js/advisor.js" data-pgc-field="script.advisor" data-pgc-optional="script.scroll" data-pgc-edit="script.advisor[src]"></script>
+        <script type="text/javascript" src="js/scroll.js" data-pgc-field="script.scroll" data-pgc-optional="script.advisor" data-pgc-edit="script.scroll[src]"></script>
     </head>
     <body data-spy="scroll" data-target="nav">
-        <header id="header-1" class="soft-scroll header-1">
+        <header id="header-1" class="soft-scroll header-1" data-pgc-lock>
             <!-- Navbar -->
             <nav class="main-nav navbar-fixed-top headroom headroom--pinned">
                 <div class="container">
@@ -65,7 +66,7 @@
                                 <a href="resquest-demo.html" class="moonlight river-hover">Request&nbsp;Demo</a>
                             </li>
                             <li class="nav-item">
-                                <a class="asbestos river-hover hidden" href="/signup.html?plan=0">Signup</a>
+                                <a class="asbestos river-hover hidden" href="signup.html?plan=0">Signup</a>
                             </li>
                             <li class="nav-item">
                                 <a href="/app/login" class="moonlight river-hover">Login</a>
@@ -82,7 +83,7 @@
         </header>
         <section data-pgc-edit="myabakus.section.content">
 </section>
-        <footer>
+        <footer data-pgc-lock>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
@@ -100,10 +101,10 @@
                         <h6 class="footer-col-heading">Country</h6>
                         <ul class="footer-ul">
                             <li>
-                                <a href="colombia/"> Colombia</a>
+                                <a href="colombia/index.html"> Colombia</a>
                             </li>
                             <li>
-                                <a href="philippines/"> The Philippines</a>
+                                <a href="philippines/index.html"> The Philippines</a>
                             </li>
                         </ul>
                     </div>
@@ -141,7 +142,7 @@
                 </div>
             </div>
         </footer>
-        <div class="copyright-bar bg-black">
+        <div class="copyright-bar bg-black" data-pgc-lock>
             <div class="container">
                 <p class="pull-left small">© Nomad Web Ventures Inc 2005-2017</p>
                 <p class="pull-right small">Made with <i class="fa fa-heart pomegranate"></i> for small businesses</p>
