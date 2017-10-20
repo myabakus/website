@@ -1,0 +1,199 @@
+[{
+    "title": "Manage multiple price lists",
+    "desc": "Manage up to five price lists and easily update prices using an Excel template.",
+    "lang": "en",
+    "id": "IVGATE-wngQ"
+}, {
+    "title": "Configure the due date for your invoices",
+    "desc": "It is now possible to configure the days used to calculate due dates in invoices.",
+    "lang": "en",
+    "id": "7c0z7d4deKs"
+}, {
+    "title": "View your income report by item type",
+    "desc": "The income by item report is now grouped by item type.",
+    "lang": "en",
+    "id": "CWwwtMMq-Jk"
+}, {
+    "title": "Export your data from the Overview",
+    "desc": "It is now possible to export data from the Overview, where we have the Balance sheet and Income and expense    statement for the current month.",
+    "lang": "en",
+    "id": "aLjSLv3osT0"
+}, {
+    "title": "Create recurring income transactions",
+    "desc": "Recurring transactions are no longer limited to expenses. You can now create recurring income transactions as well.",
+    "lang": "en",
+    "id": "NyjQTmsx3oI"
+}, {
+    "title": "Setup and use the parameters to restock the inventory",
+    "desc": "To setup the parameters to restock inventory we need to enter the minimum and maximum quantities that we want to have for inventory items.",
+    "lang": "en",
+    "id": "FA3lPbPeFRA"
+}, {
+    "title": "Use multiple prefixes on invoices and other documents",
+    "desc": "To use multiple prefixes and numbering on our invoices we need to change the invoice settings.",
+    "lang": "en",
+    "id": "slwxy2ZD3s4"
+}, {
+    "title": "Enter your initial inventory",
+    "desc": "To enter the initial inventory we need to go to control inventory and use the add inventory action.",
+    "lang": "en",
+    "id": "kp2B3y9WKPQ"
+}, {
+    "title": "Enter your starting cash balances",
+    "desc": "To enter our cash balances we will control - cash.",
+    "lang": "en",
+    "id": "Ris-dlXSR7o"
+}, {
+    "title": "Enter your starting balances for customers and suppliers",
+    "desc": "To enter all those accounts that we have outstanding receivable and payable we must do it through a transaction.",
+    "lang": "en",
+    "id": "fSXDJSnE3FY"
+}, {
+    "title": "Cree sus impuestos y retenciones - Parte 1",
+    "desc": "Maneje los impuestos y retenciones acorde a las necesidades de su pa\u00eds.",
+    "lang": "es",
+    "id": "9V0MTOZLcdk",
+    "next": "JAsQTbqEkik"
+}, {
+    "title": "Cree sus impuestos y retenciones - Parte 2",
+    "desc": "Maneje los impuestos y retenciones acorde a las necesidades de su pa\u00eds.",
+    "lang": "es",
+    "id": "JAsQTbqEkik"
+}, {
+    "title": "Cree notas cr\u00e9dito",
+    "desc": "Maneje adecuadamente los cr\u00e9ditos dados a clientes y recibidos de proveedores.",
+    "lang": "en",
+    "id": "IuEDwIhuOEo"
+}, {
+    "title": "Configure los vencimientos para sus facturas",
+    "desc": "Ahora es posible configurar los d\u00edas usados para calcular el vencimiento en las facturas.",
+    "lang": "es",
+    "id": "jeXeAUYDjjM"
+}, {
+    "title": "Use m\u00faltiples listas de precios",
+    "desc": "Maneje hasta cinco listas de precios y actualice f\u00e1cilmente sus precios usando una plantilla de Excel.",
+    "lang": "es",
+    "id": "7tyD1wxNM8w"
+}, {
+    "title": "Vea su reporte de ingresos por tipo de \u00edtem",
+    "desc": "El reporte de ingresos por \u00edtem est\u00e1 ahora agrupado por tipo de \u00edtem.",
+    "lang": "es",
+    "id": "5rxufoEFYoc"
+}, {
+    "title": "Exporte su informaci\u00f3n desde el Resumen",
+    "desc": "Ahora es posible exportar datos desde el Resumen, d\u00f3nde tenemos el Balance general y el Estado de resultados del mes en curso.",
+    "lang": "es",
+    "id": "as-SxZ1qaXE"
+}, {
+    "title": "Cree transacciones de ingresos recurrentes",
+    "desc": "Las transacciones recurrentes ya no est\u00e1n limitadas a gastos. Usted puede ahora crear transacciones de ingresos recurrentes.",
+    "lang": "es",
+    "id": "Sc0mrIxfwQQ"
+}, {
+    "title": "Determine y use los par\u00e1metros para reposici\u00f3n de inventario",
+    "desc": "Para determinar los par\u00e1metros de reposici\u00f3n de inventario debemos ingresar las cantidades m\u00ednimas y m\u00e1ximas que queremos tener para los \u00edtems de inventario.",
+    "lang": "es",
+    "id": "LUOCE-x8ehM"
+}, {
+    "title": "Use m\u00faltiples prefijos en facturas y otros documentos",
+    "desc": "Para usar m\u00faltiples prefijos y numeraci\u00f3n en nuestras facturas necesitamos cambiar la configuraci\u00f3n de la factura.",
+    "lang": "es",
+    "id": "XT7-2DQYnLI"
+}, {
+    "title": "Ingrese su inventario inicial",
+    "desc": "Para ingresar el inventario inicial necesitamos ir a controlar inventario y usar la acci\u00f3n agregar inventario.",
+    "lang": "es",
+    "id": "U6kRs9WOFGo"
+}, {
+    "title": "Ingrese sus saldos iniciales de efectivo",
+    "desc": "Para ingresar nuestros saldos de efectivo vamos a Controlar - Efectivo.",
+    "lang": "es",
+    "id": "72cQvGMHuPQ"
+}, {
+    "title": "Ingrese sus saldos iniciales de clientes y proveedores",
+    "desc": "Para ingresar todas aquellas cuentas que tenemos pendientes por cobrar y por pagar debemos hacerlo a trav\u00e9s de una transacci\u00f3n.",
+    "lang": "es",
+    "id": "Vnp6ZdoR3BI"
+}, [{
+    "title": "How and Where to Start - Part 1",
+    "desc": "First things first: Before we start entering transactions, we must enter the initial balances for receivables, payables, inventory and cash (including credits)",
+    "lang": "en",
+    "id": "3oXh3B7fjE8",
+    "next": "Dq-WLR00uNg"
+}, {
+    "title": "How and Where to Start - Part 2",
+    "desc": "We are ready to start: Let\u2019s review how to enter different type of transactions and their impact on the different sections of the application",
+    "lang": "en",
+    "id": "Dq-WLR00uNg"
+}], [{
+    "title": "Invoice Settings",
+    "desc": "Let\u2019s start by making sure that our invoice has all the information we need and that it looks good",
+    "lang": "en",
+    "id": "If7PW-zYB9w"
+}, {
+    "title": "Printing and Sending the Invoice by Email",
+    "desc": "Now that our invoice is ready, let\u2019s check how we can print it and send it by email to our customers",
+    "lang": "en",
+    "id": "5tdto25vhyg"
+}], [{
+    "title": "Get paid on time",
+    "desc": "Keep your sales and collection data up to date to make sure customers are paying you when and how they should.",
+    "lang": "en",
+    "id": "U6PN3F5q-C0"
+}], [{
+    "title": "Control your cash",
+    "desc": "Make sure everything (that should) has been accounted by keeping your cash accounts up to date and reconciled.",
+    "lang": "en",
+    "id": "YI5jDEjOq8A"
+}], [{
+    "title": "Manage your cash flow",
+    "desc": "Stay ahead of the game and avoid nasty surprises by entering pending collections and payments, as well as recurring expenses.",
+    "lang": "en",
+    "id": "dziMNOGtabA"
+}], [{
+    "title": "Control your inventory",
+    "desc": "Maintain system and real quantities synced, know when to reorder, and see how your products are contributing (or not) to your bottom line.",
+    "lang": "en",
+    "id": "bTJ4-rnkzqk"
+}], [{
+    "title": "C\u00f3mo y D\u00f3nde Arrancar - Parte 1",
+    "desc": "Primero lo primero: Antes de comenzar a ingresar transacciones debemos ingresar los saldos iniciales de cuentas por cobrar, cuentas por pagar, inventario y efectivo (incluyendo cr\u00e9ditos)",
+    "lang": "es",
+    "id": "61xx5xK9hTM",
+    "next": "v5qQ8-xtFEw"
+}, {
+    "title": "C\u00f3mo y D\u00f3nde Arrancar - Parte 2",
+    "desc": "Estamos listos para comenzar: Revisemos c\u00f3mo ingresar diferentes tipos de transacciones y el impacto de las mismas en las diferentes secciones de la aplicaci\u00f3n",
+    "lang": "es",
+    "id": "v5qQ8-xtFEw"
+}], [{
+    "title": "Configuraci\u00f3n de la Factura ",
+    "desc": "Comencemos por asegurarnos que la factura tiene toda la informaci\u00f3n que necesitamos y que se vea bien",
+    "lang": "es",
+    "id": "iUhXMyUWtKw"
+}, {
+    "title": "Impresi\u00f3n y Env\u00edo de la Factura por Email",
+    "desc": "Ahora que nuestra factura est\u00e1 lista, revisemos como podemos imprimirla y enviarla por email a nuestros clientes",
+    "lang": "es",
+    "id": "elLeoN9MSXM"
+}], [{
+    "title": "Haga sus cobros a tiempo",
+    "desc": "Mantenga sus cuentas por cobrar al d\u00eda para asegurarse que sus clientes le est\u00e1n pagando seg\u00fan lo acordado.",
+    "lang": "es",
+    "id": "K8rIA7hA2Uk"
+}], [{
+    "title": "Controle su efectivo",
+    "desc": "Aseg\u00farese que todo (lo que deber\u00eda) ha sido contabilizado manteniendo sus cuentas de efectivo actualizadas y reconciliadas.",
+    "lang": "es",
+    "id": "FVv_pc9AcsU"
+}], [{
+    "title": "Maneje su flujo de caja",
+    "desc": "Mant\u00e9ngase \u201cen la jugada\u201d y evite sorpresas desagradables registrando cobros y pagos pendientes, as\u00ed como gastos recurrentes.",
+    "lang": "es",
+    "id": "-z_zb0t9BlE"
+}], [{
+    "title": "Controle su inventario",
+    "desc": "Mantenga las unidades f\u00edsicas sincronizadas con las del sistema, sepa cu\u00e1ndo ordenar sus productos y vea c\u00f3mo estos contribuyen (o no) a su ganancia.",
+    "lang": "es",
+    "id": "mWFxihAbFZ8"
+}]]
