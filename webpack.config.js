@@ -67,7 +67,7 @@ module.exports = {
                   'js/respond.min.js'
                 ],
                 'js/app-main.js': [
-                  'js/jquery-1.11.1.min.js',
+                  'js/jquery.min.js',
                   'js/bootstrap.min.js',
                   'js/plugins.js',
                   'js/bskit-scripts.js'
@@ -136,16 +136,33 @@ module.exports = {
       },
       {
         test: /\.php$/,
-        loader: 'file-loader',
-        options: {
-          name: '/[path][name].[ext]'
-        }
+        use:[
+          {
+            loader: 'file-loader',
+            options: {
+              name: '/[path][name].[ext]'
+            }
+          },
+          'extract-loader',
+          {
+            loader: 'html-loader',
+            options: {
+              attrs: ['img:src', 'link:href', 'script:src', 'form:action'],
+              removeComments: true,
+              preserveLineBreaks: true,
+              removeScriptTypeAttributes: true
+            }
+          }
+        ]
       }
     ]
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new CopyWebpackPlugin([
+      { from : 'videos/.htaccess', to : 'videos/.htaccess', toType: 'file' },
+      { from : 'videos/routes.json', to : 'videos/routes.json' },
+      { from : 'videos/bootstrap.php', to : 'videos/bootstrap.php' },
       { from: 'js/km.js', to: 'js/km.js' }, // help use to km
       { from: 'images/favicon.png', to: 'images/favicon.png' } // other page use this file
     ]),
@@ -182,7 +199,7 @@ module.exports = {
 
 function entries () {
   return Object.entries(
-    entry(entry.basePath(), '*.html', 'colombia/*.html', 'philippines/*.html')
+    entry(entry.basePath(), '*.html', 'colombia/*.html', 'philippines/*.html', 'help/*.html', 'videos/player.php')
   ).reduce((obj, [key, file]) => {
     if (key.indexOf('master-') === -1) obj[key] = './' + file;
     return obj;
