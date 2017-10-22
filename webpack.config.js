@@ -168,6 +168,8 @@ module.exports = {
       { from: 'js/faqs-en.js', to: 'js/faqs-en.js' }, // help use to km
       { from: 'js/videos-es.js', to: 'js/videos-es.js' }, // help use to km
       { from: 'js/videos-en.js', to: 'js/videos-en.js' }, // help use to km
+      { from: 'js/course-es.js', to: 'js/course-es.js' }, // help use to km
+      { from: 'js/course-en.js', to: 'js/course-en.js' }, // help use to km
       { from: 'images/favicon.png', to: 'images/favicon.png' } // other page use this file
     ]),
     new webpack.optimize.UglifyJsPlugin({

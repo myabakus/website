@@ -1057,7 +1057,8 @@ die('El router sea regenerado...');
 }
 if(!($this['id']?? false)){
 http_response_code(404);
-die('Not found...');
+readfile(__DIR__.'/../notfound.html');
+exit;
 }
 $this->findNextVideo();
 }
