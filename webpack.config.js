@@ -67,7 +67,7 @@ module.exports = {
                   'js/respond.min.js'
                 ],
                 'js/app-main.js': [
-                  'js/jquery-1.11.1.min.js',
+                  'js/jquery.min.js',
                   'js/bootstrap.min.js',
                   'js/plugins.js',
                   'js/bskit-scripts.js'
@@ -89,7 +89,7 @@ module.exports = {
             loader: 'html-ext-remove-loader',
             options: {
               ignore: [
-                '/help/',
+                // '/help/',
                 '/privacy.html',
                 '/terms.html'
               ]
@@ -136,17 +136,40 @@ module.exports = {
       },
       {
         test: /\.php$/,
-        loader: 'file-loader',
-        options: {
-          name: '/[path][name].[ext]'
-        }
+        use:[
+          {
+            loader: 'file-loader',
+            options: {
+              name: '/[path][name].[ext]'
+            }
+          },
+          'extract-loader',
+          {
+            loader: 'html-loader',
+            options: {
+              attrs: ['img:src', 'link:href', 'script:src', 'form:action'],
+              removeComments: true,
+              preserveLineBreaks: true,
+              removeScriptTypeAttributes: true
+            }
+          }
+        ]
       }
     ]
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new CopyWebpackPlugin([
+      // { from : 'videos/.htaccess', to : 'videos/.htaccess', toType: 'file' },
+      { from : 'videos/routes.json', to : 'videos/routes.json' },
+      { from : 'videos/bootstrap.php', to : 'videos/bootstrap.php' },
       { from: 'js/km.js', to: 'js/km.js' }, // help use to km
+      { from: 'js/faqs-es.js', to: 'js/faqs-es.js' }, // help use to km
+      { from: 'js/faqs-en.js', to: 'js/faqs-en.js' }, // help use to km
+      { from: 'js/videos-es.js', to: 'js/videos-es.js' }, // help use to km
+      { from: 'js/videos-en.js', to: 'js/videos-en.js' }, // help use to km
+      { from: 'js/course-es.js', to: 'js/course-es.js' }, // help use to km
+      { from: 'js/course-en.js', to: 'js/course-en.js' }, // help use to km
       { from: 'images/favicon.png', to: 'images/favicon.png' } // other page use this file
     ]),
     new webpack.optimize.UglifyJsPlugin({
@@ -182,7 +205,7 @@ module.exports = {
 
 function entries () {
   return Object.entries(
-    entry(entry.basePath(), '*.html', 'colombia/*.html', 'philippines/*.html')
+    entry(entry.basePath(), '*.html', 'colombia/*.html', 'philippines/*.html', 'help/*.html', 'videos/player.php')
   ).reduce((obj, [key, file]) => {
     if (key.indexOf('master-') === -1) obj[key] = './' + file;
     return obj;
