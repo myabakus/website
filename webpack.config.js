@@ -47,6 +47,7 @@ module.exports = {
             options: {
               attrs: ['img:src', 'link:href', 'script:src', 'form:action'],
               minimize: true,
+              minifyJS: false,
               removeComments: true,
               preserveLineBreaks: true,
               removeScriptTypeAttributes: true
