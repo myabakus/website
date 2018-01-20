@@ -6,6 +6,7 @@
   "author": "Loduis Madariaga <loduis@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
     "clean-webpack-plugin": "^0.1.16",
     "compression-webpack-plugin": "^1.0.0",
     "copy-webpack-plugin": "^4.0.1",
