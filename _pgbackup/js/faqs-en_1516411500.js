@@ -60,7 +60,7 @@ var app = new Vue({
                 title: 'How much is it going to cost?',
                 answer: [
 
-                        'The cost depends on what you choose in your plan (and how often you pay) and starts at U$ 16.90 a month if you pay six months in advance. You can review the different payment options by clicking on "Your Account" within the application.',
+                        'The cost depends on what you choose in your plan (and how often you pay) and starts at U$ 14.90 a month if you pay six months in advance. You can review the different payment options by clicking on "Your Account" within the application.',
 
                     ,
 

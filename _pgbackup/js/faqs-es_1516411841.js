@@ -68,7 +68,7 @@ var app = new Vue({
                         "No obstante, tenga presente que el costo es irrelevante fuera de contexto. Lo que usted realmente quiere es un buen retorno sobre su inversión. En otras palabras, usted quiere que el valor que le genera myAbakus sea mayor que su costo."
                     ,
 
-                        "El periodo de prueba le da la oportunidad de evaluar nuestro software y darse una idea de cuanto valor puede generar para su negocio antes de suscribirse (ver pregunta anterior). Pero como sólo va a saberlo con certeza usándolo regularmente por suficiente tiempo, también ofrecemos una garantía de satisfacción después de suscribirse (ver siguiente pregunta)."
+                        "El periodo de prueba le da la oportunidad de evaluar nuestro software y darse una idea de valor puede generar para su negocio antes de suscribirse (ver pregunta anterior). Pero como sólo va a saberlo con certeza usándolo regularmente por suficiente tiempo, también ofrecemos una garantía de satisfacción después de suscribirse (ver siguiente pregunta)."
 
                         ]
             },
