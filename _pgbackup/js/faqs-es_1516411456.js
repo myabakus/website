@@ -61,7 +61,7 @@ var app = new Vue({
                 title: '¿Cuánto va a costar?',
                 answer: [
 
-                        "El costo depende de lo qué seleccione en su plan (y de la frecuencia con qué pague) y comienza en 16.90 dólares al mes si paga 6 meses por anticipado. Usted puede revisar las diferentes opciones de pago haciendo clic en “Su cuenta” dentro de la aplicación.",
+                        "El costo depende de lo qué seleccione en su plan (y de la frecuencia con qué pague) y comienza en 14.90 dólares al mes si paga 6 meses por anticipado. Usted puede revisar las diferentes opciones de pago haciendo clic en “Su cuenta” dentro de la aplicación.",
 
                     ,
 
