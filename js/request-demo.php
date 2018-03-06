@@ -2,11 +2,21 @@
 
 if(!$_POST) exit;
 
+
+define('LIB_PATH', realpath(__DIR__ . '/../../../kernel') . '/');
+
+const APP_PATH = LIB_PATH . 'web/';
+
+const APP_CACHE = APP_PATH . 'storage/';
+
+const APP_DATABASE = APP_PATH . 'database/';
+
 $name     = trim($_POST['name'] ?? '');
 $email    = str_replace(' ', '', $_POST['email'] ?? ''); // remueve cualquier espacio en el numero de telefono
 $phone    = trim($_POST['phone'] ?? '');
 $lang     = $_POST['lang'] ?? 'en';
 $whatsapp = $_POST['whatsapp'] ?? false;
+
 
 if($name == '') {
     error('enter_name');
@@ -24,32 +34,51 @@ if(!is_numeric($phone)) {
     error('enter_phone');
 }
 
+if ($phone) {
+
+    require LIB_PATH . 'bootstrap/autoload/web.php';
+
+    Server::fromGlobal();
+    $ip = Request::ip();
+    if ($countryCode = Web\Helper\Geo\Ip::country($ip)) {
+        $phones = Config::get('phones');
+        $dial = $phones[$countryCode];
+        if ($dial) {
+            if (strpos($phone, $dial . ' ') === 0) {
+                $phone = '+' . $phone;
+            } else {
+                $phone = '+' . $dial . ' ' . $phone;
+            }
+        }
+    }
+}
+
 $address = "help@myabakus.com";
 
-$subject = $name . ' ' . __('request_demo');
+$subject = $name . ' ' . _t('request_demo');
 
-$whatsapp = $whatsapp ? __('by') . ' WhatsApp' : null;
+$whatsapp = $whatsapp ? _t('by') . ' WhatsApp' : null;
 
-$body = __('email_message', $name, $email, $whatsapp, $phone);
+$body = _t('email_message', $name, $email, $whatsapp, $phone);
 
 $headers = "From: $email" . PHP_EOL;
 $headers .= "Reply-To: $email" . PHP_EOL;
 $headers .= "MIME-Version: 1.0" . PHP_EOL;
-$headers .= "Content-type: text/plain; charset=utf-8" . PHP_EOL;
+$headers .= "Content-type: text/html; charset=utf-8" . PHP_EOL;
 $headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
 
 if(mail($address, $subject, $body, $headers)) {
     die('<fieldset>' .
         '<div id="success_page">'.
-            "<h2>" . __('email_success') . '</h2>'.
-            '<p>' . __('email_thanks', $name) . '</p>' .
+            "<h2>" . _t('email_success') . '</h2>'.
+            '<p>' . _t('email_thanks', $name) . '</p>' .
         '</div>'.
     '</fieldset>');
 }
 
 error('error');
 
-function __($key, ...$params) {
+function _t($key, ...$params) {
     global $lang;
 
     static $locales = [
@@ -61,7 +90,7 @@ function __($key, ...$params) {
             'enter_phone' => 'Phone number can only contain digits',
             'email_invalid' => 'You have entered an invalid e-mail address, try again',
             'request_demo' => 'requested a demo.',
-            'email_message' => '%s (%s) has requested a demo from the website.\n\nHe/she can be contacted %s at %s',
+            'email_message' => "%s (%s) has requested a demo from the website.\nHe/she can be contacted %s at %s",
             'email_success' => 'Request sent successfully',
             'email_thanks' => 'Thanks <strong>%s</strong>, we will get in touch you as soon as possible.'
         ],
@@ -73,7 +102,7 @@ function __($key, ...$params) {
             'enter_phone' => 'El número de teléfono sólo puede contener caracteres numericos',
             'email_invalid' => 'Su email es invalido, por favor intente nuevamente.',
             'request_demo' => 'ha solicitado un demo.',
-            'email_message' => '%s (%s) ha solicitado un demo desde el website.\n\nSe le puede contactar %s al %s',
+            'email_message' => "%s (%s) ha solicitado un demo desde el website.\nSe le puede contactar %s al %s",
             'email_success' => 'Solictud enviada correctamente',
             'email_thanks' => 'Gracias <strong>%s</strong>, nos pondremos en contacto lo antes posible.'
         ]
@@ -93,5 +122,5 @@ function isEmail($email) {
 }
 
 function error($key) {
-    die('<div class="error_message">' . __($key) . '</div>');
+    die('<div class="error_message">' . _t($key) . '</div>');
 }
