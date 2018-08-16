@@ -439,10 +439,6 @@
       $('#overaly').overlay(action, callback);
     }
 
-    if (typeof _ga === 'undefined') {
-        var _ga = function() { };
-    }
-
     function _KM_Event(name, options) {
         options = options || {};
         try {
@@ -462,7 +458,9 @@
       if (response.done) {
         _KM_Identify(response.identify);
         _KM_Event('Signed Up');
-        _ga('send', 'pageview', '/account/created');
+        if (typeof _ga === 'function') {
+          _ga('send', 'pageview', '/account/created');
+        }
         var login = '/app/' + (logins.hasOwnProperty(lang) ? logins[lang] : logins['en']);
         location.href = $.route(login, true);
       } else {
@@ -532,6 +530,8 @@
                     .trigger('change');
 
     _element('enter').on('click', _submit);
+
+    _element('signup_form').on('submit', _submit);
 
     _element('phone').on('keypress', _keyup);
   }
