@@ -531,6 +531,8 @@
 
     _element('enter').on('click', _submit);
 
+    _element('signup_form').on('submit', _submit);
+
     _element('phone').on('keypress', _keyup);
   }
 
