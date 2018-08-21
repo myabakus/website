@@ -1,5 +1,7 @@
 <?php
 
+use Web\Helper\Geo\Ip;
+
 if(!$_POST) exit;
 
 
@@ -11,10 +13,15 @@ const APP_CACHE = APP_PATH . 'storage/';
 
 const APP_DATABASE = APP_PATH . 'database/';
 
+require LIB_PATH . 'bootstrap/autoload/web.php';
+
+Server::fromGlobal();
+
 $name     = trim($_POST['name'] ?? '');
 $email    = str_replace(' ', '', $_POST['email'] ?? ''); // remueve cualquier espacio en el numero de telefono
 $phone    = trim($_POST['phone'] ?? '');
 $lang     = $_POST['lang'] ?? 'en';
+$countryCode = null;
 $whatsapp = $_POST['whatsapp'] ?? false;
 
 
@@ -35,12 +42,8 @@ if(!is_numeric($phone)) {
 }
 
 if ($phone) {
-
-    require LIB_PATH . 'bootstrap/autoload/web.php';
-
-    Server::fromGlobal();
     $ip = Request::ip();
-    if ($countryCode = Web\Helper\Geo\Ip::country($ip)) {
+    if ($countryCode = Ip::country($ip)) {
         $phones = Config::get('phones');
         $dial = $phones[$countryCode];
         if ($dial) {
