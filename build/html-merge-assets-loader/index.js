@@ -99,7 +99,7 @@ function replaceAssets(self, html, assets, merge, callback) {
           if (!index) {
             createSource(self, main, entries)
             let replace = main
-            if (link.indexOf('../') !== -1 || self._compiler.context !== self.context) {
+            if (link.indexOf('../') !== -1) {
               replace = '../' + main
             }
             html = html.replace(link, callback(replace))
@@ -166,8 +166,7 @@ function extractUnique (original, optional) {
 
 function findAsset(assets, entry, self) {
   return assets.findIndex(([url]) => {
-    const absolute = path.resolve(self._compiler.context, entry)
-    return (path.resolve(self.context, url) === absolute) || (path.resolve(self.context, '../' + url) === absolute)
+    return path.resolve(self.context, url) === path.resolve(self._compiler.context, entry)
   })
 }
 
