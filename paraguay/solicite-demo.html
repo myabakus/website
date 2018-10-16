@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="es" style="height:100%;" data-pgc-master="master-par.html">
+<html lang="es" style="height:100%;" data-pgc-master="master-es.html">
     <head>
         <meta charset="utf-8">
-        <title data-pgc-field="page_title">Software Contable y de Facturación para administrar Pymes - Paraguay</title>
+        <title data-pgc-field="page_title">Software Administrativo y de Control Financiero - Paraguay</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Software Contable para Pymes. Programa de contabilidad, facturación y administración para Gerentes. - Pruébelo Gratis" data-pgc-field="page_description"/>
+        <meta name="description" content="Software de Gestion para Pymes. Programa de Gestion financiera, facturación y administración para Gerentes. - Pruébelo Gratis" data-pgc-field="page_description"/>
         <link rel="shortcut icon" href="../images/favicon.png">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Lato:300,400,700" rel="stylesheet">
         <!-- Core CSS -->
@@ -17,14 +17,14 @@
         <link href="../css/custom.css" rel="stylesheet">
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
         <!--[if lt IE 9]>
-      <script src="../js/html5shiv.js"></script>
-      <script src="../js/respond.min.js"></script>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
     <![endif]-->
         <script type="text/javascript" src="../js/km.js"></script>
         <script type="text/javascript" src="../js/drift.js"></script>
     </head>
     <body data-spy="scroll" data-target="nav">
-        <header id="header-1" class="soft-scroll header-1">
+        <header id="header-1" class="soft-scroll header-1" data-pgc-lock>
             <!-- Navbar -->
             <nav class="main-nav navbar-fixed-top headroom headroom--pinned">
                 <div class="container">
@@ -36,14 +36,14 @@
                             <span class="icon-bar bg-moonlight bg-deepocean-hover"></span>
                             <span class="icon-bar bg-moonlight bg-deepocean-hover"></span>
                         </button>
-                        <a href="index.html">
-                            <img src="../images/logo.svg" class="brand-img img-responsive">
+                        <a href="../inicio.html">
+                            <img src="../images/logo.svg" alt="Logo" class="brand-img img-responsive">
                         </a>
                     </div>
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
                             <li class="nav-item" data-pgc-field="inicio">
-                                <a href="index.html" class="moonlight river-hover">inicio</a>
+                                <a href="../inicio.html" class="moonlight river-hover">inicio</a>
                             </li>
                             <li class="nav-item" data-pgc-field="caracteristicas">
                                 <a href="caracteristicas.html" class="moonlight river-hover">Características</a>
@@ -59,9 +59,9 @@
                                 <a href="solicite-demo.html" class="moonlight river-hover">Solicite Demo</a>
                             </li>
                             <li class="nav-item">
-                                <a class="asbestos river-hover hidden" href="../registro.html?plan=0">Registro</a>
+                                <a class="asbestos river-hover hidden" href="../registro.html">Registro</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item" data-pgc-field="ingrese">
                                 <a href="/app/ingrese" class="moonlight river-hover">Ingrese</a>
                             </li>
                         </ul>
@@ -81,7 +81,7 @@
                         <h1 class="margin-top90 pad30">14 días de periodo de prueba con asistencia personalizada</h1>
                         <div class="text-center col-md-10 col-md-offset-1">
                             <div class="col-md-6">
-                                <a class="btn btn-outline btn-outline-lg outline-light btn-block" href="../registro.html?plan=0" data-pgc="es.button.try_this.white" data-pgc-field="es.button.try_this.white">Pruébelo Gratis</a>
+                                <a class="btn btn-outline btn-outline-lg outline-light btn-block" href="../registro.html?plan=1" data-pgc="es.button.try_this.white" data-pgc-field="es.button.try_this.white">Pruébelo Gratis</a>
                             </div>
                             <div class="col-md-6">
                                 <a href="../help/preguntas.html#prueba" class="btn btn-outline btn-outline-lg outline-light btn-block">Más información</a>
@@ -118,7 +118,7 @@
                         </ul>
                         <div id="contact" class="form-container">
                             <div id="message"></div>
-                            <form method="post" action="js/request-demo.php" name="contactform" id="contactform">
+                            <form method="post" action="../js/request-demo.php" name="contactform" id="contactform" data-pgc-field="demo.form.action">
                                 <div class="row">
                                     <div class="col-sm-4">
                                         <div class="form-group">
@@ -147,7 +147,7 @@
                                     <p class="small text-muted hidden"><span class="guardsman">* Todos los campos son requeridos</span> Una vez recibido su mensaje, le responderemos lo antes posible</p>
                                 </div>
                                 <div class="form-group">
-                                    <button class="btn btn-primary" type="submit" id="cf-submit" name="submit">Estoy interesado(A) y pueden llamarme para agendar el demo</button>
+                                    <button class="btn btn-primary" type="submit" id="cf-submit" name="submit">Estoy interesado, por favor llamarme al número arriba para agendar el demo</button>
                                 </div>
                                 <div class="form-group">
                                     <p class="text-muted">Nota: Por favor ingrese su teléfono con código de area y si quiere enviarnos un mensaje use el ícono de chat</p>
@@ -159,44 +159,9 @@
                     <!-- /.col-sm-10 -->
                 </div>
                 <!-- /.container -->
-                <!--[Pinegrow components saved data - this data is no longer used in the component. We're saving it just in case. Clear this with Components -> Clear saved unused edits]<form method="post" action="../js/request-demo.php" name="contactform" id="contactform" data-pgc-field="demo.form.action">
-    <div class="row">
-        <div class="col-sm-4">
-            <div class="form-group">
-                <input name="name" id="name" type="text" value="" placeholder="Nombre" aria-label="Nombre" class="form-control"/>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="form-group">
-                <input name="email" id="email" type="text" value="" placeholder="Email" aria-label="Email" class="form-control"/>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="form-group">
-                <input name="phone" id="phone" type="text" value="" placeholder="Teléfono (+... )" aria-label="Teléfono (+... )" class="form-control"/>
-            </div>
-        </div>
-    </div>
-    [[[-- /.row --]]]
-    <div class="checkbox">
-        <p><label class="control-label">
-                <input name="whatsapp" id="whatsapp" type="checkbox" value="1">Por favor enviar un mensaje por WhatsApp antes de llamar preguntando si puedo recibir la llamada
-            </label></p>
-    </div>
-    <div class="form-group hidden">
-        <textarea name="comments" id="comments" class="form-control" rows="3" placeholder="Mensaje"></textarea>
-        <p class="small text-muted hidden"><span class="guardsman">* Todos los campos son requeridos</span> Una vez recibido su mensaje, le responderemos lo antes posible</p>
-    </div>
-    <div class="form-group">
-        <button class="btn btn-primary" type="submit" id="cf-submit" name="submit">Estoy interesado, por favor llamarme al número arriba para agendar el demo</button>
-    </div>
-    <div class="form-group">
-        <p class="text-muted">Nota: Por favor ingrese su teléfono con código de area y si quiere enviarnos un mensaje use el ícono de chat</p>
-    </div>
-</form>-->
             </section>
         </section>
-        <footer>
+        <footer data-pgc-lock>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
@@ -217,7 +182,7 @@
                                 <a href="../colombia/index.html"> Colombia</a>
                             </li>
                             <li>
-                                <a href="index.html"> Paraguay</a>
+                                <a href="index.html">Paraguay</a>
                             </li>
                         </ul>
                     </div>
@@ -255,10 +220,9 @@
                 </div>
             </div>
         </footer>
-        <div class="copyright-bar bg-black">
+        <div class="copyright-bar bg-black" data-pgc-lock>
             <div class="container">
                 <p class="pull-left small">© Nomad Web Ventures Inc 2005-2018</p>
-                <p class="pull-left small"></p>
                 <p class="pull-right small">Hecho con <i class="fa fa-heart pomegranate"></i> para PYMES</p>
             </div>
         </div>
