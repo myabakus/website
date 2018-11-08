@@ -297,6 +297,8 @@ h6 {
 
 .agregue {
     min-height: 105px;
+    padding-bottom: 20px;
+    border-radius: 0 0 6px 6px;
 }
 
 /* A LA CARTA fin*/
