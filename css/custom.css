@@ -234,17 +234,44 @@
     padding-left: 0px !important;
 }
 
-.ancho {
-    max-width: 300px;
+.pricing-table-1 .ancho {
+    max-width: 280px;
 }
 
 .h4 {
-    padding: 0px 3px 5px 3px;
     font-size: 23px;
+}
+
+.pricing-table-1 .price-figure > h4 {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.price-simb {
+    align-self: flex-start;
+    margin-top: 10px;
+    display: iniline-block;
+}
+
+.price-value {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.price-month {
+    margin-left: 2px;
+    display: inline-block;
 }
 
 h6 {
     margin-top: 10px;
+}
+
+.pricing-table-1 h6 {
+    line-height: 1.3;
 }
 
 .email {
@@ -962,4 +989,16 @@ footer .row {
 
 #cf-submit {
     white-space: normal;
+}
+
+.pricing-table-1 h3 {
+    text-transform: initial;
+    min-height: 98px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-table-1 .price {
+    min-height: 174px;
 }
