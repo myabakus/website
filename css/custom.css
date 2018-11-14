@@ -174,6 +174,31 @@
     font-size: 15px;
 }
 
+.pricing-table-1 .container > .row:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.pricing-table-1 .container > .row:nth-child(2) > .price-block {
+    flex: 1 1 100%;
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .pricing-table-1 .container > .row:nth-child(2) > .price-block {
+        min-width: 210px;
+        max-width: 240px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .pricing-table-1 .container > .row:nth-child(2) > .price-block {
+        min-width: 210px;
+        max-width: 290px;
+    }
+}
+
 /* FREE y GRATIS inicio */
 .free {
     min-height: 133px;
@@ -234,10 +259,11 @@
     padding-left: 0px !important;
 }
 
+/*
 .pricing-table-1 .ancho {
     max-width: 240px;
 }
-
+*/
 .h4 {
     font-size: 23px;
 }
