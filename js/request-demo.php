@@ -92,8 +92,8 @@ function _t($key, ...$params) {
             'enter_email' => 'Please enter a valid email address',
             'enter_phone' => 'Phone number can only contain digits',
             'email_invalid' => 'You have entered an invalid e-mail address, try again',
-            'request_demo' => 'requested a demo.',
-            'email_message' => "%s (%s) has requested a demo from the website.\nHe/she can be contacted %s at %s",
+            'request_demo' => 'requested a meeting.',
+            'email_message' => "%s (%s) has requested a meeting from the website.\nHe/she can be contacted %s at %s",
             'email_success' => 'Request sent successfully',
             'email_thanks' => 'Thanks <strong>%s</strong>, we will get in touch you as soon as possible.'
         ],
@@ -104,8 +104,8 @@ function _t($key, ...$params) {
             'enter_email' => 'Por favor ingrese un email valido',
             'enter_phone' => 'El número de teléfono sólo puede contener caracteres numericos',
             'email_invalid' => 'Su email es invalido, por favor intente nuevamente.',
-            'request_demo' => 'ha solicitado un demo.',
-            'email_message' => "%s (%s) ha solicitado un demo desde el website.\nSe le puede contactar %s al %s",
+            'request_demo' => 'ha solicitado una reunión.',
+            'email_message' => "%s (%s) ha solicitado una reunión desde el website.\nSe le puede contactar %s al %s",
             'email_success' => 'Solictud enviada correctamente',
             'email_thanks' => 'Gracias <strong>%s</strong>, nos pondremos en contacto lo antes posible.'
         ]
