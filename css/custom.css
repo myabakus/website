@@ -1030,3 +1030,8 @@ footer .row {
 .pricing-table-1 .price {
     min-height: 174px;
 }
+
+.test {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
