@@ -7,7 +7,7 @@ const OriginalSource = require('webpack-sources').OriginalSource
 
 const RGX_HEAD = /<head>([^]+)<\/head>/im
 const RGX_BODY = /<(?:body[^>]*)>([^]+)<\/body>/im
-const RGX_LINK = /((?:<link)[^>]+href="([^"]+)"[^>]*>)/img
+const RGX_LINK = /((?:<link)[^>]+href="([^":]+)"[^>]*>)/img
 const RGX_CONDITIONAL = /<!--\[if[^\]]+]>([^]+)<\!\[endif\]-->/im
 const RGX_SCRIPT = /((?:<script)[^>]+src="([^"]+)"[^>]*><\/script>)/img
 
@@ -37,13 +37,10 @@ function loader(content, options, self) {
   if (headScriptsConditional) {
     content = replaceAssets(self, content, headScriptsConditional, options.js, replaceScript)
   }
-
   if (bodyScripts) {
     content = replaceAssets(self, content, bodyScripts, options.js, replaceScript)
   }
-
   content = replaceAssets(self, content, headLinks, options.css, replaceLink)
-  // console.log('context: ' + this.context)
   return content
 }
 
@@ -80,21 +77,33 @@ function replaceScript(main) {
   return `<script src="${main}"></script>`
 }
 
+function compareAssets(entries, assets, self) {
+  const result = [];
+  entries.forEach(entry => {
+    if ((index = findAsset(assets, entry, self)) !== -1) {
+      result.push(assets[index][0].replace('../', ''));
+    }
+  });
+  return JSON.stringify(entries) === JSON.stringify(result);
+}
+
 function replaceAssets(self, html, assets, merge, callback) {
   if (merge) {
     let index
-    const replace = {}
+    const replace = {};
     Object.entries(merge).forEach(([main, entries]) => {
       replace[main] = []
-      entries.forEach(entry => {
-        if ((index = findAsset(assets, entry, self)) !== -1) {
-          replace[main].push(assets[index])
-          assets.splice(index, 1)
-        }
-      })
+      if (compareAssets(entries, assets, self)) {
+        entries.forEach(entry => {
+          if ((index = findAsset(assets, entry, self)) !== -1) {
+            replace[main].push(assets[index])
+            assets.splice(index, 1)
+          }
+        });
+      }
     })
     Object.entries(replace).forEach(([main, entries]) => {
-      if (entries.length > 0) {
+      if (entries.length) {
         entries.forEach(([, link], index) => {
           if (!index) {
             createSource(self, main, entries)
