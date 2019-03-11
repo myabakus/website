@@ -76,6 +76,32 @@ module.exports = {
                 ]
               },
               css: {
+                'css/app-notfound.css': [
+                  'bootstrap/css/bootstrap.min.css',
+                  'css/notfound.css'
+                ],
+                'css/app-signup.css': [
+                  'css/signup.css',
+                  'css/flag-icon.css'
+                ],
+                'css/app-videos.css': [
+                  'bootstrap/css/bootstrap.css',
+                  'css/isotope.css',
+                  'css/style.css',
+                  'css/videos.css'
+                ],
+                'css/app-player.css': [
+                  'bootstrap/css/bootstrap.css',
+                  'css/player.css'
+                ],
+                'css/app-help.css': [
+                  'css/style.css',
+                  'css/faqs.css'
+                ],
+                'css/app-course.css': [
+                  'bootstrap/css/bootstrap.css',
+                  'css/course.css'
+                ],
                 'css/app-main.css': [
                   'bootstrap/css/bootstrap.min.css',
                   'css/font-awesome.min.css',
@@ -154,6 +180,35 @@ module.exports = {
               preserveLineBreaks: true,
               removeScriptTypeAttributes: true
             }
+          },
+          {
+            loader: 'html-merge-assets-loader',
+            options: {
+              js: {
+                inline: [
+                  'js/km.js',
+                  'js/drift.js',
+                  'js/hotjar.js',
+                  'js/advisor.js',
+                  'js/scroll.js',
+                ],
+                'js/app-ie9.js': [
+                  'js/html5shiv.js',
+                  'js/respond.min.js'
+                ],
+                'js/app-player.js': [
+                  'js/jquery.min.js',
+                  'bootstrap/js/bootstrap.min.js',
+                  'js/ie10-viewport-bug-workaround.js'
+                ]
+              },
+              css: {
+                'css/app-player.css': [
+                  'bootstrap/css/bootstrap.css',
+                  'css/player.css'
+                ]
+              }
+            }
           }
         ]
       }
@@ -200,7 +255,19 @@ module.exports = {
       threshold: 10240,
       minRatio: 0.8
     }),
-    new WebpackCleanPlugin(['dist/bundle', 'js/app-main.js', 'js/app-ie9.js', 'css/app-main.css'])
+    new WebpackCleanPlugin([
+      'dist/bundle',
+      'js/app-main.js',
+      'js/app-ie9.js',
+      'js/app-player.js',
+      'css/app-main.css',
+      'css/app-videos.css',
+      'css/app-signup.css',
+      'css/app-player.css',
+      'css/app-notfound.css',
+      'css/app-help.css',
+      'css/app-course.css'
+    ])
   ]
 }
 
