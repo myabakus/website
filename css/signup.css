@@ -1,5 +1,3 @@
-
-
 *
 {
     margin: 0;
@@ -13,6 +11,7 @@ body
     font-family: "Quattrocento Sans", Arial, sans-serif;
     color: #4c4c4c;
     font-size: 15px;
+    padding: 20px;
 }
 
 .container, body, html
@@ -119,15 +118,15 @@ h2
     margin-left: auto;
     margin-right: auto;
     background-repeat: no-repeat;
-    background-size: 348px 66px;
+    background-size: contain;
     height: 66px;
-    width: 348px;
+    max-width: 348px;
 }
 
 .form_cont
 {
     background-color: #ffffff;
-    width: 400px;
+    max-width: 400px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5px;
@@ -408,7 +407,7 @@ select.box
   background : -ms-linear-gradient(90deg, rgba(204, 51, 0, 1) 0%, rgba(255, 102, 0, 1) 100%);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#CC3300', endColorstr='#FF6600' ,GradientType=0)";
   background : linear-gradient(0deg, rgba(204, 51, 0, 1) 0%, rgba(255, 102, 0, 1) 100%);
-  width : 350px;
+  max-width : 350px;
   height : 27px;
   border-radius : 14px;
   -moz-border-radius : 14px;
@@ -419,9 +418,10 @@ select.box
   line-height: 27px;
   color : #fff;
   text-decoration: none;
-  display: inline-block;
+  display: block;
   text-align: center;
   cursor: pointer;
+  padding: 0 10px;
 }
 
 .button:focus,
