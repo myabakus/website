@@ -439,6 +439,7 @@
       $('#overaly').overlay(action, callback);
     }
 
+    /*
     function _KM_Event(name, options) {
         options = options || {};
         try {
@@ -452,12 +453,13 @@
         _kmq.push(['identify', id]);
       }
     }
+    */
 
     function done(data) {
       var response = _response(data);
       if (response.done) {
-        _KM_Identify(response.identify);
-        _KM_Event('Signed Up');
+        // _KM_Identify(response.identify);
+        // _KM_Event('Signed Up');
         if (typeof _ga === 'function') {
           _ga('send', 'pageview', '/account/created');
         }
