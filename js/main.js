@@ -464,7 +464,20 @@
           _ga('send', 'pageview', '/account/created');
         }
         var login = '/app/' + (logins.hasOwnProperty(lang) ? logins[lang] : logins['en']);
-        location.href = $.route(login, true);
+        const path = $.route(login, true);
+        $.ajax({
+            type: 'POST',
+            url: path,
+            dataType: 'json',
+            contentType: 'application/json',
+            processData: false,
+            data: JSON.stringify({ token: response.token })
+        }).done(request => {
+            const res = _response(request);
+            location.href = res.returnPath;
+        }).fail(re => {
+            location.href = path;
+        });
       } else {
         _overaly('hide', $.proxy(_logger, null, response));
         if (response.bounce) {
