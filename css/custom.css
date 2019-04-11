@@ -1012,6 +1012,8 @@ footer .row {
 
 #cf-submit {
     white-space: normal;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .pricing-table-1 h3 {
