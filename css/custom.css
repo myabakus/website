@@ -1032,3 +1032,7 @@ footer .row {
     padding-top: 20px;
     padding-bottom: 60px;
 }
+
+.form-control.is-invalid {
+    border-color: #ebccd1;
+}
