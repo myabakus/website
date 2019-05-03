@@ -1028,11 +1028,55 @@ footer .row {
     min-height: 174px;
 }
 
-.signup-button-block {
-    padding-top: 0px;
+.form-control.is-invalid {
+    border-color: #ebccd1;
+}
+
+.user-image {
+    border-radius: 50%;
+}
+
+.testimonial {
+    font-family: Open Sans;
+    font-size: 27px;
+    line-height: 35px;
+    color: #333333;
+    font-weight: 300;
+}
+
+.panel {
+    background-color: #eeeeee;
+    padding: 0px 20px 20px;
+    margin-top: 100px;
+}
+
+.testimonial-photo {
+    margin-top: -100px;
+    display: inline-block;
+    overflow: hidden;
+    position: inherit;
+}
+
+.testimonial-panel {
+    padding-bottom: 30px;
+}
+
+.testimonials {
     padding-bottom: 60px;
 }
 
-.form-control.is-invalid {
-    border-color: #ebccd1;
+.testimonials-header {
+    padding-bottom: 30px;
+}
+
+.testimonial-block {
+    padding-bottom: 6;
+}
+
+.testimonial-block {
+    padding-bottom: 60px;
+}
+
+.last-panel {
+    padding-bottom: 10px;
 }
