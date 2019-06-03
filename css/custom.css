@@ -1080,3 +1080,7 @@ footer .row {
 .last-panel {
     padding-bottom: 10px;
 }
+
+.content-block-adjust {
+    padding-top: 0px;
+}
