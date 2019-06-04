@@ -1084,3 +1084,20 @@ footer .row {
 .content-block-adjust {
     padding-top: 0px;
 }
+
+.quote {
+    font-size: 20px;
+    font-weight: 600;
+    border-color: #ffffff;
+    margin-bottom: 0px;
+}
+
+.quote-line {
+    width: 25%;
+    background-color: #149dcc;
+    color: #149dcc;
+    align: center;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
