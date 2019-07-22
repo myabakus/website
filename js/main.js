@@ -455,6 +455,31 @@
     }
     */
 
+    function _uGC(l,n,s) {
+      if (!l || l=="" || !n || n=="" || !s || s=="") return "-";
+      var i,i2,i3,c="-";
+      i=l.indexOf(n);
+      i3=n.indexOf("=")+1;
+      if (i > -1) {
+       i2=l.indexOf(s,i); if (i2 < 0) { i2=l.length; }
+       c=l.substring((i+i3),i2);
+      }
+      return c;
+    }
+
+    function _getGAVar(name) {
+      var z = _uGC(document.cookie, '__utmz=', ';');
+      switch(name) {
+        case 'campaing':
+          name = 'utmccn';
+          break;
+        case 'keyword':
+          name = 'utmctr';
+          break;
+      }
+      return _uGC(z, name + '=', '|');
+    }
+
     function done(data) {
       var response = _response(data);
       if (response.done) {
@@ -497,6 +522,8 @@
     return function (field) {
       _overaly('show');
       var $form = _element(field);
+      $('campaing').val(_getGAVar('campaing'));
+      $('keyword').val(_getGAVar('keyword'));
       $.post($.route('/app/signup', true), $form.serialize())
            .done(done)
            .fail(fail);
