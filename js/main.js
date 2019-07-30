@@ -510,7 +510,7 @@
     return function (field) {
       _overaly('show');
       var $form = _element(field);
-      $('campaing').val(_getGAVar('campaign'));
+      $('campaign').val(_getGAVar('campaign'));
       $('keyword').val(_getGAVar('keyword'));
       $.post($.route('/app/signup', true), $form.serialize())
            .done(done)
