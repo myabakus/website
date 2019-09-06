@@ -37,7 +37,7 @@ var app = new Vue({
 
                     ,
 
-                        "En teoría cualquier persona, negocio o entidad interesada en tener sus cuentas en orden y al día puede usar myAbakus: emprendedores, PYMES, profesionales independientes y organizaciones sin ánimo de lucro. Pero lo qué suelen tener en común los clientes de myAbakus es querer tener control de las cuentas de sus negocios diariamente y sin depender de nadie."
+                        "En teoría cualquier persona, negocio o entidad interesada en tener sus cuentas en orden y al día puede usar myAbakus: emprendedores, Pymes, profesionales independientes y organizaciones sin ánimo de lucro. Pero lo qué suelen tener en común los clientes de myAbakus es querer tener control de las cuentas de sus negocios diariamente y sin depender de nadie."
                     ,
 
                         "Si esto no es lo qué usted busca o le parece qué eso debería ser el trabajo del contador, tal vez myAbakus no sea el producto adecuado para usted."
