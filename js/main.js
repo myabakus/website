@@ -494,10 +494,10 @@
       } else {
         _overaly('hide', $.proxy(_logger, null, response));
         if (response.bounce) {
-          $('password').val('');
-          $('email').val('').focus();
+          _element('password').val('');
+          _element('email').val('').focus();
         } else if (response.exist) {
-          $('password').val('').focus();
+          _element('password').val('').focus();
         }
       }
     }
@@ -510,8 +510,8 @@
     return function (field) {
       _overaly('show');
       var $form = _element(field);
-      $('campaign').val(_getGAVar('campaign'));
-      $('keyword').val(_getGAVar('keyword'));
+      _element('campaign').val(_getGAVar('campaign'));
+      _element('keyword').val(_getGAVar('keyword'));
       $.post($.route('/app/signup', true), $form.serialize())
            .done(done)
            .fail(fail);
