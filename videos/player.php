@@ -1,5 +1,5 @@
 <?php require __DIR__ . '/bootstrap.php'; ?>
-<!DOCTYPE html>
+<!doctype html>
 <html lang="<?= $video['lang']; ?>">
     <head>
         <meta charset="utf-8">
