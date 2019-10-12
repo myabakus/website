@@ -117,7 +117,7 @@ module.exports = {
             loader: 'html-ext-remove-loader',
             options: {
               ignore: [
-                // '/help/',
+                'https://factura-electronica.dian.gov.co/como-facturar-1.html',
                 '/privacy.html',
                 '/terms.html'
               ]
