@@ -471,8 +471,6 @@
     function done(data) {
       var response = _response(data);
       if (response.done) {
-        // _KM_Identify(response.identify);
-        // _KM_Event('Signed Up');
         if (typeof _ga === 'function') {
           _ga('send', 'pageview', '/account/created');
         }
@@ -486,8 +484,13 @@
             processData: false,
             data: JSON.stringify({ token: response.token })
         }).done(request => {
-            const res = _response(request);
-            location.href = res.returnPath;
+            if (typeof gtag === 'function') {
+                gtag('event', 'conversion', {'send_to': 'AW-1042441796/b37-CJaASRDEzInxAw'});
+            }
+            setTimeout(() => {
+                const res = _response(request);
+                location.href = res.returnPath;
+            }, 3000);
         }).fail(re => {
             location.href = path;
         });
