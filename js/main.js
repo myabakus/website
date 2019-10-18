@@ -119,7 +119,7 @@
         'DK': ['Denmark', 'DKK', '45'],
         'DJ': ['Djibouti', 'DJF', '253'],
         'DM': ['Dominica', 'XCD', '1 (767)'],
-        'DO': ['Dominican Republic', 'DOP', '1 (8)'],
+        'DO': ['República Dominicana', 'DOP', '1 (8)'],
         'EC': ['Ecuador', 'USD', '593'],
         'EG': ['Egypt', 'EGP', '20'],
         'SV': ['El Salvador', 'USD', '503'],
@@ -544,7 +544,20 @@
   function _observe() {
     var countries = {
         colombia: 'CO',
-        venezuela: 'VE'
+        venezuela: 'VE',
+        argentina: 'AR',
+        bolivia: 'BO',
+        chile: 'CL',
+        'costa-rica': 'CR',
+        ecuador: 'EC',
+        espana: 'ES',
+        mexico: 'MX',
+        panama: 'PA',
+        paraguay: 'PY',
+        peru: 'PE',
+        uruguay: 'UY',
+        'estados-unidos':'US',
+        'republica-dominicana': 'DO'
     };
     // Anexamos evento para cuando se cambia el pais
     var referrer = document.referrer, code = '';
