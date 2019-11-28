@@ -1110,9 +1110,11 @@ footer .row {
     background-color: #fcf8e3;
 }
 
-.callout-container {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
+.accountant {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.accountant p {
+    font-size: 18px;
 }
