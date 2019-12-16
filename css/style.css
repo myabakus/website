@@ -1,7 +1,7 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
     box-sizing: border-box;
+    padding: 0px;
 }
 
 html,
@@ -24,8 +24,6 @@ p {
     margin-bottom: 20px;
     margin-top: 20px;
 }
-
-
 
 section {
     background-color: #ffffff;
@@ -70,4 +68,21 @@ footer {
     section {
         margin: 0px;
     }
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #848383;
+}
+
+hr {
+    border: 1px solid #cccccc;
+    width: 40%;
+    margin: 20px auto;
+}
+
+ol {
+    margin-left: 14px;
 }
