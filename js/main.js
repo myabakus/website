@@ -468,6 +468,36 @@
       }
     }
 
+    function request (path, params) {
+        return $.ajax({
+            type: 'POST',
+            url: path,
+            dataType: 'json',
+            contentType: 'application/json',
+            processData: false,
+            data: JSON.stringify(params)
+        });
+    }
+
+    function sessionSet(key, value) {
+      if (hasSession()) {
+        try {
+          sessionStorage.setItem(key, value);
+        } catch (e) {
+        }
+      }
+    }
+
+    function hasSession () {
+      return 'sessionStorage' in window && sessionStorage !== null;
+    }
+
+    function next (rs) {
+        setTimeout(() => {
+            location.href = res.returnPath;
+        }, 3000);
+    }
+
     function done(data) {
       var response = _response(data);
       if (response.done) {
@@ -476,21 +506,24 @@
         }
         var login = '/app/' + (logins.hasOwnProperty(lang) ? logins[lang] : logins['en']);
         const path = $.route(login, true);
-        $.ajax({
-            type: 'POST',
-            url: path,
-            dataType: 'json',
-            contentType: 'application/json',
-            processData: false,
-            data: JSON.stringify({ token: response.token })
-        }).done(request => {
+        request(path, { token: response.token }).done(rq => {
+            rq = _response(rq);
             if (typeof gtag === 'function') {
                 gtag('event', 'conversion', {'send_to': 'AW-1042441796/b37-CJaASRDEzInxAw'});
             }
-            setTimeout(() => {
-                const res = _response(request);
-                location.href = res.returnPath;
-            }, 3000);
+            if (rq.use_demo) {
+                request('/app/auth-demo', { token: rq.token }).done(rs => {
+                    rs = _response(rs);
+                    if (rs.token) {
+                        sessionSet('app.token', rs.token);
+                    }
+                    next(rq);
+                }).fail(() => {
+                    next(rq);
+                });
+            } else {
+                next(rq);
+            }
         }).fail(re => {
             location.href = path;
         });
