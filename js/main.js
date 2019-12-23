@@ -492,10 +492,22 @@
       return 'sessionStorage' in window && sessionStorage !== null;
     }
 
-    function next (rs) {
+    function next (rq) {
         setTimeout(() => {
-            location.href = rs.returnPath;
+            location.href = rq.returnPath;
         }, 3000);
+    }
+
+    function demo (rq) {
+        request('/app/auth-demo', { _token: rq.token }).done(rs => {
+            rs = _response(rs);
+            if (rs.token) {
+                sessionSet('app.token', rs.token);
+            }
+            next(rq);
+        }).fail(() => {
+            next(rq);
+        });
     }
 
     function done(data) {
@@ -511,19 +523,14 @@
             if (typeof gtag === 'function') {
                 gtag('event', 'conversion', {'send_to': 'AW-1042441796/b37-CJaASRDEzInxAw'});
             }
+            next(rq);
+            /*
             if (rq.use_demo) {
-                request('/app/auth-demo', { _token: rq.token }).done(rs => {
-                    rs = _response(rs);
-                    if (rs.token) {
-                        sessionSet('app.token', rs.token);
-                    }
-                    next(rq);
-                }).fail(() => {
-                    next(rq);
-                });
+                demo(rq);
             } else {
                 next(rq);
             }
+            */
         }).fail(re => {
             location.href = path;
         });
