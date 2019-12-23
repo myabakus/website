@@ -494,7 +494,7 @@
 
     function next (rs) {
         setTimeout(() => {
-            location.href = res.returnPath;
+            location.href = rs.returnPath;
         }, 3000);
     }
 
@@ -512,7 +512,7 @@
                 gtag('event', 'conversion', {'send_to': 'AW-1042441796/b37-CJaASRDEzInxAw'});
             }
             if (rq.use_demo) {
-                request('/app/auth-demo', { token: rq.token }).done(rs => {
+                request('/app/auth-demo', { _token: rq.token }).done(rs => {
                     rs = _response(rs);
                     if (rs.token) {
                         sessionSet('app.token', rs.token);
