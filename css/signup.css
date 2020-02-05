@@ -549,3 +549,7 @@ input[type="checkbox"]:disabled {
 .feature-text {
     margin: 0 0 0 45px;
 }
+
+.feature-disabled {
+    color: rgb(166, 166, 166);
+}

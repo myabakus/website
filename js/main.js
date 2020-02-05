@@ -613,12 +613,14 @@
             element.type == 'checkbox' &&
             element.name.indexOf('inventory') !== -1
         ) {
+            const actived = element.checked;
             $('.feature-child > input').each(function () {
-                this.disabled = !element.checked;
-                if (!element.checked) {
+                this.disabled = !actived;
+                if (!actived) {
                     this.checked = false;
                 }
             });
+            $('.feature-child, .feature-text')[actived ? 'removeClass' : 'addClass']('feature-disabled');
         }
     });
   }
