@@ -1,12 +1,10 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body
-{
+body {
     background-image: url('../images/background.svg');
     font-family: "Quattrocento Sans", Arial, sans-serif;
     color: #4c4c4c;
@@ -14,31 +12,28 @@ body
     padding: 20px;
 }
 
-.container, body, html
-{
+.container,
+body,
+html {
     height: 100%;
 }
 
 /* La regla para firefox debe estar sola */
-
-input::-moz-placeholder
-{
+input::-moz-placeholder {
     color: rgba(153,153,153,.5);
     font-weight: 400;
     font-family: 'Quattrocento Sans', Arial, sans-serif;
     font-size: 17px;
 }
 
-input::-webkit-input-placeholder
-{
+input::-webkit-input-placeholder {
     color: rgba(153,153,153,.5);
     font-weight: 400;
     font-family: 'Quattrocento Sans', Arial, sans-serif;
     font-size: 17px;
 }
 
-input:-ms-input-placeholder
-{
+input:-ms-input-placeholder {
     color: rgba(153,153,153,.5);
     font-weight: 400;
     font-family: 'Quattrocento Sans', Arial, sans-serif;
@@ -46,74 +41,65 @@ input:-ms-input-placeholder
 }
 
 input {
-    background : #F5F5F5;
-    background : rgba(245, 245, 245, 1);
-    border-style : Solid;
-    border-color : #ddd;
-    border-color : rgba(221, 221, 221, 1);
-    border-width : 1px;
-    width : 100%;
-    height : 28px;
-    border-radius : 4px;
-    -moz-border-radius : 4px;
-    -webkit-border-radius : 4px;
+    background: #F5F5F5;
+    background: rgba(245, 245, 245, 1);
+    border-style: Solid;
+    border-color: #ddd;
+    border-color: rgba(221, 221, 221, 1);
+    border-width: 1px;
+    width: 100%;
+    height: 28px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
     -webkit-appearance: none !important;
     -webkit-focus-ring-color: none !important;
     -moz-appearance: none !important;
     appearance: none !important;
     padding: 0 0 0 5px;
     font-family: 'Quattrocento Sans', Arial, sans-serif;
-    font-size : 17px;
-    color : #4C4C4C;
+    font-size: 17px;
+    color: #4C4C4C;
 }
 
-input:focus
-{
+input:focus {
     border-color: rgba(82, 168, 236, 0.8);
     outline: 0;
     background: #fff;
 }
 
-input[required]
-{
+input[required] {
     border-color: rgb(188, 47, 0);
 }
 
-a
-{
+a {
     color: #369;
     text-decoration: none;
 }
 
-a:hover
-{
+a:hover {
     text-decoration: underline;
 }
 
-p
-{
+p {
     float: left;
 }
 
 .center {
-  text-align: center;
+    text-align: center;
 }
 
-
-h2
-{
+h2 {
     font-family: 'Cabin', Georgia, sans-serif;
     font-size: 18px;
     font-weight: 400;
 }
 
-.container
-{
+.container {
     padding-top: 10%;
 }
 
-.logo
-{
+.logo {
     background-image: url('../images/logo.svg');
     margin-left: auto;
     margin-right: auto;
@@ -123,8 +109,7 @@ h2
     max-width: 348px;
 }
 
-.form_cont
-{
+.form_cont {
     background-color: #ffffff;
     max-width: 400px;
     margin-left: auto;
@@ -136,36 +121,31 @@ h2
     padding: 15px 25px;
 }
 
-.form
-{
+.form {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
 
-.title
-{
+.title {
     width: 100%;
     padding: 5px 0px;
     border-bottom: 1px solid #DDD;
     margin-bottom: 5px;
 }
 
-.company
-{
+.company {
     width: 100%;
     padding: 5px 0px;
 }
 
-.country
-{
+.country {
     width: 40%;
     padding: 5px 0px;
     position: relative;
 }
 
-.code
-{
+.code {
     width: 20%;
     padding: 5px 5px 5px 0px;
     text-align: right;
@@ -173,88 +153,78 @@ h2
     line-height: 28px;
 }
 
-.phone
-{
+.phone {
     width: 40%;
     padding: 5px 0px;
 }
 
-.settings
-{
+.settings {
     padding: 5px 0px 0px;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
 }
 
-.admin
-{
+.admin {
     width: 100%;
     padding: 5px 0px;
 }
 
-.name
-{
+.name {
     width: 100%;
     padding: 5px 0px;
 }
 
-.email
-{
+.email {
     width: 100%;
     padding: 5px 0px;
 }
 
-.password
-{
+.password {
     width: 100%;
     padding: 5px 0px;
 }
 
-.terms
-{
+.terms {
     width: 100%;
     padding: 5px 0px;
 }
 
-.create
-{
+.create {
     width: 100%;
     padding: 5px 0px;
 }
 
-#button
-{
+#button {
     top: 100px;
     position: absolute;
     display: none;
 }
 
-#phone
-{
+#phone {
 }
 
 .select {
     display: inline-block;
     cursor: pointer;
     height: 28px  !important;
-    background : #F5F5F5;
-    background : rgba(245, 245, 245, 1);
-    border-style : Solid;
-    border-color : #ddd;
-    border-color : rgba(221, 221, 221, 1);
-    border-width : 1px;
-    width : 100%;
-    border-radius : 4px;
-    -moz-border-radius : 4px;
-    -webkit-border-radius : 4px;
+    background: #F5F5F5;
+    background: rgba(245, 245, 245, 1);
+    border-style: Solid;
+    border-color: #ddd;
+    border-color: rgba(221, 221, 221, 1);
+    border-width: 1px;
+    width: 100%;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
     -webkit-appearance: none !important;
     -moz-appearance: none !important;
     appearance: none !important;
     padding: 0 0 0 5px;
     font-family: "Quattrocento Sans", Arial, sans-serif;
-    font-size : 17px;
-    color : #4C4C4C;
+    font-size: 17px;
+    color: #4C4C4C;
 }
 
 select {
@@ -278,20 +248,19 @@ select {
 }
 
 .select:before {
-  content: "";
-  border-left: 1px solid #ddd;
-  position: absolute;
-  width: 25px;
-  height: 26px;
-  right: 1px;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-  background: #eaeaea;
-  background: linear-gradient(180deg, #eaeaea 0%, #ddd 100%);
+    content: "";
+    border-left: 1px solid #ddd;
+    position: absolute;
+    width: 25px;
+    height: 26px;
+    right: 1px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: #eaeaea;
+    background: linear-gradient(180deg, #eaeaea 0%, #ddd 100%);
 }
 
-.select:after
-{
+.select:after {
     content: "";
     display: block;
     position: absolute;
@@ -304,8 +273,7 @@ select {
     border-style: solid outset;
 }
 
-.ss
-{
+.ss {
     height: 28px;
     line-height: 28px;
     position: absolute;
@@ -322,48 +290,40 @@ select {
     font-size: 17px;
 }
 
-.ss.placeholder
-{
+.ss.placeholder {
     color: rgba(153,153,153,.5);
     font-weight: 400;
     font-family: "Quattrocento Sans", Arial, sans-serif;
     font-size: 17px;
 }
 
-.select[required]
-{
+.select[required] {
     background: #fff;
     border: 1px solid #953B39;
 }
 
-.select[required]:before
-{
+.select[required]:before {
     border-left: 1px solid #953B39;
 }
 
-.select[required]:after
-{
+.select[required]:after {
     border-top-color: #953B39;
 }
 
-.select[focus]
-{
+.select[focus] {
     background: #fff;
     border: 1px solid rgba(82, 168, 236, 0.8);
 }
 
-.select[focus]:before
-{
+.select[focus]:before {
     border-left: 1px solid rgba(82, 168, 236, 0.8);
 }
 
-.select[focus]:after
-{
+.select[focus]:after {
     border-top-color: rgba(82, 168, 236, 0.8);
 }
 
-select.box
-{
+select.box {
     -webkit-appearance: none;
     cursor: pointer;
     opacity: 0;
@@ -372,8 +332,7 @@ select.box
 }
 
 .flag {
-
-   	width: 43px;
+    width: 43px;
     height: 33px;
     right: auto;
     bottom: auto;
@@ -382,7 +341,6 @@ select.box
     transform: translateZ(0px);
     background-color: rgb(245, 245, 245);
     background-size: 100% 100%;
-
     position: relative;
     display: inline-block;
     line-height: 1em;
@@ -391,8 +349,7 @@ select.box
     background-repeat: no-repeat;
 }
 
-.preconfig
-{
+.preconfig {
     float: left;
     padding-right: 10px;
     line-height: 33px;
@@ -400,33 +357,32 @@ select.box
 }
 
 .button {
-  background : -moz-linear-gradient(50% 100% 90deg,rgba(204, 51, 0, 1) 0%,rgba(255, 102, 0, 1) 100%);
-  background : -webkit-linear-gradient(90deg, rgba(204, 51, 0, 1) 0%, rgba(255, 102, 0, 1) 100%);
-  background : -webkit-gradient(linear,50% 100% ,50% 0% ,color-stop(0,rgba(204, 51, 0, 1) ),color-stop(1,rgba(255, 102, 0, 1) ));
-  background : -o-linear-gradient(90deg, rgba(204, 51, 0, 1) 0%, rgba(255, 102, 0, 1) 100%);
-  background : -ms-linear-gradient(90deg, rgba(204, 51, 0, 1) 0%, rgba(255, 102, 0, 1) 100%);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#CC3300', endColorstr='#FF6600' ,GradientType=0)";
-  background : linear-gradient(0deg, rgba(204, 51, 0, 1) 0%, rgba(255, 102, 0, 1) 100%);
-  max-width : 350px;
-  height : 27px;
-  border-radius : 14px;
-  -moz-border-radius : 14px;
-  -webkit-border-radius : 14px;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF6600',endColorstr='#CC3300' , GradientType=0);
-  font-family : Cabin, sans-serif;
-  font-size : 18px;
-  line-height: 27px;
-  color : #fff;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  cursor: pointer;
-  padding: 0 10px;
+    background: -moz-linear-gradient(50% 100% 90deg,rgba(204, 51, 0, 1) 0%,rgba(255, 102, 0, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(204, 51, 0, 1) 0%, rgba(255, 102, 0, 1) 100%);
+    background: -webkit-gradient(linear,50% 100% ,50% 0% ,color-stop(0,rgba(204, 51, 0, 1) ),color-stop(1,rgba(255, 102, 0, 1) ));
+    background: -o-linear-gradient(90deg, rgba(204, 51, 0, 1) 0%, rgba(255, 102, 0, 1) 100%);
+    background: -ms-linear-gradient(90deg, rgba(204, 51, 0, 1) 0%, rgba(255, 102, 0, 1) 100%);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#CC3300', endColorstr='#FF6600' ,GradientType=0)";
+    background: linear-gradient(0deg, rgba(204, 51, 0, 1) 0%, rgba(255, 102, 0, 1) 100%);
+    max-width: 350px;
+    height: 27px;
+    border-radius: 14px;
+    -moz-border-radius: 14px;
+    -webkit-border-radius: 14px;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF6600',endColorstr='#CC3300' , GradientType=0);
+    font-family: Cabin, sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    padding: 0 10px;
 }
 
 .button:focus,
-.button:hover
-{
+.button:hover {
     text-decoration: none;
 }
 
@@ -434,75 +390,73 @@ select.box
  *         OVERLAY
  *-------------------------------*/
 #overlay {
-  background-color: #000;
-  height:100%;
-  position:fixed;
-  width:100%;
-  z-index:10000;
-  top: 0;
-  left: 0;
-  opacity: .2;
+    background-color: #000;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    opacity: .2;
 }
+
 /*---------------------------------
  *         LOADER
  *-------------------------------*/
 #loader {
-  content: "";
-  position: fixed;
-  z-index:10001;
-  width: 24px;
-  height: 24px;
-  display: block;
-  background: url('/images/ajax-loader.gif') no-repeat;
-  padding: 0;
-  margin: 0;
-  outline: 0;
-  left: 0;
-  right: 0;
-  top: 10%;
-  margin: -12px auto 0 auto;
+    content: "";
+    position: fixed;
+    z-index: 10001;
+    width: 24px;
+    height: 24px;
+    display: block;
+    background: url('/images/ajax-loader.gif') no-repeat;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    left: 0;
+    right: 0;
+    top: 10%;
+    margin: -12px auto 0 auto;
 }
 
 /* ---------------------------------
  * LOGGER component
  * ------------------------------- */
-
-
-.log{
-  background-color: #fff1d7;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  margin: 10px auto 0;
-  text-align: left;
-  font-size: 1.1em;
-  padding: 8px 8px 8px 30px;
-  width: 390px;
+.log {
+    background-color: #fff1d7;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 10px auto 0;
+    text-align: left;
+    font-size: 1.1em;
+    padding: 8px 8px 8px 30px;
+    width: 390px;
 }
 
 .log-error,
 .log-warn {
-  display: inline-block;
-  position: absolute;
-  width: 32px;
-  margin-right: 5px;
-  z-index: 1;
+    display: inline-block;
+    position: absolute;
+    width: 32px;
+    margin-right: 5px;
+    z-index: 1;
 }
 
-
 .log-error:before,
-.log-error:after{
-  content: '';
-  position: absolute;
-  width: 3px;
-  height: 15px;
-  background: #b50021;
-  top: 2px;
-  left: -18px;
-  transform: rotate(-40deg);
+.log-error:after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 15px;
+    background: #b50021;
+    top: 2px;
+    left: -18px;
+    transform: rotate(-40deg);
 }
 
 .log-error:after {
-  transform: rotate(-140deg);
+    transform: rotate(-140deg);
 }
 
 .log-warn:before,
@@ -512,19 +466,86 @@ select.box
 }
 
 .log-warn:before {
-  content: "!";
-  z-index: 2;
-  margin: 8px 0 0 -18px;
-  font-size: 14px;
-  font-weight: bold;
-  color: #000;
+    content: "!";
+    z-index: 2;
+    margin: 8px 0 0 -18px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
 }
 
 .log-warn:after {
-  z-index: 1;
-  border-width: 0 11px 18px;
-  border-style: solid;
-  border-color: #F8D201 transparent;
-  background: transparent;
-  margin: 5px 0 0 -27px;
+    z-index: 1;
+    border-width: 0 11px 18px;
+    border-style: solid;
+    border-color: #F8D201 transparent;
+    background: transparent;
+    margin: 5px 0 0 -27px;
+}
+
+input[type="checkbox"] {
+    width: 19px;
+    height: 20px;
+    cursor: pointer;
+    margin: auto 5px auto 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.098);
+    background: linear-gradient(180deg, #FFF 0%, #F6F6F6 49%, #EDEDED 100%);
+    border: 1px solid #ccc;
+    position: relative;
+    user-select: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type="checkbox"]:focus {
+    outline: none;
+}
+
+input[type="checkbox"]:checked {
+    background: linear-gradient(180deg, #52A8E7 5%, #2B70C3 100%);
+    border: 1px solid #2B70C3;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.098);
+}
+
+input[type="checkbox"]:checked:after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 6px;
+    background: transparent;
+    top: 3px;
+    left: 3px;
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    -ms-transform: rotate(-50deg);
+    -webkit-transform: rotate(-50deg);
+    -moz-transform: rotate(-50deg);
+    -o-transform: rotate(-50deg);
+    transform: rotate(-50deg);
+}
+
+input[type="checkbox"]:disabled {
+    cursor: default;
+    opacity: .5;
+}
+
+.features {
+    margin: 20px 0;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+}
+
+.feature-child {
+    margin: 5px 0 0 20px;
+}
+
+.feature-text {
+    margin: 0 0 0 45px;
 }

@@ -20,15 +20,8 @@
     /*jshint validthis: true */
     var
       value     = $(this).val().toLowerCase(),
-      element   = _element('flag').get(0),
-      className = element.className.trim(),
-      pos       = className.lastIndexOf(' '),
       option    = this.options[this.selectedIndex],
       postCode  = option.getAttribute('post-code');
-
-    className = className.substring(0, pos + 1);
-    className += 'flag-icon-' + value;
-    element.className = className;
     var
       empty = option.text === '',
       content = $(this).prev().text(option.text)[empty ? 'addClass' : 'removeClass']('placeholder');
@@ -524,13 +517,6 @@
                 gtag('event', 'conversion', {'send_to': 'AW-1042441796/b37-CJaASRDEzInxAw'});
             }
             next(rq);
-            /*
-            if (rq.use_demo) {
-                demo(rq);
-            } else {
-                next(rq);
-            }
-            */
         }).fail(re => {
             location.href = path;
         });
@@ -620,6 +606,21 @@
     _element('signup_form').on('submit', _submit);
 
     _element('phone').on('keypress', _keyup);
+
+    _element('features').on('change', event => {
+        var element = event.target;
+        if (element.tagName.toUpperCase() == 'INPUT' &&
+            element.type == 'checkbox' &&
+            element.name.indexOf('inventory') !== -1
+        ) {
+            $('.feature-child > input').each(function () {
+                this.disabled = !element.checked;
+                if (!element.checked) {
+                    this.checked = false;
+                }
+            });
+        }
+    });
   }
 
   function Plugin() {
