@@ -86,3 +86,15 @@ hr {
 ol {
     margin-left: 14px;
 }
+
+.notion-sub_header-block {
+    color: #B94A48!important;
+}
+
+.notion-page-content {
+    padding: 0!important;
+}
+
+.notion-sub_sub_header-block {
+    color: #B94A48!important;
+}

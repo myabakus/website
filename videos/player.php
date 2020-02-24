@@ -15,6 +15,7 @@
         <link href="../css/player.css" rel="stylesheet" type="text/css">
         <script type="text/javascript" src="../js/km.js"></script>
         <script type="text/javascript" src="../js/drift.js"></script>
+        <script type="text/javascript" src="../js/fullstory.js"></script>
         <!--[if lt IE 9]>
         <script src="../js/html5shiv.js"></script>
         <script src="../js/respond.min.js"></script>

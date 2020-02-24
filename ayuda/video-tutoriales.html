@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Una colección de videos cortos que muestran lo que puede hacer con nuestro software No contable y de facturación en la Nube para Pymes">
+
+    <title>Software No Contable y de Facturación en la Nube para Pymes - Video Tutoriales</title>
+
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <!-- Bootstrap core CSS -->
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for filters -->
+    <link href="../css/isotope.css" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this template -->
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/videos.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:600|Quattrocento+Sans" rel="stylesheet" type="text/css">
+
+    <!-- Vue.js -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="../js/km.js"></script>
+    <script type="text/javascript" src="../js/drift.js"></script>
+    <script type="text/javascript" src="../js/fullstory.js"></script>
+    <script type="text/javascript" src="../js/videos-es.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container-fluid" id="app">
+        <div class="row ">
+            <div class="col-md-12">
+                <h1>{{ title }}</h1>
+                <h3>{{ subtitle }}</h3>
+            </div>
+
+            <div class="row sheets">
+                <div class="content-block">
+                    <ul class="filter">
+                        <li class="active" v-for="(tag, key) in tags">
+                            <a href="#" :data-filter="key == '*' ? key : '.' + key">{{ tag }}</a>
+                        </li>
+                    </ul>
+                    <!-- /.gallery-filter -->
+
+
+                    <div class="col-md-12 js-masonry isotope-gallery-container" data-masonry-options='{ "itemSelector": ".sheet" }'>
+                        <div :class="['sheet-img-'+video.icon, video.tags]" class="sheet" v-for="video in videos">
+                            <h2>{{ video.title }}</h2>
+                            <div id="app1">
+                                <a :href="video.title | slugify" :video-id="video.id">
+                                    <div class="sheet-img" :class="'sheet-img-'+video.icon">
+                                        <span class="glyphicon glyphicon-play play-btn"></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <p>{{ video.desc }}</p>
+                        </div>
+                        <!-- fin del v-for -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/jquery.min.js"></script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript" src="../js/plugins.js"></script>
+    <script type="text/javascript" src="../js/isotope.js"></script>
+    <script type="text/javascript" src="../js/v-app.js"></script>
+</body>
+
+</html>

@@ -239,7 +239,7 @@
 }
 
 /* FREE y GRATIS fin */
-/* A LA CARTA inicio*/
+/* A LA CARTA inicio */
 .facturas {
     min-height: 59px;
     padding-top: 18px !important;
@@ -323,7 +323,7 @@ h6 {
     border-radius: 0 0 6px 6px;
 }
 
-/* A LA CARTA fin*/
+/* A LA CARTA fin */
 /* PREMIUM inicio */
 .unlimited {
     min-height: 59px;
@@ -379,7 +379,7 @@ h6 {
 }
 
 /* ASESOR fin */
-/* PRIMIUM y ADVISOR inicio*/
+/* PRIMIUM y ADVISOR inicio */
 .website {
     min-height: 105px;
     padding-top: 30px !important;
@@ -390,7 +390,7 @@ h6 {
     padding-top: 38px !important;
 }
 
-/* PREMIUM y ADVISOR fin*/
+/* PREMIUM y ADVISOR fin */
 /* GRATIS y PREMIUM inicio */
 .invoicing2,
 .core2 {
@@ -481,7 +481,7 @@ h6 {
     }
 
     /* GRATIS fin */
-    /*A LA CARTE inicio */
+    /* A LA CARTE inicio */
     .h6 {
         padding-top: 10px;
         margin-bottom: -10px;
@@ -502,7 +502,7 @@ h6 {
         padding-right: 0px !important;
     }
 
-    /*A LA CARTE fin */
+    /* A LA CARTE fin */
     /* A LA CARTA inicio */
     .h62 {
         padding-top: 10px;
@@ -522,12 +522,12 @@ h6 {
     }
 
     /* A LA CARTA inicio */
-    /*FEE y GRATIS inicio */
+    /* FEE y GRATIS inicio */
     .free {
         min-height: 123px;
     }
 
-    /*FEE y GRATIS fin */
+    /* FEE y GRATIS fin */
     /* A LA CARTE Y A LA CARTA inicio */
     .pastel-red {
         min-height: 123px;
@@ -818,7 +818,7 @@ h6 {
     /* ADVISOR y ASESOR fin */
 }
 
-/* <= 384px y >= 0*/
+/* <= 384px y >= 0 */
 @media (max-width: 384px) and (min-width: 0px) {
     /* FREE y GRATIS inicio */
     .free {
@@ -940,7 +940,7 @@ h6 {
     /* ADVISOR y ASESOR fin */
 }
 
-/*Footer*/
+/* Footer */
 footer {
     background-color: #000000;
     min-height: 374px;
@@ -1076,6 +1076,7 @@ footer .row {
 
 .testimonial-block {
     padding-bottom: 60px;
+    margin-top: 60px;
 }
 
 .last-panel {
@@ -1111,7 +1112,7 @@ footer .row {
     padding: 20px 40px;
     background-color: #fcf8e3;
     width: 90%;
-    margin: 20px auto 0px;
+    margin: 20px auto;
 }
 
 .accountant {
@@ -1121,4 +1122,40 @@ footer .row {
 
 .accountant p {
     font-size: 18px;
+}
+
+.content-3-1 h1,
+.content-3-1 h2 {
+    text-transform: none;
+}
+
+.content-3-2 h1,
+.content-3-2 h2 {
+    text-transform: none;
+}
+
+.content-3-3 h1,
+.content-3-3 h2 {
+    text-transform: none;
+}
+
+@media only screen and (min-width : 992px)
+{
+    .content-3-1 {
+        min-height: 350px;
+    }
+
+    .content-3-2 {
+        min-height: 350px;
+    }
+
+    .content-3-3 {
+        min-height: 350px;
+    }
+}
+
+@media (max-width:480px) {
+    .content-3-2 {
+        min-height: 600px;
+    }
 }
