@@ -13,7 +13,7 @@
         <link href="css/flag-icon.css" rel="stylesheet" type="text/css">
         <script type="text/javascript" src="js/km.js"></script>
         <script type="text/javascript" src="js/drift.js"></script>
-        <script type="text/javascript" src="js/fullstory.js"></script>
+        <script type="text/javascript" src="js/hotjar.js"></script>
     </head>
     <body>
         <div class="container">
@@ -34,16 +34,19 @@
                         <input id="phone" name="phone" placeholder="Your Phone" data-pgc-field="phone">
                     </div>
                     <div class="features" id="features">
-                        <div class="feature">
+                        <div class="feature" data-pgc-field="inventory-1">
                             <input type="checkbox" name="features[inventory]"/> I need to control the inventory of my business
+                        
                         </div>
-                        <div class="feature feature-child feature-disabled">
+                        <div class="feature feature-child feature-disabled" data-pgc-field="inventory-2">
                             <input type="checkbox" name="features[dispatch]" disabled/>I want to test orders fulfillment
+                        
                         </div>
-                        <div class="feature feature-child feature-disabled">
+                        <div class="feature feature-child feature-disabled" data-pgc-field="inventory-3">
                             <input type="checkbox" name="features[production]" disabled/>I want to test conversion of materials into
+                        
                         </div>
-                        <div class="feature feature-text feature-disabled">finished goods</div>
+                        <div class="feature feature-text feature-disabled" data-pgc-field="inventory-4">finished goods</div>
                     </div>
                     <div class="admin">
                         <h2 data-pgc-field="admin">Account Administrator</h2>
