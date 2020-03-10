@@ -4,8 +4,7 @@ h1 {
 
 h2 {
     color: #B94A48;
-    font-size: 1.5em;
-    font-weight: 500;
+    font-size: 1.3em;
 }
 
 section > article:last-child {
@@ -13,6 +12,5 @@ section > article:last-child {
 }
 
 article {
-    border-bottom: 1px solid #CCC;
-    padding-top: 20px;
+    border-bottom: 1px solid #cccccc;
 }
