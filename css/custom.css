@@ -1139,23 +1139,12 @@ footer .row {
     text-transform: none;
 }
 
-@media only screen and (min-width : 992px)
-{
-    .content-3-1 {
-        min-height: 350px;
-    }
-
+@media (max-width:480px) {
     .content-3-2 {
-        min-height: 350px;
+        min-height: 600px;
     }
 
     .content-3-3 {
-        min-height: 350px;
-    }
-}
-
-@media (max-width:480px) {
-    .content-3-2 {
         min-height: 600px;
     }
 }
