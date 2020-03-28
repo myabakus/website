@@ -21,8 +21,8 @@ body {
 
 p {
     font-size: 1.1em;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 1rem;
+    margin-top: 0;
     line-height: 1.3em;
 }
 
@@ -47,13 +47,14 @@ a:hover {
 
 h1 {
     text-align: center;
-    padding-bottom: 20px;
     font-size: 2em;
+    margin-bottom: 1rem;
 }
 
 h2 {
     font-size: 1.3em;
     color: #B94A48;
+    margin-bottom: 0.5rem;
 }
 
 h1,
@@ -98,7 +99,28 @@ hr {
     border: 1px solid #cccccc;
 }
 
-article {
-    padding-bottom: 20px;
-    padding-top: 20px;
+div.card a {
+    color: inherit;
+}
+
+.card-body {
+    padding-bottom: 0.5 2px;
+}
+
+.card {
+    border: none;
+}
+
+.card-header {
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-style: none;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0.25rem;
+}
+
+.card-body {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
