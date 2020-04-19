@@ -1175,3 +1175,7 @@ footer .row {
 .notebar a:hover {
     text-decoration: underline;
 }
+
+.headroom {
+    position: static;
+}
