@@ -1148,3 +1148,30 @@ footer .row {
         min-height: 600px;
     }
 }
+
+.notebar {
+    background-color: #fda050;
+    color: #fff;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    line-height: 1;
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.notebar a {
+    color: #ffffff;
+}
+
+.notebar p {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.notebar a:hover {
+    text-decoration: underline;
+}
