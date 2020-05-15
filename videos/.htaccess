@@ -6,4 +6,4 @@ RewriteCond %{REQUEST_FILENAME} -l [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [NC,L]
 
-RewriteRule ^ player.php [NC,L]
+RewriteRule ^ player-1.php [NC,L]

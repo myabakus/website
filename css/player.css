@@ -1,34 +1,31 @@
-body
-{
-    margin-top: 1%;
+body {
+    /* margin-top: 1% */
     background-color: #141313;
     font-family: Quattrocento Sans;
     color: #7e7e7e;
 }
 
-a
-{
+a {
     color: #7e7e7e;
     font-family: Cabin;
     font-size: 20px;
 }
 
-a:hover
-{
+a:hover {
     color: #FFFFFF;
 }
 
-h1
-{
+h1 {
     font-family: Cabin;
     font-size: 26px;
 }
 
-h2
-{
+h2 {
     font-size: 20px;
 }
 
-h1, h2, h3 {
-  margin-top: 10px;
+h1,
+h2,
+h3 {
+    margin-top: 10px;
 }
