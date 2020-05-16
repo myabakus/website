@@ -39,7 +39,7 @@
             <div class="row">
                 <div>
                     <div class="embed-responsive embed-responsive-4by3">
-                        <iframe class="embed-responsive-item" src="https://screencast-o-matic.com/embed?sc=<?= $video['id']; ?>	&v=5&title=0&ff=1&a=1" allowfullscreen="true"></iframe>
+                        <iframe class="embed-responsive-item" src="https://screencast-o-matic.com/embed?sc=<?= $video['id']; ?>&v=5&title=0&ff=1&a=1" allowfullscreen="true"></iframe>
                     </div>
                 </div>
             </div>
