@@ -229,6 +229,8 @@ module.exports = {
       { from: 'js/videos-en.js', to: 'js/videos-en.js' }, // help use to km
       { from: 'js/course-es.js', to: 'js/course-es.js' }, // help use to km
       { from: 'js/course-en.js', to: 'js/course-en.js' }, // help use to km
+      { from: 'js/gs-es.js', to: 'js/gs-es.js' }, // help use to km
+      { from: 'js/gs-en.js', to: 'js/gs-en.js' }, // help use to km
       { from: 'images/favicon.png', to: 'images/favicon.png' } // other page use this file
     ]),
     new webpack.optimize.UglifyJsPlugin({
@@ -276,7 +278,7 @@ module.exports = {
 
 function entries () {
   return Object.entries(
-    entry(entry.basePath(), '*.html', 'help/*.html', 'ayuda/*.html', 'videos/player.php', 'videos/player-1.php')
+    entry(entry.basePath(), '*.html', 'help/*.html', 'ayuda/*.html', 'videos/player.php')
   ).reduce((obj, [key, file]) => {
     if (key.indexOf('master-') === -1) obj[key] = './' + file;
     return obj;

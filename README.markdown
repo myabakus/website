@@ -13,3 +13,5 @@ Exportar para produccion
   ```
 
 3. El comando **npm run build** genera un directorio llamado **dist**, los archivos dentro de este directorio se deben copiar todos a la carpeta website dentro del servidor
+
+4. Regenerando routes.json www.myabakus.com/videos/publish
