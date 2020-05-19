@@ -1,2 +1,284 @@
 [
+    {
+        "slug": "mantenga-las-cuentas-de-su-negocio-bajo-control-y-al-dia",
+        "title": "Mantenga las cuentas de su negocio bajo control y al día",
+        "desc": "Tome las riendas financieras de su negocio y mantenga sus cuentas en orden y al dia.",
+        "lang": "es",
+        "id": "4Hx7HXOjp0s"
+    },
+    {
+        "slug": "facturele-a-sus-clientes-en-forma-simple-y-elegante",
+        "title": "Factúrele a sus clientes en forma simple y elegante",
+        "desc": "Cree y personalice sus facturas con el logo de su compañía, imprímales o envíelas directamente por email a sus clientes.",
+        "lang": "es",
+        "id": "bN-rDaysBaY"
+    },
+    {
+        "slug": "haga-sus-cobros-a-tiempo",
+        "title": "Haga sus cobros a tiempo",
+        "desc": "Mantenga sus cuentas por cobrar al día para asegurarse que sus clientes le están pagando según lo acordado.",
+        "lang": "es",
+        "id": "K8rIA7hA2Uk"
+    },
+    {
+        "slug": "maneje-su-flujo-de-caja",
+        "title": "Maneje su flujo de caja",
+        "desc": "Manténgase “en la jugada” y evite sorpresas desagradables registrando cobros y pagos pendientes, así como gastos recurrentes.",
+        "lang": "es",
+        "id": "-z_zb0t9BlE"
+    },
+    {
+        "slug": "revise-los-pagos-de-ingresos-y-gastos",
+        "title": "Revise los pagos de ingresos y gastos",
+        "desc": "Manténgase \"encima\" de las entras y salidas de efectivo para que su información esté al día y sea confiable .",
+        "lang": "es",
+        "id": "pzuHulN2N88"
+    },
+    {
+        "slug": "controle-su-efectivo",
+        "title": "Controle su efectivo",
+        "desc": "Asegúrese que todo (lo que debería) ha sido contabilizado manteniendo sus cuentas de efectivo actualizadas y reconciliadas.",
+        "lang": "es",
+        "id": "FVv_pc9AcsU"
+    },
+    {
+        "slug": "cree-sus-impuestos-y-retenciones-parte-2",
+        "title": "Cree sus impuestos y retenciones - Parte 2",
+        "desc": "Maneje los impuestos y retenciones acorde a las necesidades de su país.",
+        "lang": "es",
+        "id": "JAsQTbqEkik"
+    },
+    {
+        "slug": "controle-su-inventario",
+        "title": "Controle su inventario",
+        "desc": "Mantenga las unidades físicas sincronizadas con las del sistema, sepa cuándo ordenar sus productos y vea cómo estos contribuyen (o no) a su ganancia.",
+        "lang": "es",
+        "id": "mWFxihAbFZ8"
+    },
+    {
+        "slug": "cree-sus-impuestos-y-retenciones-parte-1",
+        "title": "Cree sus impuestos y retenciones - Parte 1",
+        "desc": "Maneje los impuestos y retenciones acorde a las necesidades de su país.",
+        "lang": "es",
+        "id": "9V0MTOZLcdk"
+    },
+    {
+        "slug": "cree-notas-credito",
+        "title": "Cree notas crédito",
+        "desc": "Maneje adecuadamente los créditos dados a clientes y recibidos de proveedores.",
+        "lang": "es",
+        "id": "IuEDwIhuOEo"
+    },
+    {
+        "slug": "configure-los-vencimientos-terminos-de-sus-facturas",
+        "title": "Configure los vencimientos\/términos de sus facturas",
+        "desc": "Ahora es posible configurar los días usados para calcular el vencimiento en las facturas.",
+        "lang": "es",
+        "id": "jeXeAUYDjjM"
+    },
+    {
+        "slug": "use-multiples-listas-de-precios",
+        "title": "Use múltiples listas de precios",
+        "desc": "Maneje hasta cinco listas de precios y actualice fácilmente sus precios usando una plantilla de Excel.",
+        "lang": "es",
+        "id": "7tyD1wxNM8w"
+    },
+    {
+        "slug": "vea-su-reporte-de-ingresos-por-tipo-de-item",
+        "title": "Vea su reporte de ingresos por tipo de ítem",
+        "desc": "El reporte de ingresos por ítem está ahora agrupado por tipo de ítem.",
+        "lang": "es",
+        "id": "5rxufoEFYoc"
+    },
+    {
+        "slug": "exporte-su-informacion-desde-el-resumen",
+        "title": "Exporte su información desde el Resumen",
+        "desc": "Ahora es posible exportar datos desde el Resumen, dónde tenemos el Balance general y el Estado de resultados del mes en curso.",
+        "lang": "es",
+        "id": "as-SxZ1qaXE"
+    },
+    {
+        "slug": "cree-transacciones-de-ingresos-recurrentes",
+        "title": "Cree transacciones de ingresos recurrentes",
+        "desc": "Las transacciones recurrentes ya no están limitadas a gastos. Usted puede ahora crear transacciones de ingresos recurrentes.",
+        "lang": "es",
+        "id": "Sc0mrIxfwQQ"
+    },
+    {
+        "slug": "determine-y-use-los-parametros-para-reposicion-de-inventario",
+        "title": "Determine y use los parámetros para reposición de inventario",
+        "desc": "Para determinar los parámetros de reposición de inventario debemos ingresar las cantidades mínimas y máximas que queremos tener para los ítems de inventario.",
+        "lang": "es",
+        "id": "LUOCE-x8ehM"
+    },
+    {
+        "slug": "use-multiples-prefijos-en-facturas-y-otros-documentos",
+        "title": "Use múltiples prefijos en facturas y otros documentos",
+        "desc": "Para usar múltiples prefijos y numeración en nuestras facturas necesitamos cambiar la configuración de la factura.",
+        "lang": "es",
+        "id": "XT7-2DQYnLI"
+    },
+    {
+        "slug": "ingrese-su-inventario-inicial",
+        "title": "Ingrese su inventario inicial",
+        "desc": "Para ingresar el inventario inicial necesitamos ir a controlar inventario y usar la acción agregar inventario.",
+        "lang": "es",
+        "id": "U6kRs9WOFGo"
+    },
+    {
+        "slug": "ingrese-sus-saldos-iniciales-de-efectivo",
+        "title": "Ingrese sus saldos iniciales de efectivo",
+        "desc": "Para ingresar nuestros saldos de efectivo vamos a Controlar - Efectivo.",
+        "lang": "es",
+        "id": "72cQvGMHuPQ"
+    },
+    {
+        "slug": "ingrese-sus-saldos-iniciales-de-clientes-y-proveedores",
+        "title": "Ingrese sus saldos iniciales de clientes y proveedores",
+        "desc": "Para ingresar todas aquellas cuentas que tenemos pendientes por cobrar y por pagar debemos hacerlo a través de una transacción.",
+        "lang": "es",
+        "id": "Vnp6ZdoR3BI"
+    },
+    {
+        "slug": "keep-your-business-finances-under-control-and-up-to-date",
+        "title": "Keep your business finances under control and up to date",
+        "desc": "Take the financial reins of your business and keep its accounts in order and up to date.",
+        "lang": "en",
+        "id": "f0dSeD3q3Ns"
+    },
+    {
+        "slug": "invoice-your-customers-in-a-simple-and-elegant-way",
+        "title": "Invoice your customers in a simple and elegant way",
+        "desc": "Create and customize your invoices with your company's logo, print them, or email them directly to your customers.",
+        "lang": "en",
+        "id": "4nTPEaEAx_Q"
+    },
+    {
+        "slug": "get-paid-on-time",
+        "title": "Get paid on time",
+        "desc": "Keep your sales and collection data up to date to make sure customers are paying you when and how they should.",
+        "lang": "en",
+        "id": "U6PN3F5q-C0"
+    },
+    {
+        "slug": "control-your-inventory",
+        "title": "Control your inventory",
+        "desc": "Maintain system and real quantities synced, know when to reorder, and see how your products are contributing (or not) to your bottom line.",
+        "lang": "en",
+        "id": "bTJ4-rnkzqk"
+    },
+    {
+        "slug": "control-your-cash",
+        "title": "Control your cash",
+        "desc": "Make sure everything (that should) has been accounted by keeping your cash accounts up to date and reconciled.",
+        "lang": "en",
+        "id": "YI5jDEjOq8A"
+    },
+    {
+        "slug": "manage-your-cash-flow",
+        "title": "Manage your cash flow",
+        "desc": "Stay ahead of the game and avoid nasty surprises by entering pending collections and payments, as well as recurring expenses.",
+        "lang": "en",
+        "id": "dziMNOGtabA"
+    },
+    {
+        "slug": "manage-multiple-price-lists",
+        "title": "Manage multiple price lists",
+        "desc": "Manage up to five price lists and easily update prices using an Excel template.",
+        "lang": "en",
+        "id": "IVGATE-wngQ"
+    },
+    {
+        "slug": "configure-the-due-date-terms-of-your-invoices",
+        "title": "Configure the due date\/terms of your invoices",
+        "desc": "It is now possible to configure the days used to calculate due dates in invoices.",
+        "lang": "en",
+        "id": "7c0z7d4deKs"
+    },
+    {
+        "slug": "view-your-income-report-by-item-type",
+        "title": "View your income report by item type",
+        "desc": "The income by item report is now grouped by item type.",
+        "lang": "en",
+        "id": "CWwwtMMq-Jk"
+    },
+    {
+        "slug": "export-your-data-from-the-overview",
+        "title": "Export your data from the Overview",
+        "desc": "It is now possible to export data from the Overview, where we have the Balance sheet and Income and expense statement for the current month.",
+        "lang": "en",
+        "id": "aLjSLv3osT0"
+    },
+    {
+        "slug": "create-recurring-income-transactions",
+        "title": "Create recurring income transactions",
+        "desc": "Recurring transactions are no longer limited to expenses. You can now create recurring income transactions as well.",
+        "lang": "en",
+        "id": "NyjQTmsx3oI"
+    },
+    {
+        "slug": "setup-and-use-the-parameters-to-restock-the-inventory",
+        "title": "Setup and use the parameters to restock the inventory",
+        "desc": "To setup the parameters to restock inventory we need to enter the minimum and maximum quantities that we want to have for inventory items.",
+        "lang": "en",
+        "id": "FA3lPbPeFRA"
+    },
+    {
+        "slug": "use-multiple-prefixes-on-invoices-and-other-documents",
+        "title": "Use multiple prefixes on invoices and other documents",
+        "desc": "To use multiple prefixes and numbering on our invoices we need to change the invoice settings.",
+        "lang": "en",
+        "id": "slwxy2ZD3s4"
+    },
+    {
+        "slug": "enter-your-initial-inventory",
+        "title": "Enter your initial inventory",
+        "desc": "To enter the initial inventory we need to go to control inventory and use the add inventory action.",
+        "lang": "en",
+        "id": "kp2B3y9WKPQ"
+    },
+    {
+        "slug": "enter-your-starting-cash-balances",
+        "title": "Enter your starting cash balances",
+        "desc": "To enter our cash balances we will control - cash.",
+        "lang": "en",
+        "id": "Ris-dlXSR7o"
+    },
+    {
+        "slug": "enter-your-starting-balances-for-customers-and-suppliers",
+        "title": "Enter your starting balances for customers and suppliers",
+        "desc": "To enter all those accounts that we have outstanding receivable and payable we must do it through a transaction.",
+        "lang": "en",
+        "id": "fSXDJSnE3FY"
+    },
+    {
+        "slug": "como-y-donde-arrancar-parte-1",
+        "title": "Cómo y Dónde Arrancar - Parte 1",
+        "desc": "Primero lo primero: Antes de comenzar a ingresar transacciones debemos ingresar los saldos iniciales de cuentas por cobrar, cuentas por pagar, inventario y efectivo (incluyendo créditos)",
+        "lang": "es",
+        "id": "61xx5xK9hTM",
+        "next": "v5qQ8-xtFEw"
+    },
+    {
+        "slug": "como-y-donde-arrancar-parte-2",
+        "title": "Cómo y Dónde Arrancar - Parte 2",
+        "desc": "Estamos listos para comenzar: Revisemos cómo ingresar diferentes tipos de transacciones y el impacto de las mismas en las diferentes secciones de la aplicación",
+        "lang": "es",
+        "id": "v5qQ8-xtFEw"
+    },
+    {
+        "slug": "how-and-where-to-start-part-1",
+        "title": "How and Where to Start - Part 1",
+        "desc": "First things first: Before we start entering transactions, we must enter the initial balances for receivables, payables, inventory and cash (including credits)",
+        "lang": "en",
+        "id": "3oXh3B7fjE8",
+        "next": "Dq-WLR00uNg"
+    },
+    {
+        "slug": "how-and-where-to-start-part-2",
+        "title": "How and Where to Start - Part 2",
+        "desc": "We are ready to start: Let’s review how to enter different type of transactions and their impact on the different sections of the application",
+        "lang": "en",
+        "id": "Dq-WLR00uNg"
+    }
 ]

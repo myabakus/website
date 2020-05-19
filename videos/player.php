@@ -38,7 +38,7 @@
             </div>
             <div class="row">
                 <div>
-                    <div class="embed-responsive embed-responsive-16by9">
+                    <div class="embed-responsive embed-responsive-<?= $video['host'] === 'y' ? '16by9' : '4by3' ?>">
                         <iframe class="embed-responsive-item" src="<?= $video['url']; ?>" allowfullscreen=""></iframe>
                     </div>
                 </div>
