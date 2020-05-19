@@ -118,8 +118,6 @@ h3 {
 
 @media (max-width:799px) {
     .flex-container {
-        display: flex;
-        flex-wrap: wrap;
         justify-content: center;
     }
 }
@@ -140,4 +138,9 @@ h3 {
 
 .videos {
     grid-area: videos;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
 }
