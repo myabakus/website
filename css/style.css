@@ -2,6 +2,7 @@
     margin: 0px;
     box-sizing: border-box;
     padding: 0px;
+    grid-area: header;
 }
 
 html,

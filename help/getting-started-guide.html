@@ -1,133 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Getting Started Guide</title>
-        <meta name="description" content="The purpose of this guide is to show you how to start using myAbakus to make it valuable for your company. To do this we will show you step by step where the information you can see in the demo company comes from.">
-        <meta name="author" content="">
-        <!-- Bootstrap core CSS -->
-        <link href="../bootstrap4/css/bootstrap.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Software de Contabilidad y Facturación en la Nube para Pymes - Guia de Arranque</title>
+        <meta name="description" content="Una colección de videos cortos que muestran lo que puede hacer con nuestro software No contable y de facturación en la Nube para Pymes">
+        <link rel="shortcut icon" href="../images/favicon.png">
+        <!-- Custom styles for filters -->
+        <link href="../css/isotope.css" rel="stylesheet" type="text/css">
         <!-- Custom styles for this template -->
         <link href="../css/style.css" rel="stylesheet" type="text/css">
+        <link href="../css/videos.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Cabin:600|Quattrocento+Sans" rel="stylesheet" type="text/css">
+        <link href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" rel="stylesheet" type="text/css">
+        <!-- Vue.js -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
         <script type="text/javascript" src="../js/km.js"></script>
         <script type="text/javascript" src="../js/drift.js"></script>
         <script type="text/javascript" src="../js/hotjar.js"></script>
         <script type="text/javascript" src="../js/fullstory.js"></script>
+        <script type="text/javascript" src="../js/gs-en.js"></script>
     </head>
     <body>
-        <section>
-            <div class="container">
-                <h1>Getting Started Guide</h1>
-                <h2>Dissecting the Demo Company</h2>
-                <p>The purpose of this guide is to show you how to start using myAbakus to make it valuable for your company. To do this we will show you step by step where the information you can see in the demo company comes from. The demo company gives you a good idea of what an account looks like with data. But it does not tell you how the information was entered or what is the best way to do it. That is why we have created this guide: so you can see the process step by step and apply it in the evaluation and implementation of the software.</p>
-                <div id="panels1" role="tablist"> 
-                    <div class="card"> 
-                        <div class="card-header" role="tab"> 
-                            <h2 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1">Introduction: How to orient yourself in the application</a></h2> 
-                        </div>                         
-                        <div id="collapse1" class="collapse show" role="tabpanel" aria-labelledby="headingTwo" data-parent="#panels1"> 
-                            <div class="card-body"> 
-                                <div class="embed-responsive embed-responsive-4by3">
-                                    <iframe src="https://screencast-o-matic.com/embed?sc=cYe1cVx6a2&v=5&title=0&ff=1" class="embed-responsive-item" allowfullscreen="true"></iframe>
-                                </div>
-                            </div>                             
-                        </div>                         
-                    </div>                     
-                    <div class="card"> 
-                        <div class="card-header" role="tab"> 
-                            <h2 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">Step 1: Enter the initial inventory</a></h2> 
-                        </div>                         
-                        <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#panels1"> 
-                            <div class="card-body">
-                                <div class="embed-responsive embed-responsive-4by3">
-                                    <iframe src="https://screencast-o-matic.com/embed?sc=cYeh09x64K&v=5&ff=1&title=0" class="embed-responsive-item" allowfullscreen="true"></iframe>
-                                </div>                                 
-                            </div>                             
-                        </div>                         
+        <div class="wrapper">
+            <div id="app" class="grid">
+                <div class="header">
+                    <div>
+                        <h1>{{ title }}</h1>
+                        <h3>{{ subtitle }}</h3>
                     </div>
-                    <div class="card"> 
-                        <div class="card-header" role="tab"> 
-                            <h2 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapse3">Step 2: Enter the starting cash balances</a></h2> 
-                        </div>                         
-                        <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#panels1"> 
-                            <div class="card-body">
-                                <div class="embed-responsive embed-responsive-4by3">
-                                    <iframe src="https://screencast-o-matic.com/embed?sc=cYe6qqxYgw&v=5&ff=1&title=0" class="embed-responsive-item" allowfullscreen="true"></iframe>
-                                </div>                                 
-                            </div>                             
-                        </div>                         
+                </div>
+                <div class="tags">
+                    <div>
+                        <ul class="filter">
+                            <li class="active" v-for="(tag, key) in tags">
+                                <a href="#" :data-filter="key == '*' ? key : '.' + key">{{ tag }}</a>
+                            </li>
+                        </ul>
+                        <!-- /.gallery-filter -->
                     </div>
-                    <div class="card"> 
-                        <div class="card-header" role="tab"> 
-                            <h2 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapse4" aria-expanded="false" aria-controls="collapse4">Step 3: Enter purchases of products</a></h2> 
-                        </div>                         
-                        <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#panels1"> 
-                            <div class="card-body">
-                                <div class="embed-responsive embed-responsive-4by3">
-                                    <iframe src="https://screencast-o-matic.com/embed?sc=cYeq3ByVxz&v=5&ff=1&title=0" class="embed-responsive-item" allowfullscreen="true"></iframe>
-                                </div>                                 
-                            </div>                             
-                        </div>                         
+                </div>
+                <div data-masonry-options='{ "itemSelector": ".sheet" }' class="flex-container videos">
+                    <div :class="['sheet-img-'+video.icon, video.tags]" class="sheet" v-for="video in videos">
+                        <h2>{{ video.title }}</h2>
+                        <div id="app1">
+                            <a :href="video.title | slugify" :video-id="video.id"> <div class="sheet-img" :class="'sheet-img-'+video.icon">
+                                    <i class="fa-3x fa-play-circle fas play-btn"></i>
+                                </div> </a>
+                        </div>
+                        <p>{{ video.desc }}</p>
                     </div>
-                    <div class="card"> 
-                        <div class="card-header" role="tab"> 
-                            <h2 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapse5" aria-expanded="false" aria-controls="collapse5">Step 4: Enter operating expenses</a></h2> 
-                        </div>                         
-                        <div id="collapse5" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#panels1"> 
-                            <div class="card-body">
-                                <div class="embed-responsive embed-responsive-4by3">
-                                    <iframe src="https://screencast-o-matic.com/embed?sc=cYe0rXyZzj&v=5&ff=1&title=0" class="embed-responsive-item" allowfullscreen="true"></iframe>
-                                </div>                                 
-                            </div>                             
-                        </div>                         
-                    </div>
-                    <div class="card"> 
-                        <div class="card-header" role="tab"> 
-                            <h2 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapse6" aria-expanded="false" aria-controls="collapse6">Step 5: Enter sales of products</a></h2> 
-                        </div>                         
-                        <div id="collapse6" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#panels1"> 
-                            <div class="card-body">
-                                <div class="embed-responsive embed-responsive-4by3">
-                                    <iframe src="https://screencast-o-matic.com/embed?sc=cYfeeE4Jjl&v=5&ff=1&title=0" class="embed-responsive-item" allowfullscreen="true"></iframe>
-                                </div>                                 
-                            </div>                             
-                        </div>                         
-                    </div>
-                    <div class="card"> 
-                        <div class="card-header" role="tab"> 
-                            <h2 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapse7" aria-expanded="false" aria-controls="collapse7">Step 6: Enter financial transactions</a></h2> 
-                        </div>                         
-                        <div id="collapse7" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#panels1"> 
-                            <div class="card-body">
-                                <div class="embed-responsive embed-responsive-4by3">
-                                    <iframe src="https://screencast-o-matic.com/embed?sc=cYf2Ynz1VJ&v=5&ff=1&title=0" class="embed-responsive-item" allowfullscreen="true"></iframe>
-                                </div>                                 
-                            </div>                             
-                        </div>                         
-                    </div>
-                    <div class="card"> 
-                        <div class="card-header" role="tab"> 
-                            <h2 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapse8" aria-expanded="false" aria-controls="collapse8">Step 7: Enter financial income and expenses</a></h2> 
-                        </div>                         
-                        <div id="collapse8" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#panels1"> 
-                            <div class="card-body">
-                                <div class="embed-responsive embed-responsive-4by3">
-                                    <iframe src="https://screencast-o-matic.com/embed?sc=cYhf3sBLGC&v=5&ff=1&title=0" class="embed-responsive-item" allowfullscreen="true"></iframe>
-                                </div>                                 
-                            </div>                             
-                        </div>                         
-                    </div>                     
+                    <!-- fin del v-for -->
                 </div>
             </div>
-        </section>
-        <!-- Bootstrap core JavaScript
-    ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="../assets/js/jquery.min.js"></script>
-        <script src="../assets/js/popper.js"></script>
-        <script src="../bootstrap4/js/bootstrap.min.js"></script>
+        </div>
+        <script src="../js/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/plugins.js"></script>
+        <script type="text/javascript" src="../js/isotope.js"></script>
+        <script type="text/javascript" src="../js/v-app.js"></script>
     </body>
 </html>

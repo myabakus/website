@@ -23,31 +23,33 @@
         <script type="text/javascript" src="../js/fullstory.js"></script>
         <script type="text/javascript" src="../js/videos-es.js"></script>
         <body>
-            <div id="app" class="sheets">
-                <div>
+            <div class="wrapper">
+                <div id="app" class="grid">
                     <div>
-                        <h1>{{ title }}</h1>
-                        <h3 style="text-align: center;">{{ subtitle }}</h3>
-                    </div>
-                    <div class="sheets">
                         <div>
-                            <ul class="filter">
-                                <li v-for="(tag, key) in tags">
-                                    <a href="#" :data-filter="key == '*' ? key : '.' + key">{{ tag }}</a>
-                                </li>
-                            </ul>
-                            <!-- /.gallery-filter -->
-                            <div class="isotope-gallery-container js-masonry" data-masonry-options='{ "itemSelector": ".sheet" }'>
-                                <div :class="['sheet-img-'+video.icon, video.tags]" class="sheet" v-for="video in videos">
-                                    <h2>{{ video.title }}</h2>
-                                    <div id="app1">
-                                        <a :href="video.title | slugify" :video-id="video.id"> <div class="sheet-img" :class="'sheet-img-'+video.icon">
-                                                <i class="fa-3x fa-play-circle fas play-btn"></i>
-                                            </div> </a>
+                            <h1>{{ title }}</h1>
+                            <h3 style="text-align: center;">{{ subtitle }}</h3>
+                        </div>
+                        <div class="sheets">
+                            <div>
+                                <ul class="filter">
+                                    <li v-for="(tag, key) in tags">
+                                        <a href="#" :data-filter="key == '*' ? key : '.' + key">{{ tag }}</a>
+                                    </li>
+                                </ul>
+                                <!-- /.gallery-filter -->
+                                <div class="flex-container isotope-gallery-container js-masonry" data-masonry-options='{ "itemSelector": ".sheet" }'>
+                                    <div :class="['sheet-img-'+video.icon, video.tags]" class="sheet" v-for="video in videos">
+                                        <h2>{{ video.title }}</h2>
+                                        <div id="app1">
+                                            <a :href="video.title | slugify" :video-id="video.id"> <div class="sheet-img" :class="'sheet-img-'+video.icon">
+                                                    <i class="fa-3x fa-play-circle fas play-btn"></i>
+                                                </div> </a>
+                                        </div>
+                                        <p>{{ video.desc }}</p>
                                     </div>
-                                    <p>{{ video.desc }}</p>
+                                    <!-- fin del v-for -->
                                 </div>
-                                <!-- fin del v-for -->
                             </div>
                         </div>
                     </div>
