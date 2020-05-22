@@ -1,30 +1,45 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-pgc-set-master>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Las preguntas y respuestas más comunes sobre nuestro software No contable y de facturación para Pymes">
+        <title data-pgc-edit="page_title">Software de Contabilidad y Facturación en la Nube para Pymes - Preguntas Frecuentes</title>
+        <meta name="description" content="Las preguntas y respuestas más comunes sobre nuestro software No contable y de facturación para Pymes" data-pgc-edit="page_description[content]">
         <link rel="shortcut icon" href="../images/favicon.png">
-        <title>Software de Contabilidad y Facturación en la Nube para Pymes - Preguntas Frecuentes</title>
-        <link href="../css/style.css" rel="stylesheet" type="text/css">
-        <link href="../css/faqs.css" rel="stylesheet" type="text/css">
-        <link href='https://fonts.googleapis.com/css?family=Cabin:600|Quattrocento+Sans' rel='stylesheet' type='text/css'>
+        <!-- Bootstrap core CSS -->
+        <!-- Custom styles for this template -->
         <!-- Vue.js -->
         <script type="text/javascript" src="https://unpkg.com/vue@2.2.6"></script>
         <script type="text/javascript" src="../js/km.js"></script>
         <script type="text/javascript" src="../js/drift.js"></script>
         <script type="text/javascript" src="../js/hotjar.js"></script>
         <script type="text/javascript" src="../js/fullstory.js"></script>
+        <link href="../bootstrap4/css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="../css/style.css" rel="stylesheet" type="text/css">
+        <link href="../css/faqs.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Cabin:600|Quattrocento+Sans" rel="stylesheet" type="text/css">
     </head>
     <body>
         <section id="app">
             <h1>{{ title }}</h1>
-            <article v-for="question in questions" :id="question.id">
-                <h2>{{ question.title }}</h2>
-                <p v-for="answ in question.answer" v-html="answ"></p>
-            </article>
+            <div id="panels" role="tablist">
+                <article v-for="question in questions" :id="question.id" class="card">
+                    <div class="card-header" role="tab">
+                        <h2><a data-toggle="collapse" :href="'#collapse'+question.order" aria-expanded="false" aria-controls="'collapse'+question.order" class="collapsed">{{ question.title }}</a></h2>
+                    </div>
+                    <div :id="'collapse'+question.order" class="collapse" role="tabpanel" data-parent="#panels">
+                        <p v-for="answ in question.answer" v-html="answ" class="card-body"></p>
+                    </div>
+                </article>
+            </div>
         </section>
-        <script type="text/javascript" src="../js/faqs-es.js"></script>
+        <script type="text/javascript" src="../js/faqs-es.js" data-pgc-edit="data[src]"></script>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="../assets/js/jquery.min.js"></script>
+        <script src="../assets/js/popper.js"></script>
+        <script src="../bootstrap4/js/bootstrap.min.js"></script>
     </body>
 </html>

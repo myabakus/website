@@ -1,6 +1,6 @@
 var data = {
   "title": "Guia de Arranque",
-  "subtitle": "El objetivo de este guía es mostrarle paso por paso de dónde viene la información de la empresa demo. Aunque la empresa demo le da una buena idea de como se ve una cuenta con datos, no le muestra cómo se ingresó la información ni cuál es la mejor forma de hacerlo. Por eso hemos creado esta guía: para que usted puede ver el proceso paso por paso y aplicarlo en la evaluación e implementación del software en su empresa.",
+  "subtitle": "El objetivo de este guía es mostrarle la secuencia que usamos para ingresar la información de la empresa demo para que usted pueda entender de donde viene y aplicar la misma lógica en la evaluación e implementación del software en su empresa.",
   "tags": {
     "*": "Todos",
     "arrancando": "Arrancando",

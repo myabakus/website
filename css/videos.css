@@ -122,8 +122,12 @@ h3 {
     }
 }
 
+border-bottom: {
+}
+
 .header {
     grid-area: header;
+    border-bottom: 1px solid #ded7c8;
 }
 
 .tags {

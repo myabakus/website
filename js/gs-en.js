@@ -1,6 +1,6 @@
 var data = {
   "title": "Getting Started Guide",
-  "subtitle": "The purpose of this guide is to show you step by step where the information in the demo company comes from. Although the demo company gives you a good idea of what an account looks like with data, it does not tell you how the information was entered or what is the best way to do it. That is why we have created this guide: so you can see the process step by step and use it in the evaluation and implementation of the software in your business.",
+  "subtitle": "The purpose of this guide is to show you the sequence we use to enter the demo company information so that you can understand where it comes from and apply the same logic in the evaluation and implementation of the software in your business.",
   "tags": {
     "*": "All",
     "gettingstarted": "Getting started",

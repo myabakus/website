@@ -43,6 +43,7 @@ a {
 
 a:hover {
     text-decoration: underline;
+    color: inherit;
 }
 
 h1 {
@@ -98,7 +99,7 @@ hr {
     border: 1px solid #cccccc;
 }
 
-div.card a {
+h2 a {
     color: inherit;
 }
 
@@ -115,11 +116,9 @@ div.card a {
     border-bottom-style: none;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 0.25rem;
+    padding-bottom: 0;
 }
 
 .card-body {
-    padding-top: 0;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
 }

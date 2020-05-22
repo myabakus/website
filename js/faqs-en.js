@@ -10,7 +10,8 @@ var app = new Vue({
                 answer: [
                         //answer 1.1
                         'myAbakus is a simple accounting software for non-accountants. Said in different way, myAbakus is a administrative and financial software designed for you and your business, not your accountant. This means that with myAbakus you will get the critical and essential functionality of a traditional accounting software (invoicing, accounts receivable, cash control, cash flow management), but without its complexity (see next question). Not interested or familiarized with the double-entry bookkeeping system? myAbakus will take care of implementing it without you even knowing.'
-                    ]
+                    ],
+                order: '1',
             },
             {
                 id: '',
@@ -25,7 +26,8 @@ var app = new Vue({
 
                         "That myAbakus is accounting software for non-accountants doesn’t mean we are trying to antagonize accountants. In fact, we have been working hard on the tax management features and reports to facilitate the accountant’s work. And we are committed to continue working on this area, but always adhering to our philosophy that accounting must be more a management tool than something done to comply with fiscal norms."
 
-                    ]
+                    ],
+                order: '2',
             },
             {
                 id: 'why',
@@ -41,7 +43,8 @@ var app = new Vue({
 
                         "If you don't feel that way or believe that should be the accountants job, myAbakus might not be the right product for you."
 
-                        ]
+                        ],
+                    order: '3',
             },
             {
                 id: 'trial',
@@ -53,14 +56,15 @@ var app = new Vue({
 
                         "And keep in mind that during this period you will receive the same personalized service we provide to our customers. Which means that you will have access to a person responsible for helping with the implementation and ensuring that myAbakus becomes a valuable tool for your business."
 
-                    ]
+                    ],
+                order: '4',
             },
             {
                 id: 'cost',
                 title: 'How much is it going to cost?',
                 answer: [
 
-                        'The cost depends on what you choose in your plan (and how often you pay) and starts at U$ 14.90 a month if you pay six months in advance. You can review the different payment options by clicking on "Your Account" within the application.',
+                        'The cost depends on the plan and extras you choose and how often you pay, and starts at U$29 per month. To see the different options check the account settings page.',
 
                     ,
 
@@ -69,7 +73,8 @@ var app = new Vue({
 
                         "The free trial gives your a proper chance to evaluate our software and get a sense of how much value it could generate for your business before subscribing (see previous question). But because you will only know for sure by using it regularly for sufficient time, we also offer a satisfaction guarantee (see next question)."
 
-                        ]
+                        ],
+                    order: '5',
             },
             {
                 id: 'guarantee',
@@ -81,7 +86,8 @@ var app = new Vue({
 
                         "Say you have properly evaluated myAbakus and feels it could be a good investment for your business (see previous question). You can now subscribe confidently knowing that for the following 90-days you are entitled to get all your money back if after using it regularly (at least 3 days per week), you feel myAbakus not generating enough value for your business relative to its cost."
 
-                        ]
+                        ],
+                    order: '6',
             },
             {
                 id: 'country',
@@ -90,7 +96,8 @@ var app = new Vue({
 
                         "We strongly believe it will. We designed myAbakus following business principles that are universal. We believe this makes myAbakus simpler and easier than traditional accounting software that is suppose to deal every local regulatory aspect. Remember that myAbakus was designed to help you run your business, not please your accountant. But also keep in mind that myAbakus can handle local tax issues (like VAT) and that granting access to your accountant will make his/her work easier. And if you think myAbakus is lacking something needed in your regulatory environment, please let us know to see if we can correct it."
 
-                        ]
+                        ],
+                    order: '7',
             },
             {
                 id: '',
@@ -98,7 +105,8 @@ var app = new Vue({
                 answer: [
 
                         "Yes. You can export your data from myAbakus in a spreadsheet format (CSV), which is readable by most systems with data import capabilities."
-                        ]
+                        ],
+                    order: '8',
             },
             {
                 id: '',
@@ -107,7 +115,8 @@ var app = new Vue({
 
                         "Nowadays your information is safer stored in the cloud that in your personal computer. Your login information is encrypted using the same technology that financial institutions rely on for online banking. And you have a team of software and hardware administrators behind you whose job is to keep thing running smoothly and to make sure your information is always protected, which includes making daily data backups."
 
-                        ]
+                        ],
+                    order: '9',
             },
             {
                 id: 'pay',
@@ -122,7 +131,8 @@ var app = new Vue({
 
                 'If you do not own or have access to a credit card, please contact us so that we can give you the information you need to send the payment using WesternUnion.'
 
-                ]
+                ],
+            order: '10',
             },
             {
                 id: 'card',
@@ -131,7 +141,8 @@ var app = new Vue({
 
                         'You credit card information is safe with <a href="https://stripe.com/us/features#seamless-security">Stripe</a>, a San Francisco based company founded in 2011 and backed by some of the most prominent investors in Silicon Valley. Stripe might be relatively new in the payment processing industry, but it has been growing rapidly by focusing on delivering a payment infrastructure for the internet that enable business to accept and manage online payments. Naturally, their success is based on using robust and secure technology that complies with the most stringent levels of security certification in the industry.'
 
-                ]
+                ],
+            order: '11',
             },
             {
                 id: 'change',
@@ -143,7 +154,8 @@ var app = new Vue({
 
                         'And the unused portion of the previous plan becomes a credit for subsequent charges. So if, for example, 20 days into your 30 day billing cycle, you add features to your your plan, the 10 unused (but paid) days will be deducted from the cost of the new plan.'
 
-                ]
+                ],
+            order: '12',
             },
             {
                 id: 'cancel',
@@ -152,7 +164,8 @@ var app = new Vue({
 
                         'You will not be charged again and when your subscription expires, you will not able to enter more transactions. But you will have access to your account and all the information you have entered. We will not delete your account nor your data unless you instruct us to do so by canceling your account.'
 
-                ]
+                ],
+            order: '13',
             }
         ]
 
