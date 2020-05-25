@@ -23,7 +23,8 @@ var data = {
       "lang": "es",
       "id": "cYnT3YwMui",
       "icon": "1",
-      "tags": "impuestos"
+      "tags": "impuestos",
+      "next": "cYeh0wx6xn"
     },
     {
       "title": "Paso 1: Ingresar el inventario inicial",
@@ -31,7 +32,8 @@ var data = {
       "lang": "es",
       "id": "cYeh0wx6xn",
       "icon": "2",
-      "tags": "impuestos"
+      "tags": "impuestos",
+      "next": "cYe6qOxYk8"
     },
     {
       "title": "Paso 2: Ingresar los saldos iniciales de efectivo",
@@ -39,7 +41,8 @@ var data = {
       "lang": "es",
       "id": "cYe6qOxYk8",
       "icon": "4",
-      "tags": "facturacion cuentasxcobrar"
+      "tags": "facturacion cuentasxcobrar",
+      "next": "cYeFr8xN5y"
     },
     {
       "title": "Paso 3: Ingresar compras de productos",
@@ -47,7 +50,8 @@ var data = {
       "lang": "es",
       "id": "cYeFr8xN5y",
       "icon": "5",
-      "tags": "items facturacion importar"
+      "tags": "items facturacion importar",
+      "next": "cYe33dyDDH"
     },
     {
       "title": "Paso 4: Ingresar gastos operacionales",
@@ -55,7 +59,8 @@ var data = {
       "lang": "es",
       "id": "cYe33dyDDH",
       "icon": "6",
-      "tags": "ingresos reportes items"
+      "tags": "ingresos reportes items",
+      "next": "cYfeeu4Jhj"
     },
     {
       "title": "Paso 5: Ingresar ventas de productos",
@@ -63,7 +68,8 @@ var data = {
       "lang": "es",
       "id": "cYfeeu4Jhj",
       "icon": "1",
-      "tags": "exportar"
+      "tags": "exportar",
+      "next": "cYf2Yhz1eA"
     },
     {
       "title": "Paso 6: Ingresar transacciones financieras",
@@ -71,7 +77,8 @@ var data = {
       "lang": "es",
       "id": "cYf2Yhz1eA",
       "icon": "2",
-      "tags": "ingresos"
+      "tags": "ingresos",
+      "next": "cYhf3EBLCI"
     },
     {
       "title": "Paso 7: Ingresar ingresos y gastos financieros",

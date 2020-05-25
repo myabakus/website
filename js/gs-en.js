@@ -24,7 +24,8 @@ var data = {
       "lang": "en",
       "id": "cYe1cVx6a2",
       "icon": "1",
-      "tags": "items invoicing import"
+      "tags": "items invoicing import",
+      "next": "cYeh0wx6xn"
     },
     {
       "title": "Step 1: Enter the initial inventory",
@@ -32,7 +33,8 @@ var data = {
       "lang": "en",
       "id": "cYeh09x64K",
       "icon": "2",
-      "tags": "invoicing"
+      "tags": "invoicing",
+      "next": "cYe6qqxYgw"
     },
     {
       "title": "Step 2: Enter the starting cash balances",
@@ -40,7 +42,8 @@ var data = {
       "lang": "en",
       "id": "cYe6qqxYgw",
       "icon": "3",
-      "tags": "income reports items"
+      "tags": "income reports items",
+      "next": "cYeq3ByVxz"
     },
     {
       "title": "Step 3: Enter purchases of products",
@@ -48,7 +51,8 @@ var data = {
       "lang": "en",
       "id": "cYeq3ByVxz",
       "icon": "4",
-      "tags": "export"
+      "tags": "export",
+      "next": "cYe0rXyZzj"
     },
     {
       "title": "Step 4: Enter operating expenses",
@@ -56,7 +60,8 @@ var data = {
       "lang": "en",
       "id": "cYe0rXyZzj",
       "icon": "5",
-      "tags": "income"
+      "tags": "income",
+      "next": "cYfeeE4Jjl"
     },
     {
       "title": "Step 5: Enter sales of products",
@@ -64,7 +69,8 @@ var data = {
       "lang": "en",
       "id": "cYfeeE4Jjl",
       "icon": "6",
-      "tags": "inventory"
+      "tags": "inventory",
+      "next": "cYf2Ynz1VJ"
     },
     {
       "title": "Step 6: Enter financial transactions",
@@ -72,7 +78,8 @@ var data = {
       "lang": "en",
       "id": "cYf2Ynz1VJ",
       "icon": "1",
-      "tags": "invoicing"
+      "tags": "invoicing",
+      "next": "cYeh0wx6xn"
     },
     {
       "title": "Step 7: Enter financial income and expenses",

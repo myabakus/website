@@ -25,7 +25,7 @@
         <!-- Bootstrap core JavaScript
     ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <div class="container" style="max-width: 960px;">
+        <div class="container" style="max-width: 920px;">
             <div class="row">
                 <div class="col-md-9 col-sm-9">
                     <h1><?= $video['title']; ?></h1>
