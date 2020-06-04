@@ -79,13 +79,13 @@ var app = new Vue({
             },
             {
                 id: 'garantia',
-                title: '¿Qué es la garantía de satisfacción?',
+                title: '¿Cómo funciona la garantía de satisfacción?',
                 answer: [
 
-                        "El periodo de prueba le da la oportunidad de evaluar nuestro software y darse una idea de qué tan valioso va ser para su negocio antes de suscribirse. Pero como sólo va a saberlo con certeza usándolo regularmente y por suficiente tiempo, también ofrecemos una garantía de satisfacción por 90 días después de suscribirse."
+                        "Naturalmente, nosotros pensamos que myAbakus es una buena inversión. Si se usa regularmente, estamos seguros de que el valor que va a generarle a su empresa va a ser mayor que su costo. Y por lo tanto, estamos preparados a ofrecer con una garantía de satisfacción que cubre los primeros 90 días de su suscripción y devuelve el 120% de su pago."
                     ,
 
-                        "Suponga que usted ha evaluado myAbakus y le parece que puede ser una buena inversión para su negocio. Puede suscribirse con la tranquilidad de saber que durante los siguientes 90 días tiene derecho a que le devuelvan la totalidad de su dinero si después de usarlo regularmente (al menos 3 días a la semana), la relación costo-beneficio no es satisfactoria para usted."
+                        "Cuando termine su periodo de prueba, usted puede suscribirse con la tranquilidad de saber que puede solicitar la devolución del 120% de su pago (como compensación por su tiempo y esfuerzo), si después de haber usado el software regularmente (al menos 3 veces a la semana) por 90 días, usted no esta satisfecho con el valor que le está generando a su empresa."
 
                         ],
                     order: '6',
