@@ -87,6 +87,9 @@ $data['body']=gzinflate(substr(substr($data['body'],10),0,-8));
 return $data['body'];
 }
 function __(...$args){
+if(is_array($args[0])){
+$args=$args[0];
+}
 return Lang::translate(...$args);
 }
 function _e($key1,$key2=null,$key3=null,$key4=null,$key5=null,$key6=null){
@@ -365,7 +368,7 @@ return Session::get($key,$default);
 }
 }
 function dotenv($path){
-(new Dotenv\Dotenv($path))->load();
+Dotenv\Dotenv::create($path)->load();
 }
 if(!function_exists('array_except')){
 function array_except($array,$keys){
@@ -420,8 +423,9 @@ $array=$array[$segment];
 return true;
 }
 }
-function array_sort_by(array&$data,$columnName){
-usort($data,function($a,$b)use($columnName){
+function array_sort_by(array&$data,$columnName,$newKey=true){
+$sort=$newKey?'usort':'uasort';
+$sort($data,function($a,$b)use($columnName){
 $a=array_get($a,$columnName);
 $b=array_get($b,$columnName);
 return strcasecmp($a,$b);
@@ -529,6 +533,20 @@ $title=preg_replace('![^'.preg_quote($separator).'\pL\pN\s]+!u','',mb_strtolower
 $title=preg_replace('!['.preg_quote($separator).'\s]+!u',$separator,$title);
 return trim($title,$separator);
 }
+}
+if(!function_exists('array_each')){
+function array_each(&$array){
+$key=key($array);
+if($key===null){
+return false;
+}
+$value=current($array);
+next($array);
+return [$key,$value];
+}
+}
+function versioned($directory,$file){
+return '/'.$directory.App::path('/'.Versioned::out($file,true));
 }
 class App{
 protected static $name='app';
@@ -805,38 +823,43 @@ return dirname(static::currentRoot($path));
 class Input{
 private static $data=[];
 public static function all(){
-return self::$data;
+return static::$data;
 }
 public static function get($field,$default=null){
 if(strpos($field,'.')!==false){
 return array_get(static::$data,$field,$default);
 }
-return isset(self::$data[$field])?self::$data[$field]:$default;
+return isset(static::$data[$field])?static::$data[$field]:$default;
 }
 public static function set($field,$value=null){
 if(func_num_args()===1){
-self::$data=$field;
+static::$data=$field;
 }else{
-self::$data[$field]=$value;
+static::$data[$field]=$value;
 }
 return static::$data;
 }
 public static function has($field){
-return isset(self::$data[$field]);
+return isset(static::$data[$field]);
 }
 public static function only($keys){
 $keys=is_array($keys)?$keys:func_get_args();
 $values=[];
 foreach($keys as $key){
-$values[$key]=self::get($key);
+$values[$key]=static::get($key);
 }
 return $values;
 }
+public static function pluck($field){
+$value=static::get($field);
+static::remove($field);
+return $value;
+}
 public static function remove($field){
-unset(self::$data[$field]);
+unset(static::$data[$field]);
 }
 public static function fromJson(){
-return static::set(Request::json());
+return $_POST=static::set(Request::json());
 }
 public static function fromGlobal(){
 if(Request::isMethod('get')){
@@ -986,7 +1009,7 @@ return Str::contains(static::header('content_type'),['/json','+json']);
 public static function wantsJson(){
 static $wantsJson=null;
 if($wantsJson===null){
-$wantsJson=static::header('accept')=='application/json';
+$wantsJson=Str::contains(static::header('accept'),'application/json');
 }
 return $wantsJson;
 }
@@ -1042,6 +1065,7 @@ return $value;
 }
 ($video=(new class extends ArrayObject{
 const LANGS=['es','en'];
+const HOST_URL=['y'=>'https://www.youtube.com/embed/ID?autoplay=1&rel=0','s'=>'https://screencast-o-matic.com/embed?sc=ID&v=5&title=0&ff=1&a=1'];
 protected $routes=['slug'=>[],'id'=>[]];
 protected $originalRoutes=[];
 protected $publish=false;
@@ -1097,7 +1121,8 @@ return static::TRANSLATE[$this['lang']];
 }
 }
 protected function findById($id){
-return array_get($this->routes['id'],$id);
+$route=array_get($this->routes['id'],$id);
+return $this->resolve($route);
 }
 protected function findBySlug($slug){
 if(!($route=array_get($this->routes['slug'],$slug,[]))){
@@ -1105,7 +1130,7 @@ if(!($route=$this->findInTutorials($slug))){
 $route=$this->findInCourses($slug);
 }
 }
-return $route;
+return $this->resolve($route);
 }
 protected function getSlug(){
 $path=URL::current();
@@ -1173,7 +1198,7 @@ $content=trim($content);
 return json_decode($content,true);
 }
 protected function getRoute($slug,$item){
-$route=['slug'=>$slug,'title'=>$item['title'],'desc'=>$item['desc'],'lang'=>$item['lang'],'id'=>$item['id']];
+$route=['slug'=>$slug,'title'=>$item['title'],'desc'=>$item['desc'],'lang'=>$item['lang'],'id'=>$item['id'],];
 if($item['next']?? false){
 $route['next']=$item['next'];
 }
@@ -1191,7 +1216,9 @@ protected function regenerate(){
 $routes=[];
 foreach(static::LANGS as $lang){
 $tutorials=$this->filteToArray($lang,'videos');
+$gs=$this->filteToArray($lang,'gs');
 $routes=array_merge($routes,$this->getRoutes($tutorials['videos']));
+$routes=array_merge($routes,$this->getRoutes($gs['videos'],'s'));
 $courses=$this->filteToArray($lang,'course');
 foreach($courses['lessons']as $lesson){
 $routes=array_merge($routes,$this->getRoutes($lesson['videos']));
@@ -1199,13 +1226,20 @@ $routes=array_merge($routes,$this->getRoutes($lesson['videos']));
 }
 File::json($this->getRouter(),$routes);
 }
-protected function getRoutes($videos){
+protected function getRoutes($videos,$host='y'){
 $routes=[];
 foreach($videos as $video){
 $slug=str_slug($video['title']);
-$routes[]=$this->getRoute($slug,$video);
+$video=$this->getRoute($slug,$video);
+$video['host']=$host;
+$routes[]=$video;
 }
 return $routes;
+}
+protected function resolve($route){
+$path=static::HOST_URL[$route['host']];
+$route['url']=str_replace('ID',$route['id'],$path);
+return $route;
 }
 }))->dispatch();
 }
