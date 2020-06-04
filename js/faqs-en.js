@@ -78,13 +78,13 @@ var app = new Vue({
             },
             {
                 id: 'guarantee',
-                title: 'What is the satisfaction guarantee?',
+                title: 'How does the money guarantee work?',
                 answer: [
 
-                        "We naturally believe myAbakus is a good investment. If used regularly, we are confident that the value it will generate for your business will be greater for its cost. And we are prepared to back up this claim with a 90-day satisfaction guarantee."
+                        "Naturally, we think myAbakus is a good investment. If used regularly, we are sure that the value it will generate for your business will be greater than its cost. And therefore, we are prepared to offer a money back guarantee that covers the first 90 days of your subscription and will refund 120% of your payment"
                     ,
 
-                        "Say you have properly evaluated myAbakus and feels it could be a good investment for your business (see previous question). You can now subscribe confidently knowing that for the following 90-days you are entitled to get all your money back if after using it regularly (at least 3 days per week), you feel myAbakus not generating enough value for your business relative to its cost."
+                        "When your free trial ends, you can subscribe with the peace of mind you get from knowing that you can request a refund of 120% of your payment (as compensation for your time and effort), if after using the software regularly (at least 3 times a week) for 90 days, you are not satisfied with the value that you it is generating for your business."
 
                         ],
                     order: '6',
