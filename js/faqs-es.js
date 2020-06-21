@@ -52,10 +52,10 @@ var app = new Vue({
                 title: '¿Cómo funciona el periodo de prueba?',
                 answer: [
 
-                        "El periodo de prueba tiene una duración de 14 días durante los cuales usted podrá evaluar el software sin ninguna restricción, con lo cual podrá ver cómo se adapta a las necesidades de su negocio y determinar que funcionalidad es relevante para usted."
+                        "El periodo de prueba tiene una duración de 7 días durante los cuales usted podrá evaluar el software sin ninguna restricción, para que pueda ver cómo se adapta a las necesidades de su negocio y determinar que funcionalidad es relevante para usted."
                     ,
 
-                        "Y tenga presente que durante este periodo usted va a recibir el mismo servicio personalizado que le brindamos a nuestros clientes. Lo cual quiere decir que va a tener acceso a una persona responsable de ayudarlo con la implementación y asegurarse que myAbakus se convierta en una herramienta valiosa para su negocio."
+                        "Tenga presente que puede extenderlo a 14 días con tan solo verificar su email y que durante este periodo usted va a recibir el mismo nivel de servicio que le brindamos a nuestros clientes si nos solicita ayuda."
 
                     ],
                 order: '4',
@@ -85,7 +85,7 @@ var app = new Vue({
                         "Naturalmente, nosotros pensamos que myAbakus es una buena inversión. Si se usa regularmente, estamos seguros de que el valor que va a generarle a su empresa va a ser mayor que su costo. Y por lo tanto, estamos preparados a ofrecer con una garantía de satisfacción que cubre los primeros 90 días de su suscripción y devuelve el 120% de su pago."
                     ,
 
-                        "Cuando termine su periodo de prueba, usted puede suscribirse con la tranquilidad de saber que puede solicitar la devolución del 120% de su pago (como compensación por su tiempo y esfuerzo), si después de haber usado el software regularmente (al menos 3 veces a la semana) por 90 días, usted no esta satisfecho con el valor que le está generando a su empresa."
+                        "Cuando termine su periodo de prueba, usted puede suscribirse con la tranquilidad de saber que puede solicitar la devolución del 120% de su pago, como compensación por su tiempo y esfuerzo, si después de haber usado el software regularmente (al menos 3 veces a la semana) por 90 días, usted no esta satisfecho con el valor que le está generando a su empresa."
 
                         ],
                     order: '6',
