@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="es" data-pgc-master="video-tutoriales.html">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="A collection of short videos showing what you can do with myAbakus">
-        <title>Accounting and Invoicing Software in the Cloud for Small and Medium Businesses - Video Tutorials</title>
+        <title data-pgc-field="page_title">Accounting and Invoicing Software in the Cloud for Small and Medium Businesses - Video Tutorials</title>
+        <meta name="description" content="A collection of short videos showing what you can do with myAbakus" data-pgc-field="page_description">
         <link rel="shortcut icon" href="../images/favicon.png">
         <!-- Custom styles for filters -->
         <link href="../css/isotope.css" rel="stylesheet" type="text/css">
@@ -21,44 +21,39 @@
         <script type="text/javascript" src="../js/drift.js"></script>
         <script type="text/javascript" src="../js/hotjar.js"></script>
         <script type="text/javascript" src="../js/fullstory.js"></script>
-        <script type="text/javascript" src="../js/videos-en.js"></script>
-    </head>
-    <body>
-        <div class="wrapper">
-            <div id="app" class="grid">
-                <div>
-                    <div>
+        <script type="text/javascript" src="../js/videos-en.js" data-pgc-field="data"></script>
+        <body>
+            <div class="wrapper">
+                <div id="app" class="grid">
+                    <div class="header">
                         <h1>{{ title }}</h1>
                         <h3 style="text-align: center;">{{ subtitle }}</h3>
                     </div>
-                    <div class="sheets">
-                        <div>
-                            <ul class="filter">
-                                <li class="active" v-for="=(tag, key) in tags">
-                                    <a href="#" :data-filter="key == '*' ? key : '.' + key">{{ tag }}</a>
-                                </li>
-                            </ul>
-                            <!-- /.gallery-filter -->
-                            <div class="flex-container isotope-gallery-container js-masonry" data-masonry-options='{ "itemSelector": ".sheet" }'>
-                                <div :class="['sheet-img-'+video.icon, video.tags]" class="sheet " v-for="video in videos">
-                                    <h2>{{ video.title }}</h2>
-                                    <div>
-                                        <a :href="video.title | slugify" :video-id="video.id"> <div class="sheet-img" :class="'sheet-img-'+video.icon">
-                                                <i class="fa-3x fa-play-circle fas play-btn"></i>
-                                            </div> </a>
-                                    </div>
-                                    <p>{{ video.desc }}</p>
-                                </div>
-                                <!-- fin del v-for -->
+                    <div class="tags">
+                        <ul class="filter">
+                            <li v-for="(tag, key) in tags">
+                                <a href="#" :data-filter="key == '*' ? key : '.' + key">{{ tag }}</a>
+                            </li>
+                        </ul>
+                        <!-- /.gallery-filter -->
+                    </div>
+                    <div class="flex-container isotope-gallery-container js-masonry videos" data-masonry-options='{ "itemSelector": ".sheet" }'>
+                        <div :class="['sheet-img-'+video.icon, video.tags]" class="sheet" v-for="video in videos">
+                            <h2>{{ video.title }}</h2>
+                            <div id="app1">
+                                <a :href="video.title | slugify" :video-id="video.id"> <div class="sheet-img" :class="'sheet-img-'+video.icon">
+                                        <i class="fa-3x fa-play-circle fas play-btn"></i>
+                                    </div> </a>
                             </div>
+                            <p>{{ video.desc }}</p>
                         </div>
+                        <!-- fin del v-for -->
                     </div>
                 </div>
             </div>
-        </div>
-        <script src="../js/jquery.min.js"></script>
-        <script type="text/javascript" src="../js/plugins.js"></script>
-        <script type="text/javascript" src="../js/isotope.js"></script>
-        <script type="text/javascript" src="../js/v-app.js"></script>
-    </body>
+            <script src="../js/jquery.min.js"></script>
+            <script type="text/javascript" src="../js/plugins.js"></script>
+            <script type="text/javascript" src="../js/isotope.js"></script>
+            <script type="text/javascript" src="../js/v-app.js"></script>
+        </body>
 </html>

@@ -109,6 +109,7 @@ h3 {
     grid-template-areas: 'header' 'tags' 'videos';
     grid-gap: 1rem;
     max-width: 960px;
+    min-width: 320px;
 }
 
 .wrapper {
@@ -116,7 +117,7 @@ h3 {
     justify-content: center;
 }
 
-@media (max-width:799px) {
+@media (max-width:959px) {
     .flex-container {
         justify-content: center;
     }
@@ -128,12 +129,6 @@ h3 {
 }
 
 .tags {
-    display: none;
-    grid-area: tags;
-}
-
-.tags {
-    display: none;
     grid-area: tags;
 }
 

@@ -32,15 +32,13 @@
                     <div>
 </div>
                 </div>
-                <div class="tags">
-                    <div>
-                        <ul class="filter">
-                            <li class="active" v-for="(tag, key) in tags">
-                                <a href="#" :data-filter="key == '*' ? key : '.' + key">{{ tag }}</a>
-                            </li>
-                        </ul>
-                        <!-- /.gallery-filter -->
-                    </div>
+                <div class="tags" style="display: none;">
+                    <ul class="filter">
+                        <li class="active" v-for="(tag, key) in tags">
+                            <a href="#" :data-filter="key == '*' ? key : '.' + key">{{ tag }}</a>
+                        </li>
+                    </ul>
+                    <!-- /.gallery-filter -->
                 </div>
                 <div data-masonry-options='{ "itemSelector": ".sheet" }' class="flex-container videos">
                     <div :class="['sheet-img-'+video.icon, video.tags]" class="sheet" v-for="video in videos">
