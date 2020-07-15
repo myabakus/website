@@ -46,7 +46,7 @@ var data = {
       "next": "cYeq3ByVxz"
     },
     {
-      "title": "Step 3: Enter purchases of products",
+      "title": "Step 3: Enter purchases from suppliers",
       "desc": "We are going to increase our stock levels by purchasing from our suppliers",
       "lang": "en",
       "id": "cYeq3ByVxz",
@@ -61,10 +61,19 @@ var data = {
       "id": "cYe0rXyZzj",
       "icon": "5",
       "tags": "income",
+      "next": "cYi2F15SwB"
+    },
+    {
+      "title": "Step 5: Create the price lists we need",
+      "desc": "Before entering sales let's first define prices for different type of customers ",
+      "lang": "en",
+      "id": "cYi2F15SwB",
+      "icon": "6",
+      "tags": "inventory",
       "next": "cYfeeE4Jjl"
     },
     {
-      "title": "Step 5: Enter sales of products",
+      "title": "Step 6: Enter sales to customers",
       "desc": "Now we are going to reduce our stock levels selling products to our customers",
       "lang": "en",
       "id": "cYfeeE4Jjl",
@@ -73,7 +82,7 @@ var data = {
       "next": "cYf2Ynz1VJ"
     },
     {
-      "title": "Step 6: Enter financial transactions",
+      "title": "Step 7: Enter financial transactions",
       "desc": "This transactions are vital for the business cash flow, despite not being income or expenses",
       "lang": "en",
       "id": "cYf2Ynz1VJ",
@@ -82,7 +91,7 @@ var data = {
       "next": "cYeh0wx6xn"
     },
     {
-      "title": "Step 7: Enter financial income and expenses",
+      "title": "Step 8: Enter financial income and expenses",
       "desc": "The unavoidable sidde effect of financial transactions is that they have a cost and it can be signficant",
       "lang": "en",
       "id": "cYhf3sBLGC",

@@ -45,7 +45,7 @@ var data = {
       "next": "cYeFr8xN5y"
     },
     {
-      "title": "Paso 3: Ingresar compras de productos",
+      "title": "Paso 3: Ingresar compras a proveedores",
       "desc": "Vamos a aumentar nuestro inventario de productos haciendole compras a nuestros proveedores",
       "lang": "es",
       "id": "cYeFr8xN5y",
@@ -60,10 +60,19 @@ var data = {
       "id": "cYe33dyDDH",
       "icon": "6",
       "tags": "ingresos reportes items",
+      "next": "cYi2Fn5Sv5"
+    },
+    {
+      "title": "Paso 5: Crear las listas de precios",
+      "desc": "Antes de ingresar las ventas definamos primero los precios para diferentes tipos de clientes",
+      "lang": "es",
+      "id": "cYi2Fn5Sv5",
+      "icon": "1",
+      "tags": "exportar",
       "next": "cYfeeu4Jhj"
     },
     {
-      "title": "Paso 5: Ingresar ventas de productos",
+      "title": "Paso 6: Ingresar ventas a clientes",
       "desc": "Ahora vamos a reducir nuestro inventario de productos haciendole ventas a nuestros clientes",
       "lang": "es",
       "id": "cYfeeu4Jhj",
@@ -72,7 +81,7 @@ var data = {
       "next": "cYf2Yhz1eA"
     },
     {
-      "title": "Paso 6: Ingresar transacciones financieras",
+      "title": "Paso 7: Ingresar transacciones financieras",
       "desc": "Estas transacciones son vitales para el flujo de caja de la empresa a pesar de no ser ni ingresos ni gastos",
       "lang": "es",
       "id": "cYf2Yhz1eA",
@@ -81,7 +90,7 @@ var data = {
       "next": "cYhf3EBLCI"
     },
     {
-      "title": "Paso 7: Ingresar ingresos y gastos financieros",
+      "title": "Paso 8: Ingresar ingresos y gastos financieros",
       "desc": "El efecto secundario e invevitable de las transacciones financieras es que tienen un costo significativo",
       "lang": "es",
       "id": "cYhf3EBLCI",
