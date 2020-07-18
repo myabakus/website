@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es" data-pgc-set-master>
+<html lang="es" data-pgc-set-master data-pgc-edit="language[lang, no_content]">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,38 +23,38 @@
         <script type="text/javascript" src="../js/fullstory.js"></script>
         <script type="text/javascript" src="../js/videos-es.js" data-pgc-edit="data[src]"></script>
     </head>
-        <body>
-            <div class="wrapper">
-                <div id="app" class="grid">
-                    <div class="header">
-                        <h1>{{ title }}</h1>
-                        <h3 style="text-align: center;">{{ subtitle }}</h3>
-                    </div>
-                    <div class="tags">
-                        <ul class="filter">
-                            <li v-for="(tag, key) in tags">
-                                <a href="#" :data-filter="key == '*' ? key : '.' + key">{{ tag }}</a>
-                            </li>
-                        </ul>
-                        <!-- /.gallery-filter -->
-                    </div>
-                    <div class="flex-container isotope-gallery-container js-masonry videos" data-masonry-options='{ "itemSelector": ".sheet" }'>
-                        <div :class="['sheet-img-'+video.icon, video.tags]" class="sheet" v-for="video in videos">
-                            <h2>{{ video.title }}</h2>
-                            <div id="app1">
-                                <a :href="video.title | slugify" :video-id="video.id"> <div class="sheet-img" :class="'sheet-img-'+video.icon">
-                                        <i class="fa-3x fa-play-circle fas play-btn"></i>
-                                    </div> </a>
-                            </div>
-                            <p>{{ video.desc }}</p>
+    <body>
+        <div class="wrapper">
+            <div id="app" class="grid">
+                <div class="header">
+                    <h1>{{ title }}</h1>
+                    <h3 style="text-align: center;">{{ subtitle }}</h3>
+                </div>
+                <div class="tags">
+                    <ul class="filter">
+                        <li v-for="(tag, key) in tags">
+                            <a href="#" :data-filter="key == '*' ? key : '.' + key">{{ tag }}</a>
+                        </li>
+                    </ul>
+                    <!-- /.gallery-filter -->
+                </div>
+                <div class="flex-container isotope-gallery-container js-masonry videos" data-masonry-options='{ "itemSelector": ".sheet" }'>
+                    <div :class="['sheet-img-'+video.icon, video.tags]" class="sheet" v-for="video in videos">
+                        <h2>{{ video.title }}</h2>
+                        <div id="app1">
+                            <a :href="video.title | slugify" :video-id="video.id"> <div class="sheet-img" :class="'sheet-img-'+video.icon">
+                                    <i class="fa-3x fa-play-circle fas play-btn"></i>
+                                </div> </a>
                         </div>
-                        <!-- fin del v-for -->
+                        <p>{{ video.desc }}</p>
                     </div>
+                    <!-- fin del v-for -->
                 </div>
             </div>
-            <script src="../js/jquery.min.js"></script>
-            <script type="text/javascript" src="../js/plugins.js"></script>
-            <script type="text/javascript" src="../js/isotope.js"></script>
-            <script type="text/javascript" src="../js/v-app.js"></script>
-        </body>
+        </div>
+        <script src="../js/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/plugins.js"></script>
+        <script type="text/javascript" src="../js/isotope.js"></script>
+        <script type="text/javascript" src="../js/v-app.js"></script>
+    </body>
 </html>
