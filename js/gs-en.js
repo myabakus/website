@@ -1,6 +1,6 @@
 var data = {
   "title": "Getting Started Guide",
-  "subtitle": "The purpose of this guide is to show you the sequence we use to enter the demo company information so that you can understand where it comes from and apply the same logic in the evaluation and implementation of the software in your business.",
+  "subtitle": "The purpose of this guide is to show you the sequence we use to enter the demo company information so that you can understand where it comes from and apply the same logic in the evaluation and implementation of the software in your business. You can watch the videos in order or just the ones that are relevant for your business.",
   "tags": {
     "*": "All",
     "gettingstarted": "Getting started",
@@ -19,16 +19,16 @@ var data = {
   "url": "../videos/",
   "videos": [
     {
-      "title": "Introduction: How to orient yourself in the application",
+      "title": "How to orient yourself in the application",
       "desc": "A quick review of the different sections in the application and how to move around",
       "lang": "en",
       "id": "cYe1cVx6a2",
       "icon": "1",
       "tags": "items invoicing import",
-      "next": "cYeh0wx6xn"
+      "next": "cYeh09x64K"
     },
     {
-      "title": "Step 1: Enter the initial inventory",
+      "title": "How to enter the initial inventory",
       "desc": "Let's start by created the products we have in inventory with the stock quantities",
       "lang": "en",
       "id": "cYeh09x64K",
@@ -37,7 +37,7 @@ var data = {
       "next": "cYe6qqxYgw"
     },
     {
-      "title": "Step 2: Enter the starting cash balances",
+      "title": "How to enter the starting cash balances",
       "desc": "The key to reliable financial information is to enter cash balances and keep them in sync with reality",
       "lang": "en",
       "id": "cYe6qqxYgw",
@@ -46,7 +46,7 @@ var data = {
       "next": "cYeq3ByVxz"
     },
     {
-      "title": "Step 3: Enter purchases from suppliers",
+      "title": "How to enter purchases from suppliers",
       "desc": "We are going to increase our stock levels by purchasing from our suppliers",
       "lang": "en",
       "id": "cYeq3ByVxz",
@@ -55,7 +55,7 @@ var data = {
       "next": "cYe0rXyZzj"
     },
     {
-      "title": "Step 4: Enter operating expenses",
+      "title": "How to enter operating expenses",
       "desc": "Let's enter recurring expenses such as rent and payment to employees and contractors",
       "lang": "en",
       "id": "cYe0rXyZzj",
@@ -64,7 +64,7 @@ var data = {
       "next": "cYi2F15SwB"
     },
     {
-      "title": "Step 5: Create the price lists we need",
+      "title": "How to create the price lists we need",
       "desc": "Before entering sales let's first define prices for different type of customers ",
       "lang": "en",
       "id": "cYi2F15SwB",
@@ -73,7 +73,7 @@ var data = {
       "next": "cYfeeE4Jjl"
     },
     {
-      "title": "Step 6: Enter sales to customers",
+      "title": "How to enter sales to customers",
       "desc": "Now we are going to reduce our stock levels selling products to our customers",
       "lang": "en",
       "id": "cYfeeE4Jjl",
@@ -82,7 +82,16 @@ var data = {
       "next": "cYf2Ynz1VJ"
     },
     {
-      "title": "Step 7: Enter financial transactions",
+      "title": "How to configure the invoice we are sending to customers",
+      "desc": "If we are sending invoice, we need to make sure they have all the required information",
+      "lang": "en",
+      "id": "cYf2Ynz1VJ",
+      "icon": "1",
+      "tags": "invoicing",
+      "next": "cYeh0wx6xn"
+    },
+    {
+      "title": "How to enter financial transactions",
       "desc": "This transactions are vital for the business cash flow, despite not being income or expenses",
       "lang": "en",
       "id": "cYf2Ynz1VJ",
@@ -91,7 +100,7 @@ var data = {
       "next": "cYeh0wx6xn"
     },
     {
-      "title": "Step 8: Enter financial income and expenses",
+      "title": "How to enter financial income and expenses",
       "desc": "The unavoidable sidde effect of financial transactions is that they have a cost and it can be signficant",
       "lang": "en",
       "id": "cYhf3sBLGC",

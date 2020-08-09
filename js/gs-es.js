@@ -1,6 +1,6 @@
 var data = {
   "title": "Guia de Arranque",
-  "subtitle": "El objetivo de este guía es mostrarle la secuencia que usamos para ingresar la información de la empresa demo para que usted pueda entender de donde viene y aplicar la misma lógica en la evaluación e implementación del software en su empresa.",
+  "subtitle": "El objetivo de este guía es mostrarle la secuencia que usamos para ingresar la información de la empresa demo para que usted pueda entender de donde viene y aplicar la misma lógica en la evaluación e implementación del software en su empresa. Usted puede ver los videos en orden o solo los que son relevantes para su empresa.",
   "tags": {
     "*": "Todos",
     "arrancando": "Arrancando",
@@ -18,7 +18,7 @@ var data = {
   },
   "videos": [
     {
-      "title": "Introducción: Cómo orientarse en la aplicación",
+      "title": "Cómo orientarse en la aplicación",
       "desc": "Un recorrido rápido de las diferentes secciones de la aplicación y cómo recorrela",
       "lang": "es",
       "id": "cYnT3YwMui",
@@ -27,7 +27,7 @@ var data = {
       "next": "cYeh0wx6xn"
     },
     {
-      "title": "Paso 1: Ingresar el inventario inicial",
+      "title": "Cómo ingresar el inventario inicial",
       "desc": "Comencemos creando los productos que tenemos inventario con sus correspondientes existencias",
       "lang": "es",
       "id": "cYeh0wx6xn",
@@ -36,7 +36,7 @@ var data = {
       "next": "cYe6qOxYk8"
     },
     {
-      "title": "Paso 2: Ingresar los saldos iniciales de efectivo",
+      "title": "Cómo ingresar los saldos iniciales de efectivo",
       "desc": "Ingresar los saldos de efectivo y mantenerlos conciliados es la clave para tener información confiable",
       "lang": "es",
       "id": "cYe6qOxYk8",
@@ -45,7 +45,7 @@ var data = {
       "next": "cYeFr8xN5y"
     },
     {
-      "title": "Paso 3: Ingresar compras a proveedores",
+      "title": "Cómo ingresar compras a proveedores",
       "desc": "Vamos a aumentar nuestro inventario de productos haciendole compras a nuestros proveedores",
       "lang": "es",
       "id": "cYeFr8xN5y",
@@ -54,7 +54,7 @@ var data = {
       "next": "cYe33dyDDH"
     },
     {
-      "title": "Paso 4: Ingresar gastos operacionales",
+      "title": "Cómo ingresar gastos operacionales",
       "desc": "Registremos gastos que ocurren regularmente como arriendo y pagos a empleados",
       "lang": "es",
       "id": "cYe33dyDDH",
@@ -63,7 +63,7 @@ var data = {
       "next": "cYi2Fn5Sv5"
     },
     {
-      "title": "Paso 5: Crear las listas de precios",
+      "title": "Cómo crear las listas de precios",
       "desc": "Antes de ingresar las ventas definamos primero los precios para diferentes tipos de clientes",
       "lang": "es",
       "id": "cYi2Fn5Sv5",
@@ -72,7 +72,7 @@ var data = {
       "next": "cYfeeu4Jhj"
     },
     {
-      "title": "Paso 6: Ingresar ventas a clientes",
+      "title": "Cómo ingresar ventas a clientes",
       "desc": "Ahora vamos a reducir nuestro inventario de productos haciendole ventas a nuestros clientes",
       "lang": "es",
       "id": "cYfeeu4Jhj",
@@ -81,7 +81,16 @@ var data = {
       "next": "cYf2Yhz1eA"
     },
     {
-      "title": "Paso 7: Ingresar transacciones financieras",
+      "title": "Cómo configurar la factura para enviarla a clientes",
+      "desc": "Si vamos a enviar facturas, necesitamos que tengan toda la información requerida ",
+      "lang": "es",
+      "id": "cYf2Yhz1eA",
+      "icon": "2",
+      "tags": "ingresos",
+      "next": "cYhf3EBLCI"
+    },
+    {
+      "title": "Cómo ingresar transacciones financieras",
       "desc": "Estas transacciones son vitales para el flujo de caja de la empresa a pesar de no ser ni ingresos ni gastos",
       "lang": "es",
       "id": "cYf2Yhz1eA",
@@ -90,7 +99,7 @@ var data = {
       "next": "cYhf3EBLCI"
     },
     {
-      "title": "Paso 8: Ingresar ingresos y gastos financieros",
+      "title": "Cómo ingresar ingresos y gastos financieros",
       "desc": "El efecto secundario e invevitable de las transacciones financieras es que tienen un costo significativo",
       "lang": "es",
       "id": "cYhf3EBLCI",
