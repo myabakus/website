@@ -1,3 +1,4 @@
+/*
 const locale = document.querySelector('html').getAttribute('lang') || 'en';
 
 ! function () {
@@ -23,3 +24,5 @@ drift.config({
   locale: locale
 });
 drift.load('33c7h6tzniik');
+
+*/

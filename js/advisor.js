@@ -1,3 +1,4 @@
+/*
 drift.on('ready',function(api, payload) {
   document.addEventListener('click', (event) => {
     const target = event.target;
@@ -6,3 +7,4 @@ drift.on('ready',function(api, payload) {
     }
   });
 });
+*/
