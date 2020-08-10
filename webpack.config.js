@@ -59,7 +59,7 @@ module.exports = {
               js: {
                 inline: [
                   'js/km.js',
-                  'js/drift.js',
+                  // 'js/drift.js',
                   'js/hotjar.js',
                   'js/fullstory.js',
                   'js/advisor.js',
@@ -188,7 +188,7 @@ module.exports = {
               js: {
                 inline: [
                   'js/km.js',
-                  'js/drift.js',
+                  // 'js/drift.js',
                   'js/hotjar.js',
                   'js/fullstory.js',
                   'js/advisor.js',
