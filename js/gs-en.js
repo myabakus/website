@@ -25,7 +25,7 @@ var data = {
       "id": "cYe1cVx6a2",
       "icon": "1",
       "tags": "items invoicing import",
-      "next": "cYeh0wx6xn"
+      "next": "cYeh09x64K"
     },
     {
       "title": "Step 1: Enter the initial inventory",
