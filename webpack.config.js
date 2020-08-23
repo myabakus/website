@@ -62,7 +62,7 @@ module.exports = {
                   // 'js/drift.js',
                   'js/hotjar.js',
                   'js/fullstory.js',
-                  'js/advisor.js',
+                  // 'js/advisor.js',
                   'js/scroll.js',
                 ],
                 'js/app-ie9.js': [
@@ -74,6 +74,10 @@ module.exports = {
                   'js/bootstrap.min.js',
                   'js/plugins.js',
                   'js/bskit-scripts.js'
+                ],
+                'js/app-tags.js': [
+                  'js/bento.js',
+                  'js/gtag.js'
                 ]
               },
               css: {
@@ -191,7 +195,7 @@ module.exports = {
                   // 'js/drift.js',
                   'js/hotjar.js',
                   'js/fullstory.js',
-                  'js/advisor.js',
+                  // 'js/advisor.js',
                   'js/scroll.js',
                 ],
                 'js/app-ie9.js': [
@@ -202,7 +206,11 @@ module.exports = {
                   'js/jquery.min.js',
                   'bootstrap/js/bootstrap.min.js',
                   'js/ie10-viewport-bug-workaround.js'
-                ]
+                ],
+                'js/app-tags.js': [
+                  'js/bento.js',
+                  'js/gtag.js'
+                ]                
               },
               css: {
                 'css/app-player.css': [
