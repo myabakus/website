@@ -77,25 +77,34 @@ var data = {
       "desc": "Now we are going to reduce our stock levels selling products to our customers",
       "lang": "en",
       "id": "cYfeeE4Jjl",
-      "icon": "6",
+      "icon": "1",
+      "tags": "inventory",
+      "next": "cYQVYjH6Zz"
+    },
+    {
+      "title": "Step 7: Configure our sales invoices",
+      "desc": "To be able to send invoices to customers, we need to make sure they have all the required information",
+      "lang": "en",
+      "id": "cYQVYjH6Zz",
+      "icon": "2",
       "tags": "inventory",
       "next": "cYf2Ynz1VJ"
     },
     {
-      "title": "Step 7: Enter financial transactions",
+      "title": "Step 8: Enter financial transactions",
       "desc": "This transactions are vital for the business cash flow, despite not being income or expenses",
       "lang": "en",
       "id": "cYf2Ynz1VJ",
-      "icon": "1",
+      "icon": "3",
       "tags": "invoicing",
       "next": "cYeh0wx6xn"
     },
     {
-      "title": "Step 8: Enter financial income and expenses",
+      "title": "Step 9: Enter financial income and expenses",
       "desc": "The unavoidable sidde effect of financial transactions is that they have a cost and it can be signficant",
       "lang": "en",
       "id": "cYhf3sBLGC",
-      "icon": "2",
+      "icon": "4",
       "tags": "gettingstarted inventory"
     }
   ]

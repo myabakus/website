@@ -40,7 +40,7 @@ var data = {
       "desc": "Ingresar los saldos de efectivo y mantenerlos conciliados es la clave para tener información confiable",
       "lang": "es",
       "id": "cYe6qOxYk8",
-      "icon": "4",
+      "icon": "3",
       "tags": "facturacion cuentasxcobrar",
       "next": "cYeFr8xN5y"
     },
@@ -49,7 +49,7 @@ var data = {
       "desc": "Vamos a aumentar nuestro inventario de productos haciendole compras a nuestros proveedores",
       "lang": "es",
       "id": "cYeFr8xN5y",
-      "icon": "5",
+      "icon": "4",
       "tags": "items facturacion importar",
       "next": "cYe33dyDDH"
     },
@@ -58,7 +58,7 @@ var data = {
       "desc": "Registremos gastos que ocurren regularmente como arriendo y pagos a empleados",
       "lang": "es",
       "id": "cYe33dyDDH",
-      "icon": "6",
+      "icon": "5",
       "tags": "ingresos reportes items",
       "next": "cYi2Fn5Sv5"
     },
@@ -67,7 +67,7 @@ var data = {
       "desc": "Antes de ingresar las ventas definamos primero los precios para diferentes tipos de clientes",
       "lang": "es",
       "id": "cYi2Fn5Sv5",
-      "icon": "1",
+      "icon": "6",
       "tags": "exportar",
       "next": "cYfeeu4Jhj"
     },
@@ -78,23 +78,32 @@ var data = {
       "id": "cYfeeu4Jhj",
       "icon": "1",
       "tags": "exportar",
+      "next": "cYQVYhH63W"
+    },
+    {
+      "title": "Paso 7: Configurar nuestras facturas de ventas",
+      "desc": "Para poder enviar facturas a clientes, necesitamos que tengan toda la información requerida",
+      "lang": "es",
+      "id": "cYQVYhH63W",
+      "icon": "2",
+      "tags": "exportar",
       "next": "cYf2Yhz1eA"
     },
     {
-      "title": "Paso 7: Ingresar transacciones financieras",
+      "title": "Paso 8: Ingresar transacciones financieras",
       "desc": "Estas transacciones son vitales para el flujo de caja de la empresa a pesar de no ser ni ingresos ni gastos",
       "lang": "es",
       "id": "cYf2Yhz1eA",
-      "icon": "2",
+      "icon": "3",
       "tags": "ingresos",
       "next": "cYhf3EBLCI"
     },
     {
-      "title": "Paso 8: Ingresar ingresos y gastos financieros",
+      "title": "Paso 9: Ingresar ingresos y gastos financieros",
       "desc": "El efecto secundario e invevitable de las transacciones financieras es que tienen un costo significativo",
       "lang": "es",
       "id": "cYhf3EBLCI",
-      "icon": "3",
+      "icon": "4",
       "tags": "inventario"
     }
   ]
