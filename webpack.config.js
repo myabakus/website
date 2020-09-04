@@ -210,7 +210,7 @@ module.exports = {
                 'js/app-tags.js': [
                   'js/bento.js',
                   'js/gtag.js'
-                ]                
+                ]
               },
               css: {
                 'css/app-player.css': [
@@ -270,6 +270,7 @@ module.exports = {
     new WebpackCleanPlugin([
       'dist/bundle',
       'js/app-main.js',
+      'js/app-tags.js',
       'js/app-ie9.js',
       'js/app-player.js',
       'css/app-main.css',
