@@ -13,13 +13,12 @@
         <!-- Bootstrap core CSS -->
         <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
         <link href="../css/player.css" rel="stylesheet" type="text/css">
-        <script type="text/javascript" src="../js/km.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1042441796"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2211383-1"></script>
         <script type="text/javascript" src="../js/drift.js"></script>
         <script type="text/javascript" src="../js/fullstory.js"></script>
-        <!--[if lt IE 9]>
-        <script src="../js/html5shiv.js"></script>
-        <script src="../js/respond.min.js"></script>
-        <![endif]-->
+        <script type="text/javascript" src="js/fb.js"></script>
+        <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2643049546010302&ev=PageView&noscript=1"/></noscript>
     </head>
     <body>
         <!-- Bootstrap core JavaScript
