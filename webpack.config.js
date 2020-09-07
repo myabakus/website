@@ -75,8 +75,8 @@ module.exports = {
                   'js/plugins.js',
                   'js/bskit-scripts.js'
                 ],
-                'js/app-tags.js': [
-                  'js/bento.js',
+                inlineFooter: [
+                  'js/player.js',
                   'js/gtag.js'
                 ]
               },
@@ -206,8 +206,8 @@ module.exports = {
                   'bootstrap/js/bootstrap.min.js',
                   'js/ie10-viewport-bug-workaround.js'
                 ],
-                'js/app-tags.js': [
-                  'js/bento.js',
+                inlineFooter: [
+                  'js/player.js',
                   'js/gtag.js'
                 ]
               },

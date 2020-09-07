@@ -489,22 +489,7 @@ and up to date</b>. Manage invoicing, accounts receivable and payable, cash and 
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/plugins.js"></script>
         <script type="text/javascript" src="js/bskit-scripts.js"></script>
-        <script>
-        autoPlayYouTubeModal();
-        //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
-        function autoPlayYouTubeModal() {
-            var trigger = $("body").find('[data-toggle="modal"]');
-            trigger.click(function () {
-                var theModal = $(this).data("target"),
-                    videoSRC = $(this).attr("data-theVideo"),
-                    videoSRCauto = videoSRC + "?autoplay=1";
-                $(theModal + ' iframe').attr('src', videoSRCauto);
-                $(theModal + ' button.cerrar').click(function () {
-                    $(theModal + ' iframe').attr('src', videoSRC);
-                });
-            });
-          }
-        </script>
+        <script type="text/javascript" src="js/player.js"></script>
         <!-- <script src="https://app.bentonow.com/2e23170fcf732bc2cbfb7ad31c323076.js"></script> -->
         <!-- <script type="text/javascript" src="js/bento.js"></script> -->
         <script type="text/javascript" src="js/gtag.js"></script>

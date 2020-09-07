@@ -31,13 +31,19 @@ function loader(content, options, self) {
     headScripts = extractUnique(headScripts, scriptInline)
   }
   const body = extractContent(RGX_BODY, content)
-  const bodyScripts = extractAssets(RGX_SCRIPT, body)
+  let bodyScripts = extractAssets(RGX_SCRIPT, body)
   content = replaceInlineScript(content, scriptInline, self)
 
   if (headScriptsConditional) {
     content = replaceAssets(self, content, headScriptsConditional, options.js, replaceScript)
   }
   if (bodyScripts) {
+    let scriptInline = options.js.inlineFooter || []
+    if (scriptInline) {
+      scriptInline = copyAssets(bodyScripts, scriptInline, self)
+      bodyScripts = extractUnique(bodyScripts, scriptInline)
+      content = replaceInlineScript(content, scriptInline, self)
+    }
     content = replaceAssets(self, content, bodyScripts, options.js, replaceScript)
   }
   content = replaceAssets(self, content, headLinks, options.css, replaceLink)
