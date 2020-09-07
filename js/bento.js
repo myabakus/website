@@ -1,6 +1,6 @@
 if (typeof(bento$) != 'undefined') {
   bento$(function() {
-    bento.showChat();
+    // bento.showChat();
     bento.view();
   });
 }
