@@ -59,10 +59,10 @@ module.exports = {
               js: {
                 inline: [
                   'js/km.js',
-                  // 'js/drift.js',
+                  'js/drift.js',
                   'js/hotjar.js',
                   'js/fullstory.js',
-                  // 'js/advisor.js',
+                  'js/fb.js',
                   'js/scroll.js',
                 ],
                 'js/app-ie9.js': [
@@ -192,10 +192,9 @@ module.exports = {
               js: {
                 inline: [
                   'js/km.js',
-                  // 'js/drift.js',
+                  'js/drift.js',
                   'js/hotjar.js',
                   'js/fullstory.js',
-                  // 'js/advisor.js',
                   'js/scroll.js',
                 ],
                 'js/app-ie9.js': [
