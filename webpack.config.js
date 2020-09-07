@@ -181,6 +181,7 @@ module.exports = {
             loader: 'html-loader',
             options: {
               attrs: ['img:src', 'link:href', 'script:src', 'form:action'],
+              minimize: true,
               removeComments: true,
               preserveLineBreaks: true,
               removeScriptTypeAttributes: true
@@ -196,6 +197,7 @@ module.exports = {
                   'js/hotjar.js',
                   'js/fullstory.js',
                   'js/scroll.js',
+                  'js/fb.js'
                 ],
                 'js/app-ie9.js': [
                   'js/html5shiv.js',
