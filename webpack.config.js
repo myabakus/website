@@ -77,6 +77,7 @@ module.exports = {
                 ],
                 inlineFooter: [
                   'js/player.js',
+                  'js/bento.js',
                   'js/gtag.js'
                 ]
               },
@@ -210,6 +211,7 @@ module.exports = {
                 ],
                 inlineFooter: [
                   'js/player.js',
+                  'js/bento.js',
                   'js/gtag.js'
                 ]
               },
