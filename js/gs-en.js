@@ -20,7 +20,7 @@ var data = {
   "videos": [
     {
       "title": "Introduction: How to orient yourself in the application",
-      "desc": "A quick review of the different sections in the application and how to move around",
+      "desc": "A quick overview of the different sections in the application and how to move around",
       "lang": "en",
       "id": "cYe1cVx6a2",
       "icon": "1",
