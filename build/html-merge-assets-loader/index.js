@@ -62,11 +62,11 @@ function replaceInlineScript(html, scripts, self) {
     }
   }
   if (replace) {
-    const minify = uglify.minify(source.join('\n'))
+    const minify = uglify.minify(source.join('\n')).code
     html = html.replace(
       replace,
-      `<script>${minify.code}</script>`
-    )
+      `<script>${minify}</script>`
+    );
   }
   return html
 }

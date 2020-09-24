@@ -509,6 +509,9 @@
         if (typeof _ga === 'function') {
           _ga('send', 'pageview', '/account/created');
         }
+        if (typeof fbq === 'function') {
+            fbq('track', 'CompleteRegistration');
+        }
         var login = '/app/' + (logins.hasOwnProperty(lang) ? logins[lang] : logins['en']);
         const path = $.route(login, true);
         request(path, { token: response.token }).done(rq => {
