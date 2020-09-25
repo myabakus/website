@@ -21,88 +21,88 @@ var data = {
       "title": "Introducción: Cómo orientarse en la aplicación",
       "desc": "Un recorrido rápido de las diferentes secciones de la aplicación y cómo recorrela",
       "lang": "es",
-      "id": "cYnT3YwMui",
+      "id": "VuVZrilZAcw",
       "icon": "1",
       "tags": "impuestos",
-      "next": "cYeh0wx6xn"
+      "next": "Uqd3Ll_zhtQ"
     },
     {
       "title": "Paso 1: Ingresar el inventario inicial",
       "desc": "Comencemos creando los productos que tenemos inventario con sus correspondientes existencias",
       "lang": "es",
-      "id": "cYeh0wx6xn",
+      "id": "Uqd3Ll_zhtQ",
       "icon": "2",
       "tags": "impuestos",
-      "next": "cYe6qOxYk8"
+      "next": "NxELQMdhMls"
     },
     {
       "title": "Paso 2: Ingresar los saldos iniciales de efectivo",
       "desc": "Ingresar los saldos de efectivo y mantenerlos conciliados es la clave para tener información confiable",
       "lang": "es",
-      "id": "cYe6qOxYk8",
+      "id": "NxELQMdhMls",
       "icon": "3",
       "tags": "facturacion cuentasxcobrar",
-      "next": "cYeFr8xN5y"
+      "next": "SSKXHqtMcxA"
     },
     {
       "title": "Paso 3: Ingresar compras a proveedores",
       "desc": "Vamos a aumentar nuestro inventario de productos haciendole compras a nuestros proveedores",
       "lang": "es",
-      "id": "cYeFr8xN5y",
+      "id": "SSKXHqtMcxA",
       "icon": "4",
       "tags": "items facturacion importar",
-      "next": "cYe33dyDDH"
+      "next": "bAI19jobnIc"
     },
     {
       "title": "Paso 4: Ingresar gastos operacionales",
       "desc": "Registremos gastos que ocurren regularmente como arriendo y pagos a empleados",
       "lang": "es",
-      "id": "cYe33dyDDH",
+      "id": "bAI19jobnIc",
       "icon": "5",
       "tags": "ingresos reportes items",
-      "next": "cYi2Fn5Sv5"
+      "next": "jRKxkvY5i4I"
     },
     {
       "title": "Paso 5: Crear las listas de precios",
       "desc": "Antes de ingresar las ventas definamos primero los precios para diferentes tipos de clientes",
       "lang": "es",
-      "id": "cYi2Fn5Sv5",
+      "id": "jRKxkvY5i4I",
       "icon": "6",
       "tags": "exportar",
-      "next": "cYfeeu4Jhj"
+      "next": "TewGzvXU8OI"
     },
     {
       "title": "Paso 6: Ingresar ventas a clientes",
       "desc": "Ahora vamos a reducir nuestro inventario de productos haciendole ventas a nuestros clientes",
       "lang": "es",
-      "id": "cYfeeu4Jhj",
+      "id": "TewGzvXU8OI",
       "icon": "1",
       "tags": "exportar",
-      "next": "cYQVYhH63W"
+      "next": "19YFlnHKxEo"
     },
     {
       "title": "Paso 7: Configurar nuestras facturas de ventas",
       "desc": "Para poder enviar facturas a clientes, necesitamos que tengan toda la información requerida",
       "lang": "es",
-      "id": "cYQVYhH63W",
+      "id": "19YFlnHKxEo",
       "icon": "2",
       "tags": "exportar",
-      "next": "cYf2Yhz1eA"
+      "next": "Jz47_TbTVas"
     },
     {
       "title": "Paso 8: Ingresar transacciones financieras",
       "desc": "Estas transacciones son vitales para el flujo de caja de la empresa a pesar de no ser ni ingresos ni gastos",
       "lang": "es",
-      "id": "cYf2Yhz1eA",
+      "id": "Jz47_TbTVas",
       "icon": "3",
       "tags": "ingresos",
-      "next": "cYhf3EBLCI"
+      "next": "fQ3oV-GFTY0"
     },
     {
       "title": "Paso 9: Ingresar ingresos y gastos financieros",
       "desc": "El efecto secundario e invevitable de las transacciones financieras es que tienen un costo significativo",
       "lang": "es",
-      "id": "cYhf3EBLCI",
+      "id": "fQ3oV-GFTY0",
       "icon": "4",
       "tags": "inventario"
     }

@@ -22,88 +22,88 @@ var data = {
       "title": "Introduction: How to orient yourself in the application",
       "desc": "A quick overview of the different sections in the application and how to move around",
       "lang": "en",
-      "id": "cYe1cVx6a2",
+      "id": "MZijYcqsBnQ",
       "icon": "1",
       "tags": "items invoicing import",
-      "next": "cYeh09x64K"
+      "next": "h899KbzkN9g"
     },
     {
       "title": "Step 1: Enter the initial inventory",
       "desc": "Let's start by created the products we have in inventory with the stock quantities",
       "lang": "en",
-      "id": "cYeh09x64K",
+      "id": "h899KbzkN9g",
       "icon": "2",
       "tags": "invoicing",
-      "next": "cYe6qqxYgw"
+      "next": "EK_7VCulDLI"
     },
     {
       "title": "Step 2: Enter the starting cash balances",
       "desc": "The key to reliable financial information is to enter cash balances and keep them in sync with reality",
       "lang": "en",
-      "id": "cYe6qqxYgw",
+      "id": "EK_7VCulDLI",
       "icon": "3",
       "tags": "income reports items",
-      "next": "cYeq3ByVxz"
+      "next": "vUhlV7SHr2s"
     },
     {
       "title": "Step 3: Enter purchases from suppliers",
       "desc": "We are going to increase our stock levels by purchasing from our suppliers",
       "lang": "en",
-      "id": "cYeq3ByVxz",
+      "id": "vUhlV7SHr2s",
       "icon": "4",
       "tags": "export",
-      "next": "cYe0rXyZzj"
+      "next": "fWs8Y0Q7G9I"
     },
     {
       "title": "Step 4: Enter operating expenses",
       "desc": "Let's enter recurring expenses such as rent and payment to employees and contractors",
       "lang": "en",
-      "id": "cYe0rXyZzj",
+      "id": "fWs8Y0Q7G9I",
       "icon": "5",
       "tags": "income",
-      "next": "cYi2F15SwB"
+      "next": "ELIT_fP4Hyc"
     },
     {
       "title": "Step 5: Create the price lists we need",
       "desc": "Before entering sales let's first define prices for different type of customers ",
       "lang": "en",
-      "id": "cYi2F15SwB",
+      "id": "ELIT_fP4Hyc",
       "icon": "6",
       "tags": "inventory",
-      "next": "cYfeeE4Jjl"
+      "next": "Nq8i4BySEwk"
     },
     {
       "title": "Step 6: Enter sales to customers",
       "desc": "Now we are going to reduce our stock levels selling products to our customers",
       "lang": "en",
-      "id": "cYfeeE4Jjl",
+      "id": "Nq8i4BySEwk",
       "icon": "1",
       "tags": "inventory",
-      "next": "cYQVYjH6Zz"
+      "next": "Nx63rbeEiLg"
     },
     {
       "title": "Step 7: Configure our sales invoices",
       "desc": "To be able to send invoices to customers, we need to make sure they have all the required information",
       "lang": "en",
-      "id": "cYQVYjH6Zz",
+      "id": "Nx63rbeEiLg",
       "icon": "2",
       "tags": "inventory",
-      "next": "cYf2Ynz1VJ"
+      "next": "1QbH4eD3QxA"
     },
     {
       "title": "Step 8: Enter financial transactions",
       "desc": "This transactions are vital for the business cash flow, despite not being income or expenses",
       "lang": "en",
-      "id": "cYf2Ynz1VJ",
+      "id": "1QbH4eD3QxA",
       "icon": "3",
       "tags": "invoicing",
-      "next": "cYeh0wx6xn"
+      "next": "C_03x3854EE"
     },
     {
       "title": "Step 9: Enter financial income and expenses",
       "desc": "The unavoidable sidde effect of financial transactions is that they have a cost and it can be signficant",
       "lang": "en",
-      "id": "cYhf3sBLGC",
+      "id": "C_03x3854EE",
       "icon": "4",
       "tags": "gettingstarted inventory"
     }
