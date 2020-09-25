@@ -1218,7 +1218,7 @@ foreach(static::LANGS as $lang){
 $tutorials=$this->filteToArray($lang,'videos');
 $gs=$this->filteToArray($lang,'gs');
 $routes=array_merge($routes,$this->getRoutes($tutorials['videos']));
-$routes=array_merge($routes,$this->getRoutes($gs['videos'],'s'));
+$routes=array_merge($routes,$this->getRoutes($gs['videos']));
 $courses=$this->filteToArray($lang,'course');
 foreach($courses['lessons']as $lesson){
 $routes=array_merge($routes,$this->getRoutes($lesson['videos']));
