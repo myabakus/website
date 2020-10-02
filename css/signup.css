@@ -603,16 +603,15 @@ input[type="checkbox"]:disabled {
 
 .wrapper {
     display: flex;
-    justify-content: center;
     height: 100%;
     min-width: 380px;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: 200px 380px 200px;
+    grid-template-columns: 1fr 200px 380px 200px 1fr;
     grid-template-rows: auto auto auto;
-    grid-template-areas: 'faq1 logo faq2' '. form .' 'faq3 . faq4';
+    grid-template-areas: '. faq1 logo faq2 .' '. . form . .' '. faq3 . faq4 .';
     margin: auto;
 }
 
