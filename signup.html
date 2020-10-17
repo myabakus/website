@@ -18,35 +18,33 @@
         <script type="text/javascript" src="js/fb.js"></script>
     </head>
     <body>
-        <div class="wrapper">
-            <div class="grid">
-                <div class="faq1 hide">
-                    <a class="hand" href="help/faqs.html#collapse4" data-pgc-field="faq1">Try it Free for 7 Days...</a>
+        <div class="faq1 hide">
+            <a class="hand" href="help/faqs.html#collapse4" data-pgc-field="faq1">Try it Free for 7 Days...</a>
+        </div>
+        <div class="logo-grid">
+            <img src="images/logo.svg"/>
+        </div>
+        <div class="faq2 hide">
+            <a class="hand" href="pricing.html" data-pgc-field="faq2">Plans From U$29/month...</a>
+        </div>
+        <div class="form">
+            <form method="post" id="signup_form" autocomplete="off" class="form_content">
+                <div class="title">
+                    <h2 class="center" data-pgc-field="title">Create your account now in only one step</h2>
                 </div>
-                <div class="logo-grid">
-                    <img src="images/logo.svg"/>
+                <div class="company">
+                    <input id="company_name" name="company_name" placeholder="Your Company Name" data-hj-whitelist data-pgc-field="company">
                 </div>
-                <div class="faq2 hide">
-                    <a class="hand" href="pricing.html" data-pgc-field="faq2">Plans From U$29/month...</a>
+                <div class="country">
+                    <span class="select"><span class="ss" placeholder="Country" data-pgc-field="country">Venezuela</span><select id="country_id" name="country_id" data-hj-whitelist></select></span>
                 </div>
-                <div class="form form_cont">
-                    <form method="post" id="signup_form" autocomplete="off" class="form">
-                        <div class="title">
-                            <h2 class="center" data-pgc-field="title">Create your account now in only one step</h2>
-                        </div>
-                        <div class="company">
-                            <input id="company_name" name="company_name" placeholder="Your Company Name" data-hj-whitelist data-pgc-field="company">
-                        </div>
-                        <div class="country">
-                            <span class="select"><span class="ss" placeholder="Country" data-pgc-field="country">Venezuela</span><select id="country_id" name="country_id" data-hj-whitelist></select></span>
-                        </div>
-                        <div id="code" class="code">+58</div>
-                        <div class="phone">
-                            <input id="phone" name="phone" placeholder="Your Phone" data-hj-whitelist data-pgc-field="phone">
-                        </div>
-                        <div class="features" id="features">
-                            <div class="feature" data-pgc-field="inventory-1">
-                                <input type="checkbox" name="features[inventory]" data-hj-whitelist/>I need to control the inventory of my business
+                <div id="code" class="code">+58</div>
+                <div class="phone">
+                    <input id="phone" name="phone" placeholder="Your Phone" data-hj-whitelist data-pgc-field="phone">
+                </div>
+                <div class="features" id="features">
+                    <div class="feature" data-pgc-field="inventory-1">
+                        <input type="checkbox" name="features[inventory]" data-hj-whitelist/>I need to control the inventory of my business
 
 
 
@@ -56,40 +54,40 @@
                             
                             
                             
-                            </div>
-                        </div>
-                        <div class="admin">
-                            <h2 data-pgc-field="admin">Account Administrator</h2>
-                        </div>
-                        <div class="name">
-                            <input id="name" name="name" placeholder="Your Name" data-hj-whitelist data-pgc-field="name">
-                        </div>
-                        <div class="email">
-                            <input id="email" name="email" placeholder="Your Email" data-hj-whitelist data-pgc-field="email">
-                        </div>
-                        <div class="password">
-                            <input type="password" id="password" name="password" placeholder="Password (min 6 characters)" data-pgc-field="password">
-                        </div>
-                        <div class="terms">
-                            <p data-pgc-field="terms">By creating my account I confirm that I agree with the <a href="/terms.html">Térms of Service</a> and the <a href="/privacy.html">Privacy Policy</a>.</p>
-                        </div>
-                        <div class="create">
-                            <input type="submit" class="button" id="enter" value="Create my myAbakus account" data-pgc-field="button">
-                        </div>
-                        <input type="hidden" name="language" id="language">
-                        <input type="hidden" name="campaign" id="campaing">
-                        <input type="hidden" name="keyword" id="keyword">
-                        <input type="hidden" name="currency_base" id="currency_base">
-                        <input type="hidden" name="post_code" id="post_code">
-                    </form>
+                            
+                        
+                    </div>
                 </div>
-                <div class="faq3 hide">
-                    <a class="hand" href="help/faqs.html#collapse3" data-pgc-field="faq3">Designed for SMEs Owners...</a>
+                <div class="admin">
+                    <h2 data-pgc-field="admin">Account Administrator</h2>
                 </div>
-                <div class="faq4 hide">
-                    <a class="hand" href="help/faqs.html#collapse6" data-pgc-field="faq4">120%<br> Money Back Guarantee...</a>
+                <div class="name">
+                    <input id="name" name="name" placeholder="Your Name" data-hj-whitelist data-pgc-field="name">
                 </div>
-            </div>
+                <div class="email">
+                    <input id="email" name="email" placeholder="Your Email" data-hj-whitelist data-pgc-field="email">
+                </div>
+                <div class="password">
+                    <input type="password" id="password" name="password" placeholder="Password (min 6 characters)" data-pgc-field="password">
+                </div>
+                <div class="terms">
+                    <p data-pgc-field="terms">By creating my account I confirm that I agree with the <a href="/terms.html">Térms of Service</a> and the <a href="/privacy.html">Privacy Policy</a>.</p>
+                </div>
+                <div class="create">
+                    <input type="submit" class="button" id="enter" value="Create my myAbakus account" data-pgc-field="button">
+                </div>
+                <input type="hidden" name="language" id="language">
+                <input type="hidden" name="campaign" id="campaing">
+                <input type="hidden" name="keyword" id="keyword">
+                <input type="hidden" name="currency_base" id="currency_base">
+                <input type="hidden" name="post_code" id="post_code">
+            </form>
+        </div>
+        <div class="faq3 hide">
+            <a class="hand" href="help/faqs.html#collapse3" data-pgc-field="faq3">Designed for SMEs Owners...</a>
+        </div>
+        <div class="faq4 hide">
+            <a class="hand" href="help/faqs.html#collapse6" data-pgc-field="faq4">120%<br> Money Back Guarantee...</a>
         </div>
         <script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>

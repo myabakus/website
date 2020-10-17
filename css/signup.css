@@ -9,7 +9,12 @@ body {
     font-family: "Quattrocento Sans", Arial, sans-serif;
     color: #4c4c4c;
     font-size: 15px;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: minmax(100px, 200px) minmax(360px, 400px) minmax(100px, 200px);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 'faq1 logo faq2' '. form .' 'faq3 . faq4';
+    height: 100vh;
+    justify-content: center;
 }
 
 @font-face {
@@ -22,12 +27,6 @@ body {
        url('../fonts/hand-webfont.svg#hand_of_sean_proregular') format('svg');
     font-weight: normal;
     font-style: normal;
-}
-
-.container,
-body,
-html {
-    height: 100%;
 }
 
 /* La regla para firefox debe estar sola */
@@ -121,9 +120,11 @@ h2 {
     max-width: 348px;
 }
 
-.form_cont {
+.form {
+    grid-area: form;
     background-color: #ffffff;
-    max-width: 400px;
+
+    /* max-width: 400px */
     margin-left: auto;
     margin-right: auto;
     margin-top: 5px;
@@ -131,12 +132,7 @@ h2 {
     border: 1px solid rgb(221, 221, 221);
     box-shadow: rgba(0, 0, 0, 0.247059) 0px 2px 2px 0px;
     padding: 15px 25px;
-}
-
-.form {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    align-self: flex-start;
 }
 
 .title {
@@ -576,28 +572,32 @@ input[type="checkbox"]:disabled {
 .faq1 {
     grid-area: faq1;
     align-self: flex-end;
-    justify-self: end;
+
+    /* justify-self: end */
     transform: translate3d(-20px,  22px, 0px) rotate(-13deg) scale(1);
 }
 
 .faq2 {
     grid-area: faq2;
     align-self: flex-end;
-    justify-self: end;
+
+    /* justify-self: end */
     transform: translate3d(50px,    40px, 0px) rotate(10deg) scale(1);
 }
 
 .faq3 {
     grid-area: faq3;
     align-self: flex-start;
-    justify-self: end;
+
+    /* justify-self: end */
     transform: translate3d(-20px,      -55px, 0px) rotate(10deg) scale(1);
 }
 
 .faq4 {
     grid-area: faq4;
     align-self: flex-start;
-    justify-self: end;
+
+    /* justify-self: end */
     transform: translate3d(50px,          -55px, 0px) rotate(-13deg) scale(1);
 }
 
@@ -608,11 +608,6 @@ input[type="checkbox"]:disabled {
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 200px 380px 200px 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: '. faq1 logo faq2 .' '. . form . .' '. faq3 . faq4 .';
-    margin: auto;
 }
 
 .logo-grid {
@@ -621,10 +616,10 @@ input[type="checkbox"]:disabled {
     justify-self: center;
 }
 
-.form {
-    grid-area: form;
-    align-self: flex-start;
-    width: 380px;
+.form_content {
+    /* width: 380px */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .logo-grid img {
@@ -635,4 +630,9 @@ input[type="checkbox"]:disabled {
     .hide {
         display: none;
     }
+}
+
+.form_gc {
+    /* grid-area: form */
+    /* align-self: flex-start */
 }
