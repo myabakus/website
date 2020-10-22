@@ -115,7 +115,7 @@ var app = new Vue({
                 title: '¿Cómo mantienen mi información segura?',
                 answer: [
 
-                        "Hoy en día su información está más segura en la nube que un su computador personal. Su información de acceso se encripta usando la misma tecnología que las instituciones financieras usan para banca en línea. Y usted tiene un equipo de administradores de software y hardware detrás suyo cuyo trabajo es mantener todo operando correctamente y asegurarse que su información siempre esté protegida, incluyendo backups diarios de los datos."
+                        "Hoy en día su información está más segura en la nube que un su computador personal. Su información de acceso se encripta usando la misma tecnología que las instituciones financieras usan en la Nube para banca en línea. Y usted tiene un equipo de administradores de software y hardware detrás suyo cuyo trabajo es mantener todo operando correctamente y asegurarse que su información siempre esté protegida, incluyendo backups diarios de los datos."
 
                         ],
                     order: '9',
