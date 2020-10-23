@@ -18,11 +18,20 @@ var data = {
   },
   "videos": [
     {
+      "title": "Bienvenido: Cómo usar la guía de arranque",
+      "desc": "Para determinar si nuestro producto hace lo que usted quiere y necesita para su empresa",
+      "lang": "es",
+      "id": "0OEnOcSJ2s0",
+      "icon": "1",
+      "tags": "impuestos",
+      "next": "VuVZrilZAcw"
+    },
+    {
       "title": "Introducción: Cómo orientarse en la aplicación",
       "desc": "Un recorrido rápido de las diferentes secciones de la aplicación y cómo recorrela",
       "lang": "es",
       "id": "VuVZrilZAcw",
-      "icon": "1",
+      "icon": "2",
       "tags": "impuestos",
       "next": "Uqd3Ll_zhtQ"
     },
@@ -31,7 +40,7 @@ var data = {
       "desc": "Comencemos creando los productos que tenemos inventario con sus correspondientes existencias",
       "lang": "es",
       "id": "Uqd3Ll_zhtQ",
-      "icon": "2",
+      "icon": "3",
       "tags": "impuestos",
       "next": "NxELQMdhMls"
     },
@@ -40,7 +49,7 @@ var data = {
       "desc": "Ingresar los saldos de efectivo y mantenerlos conciliados es la clave para tener información confiable",
       "lang": "es",
       "id": "NxELQMdhMls",
-      "icon": "3",
+      "icon": "4",
       "tags": "facturacion cuentasxcobrar",
       "next": "SSKXHqtMcxA"
     },
@@ -49,7 +58,7 @@ var data = {
       "desc": "Vamos a aumentar nuestro inventario de productos haciendole compras a nuestros proveedores",
       "lang": "es",
       "id": "SSKXHqtMcxA",
-      "icon": "4",
+      "icon": "5",
       "tags": "items facturacion importar",
       "next": "bAI19jobnIc"
     },
@@ -58,7 +67,7 @@ var data = {
       "desc": "Registremos gastos que ocurren regularmente como arriendo y pagos a empleados",
       "lang": "es",
       "id": "bAI19jobnIc",
-      "icon": "5",
+      "icon": "6",
       "tags": "ingresos reportes items",
       "next": "jRKxkvY5i4I"
     },
@@ -67,7 +76,7 @@ var data = {
       "desc": "Antes de ingresar las ventas definamos primero los precios para diferentes tipos de clientes",
       "lang": "es",
       "id": "jRKxkvY5i4I",
-      "icon": "6",
+      "icon": "7",
       "tags": "exportar",
       "next": "TewGzvXU8OI"
     },

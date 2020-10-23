@@ -19,11 +19,20 @@ var data = {
   "url": "../videos/",
   "videos": [
     {
+      "title": "Welcome: How to use the getting started guide",
+      "desc": "To determine if our product does what you want and need for your business",
+      "lang": "en",
+      "id": "myVWKDdwvw0",
+      "icon": "1",
+      "tags": "items invoicing import",
+      "next": "MZijYcqsBnQ"
+    },
+    {
       "title": "Introduction: How to orient yourself in the application",
       "desc": "A quick overview of the different sections in the application and how to move around",
       "lang": "en",
       "id": "MZijYcqsBnQ",
-      "icon": "1",
+      "icon": "2",
       "tags": "items invoicing import",
       "next": "h899KbzkN9g"
     },
@@ -32,7 +41,7 @@ var data = {
       "desc": "Let's start by created the products we have in inventory with the stock quantities",
       "lang": "en",
       "id": "h899KbzkN9g",
-      "icon": "2",
+      "icon": "3",
       "tags": "invoicing",
       "next": "EK_7VCulDLI"
     },
@@ -41,7 +50,7 @@ var data = {
       "desc": "The key to reliable financial information is to enter cash balances and keep them in sync with reality",
       "lang": "en",
       "id": "EK_7VCulDLI",
-      "icon": "3",
+      "icon": "4",
       "tags": "income reports items",
       "next": "vUhlV7SHr2s"
     },
@@ -50,7 +59,7 @@ var data = {
       "desc": "We are going to increase our stock levels by purchasing from our suppliers",
       "lang": "en",
       "id": "vUhlV7SHr2s",
-      "icon": "4",
+      "icon": "5",
       "tags": "export",
       "next": "fWs8Y0Q7G9I"
     },
@@ -59,7 +68,7 @@ var data = {
       "desc": "Let's enter recurring expenses such as rent and payment to employees and contractors",
       "lang": "en",
       "id": "fWs8Y0Q7G9I",
-      "icon": "5",
+      "icon": "6",
       "tags": "income",
       "next": "ELIT_fP4Hyc"
     },
@@ -68,7 +77,7 @@ var data = {
       "desc": "Before entering sales let's first define prices for different type of customers ",
       "lang": "en",
       "id": "ELIT_fP4Hyc",
-      "icon": "6",
+      "icon": "7",
       "tags": "inventory",
       "next": "Nq8i4BySEwk"
     },

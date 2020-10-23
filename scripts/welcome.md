@@ -1,0 +1,29 @@
+- Hi, my name is Federico and I'm one of the creators of myAbakus.
+- Welcome and thanks for creating your account.
+- I'm assuming you did so because you want to put in practice on your business what I call management accounting.
+- The key difference between fiscal and management accounting is that the first is to comply with regulations and the second one to control and understand the finances of your business.
+- It's important to keep in mind that our software is designed for management accounting and therefore will only be valuable for you and your business if that's what you want to do.
+- But it's also true that the information on your accountant could be the primary source of information that your accountant could use to do your fiscal accounting.
+- If you agree with me that the accountant cannot solve the financial control problem (only the fiscal one) and therefore is up to you to do it with a product like ours, we are on the right track.
+- But the key question still is, how do you know if our product does what you want and need for your business?
+- The main purpose of this video is to guide you on how to solve that question as quickly and efficiently as possible.
+- ...
+- To get a good idea of what you can do with our software, the best place to start is the demo company along with the getting started guide.
+- And that's precisely what we recommend here when you create your account, so let's start by reviewing the demo company quickly
+- Let's check, for example, expenses...inventory...and the profit report.
+- Basically, with the demo company you can see how the software looks with data and understand how it is organized.
+- That's useful but not enough to fully understand how it works and what you can do with it.
+- That's why we created the getting started guide, so let's check it out. 
+- This getting started guide is entirely based on the demo company and what that means is that the series of steps that you see here culminate in exactly what you see in the demo company.
+- So if you were to do each step of the getting started guide on your own account exactly as I do, you would end up with a clone of the demo company.
+- Let's go back to the demo company...and from there let's go back to my own account.
+- Basically, what I propose is that you learn to use the software by following some or all of the steps in the getting started guide on your own account.
+- You can replicate exactly what I do or use your own fake or real data to do something similar.
+- The important thing is that at the end of the exercise you will have a complete idea of what you can do with the software.
+- And as an incentive to go through the exercise, we will give you a five dollar credit for every step you complete.
+- That way, if you want to continue with the evaluation and implementation of the software, you could start your subscription without having to pay for the first month.
+- We will just need to look at your account at the end of the exercise, apply the credits you earned, and delete all the test data so that you can start using it with real data from your business.
+- ...
+- Also keep in mind that you can schedule a quick meeting with us (using this link or the help menu) to ask us specific questions about using the software in the context of your business at any time.
+- And that your questions and feedback are always welcomed. Just send them using the chat widget and we'll reply as soon as we can. 
+- Thanks again for your interest in our product and for taking the time to watch this video.

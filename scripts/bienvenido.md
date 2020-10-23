@@ -1,0 +1,29 @@
+- Hola, mi nombre es Federico y soy uno de los creadores de myAbakus.
+- Bienvenido y gracias por crear su cuenta.
+- Asumo que lo hizo porque quiere poner en práctica en su empresa lo que yo llamo contabilidad gerencial.
+- La diferencia clave entre la contabilidad fiscal y gerencial es que la primera es para cumplir con las regulaciones y la segunda para controlar y entender las finanzas de su empresa.
+- Es importante tener presente que nuestro software está diseñado para contabilidad gerencial y por lo tanto solo será valioso para usted y su empresa si eso es lo que usted quiere hacer.
+- Pero también es cierto que la información en su cuenta podría ser la fuente de información primaria con la que su contador podría realizar su contabilidad fiscal.
+- Si usted está de acuerdo conmigo en que el contador no puede resolverle el problema de control financiero (solo el fiscal) y por lo tanto es a usted al que le corresponde hacerlo con un producto como el nuestro, vamos por buen camino.
+- Pero la pregunta clave sigue siendo, ¿cómo hace usted para saber si nuestro producto hace lo que usted quiere y necesita para su empresa?
+- El propósito principal de este video es orientarlo en cómo resolver ese interrogante en la forma más rápida y eficaz posible.
+- ...
+- Para tener una buena idea de lo que puede hacer con nuestro software, el mejor lugar para comenzar es la empresa demo junto con la guía de arranque.
+- Y es eso precisamente lo que le estamos recomendado aquí cuando usted crea su cuenta, así que comencemos revisando la empresa demo rápidamente
+- Vamos, por ejemplo, los ingresos...el inventario...y el reporte de ganancia.
+- Básicamente, con la empresa demo usted puede ver cómo se ve el software con datos y entender cómo está organizado.
+- Eso es útil pero no suficiente para entender bien cómo funciona y qué puede hacer con él. 
+- Por eso creamos la guía de arranque completamente basada en la empresa demo.
+- Lo que eso significa es que la serie de pasos que usted ve acá culminan en exactamente en lo que usted ve en la empresa demo. 
+- Por lo tanto, si usted hiciera cada paso de la guía de arranque en su propia cuenta exactamente como lo hago yo, terminaría con un clon de la empresa demo.
+- ...
+- Básicamente, lo que yo propongo es que usted aprenda a usar el software siguiendo algunos o todos los pasos de la guía de inicio en su propia cuenta.
+- Puede replicar exactamente lo que yo hago o usar sus propios datos falsos o reales para hacer algo similar.
+- Lo importante es que al final del ejercicio tendrá una idea completa de lo que puede hacer con el software.
+- Y como incentivo para realizar este ejercicio, le daremos un crédito de cinco dólares por cada paso que complete.
+- De esa forma, si desea continuar con la evaluación e implementación del software en su empresa, podría comenzar su suscripción sin tener que pagar por el primer mes.
+- Solo tendríamos que revisar su cuenta al final del ejercicio, aplicar los créditos que ganó y eliminar todos los datos de prueba para que pueda comenzar a usarla con datos reales de su empresa.
+- ...
+- También tenga presente que usted puede agendar una reunión rápida con nosotros (usando este enlace o el menú de ayuda) para hacernos preguntas específicas sobre el uso del software en el contexto de su empresa en cualquier momento.
+- Y que sus preguntas y comentarios sean bienvenidos. Simplemente envíelos usando el widget de chat y le responderemos lo antes posible.
+- Gracias nuevamente por su interés en nuestro producto y por tomarse el tiempo de ver este video.
