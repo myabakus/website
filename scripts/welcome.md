@@ -1,8 +1,8 @@
 - Hi, my name is Federico and I'm one of the creators of myAbakus.
 - Welcome and thanks for creating your account.
-- I'm assuming you did so because you want to put in practice on your business what I call management accounting.
-- The key difference between fiscal and management accounting is that the first is to comply with regulations and the second one to control and understand the finances of your business.
-- It's important to keep in mind that our software is designed for management accounting and therefore will only be valuable for you and your business if that's what you want to do.
+- I'm assuming you did so because you want to put in practice on your business what I call management accountinging.
+- The key difference between fiscal and management accountinging is that the first is to comply with regulations and the second one to control and understand the finances of your business.
+- It's important to keep in mind that our software is designed for management accountinging and therefore will only be valuable for you and your business if that's what you want to do.
 - But it's also true that the information on your accountant could be the primary source of information that your accountant could use to do your fiscal accounting.
 - If you agree with me that the accountant cannot solve the financial control problem (only the fiscal one) and therefore is up to you to do it with a product like ours, we are on the right track.
 - But the key question still is, how do you know if our product does what you want and need for your business?
