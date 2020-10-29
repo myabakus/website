@@ -107,5 +107,6 @@ var data = {
   benefits_headline_dom: "Software de Contabilidad Gerencial <b>Simple</b> y <b>Fácil</b> de usar para <b>Dueños de Pymes</b> en <b>República Dominicana</b>",
   benefits_headline_ury: "Software de Contabilidad Gerencial <b>Simple</b> y <b>Fácil</b> de usar para <b>Dueños de Pymes</b> en <b>Uruguay</b>",
   features_headline: "Software de Contabilidad Gerencial",
+  features_subheadline: "Para mantener sus cuentas –y su negocio– en la trayectoria correcta",
   non_accountants_headline: "Software de Contabilidad Gerencial para <b>No Contadores</b>",
 }

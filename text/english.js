@@ -52,5 +52,6 @@ var data = {
   main_description_prf: "A simple and easy to use <b>Management Accounting</b> Software that <b>Small and Medium Business</b> owners use in the <b>Cloud</b> to <b>analyze and understand their profitability</b> and <b>keep their businesses accounts in order, clear,and up to date</b>. Manage invoicing, accounts receivable and payable, cash and banks, inventory and cash flow. Easily export income and expenses reports for your accountant.",
   benefits_headline: "<b>Simple</b> and <b>Easy</b> to use Management Accounting Software for <b>Small and Medium Businesses Owners</b>",
   features_headline: "Management Accounting Software",
+  features_subheadline: ">To keep your accounts - and business - in the right trayectory",
   non_accountants_headline: "Management Management Accounting Software for <b>Non-Accountants</b>",
 }
