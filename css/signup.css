@@ -4,17 +4,34 @@
     box-sizing: border-box;
 }
 
-body {
-    background-image: url('../images/background.svg');
-    font-family: "Quattrocento Sans", Arial, sans-serif;
-    color: #4c4c4c;
-    font-size: 15px;
-    display: grid;
-    grid-template-columns: minmax(100px, 200px) minmax(360px, 400px) minmax(100px, 200px);
-    grid-template-rows: auto auto auto;
-    grid-template-areas: 'faq1 logo faq2' '. form .' 'faq3 . faq4';
-    height: 100vh;
-    justify-content: center;
+@media (max-width:869px) {
+    body {
+        background-image: url('../images/background.svg');
+        font-family: "Quattrocento Sans", Arial, sans-serif;
+        color: #4c4c4c;
+        font-size: 15px;
+        display: grid;
+        grid-template-columns: minmax(360px, 400px);
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: 'logo' 'form' 'faq1' 'faq2' 'faq3' 'faq4';
+        height: 100vh;
+        justify-content: center;
+    }
+}
+
+@media (min-width:870px) {
+    body {
+        background-image: url('../images/background.svg');
+        font-family: "Quattrocento Sans", Arial, sans-serif;
+        color: #4c4c4c;
+        font-size: 15px;
+        display: grid;
+        grid-template-columns: minmax(100px, 200px) minmax(360px, 400px) minmax(100px, 200px);
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 'faq1 logo faq2' '. form .' 'faq3 . faq4';
+        height: 100vh;
+        justify-content: center;
+    }
 }
 
 @font-face {
@@ -123,8 +140,7 @@ h2 {
 .form {
     grid-area: form;
     background-color: #ffffff;
-
-    /* max-width: 400px */
+    max-width: 400px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5px;
@@ -566,48 +582,63 @@ input[type="checkbox"]:disabled {
     font-size: 36px;
     font-weight: 400;
     font-family: hand, sans-serif;
-    color: rgb(0, 80, 149);
+}
+
+@media (max-width:869px) {
+    .faq1,
+    .faq2,
+    .faq3,
+    .faq4 {
+        transform: none;
+    }
+
+    .hand {
+        font-size: 28px;
+    }
+}
+
+@media (min-width:870px) {
+    .faq1 {
+        transform: translate3d(-20px, 22px, 0px) rotate(-13deg) scale(1);
+    }
+
+    .faq2 {
+        transform: translate3d(50px, 40px, 0px) rotate(10deg) scale(1);
+    }
+
+    .faq3 {
+        transform: translate3d(-20px, -55px, 0px) rotate(10deg) scale(1);
+    }
+
+    .faq4 {
+        transform: translate3d(50px, -55px, 0px) rotate(-13deg) scale(1);
+    }
 }
 
 .faq1 {
     grid-area: faq1;
     align-self: flex-end;
-
-    /* justify-self: end */
-    transform: translate3d(-20px,  22px, 0px) rotate(-13deg) scale(1);
 }
 
 .faq2 {
     grid-area: faq2;
     align-self: flex-end;
-
-    /* justify-self: end */
-    transform: translate3d(50px,    40px, 0px) rotate(10deg) scale(1);
 }
 
 .faq3 {
     grid-area: faq3;
     align-self: flex-start;
-
-    /* justify-self: end */
-    transform: translate3d(-20px,      -55px, 0px) rotate(10deg) scale(1);
 }
 
 .faq4 {
     grid-area: faq4;
     align-self: flex-start;
-
-    /* justify-self: end */
-    transform: translate3d(50px,          -55px, 0px) rotate(-13deg) scale(1);
 }
 
 .wrapper {
     display: flex;
     height: 100%;
     min-width: 380px;
-}
-
-.grid {
 }
 
 .logo-grid {
@@ -617,22 +648,10 @@ input[type="checkbox"]:disabled {
 }
 
 .form_content {
-    /* width: 380px */
     display: flex;
     flex-wrap: wrap;
 }
 
 .logo-grid img {
     width: 350px;
-}
-
-@media (max-width:869px) {
-    .hide {
-        display: none;
-    }
-}
-
-.form_gc {
-    /* grid-area: form */
-    /* align-self: flex-start */
 }
