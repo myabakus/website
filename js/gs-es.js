@@ -24,7 +24,8 @@ var data = {
       "id": "0OEnOcSJ2s0",
       "icon": "1",
       "tags": "impuestos",
-      "next": "VuVZrilZAcw"
+      "next": "VuVZrilZAcw",
+      "trans": "bienvenido.txt"
     },
     {
       "title": "Introducción: Cómo orientarse en la aplicación",

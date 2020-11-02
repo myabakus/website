@@ -26,6 +26,7 @@ var data = {
       "icon": "1",
       "tags": "items invoicing import",
       "next": "MZijYcqsBnQ"
+      "trans": "welcome.txt"
     },
     {
       "title": "Introduction: How to orient yourself in the application",
