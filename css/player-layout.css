@@ -13,7 +13,7 @@ body {
     grid-template-rows: auto auto auto auto;
     grid-template-areas: 'title title title next' 'video video video video' '. description description description' '. transcription transcription transcription';
     font-size: 1rem;
-    max-width: 1280px;
+    max-width: 80rem;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.25rem;
@@ -89,4 +89,3 @@ p {
     grid-area: transcription;
     max-width: 40em;
 }
-
