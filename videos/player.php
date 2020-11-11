@@ -32,7 +32,7 @@
         <div class="description">
             <h2><?= $video['desc']; ?></h2>
         </div>
-        <?php if ($trans = $video['trans']): ?>
+        <?php if ($trans = ($video['trans'] ?? false)): ?>
         <div class="transcription">
             <h2><?= $trans['title'] ?></h2>
             <?php foreach ($trans['entries'] as $content): ?>
