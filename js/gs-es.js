@@ -25,7 +25,7 @@ var data = {
       "icon": "1",
       "tags": "impuestos",
       "next": "VuVZrilZAcw",
-      "trans": "bienvenido.txt"
+      "trans": "bienvenido"
     },
     {
       "title": "Introducción: Cómo orientarse en la aplicación",
