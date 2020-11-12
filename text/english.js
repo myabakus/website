@@ -30,7 +30,7 @@ var data = {
   notebar_text: "Keep your finger in the financial pulse of Your Business",
   notebar_cta: "Request a demo",
   main_headline: "Unhappy with the Level or Absence of Financial Control on <b>Your Business</b>?",
-  main_headline_tst: "Supporting the <b>Financial Control</b> and <b>Decision Making</b> of&nbsp; <b>Small and Medium Businesses</b> since <b>2005</b>",
+  main_headline_tst: "Supporting the <b>Financial Control</b> and <b>Decision Making</b> of <b>Small and Medium Businesses</b> since <b>2005</b>",
   main_headline_bil: "Kill Two Birds With One Stone: Modernize Your Invocing and Control the Finances of <b>Your Business</b>",
   main_headline_cfl: "Avoid Nasty Surprises in the Cash Flow of <b>Your Business</b>",
   main_headline_rec: "Make Sure Your Customers <b>Pay All They Owe You</b> on Time",
