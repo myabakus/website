@@ -57,6 +57,7 @@ var data = {
   notebar_text: "Mantenga el dedo en el pulso financiero de Su Empresa",
   notebar_cta: "Solicite un demo",
   main_headline: "¿Insatisfecho con el Nivel o la Ausencia de Control Financiero en <b>Su Empresa</b>?",
+  main_headline_tst: "Ayudando a Nuestros Clientes a Estar en la 'Jugada Financiera' de sus Pymes desde el 2005",
   main_headline_bil: "Mate Dos Pájaros de Un Tiro: Modernice su Facturación y Organice las Cuentas de Su Empresa",
   main_headline_cfl: "Evite Sorpresas en el Flujo de Caja de SU EMPRESA",
   main_headline_rec: "Asegúrese que SUS CLIENTES Paguen Todo lo que Deben a Tiempo",
