@@ -18,34 +18,54 @@ El propósito principal de este video es orientarlo en cómo resolver ese interr
 
 Para tener una buena idea de lo que puede hacer con nuestro software, el mejor lugar para comenzar es la empresa demo junto con la guía de arranque.
 
-Y es eso precisamente lo que le estamos recomendado aquí cuando usted crea su cuenta, así que comencemos revisando la empresa demo rápidamente.
+Y es eso precisamente lo que le estamos recomendado aquí cuando usted crea su cuenta, así que comencemos revisando la empresa demo rápidamente...
 
-Vamos, por ejemplo, los ingresos...el inventario...y el reporte de ganancia.
+Vamos, por ejemplo, a ingresos...
 
-Básicamente, con la empresa demo usted puede ver cómo se ve el software con datos y entender cómo está organizado.
+Vemos la lista de nuestras transacciones de ingreso.
+
+Vayamos a inventario, cantidades...
+
+Vemos las cantidades que tenemos en inventario.
+
+Revisemos rapidamente el reporte de ganancia...
+
+Aquí podemos ver cómo se llegó a la ganancia neta partiendo de los ingresos.
+
+Y volvamos a inicio... 
+
+Con la empresa demo, por lo tanto, usted puede ver cómo se ve el software con datos y entender cómo está organizado.
 
 Eso es útil pero no suficiente para entender bien cómo funciona y qué puede hacer con él. 
 
-Por eso creamos la guía de arranque completamente basada en la empresa demo.
+Para eso creamos la guía de arranque, así que revisémosla rápidamente...
 
-Lo que eso significa es que la serie de pasos que usted ve acá culminan en exactamente en lo que usted ve en la empresa demo. 
+La guía de arranque está completamente basada en la empresa demo y lo que eso quiere decir es, que la serie de pasos que se ven acá, culminan con exactamente lo que vimos en la empresa demo. 
 
-Por lo tanto, si usted hiciera cada paso de la guía de arranque en su propia cuenta exactamente como lo hago yo, terminaría con un clon de la empresa demo.
+Por lo tanto, si usted hiciera cada paso de la guía de arranque en su propia cuenta exactamente como lo hago yo acá, terminaría con un clon de la empresa demo.
 
-Básicamente, lo que yo propongo es que usted aprenda a usar el software siguiendo algunos o todos los pasos de la guía de inicio en su propia cuenta.
+Volvamos a la empresa demo...
+
+Y ahora volvamos a nuestra cuenta...
+
+Básicamente, lo que yo propongo es que usted aprenda a usar el software siguiendo algunos o todos los pasos de la guía de arranque en su propia cuenta.
 
 Puede replicar exactamente lo que yo hago o usar sus propios datos falsos o reales para hacer algo similar.
 
-Lo importante es que al final del ejercicio tendrá una idea completa de lo que puede hacer con el software.
+Lo importante es que al final del ejercicio tendrá una idea clara de lo que puede hacer con el software.
 
-Y como incentivo para realizar este ejercicio, le daremos un crédito de cinco dólares por cada paso que complete.
+Y como incentivo para realizar el ejercicio, le daremos un crédito de cinco dólares por cada paso que complete.
 
 De esa forma, si desea continuar con la evaluación e implementación del software en su empresa, podría comenzar su suscripción sin tener que pagar por el primer mes.
 
 Solo tendríamos que revisar su cuenta al final del ejercicio, aplicar los créditos que ganó y eliminar todos los datos de prueba para que pueda comenzar a usarla con datos reales de su empresa.
 
-También tenga presente que usted puede agendar una reunión rápida con nosotros (usando este enlace o el menú de ayuda) para hacernos preguntas específicas sobre el uso del software en el contexto de su empresa en cualquier momento.
+También tenga presente que usted puede agendar una reunión rápida con nosotros en cualquier momento...
 
-Y que sus preguntas y comentarios sean bienvenidos. Simplemente envíelos usando el widget de chat y le responderemos lo antes posible.
+Usando este enlace o el menú de ayuda.
+
+Y recuerde que todas sus preguntas son muy bienvenidas, así que por favor envíelas...
+
+ Usando el widget de chat y le responderemos lo antes posible.
 
 Gracias nuevamente por su interés en nuestro producto y por tomarse el tiempo de ver este video.

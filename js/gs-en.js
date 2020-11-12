@@ -22,7 +22,7 @@ var data = {
       "title": "Welcome: How to use the getting started guide",
       "desc": "To determine if our product does what you want and need for your business",
       "lang": "en",
-      "id": "myVWKDdwvw0",
+      "id": "M7_SNGb5PJs",
       "icon": "1",
       "tags": "items invoicing import",
       "next": "MZijYcqsBnQ",
