@@ -1065,7 +1065,7 @@ return $value;
 }
 ($video=(new class extends ArrayObject{
 const LANGS=['es','en'];
-const HOST_URL=['y'=>'https://www.youtube.com/embed/ID?autoplay=1&rel=0','s'=>'https://screencast-o-matic.com/embed?sc=ID&v=5&title=0&ff=1&a=1'];
+const HOST_URL=['y'=>'https://www.youtube.com/embed/ID?autoplay=1&cc_load_policy=1&rel=0','s'=>'https://screencast-o-matic.com/embed?sc=ID&v=5&title=0&ff=1&a=1'];
 protected $routes=['slug'=>[],'id'=>[]];
 protected $originalRoutes=[];
 protected $publish=false;

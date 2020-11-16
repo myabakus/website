@@ -16,9 +16,11 @@ Pero la pregunta clave sigue siendo, ¿cómo hace usted para saber si nuestro pr
 
 El propósito principal de este video es orientarlo en cómo resolver ese interrogante en la forma más rápida y eficaz posible.
 
-Para tener una buena idea de lo que puede hacer con nuestro software, el mejor lugar para comenzar es la empresa demo junto con la guía de arranque.
+Para tener una buena idea de lo que puede hacer con nuestro software, el mejor lugar para comenzar es la empresa demo junto con la guía de arranque...
 
-Y es eso precisamente lo que le estamos recomendado aquí cuando usted crea su cuenta, así que comencemos revisando la empresa demo rápidamente...
+Y es eso precisamente lo que le estamos recomendado aquí cuando usted crea su cuenta. 
+
+Comencemos revisando la empresa demo rápidamente...
 
 Vamos, por ejemplo, a ingresos...
 
@@ -40,7 +42,7 @@ Eso es útil pero no suficiente para entender bien cómo funciona y qué puede h
 
 Para eso creamos la guía de arranque, así que revisémosla rápidamente...
 
-La guía de arranque está completamente basada en la empresa demo y lo que eso quiere decir es, que la serie de pasos que se ven acá, culminan con exactamente lo que vimos en la empresa demo. 
+La guía de arranque está completamente basada en la empresa demo y lo que eso quiere decir es, que la serie de pasos que se ven acá, culminan exactamente con lo que vimos en la empresa demo. 
 
 Por lo tanto, si usted hiciera cada paso de la guía de arranque en su propia cuenta exactamente como lo hago yo acá, terminaría con un clon de la empresa demo.
 
@@ -64,8 +66,8 @@ También tenga presente que usted puede agendar una reunión rápida con nosotro
 
 Usando este enlace o el menú de ayuda.
 
-Y recuerde que todas sus preguntas son muy bienvenidas, así que por favor envíelas...
+Y recuerde que todas sus preguntas son muy bienvenidas, así que por favor envíelas usando el widget de chat... 
 
- Usando el widget de chat y le responderemos lo antes posible.
+Y le responderemos lo antes posible.
 
 Gracias nuevamente por su interés en nuestro producto y por tomarse el tiempo de ver este video.
