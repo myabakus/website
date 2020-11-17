@@ -8,7 +8,7 @@
         <meta name="description" content="<?= $video['desc']; ?>">
         <title><?= $video['title']; ?></title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:600|Quattrocento+Sans:400">
-        <link href="../css/player-layout.css" rel="stylesheet" type="text/css">
+        <link href="../css/player.css" rel="stylesheet" type="text/css">
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1042441796"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2211383-1"></script>
         <script type="text/javascript" src="../js/drift.js"></script>
