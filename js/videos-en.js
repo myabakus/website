@@ -1,6 +1,6 @@
 var data = {
   "title": "Video Tutorials",
-  "subtitle": "A collection of short videos showing what you can do with myAbakus",
+  "subtitle": "A collection of short videos showing what you can do with our management accounting software",
   "tags": {
     "*": "All",
     "gettingstarted": "Getting started",

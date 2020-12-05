@@ -8,48 +8,57 @@
         <meta name="description" content="A collection of short videos showing what you can do with our management accounting software" data-pgc-field="page_description">
         <link rel="shortcut icon" href="../images/favicon.png">
         <!-- Custom styles for filters -->
-        <link href="../css/isotope.css" rel="stylesheet" type="text/css">
         <!-- Custom styles for this template -->
-        <link href="../css/style.css" rel="stylesheet" type="text/css">
-        <link href="../css/videos.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Cabin:600|Quattrocento+Sans" rel="stylesheet" type="text/css">
-        <link href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" rel="stylesheet" type="text/css">
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1042441796"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2211383-1"></script>
         <script type="text/javascript" src="../js/fullstory.js"></script>
         <!-- <script type="text/javascript" src="../js/drift.js"></script> -->
         <script type="text/javascript" src="../js/hotjar.js"></script>
         <script type="text/javascript" src="../js/fb.js"></script>
+        <link href="../css/isotope.css" rel="stylesheet" type="text/css">
+        <link href="../css/help.css" rel="stylesheet" type="text/css">
+        <link href="../css/videos.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Cabin:600|Quattrocento+Sans" rel="stylesheet" type="text/css">
+        <link href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" rel="stylesheet" type="text/css">
+        <style></style>
     </head>
     <body>
-        <div class="wrapper">
-            <div id="app" class="grid">
-                <div class="header">
-                    <h1>{{ title }}</h1>
-                    <h3 style="text-align: center;">{{ subtitle }}</h3>
-                </div>
-                <div class="tags">
-                    <ul class="filter">
-                        <li v-for="(tag, key) in tags">
-                            <a href="#" :data-filter="key == '*' ? key : '.' + key">{{ tag }}</a>
-                        </li>
-                    </ul>
-                    <!-- /.gallery-filter -->
-                </div>
-                <div class="flex-container isotope-gallery-container js-masonry videos" data-masonry-options='{ "itemSelector": ".sheet" }'>
-                    <div :class="['sheet-img-'+video.icon, video.tags]" class="sheet" v-for="video in videos">
-                        <h2>{{ video.title }}</h2>
-                        <div id="app1">
-                            <a :href="video.title | slugify" :video-id="video.id"> <div class="sheet-img" :class="'sheet-img-'+video.icon">
-                                    <i class="fa-3x fa-play-circle fas play-btn"></i>
-                                </div> </a>
-                        </div>
-                        <p>{{ video.desc }}</p>
+        <div id="app">
+            <div class="header">
+                <div class="header-top">
+                    <div>
+                        <a href="https://www.myabakus.com/"> <img src="../images/logo.svg" class="brand-img"> </a>
                     </div>
-                    <!-- fin del v-for -->
+                    <div>
+                        <h1>{{ title }}</h1>
+                    </div>
                 </div>
+                <div class="header-bottom">
+                    <p> {{ subtitle }} </p>
+                </div>
+            </div>
+            <hr/>
+            <div class="tags">
+                <ul class="filter">
+                    <li v-for="(tag, key) in tags">
+                        <a href="#" :data-filter="key == '*' ? key : '.' + key">{{ tag }}</a>
+                    </li>
+                </ul>
+                <!-- /.gallery-filter -->
+            </div>
+            <div class="isotope-gallery-container js-masonry videos" data-masonry='{"itemSelector": ".sheet", "fitWidth": true }'>
+                <div :class="['sheet-img-'+video.icon, video.tags]" class="sheet" v-for="video in videos">
+                    <h2>{{ video.title }}</h2>
+                    <div id="app1">
+                        <a :href="video.title | slugify" :video-id="video.id"> <div class="sheet-img" :class="'sheet-img-'+video.icon">
+                                <i class="fa-3x fa-play-circle fas play-btn"></i>
+                            </div> </a>
+                    </div>
+                    <p>{{ video.desc }}</p>
+                </div>
+                <!-- fin del v-for -->
             </div>
         </div>
         <script type="text/javascript" src="../js/videos-en.js" data-pgc-field="data"></script>
