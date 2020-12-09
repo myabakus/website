@@ -4,8 +4,6 @@
 
 (function ($) {
 
-  /* globals _kmq */
-
   'use strict';
 
   function _element(field) {
@@ -16,15 +14,16 @@
     return _element(field).val();
   }
 
-  function _onChange(event) {
+  function _onChange() {
     /*jshint validthis: true */
     var
-      value     = $(this).val().toLowerCase(),
       option    = this.options[this.selectedIndex],
       postCode  = option.getAttribute('post-code');
     var
       empty = option.text === '',
-      content = $(this).prev().text(option.text)[empty ? 'addClass' : 'removeClass']('placeholder');
+      content = $(this).prev().text(option.text)[
+        empty ? 'addClass' : 'removeClass'
+      ]('placeholder');
     if (empty) {
       content.html(content.attr('placeholder'));
     }
@@ -34,12 +33,12 @@
     _element('phone').focus();
   }
 
-  function _onFocus(event) {
+  function _onFocus() {
     /*jshint validthis: true */
     $(this).parent().attr('focus', 'true');
   }
 
-  function _onBlur(event) {
+  function _onBlur() {
     /*jshint validthis: true */
     $(this).parent().removeAttr('focus');
   }
@@ -300,7 +299,8 @@
         'ZM': ['Zambia', 'ZMK', '260'],
         'ZW': ['Zimbabwe', 'ZWL', '263']
       },
-      countryHTML = '<span class="ss placeholder"></span><select name="country_id" id="country_id" class="box">',
+      countryHTML = '<span class="ss placeholder"></span>' +
+        '<select name="country_id" id="country_id" class="box">',
       country,
       code;
     for (code in countries) {
@@ -308,7 +308,9 @@
       if (country[2]) {
         country[2] = '+' + country[2];
       }
-      countryHTML += '<option value="' + code + '" currency="' + country[1] + '" post-code="' + country[2] + '">' + country[0] + '</option>';
+      countryHTML += '<option value="' + code
+        + '" currency="' + country[1] + '" post-code="'
+        + country[2] + '">' + country[0] + '</option>';
     }
 
     countryHTML += '</select>';
@@ -339,7 +341,7 @@
     }
 
     function requiredLength(field) {
-        return _field(field).val().length > 5;
+      return _field(field).val().length > 5;
     }
 
     return function () {
@@ -358,7 +360,6 @@
           );
         }
       );
-
       return empty.length > 0 ? empty[0] : true;
     };
   })();
@@ -385,9 +386,9 @@
       lang = $('html').attr('lang'),
       errors = {
         en: 'A technical problem occurred during the setup. ' +
-                     'Please accept our apologies and try again.',
+          'Please accept our apologies and try again.',
         es: 'Un problema técnico ha ocurrido durante el registro . ' +
-                     'Por favor acepte nuestras disculpas e inténtelo de nuevo.'
+          'Por favor acepte nuestras disculpas e inténtelo de nuevo.'
       },
       logins = {
         en: 'login',
@@ -414,16 +415,19 @@
 
     function _getLogger() {
       if (!$('#logger').length) {
-        $('.container').append('<div id="logger" class="log" style="display:none"/>');
+        $('.container').append(
+          '<div id="logger" class="log" style="display:none"/>'
+        );
       }
-
       return $('#logger');
     }
 
     function _logger(response) {
       var info = response.info,
         errorClass = response.down ? 'warn' : 'error';
-      _getLogger().html('<span class="log-' + errorClass + '"></span>' + info).fadeIn('slow');
+      _getLogger().html(
+        '<span class="log-' + errorClass + '"></span>' + info
+      ).fadeIn('slow');
       _element('enter').blur();
     }
 
@@ -432,25 +436,12 @@
       $('#overaly').overlay(action, callback);
     }
 
-    /*
-    function _KM_Event(name, options) {
-        options = options || {};
-        try {
-          _kmq.push(['record', name, options]);
-        } catch (e) {
-        }
-    }
-
-    function _KM_Identify(id) {
-      if (typeof (_kmq) !== 'undefined' && typeof(id) !== 'undefined') {
-        _kmq.push(['identify', id]);
-      }
-    }
-    */
-
     function _getGAVar(name) {
       let ga;
-      if (typeof sessionStorage === 'undefined' || (ga = sessionStorage.getItem('_ga')) === null) {
+      if (
+        typeof sessionStorage === 'undefined' ||
+        (ga = sessionStorage.getItem('_ga')) === null
+      ) {
         return '';
       }
       try {
@@ -462,66 +453,53 @@
     }
 
     function request (path, params) {
-        return $.ajax({
-            type: 'POST',
-            url: path,
-            dataType: 'json',
-            contentType: 'application/json',
-            processData: false,
-            data: JSON.stringify(params)
-        });
-    }
-
-    function sessionSet(key, value) {
-      if (hasSession()) {
-        try {
-          sessionStorage.setItem(key, value);
-        } catch (e) {
-        }
-      }
-    }
-
-    function hasSession () {
-      return 'sessionStorage' in window && sessionStorage !== null;
+      return $.ajax({
+        type: 'POST',
+        url: path,
+        dataType: 'json',
+        contentType: 'application/json',
+        processData: false,
+        data: JSON.stringify(params)
+      });
     }
 
     function next (rq) {
-        setTimeout(() => {
-            location.href = rq.returnPath;
-        }, 3000);
+      setTimeout(() => {
+        location.href = rq.returnPath;
+      }, 3000);
     }
 
-    function demo (rq) {
-        request('/app/auth-demo', { _token: rq.token }).done(rs => {
-            rs = _response(rs);
-            if (rs.token) {
-                sessionSet('app.token', rs.token);
-            }
-            next(rq);
-        }).fail(() => {
-            next(rq);
-        });
+    function hTag() {
+      return typeof gtag === 'function';
     }
 
     function done(data) {
       var response = _response(data);
       if (response.done) {
-        if (typeof _ga === 'function') {
-          _ga('send', 'pageview', '/account/created');
+        if (hTag()) {
+          gtag('event', 'pageview', {
+            page_path: '/account/created'
+          });
         }
         if (typeof fbq === 'function') {
             fbq('track', 'CompleteRegistration');
         }
-        var login = '/app/' + (logins.hasOwnProperty(lang) ? logins[lang] : logins['en']);
+        var login = '/app/' + (
+          logins.hasOwnProperty(lang) ? logins[lang] : logins['en']
+        );
         const path = $.route(login, true);
         request(path, { token: response.token }).done(rq => {
-            rq = _response(rq);
-            if (typeof gtag === 'function') {
-                gtag('event', 'conversion', {'send_to': 'AW-1042441796/b37-CJaASRDEzInxAw'});
-            }
-            next(rq);
-        }).fail(re => {
-            location.href = path;
+          rq = _response(rq);
+          if (hTag()) {
+            gtag(
+              'event',
+              'conversion',
+              {'send_to': 'AW-1042441796/b37-CJaASRDEzInxAw'}
+            );
+          }
+          next(rq);
+        }).fail(() => {
+          location.href = path;
         });
       } else {
         _overaly('hide', $.proxy(_logger, null, response));
@@ -545,8 +523,8 @@
       _element('campaign').val(_getGAVar('campaign'));
       _element('keyword').val(_getGAVar('keyword'));
       $.post($.route('/app/signup', true), $form.serialize())
-           .done(done)
-           .fail(fail);
+        .done(done)
+        .fail(fail);
     };
   })();
 
@@ -566,43 +544,41 @@
     if (!regex.test(keyChar)) {
       event.preventDefault();
     }
-    // console.log(event.type + ": " + event.keyCode + ' -> ' + );
-    // console.log(event);
   }
 
   function _observe() {
     var countries = {
-        colombia: 'CO',
-        venezuela: 'VE',
-        argentina: 'AR',
-        bolivia: 'BO',
-        chile: 'CL',
-        'costa-rica': 'CR',
-        ecuador: 'EC',
-        espana: 'ES',
-        mexico: 'MX',
-        panama: 'PA',
-        paraguay: 'PY',
-        peru: 'PE',
-        uruguay: 'UY',
-        'estados-unidos':'US',
-        'republica-dominicana': 'DO'
+      colombia: 'CO',
+      venezuela: 'VE',
+      argentina: 'AR',
+      bolivia: 'BO',
+      chile: 'CL',
+      'costa-rica': 'CR',
+      ecuador: 'EC',
+      espana: 'ES',
+      mexico: 'MX',
+      panama: 'PA',
+      paraguay: 'PY',
+      peru: 'PE',
+      uruguay: 'UY',
+      'estados-unidos':'US',
+      'republica-dominicana': 'DO'
     };
     // Anexamos evento para cuando se cambia el pais
     var referrer = document.referrer, code = '';
 
     for (var name in countries) {
-        if (referrer.indexOf(name) !== -1) {
-            code = countries[name];
-            break;
-        }
+      if (referrer.indexOf(name) !== -1) {
+        code = countries[name];
+        break;
+      }
     }
 
     _element('country_id').change($.proxy(_onChange))
-                    .focus(_onFocus)
-                    .blur(_onBlur)
-                    .val(code)
-                    .trigger('change');
+      .focus(_onFocus)
+      .blur(_onBlur)
+      .val(code)
+      .trigger('change');
 
     _element('enter').on('click', _submit);
 
@@ -611,20 +587,22 @@
     _element('phone').on('keypress', _keyup);
 
     _element('features').on('change', event => {
-        var element = event.target;
-        if (element.tagName.toUpperCase() == 'INPUT' &&
-            element.type == 'checkbox' &&
-            element.name.indexOf('inventory') !== -1
-        ) {
-            const actived = element.checked;
-            $('.feature-child > input').each(function () {
-                this.disabled = !actived;
-                if (!actived) {
-                    this.checked = false;
-                }
-            });
-            $('.feature-child, .feature-text')[actived ? 'removeClass' : 'addClass']('feature-disabled');
-        }
+      var element = event.target;
+      if (element.tagName.toUpperCase() == 'INPUT' &&
+        element.type == 'checkbox' &&
+        element.name.indexOf('inventory') !== -1
+      ) {
+        const actived = element.checked;
+        $('.feature-child > input').each(function () {
+          this.disabled = !actived;
+          if (!actived) {
+            this.checked = false;
+          }
+        });
+        $('.feature-child, .feature-text')[
+          actived ? 'removeClass' : 'addClass'
+        ]('feature-disabled');
+      }
     });
   }
 
@@ -662,7 +640,8 @@
 
   function Plugin(path, ssl) {
     var host = location.hostname,
-        protocol = ssl && host.indexOf('myabakus.org') === -1 ? 'https' : 'http';
+      protocol = ssl &&
+        host.indexOf('myabakus.org') === -1 ? 'https' : 'http';
     return protocol + '://' + host + path;
   }
 
@@ -685,7 +664,7 @@
 //    OPEN PLUGIN
 // ==================
 
-(function ($, location, window) {
+(function ($, window) {
 
   'use strict';
 
@@ -706,7 +685,7 @@
     return this;
   };
 
-}(jQuery, location, window));
+}(jQuery, window));
 
 // ==================
 //    HELP PLUGIN
@@ -733,7 +712,6 @@
     if (translate.hasOwnProperty(lang) && translate[lang][key]) {
       value = translate[lang][key];
     }
-
     return value;
   }
 
