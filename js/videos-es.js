@@ -67,14 +67,6 @@ var data = {
       "tags": "exportar"
     },
     {
-      "title": "Cree transacciones de ingresos recurrentes",
-      "desc": "Las transacciones recurrentes ya no están limitadas a gastos. Usted puede ahora crear transacciones de ingresos recurrentes.",
-      "lang": "es",
-      "id": "Sc0mrIxfwQQ",
-      "icon": "2",
-      "tags": "ingresos"
-    },
-    {
       "title": "Determine y use los parámetros para reposición de inventario",
       "desc": "Para determinar los parámetros de reposición de inventario debemos ingresar las cantidades mínimas y máximas que queremos tener para los ítems de inventario.",
       "lang": "es",
@@ -161,6 +153,14 @@ var data = {
       "id": "5AjEH7F8PoY",
       "icon": "1",
       "tags": "ingresos gastos porcobrar porpagar"
-    }
+    },
+    {
+      "title": "Cree transacciones recurrentes de ingresos y gastos",
+      "desc": "Agilize el ingreso de información creando transacciones recurrentes de ingresos y/o gastos",
+      "lang": "es",
+      "id": "9jv9bSVy0bc",
+      "icon": "2",
+      "tags": "ingresos gastos porcobrar porpagar"
+    },
   ]
 };

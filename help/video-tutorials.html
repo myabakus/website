@@ -29,7 +29,7 @@
             <div class="header">
                 <div class="header-top">
                     <div>
-                        <a href="https://www.myabakus.com/"> <img src="../images/logo.svg" class="brand-img"> </a>
+                        <a href="https://www.myabakus.com/"> <img src="../images/logo.svg" alt="Logo"> </a>
                     </div>
                     <div>
                         <h1>{{ title }}</h1>
@@ -49,7 +49,7 @@
                 <!-- /.gallery-filter -->
             </div>
             <div class="isotope-gallery-container js-masonry videos" data-masonry='{"itemSelector": ".sheet", "fitWidth": true }'>
-                <div :class="['sheet-img-'+video.icon, video.tags]" class="sheet" v-for="video in videos">
+                <div :class="['sheet-img-'+video.icon, video.tags]" class="sheet" v-for="video in videos.slice().reverse()">
                     <h2>{{ video.title }}</h2>
                     <div id="app1">
                         <a :href="video.title | slugify" :video-id="video.id"> <div class="sheet-img" :class="'sheet-img-'+video.icon">

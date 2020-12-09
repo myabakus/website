@@ -51,14 +51,6 @@ var data = {
       "tags": "export"
     },
     {
-      "title": "Create recurring income transactions",
-      "desc": "Recurring transactions are no longer limited to expenses. You can now create recurring income transactions as well.",
-      "lang": "en",
-      "id": "NyjQTmsx3oI",
-      "icon": "5",
-      "tags": "income"
-    },
-    {
       "title": "Setup and use the parameters to restock the inventory",
       "desc": "To setup the parameters to restock inventory we need to enter the minimum and maximum quantities that we want to have for inventory items.",
       "lang": "en",
@@ -145,6 +137,14 @@ var data = {
       "id": "X6f2y8DCCno",
       "icon": "4",
       "tags": "income expenses receivable payable"
-    }
+    },
+    {
+      "title": "Create income and expense recurring transactions",
+      "desc": "Speed up data entry by creating income and/or expense recurring transactions",
+      "lang": "en",
+      "id": "9jv9bSVy0bc",
+      "icon": "5",
+      "tags": "income expenses receivable payable"
+    },
   ]
 };
