@@ -7,8 +7,6 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-items: center;
     grid-auto-rows: auto;
-
-    /* grid-row-gap: 1.25rem */
 }
 
 .sheet {
