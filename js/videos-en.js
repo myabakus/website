@@ -144,7 +144,8 @@ var data = {
       "lang": "en",
       "id": "9jv9bSVy0bc",
       "icon": "5",
-      "tags": "income expenses receivable payable"
+      "tags": "income expenses receivable payable",
+      "trans": "recurring-transactions-en"
     },
   ]
 };

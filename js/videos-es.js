@@ -160,7 +160,8 @@ var data = {
       "lang": "es",
       "id": "9jv9bSVy0bc",
       "icon": "2",
-      "tags": "ingresos gastos porcobrar porpagar"
+      "tags": "ingresos gastos porcobrar porpagar",
+      "trans": "recurring-transactions-es"
     },
   ]
 };

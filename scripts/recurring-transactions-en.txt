@@ -1,0 +1,100 @@
+Hi I'm Federico and I'm going to make you a quick demonstration of how to create recurring transactions in myAbakus.
+
+So I'm here in my list of incomes and I'm going to search one of my customers.
+
+So this transactions are all the same so it doesn't make any sense for me to
+
+create them manually or to clone them. I'm going to get them to repeat, so I select repeat
+
+this option here on this menu.
+
+Then I'm going to say that this should be repeated
+
+every month.
+
+The next day is suggested by the system but I can
+
+change it.
+
+And I'm going to select the payment account.
+
+The payment account is optional, but it
+
+can be quite good because when the transaction is created, is automatically registered as paid at the same time, so that saves a bit of time.
+
+So I'm going to save this.
+
+And now I have these arrows that indicate that it's a recurring one.  Shows me
+
+when is the next one, when I put the mouse on top, and I can click to change
+
+the terms in which is repeating or stop it from
+
+repeating
+
+Obviously
+
+I said is good to have the payment, but what if the transaction was created correctly, but the payment was not received
+
+on time.
+
+So in that case and the best thing to do would be to go to payments
+
+and simply
+
+delete
+
+that payment. So I would say okay this payment
+
+really hasn't happened, so let's remove it.
+
+And when when I go back to my list of income,
+
+and let's search again, so it makes it
+
+clear.
+
+That's how it should be.
+
+It hasn't been paid.
+
+Now Let's quickly go to expenses to check a case where not entering the payment account make sense.  So I'm going to search here for Google.
+
+So
+
+let's say this is a transaction that happens every momth, so therefore it makes sense for it to be recurring, but the amount is not always the same.
+
+So what I do in that case is the same that I show you before.
+
+So I repeat it every month,
+
+but I don't select a payment account. Because
+
+it will register the payment as well, and it will be it for the incorrect amount, so what I would do is let's say
+
+this was copied from the last one, and I just saw it, and I just checked the correct amount, so what I do is simply go
+
+and edit the transaction. Now put the correct amount, say 300,
+
+and then I will go and register the payment, whatever account
+
+I used for the payment.
+
+And I go and save and go back.
+
+Naturally
+
+this transaction
+
+will repeat next month
+
+with 300.
+
+But that's not a problem.
+
+I will do the same thing. I will change it, I'll put the correct amount, and I'll save it again. So that's basically it. All you need to know for creating recurring transactions in myAbakus
+
+I hope this was
+
+useful and thanks for watching this video.
+

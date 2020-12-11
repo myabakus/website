@@ -1,0 +1,58 @@
+Hola soy Federico y les voy a hacer una breve demostración de cómo crear transacciones recurrentes en myAbakus .
+
+Entonces aquí estoy en mi lista de ingresos y voy a hacer una búsqueda de uno de mis clientes.
+
+Enntonces aquí puedo ver
+
+que las transacciones que tengo son todas iguales.
+
+Entonces tiene todo el sentido del mundo que en lugar de crearlas manualmente o clonarlas las ponga a repetir. Entonces le doy clic a esta flecha, le doy a repetir,
+
+seleccionó, en este caso le voy a decir repetir cada mes, yo podría cambiar acá la seleccion por
+
+semanas.
+
+El me dice que la siguiente va a ser en una fecha dada, pero yo puedo cambiar la fecha, puedo ponerle un límite
+
+y puedo seleccionar la cuenta para el pago. En este caso selecciono la cuenta para el pago porque me ahorro tiempo cuando la transacción se crea. No solo crea la transacción si no que la registra como paga de una vez entonces eso me resulta útil. Entonces
+
+guardo, el me pone esta flecha este icono de recurrencia me dice cuándo va a ser la siguiente y aquí puedo modificar los términos en que se repite o parar la de repetir.
+
+Una cosa importante, porque yo estoy ahorrando tiempo acá, es que pasa si el sistema crea, pero no me la han pagado, que puede pasar.
+
+En este caso lo que haría sentido entonces es que yo simplemente voy a mi lista de pagos, que tengo ahí, y
+
+elimino
+
+eso pago. Porque la realidad es que no me la han pagado. Si yo vuelvo a mi lista de ingresos.
+
+y veo la transacción, hagamos la búsqueda para que sea más claro, ahí está mi transacción y está vencida como tiene que quedar.
+
+Ahora
+
+vayaos rápidamente a gastos para revisar cuando no hace sentido colocar la cuenta de pago.
+
+Entonces vamos a hacer una búsqueda, voy a buscar Google.
+
+Aquí tengo mi lista de transiciones de Google y aquí tengo una que se repite. Entonces sí revisó las condiciones de repetición,
+
+no seleccione la cuenta para el pago a pesar de que la cuenta por el pago siempre es la misma. La razón por la que no lo hago es porque yo quiero que la transición no me aparezca con pagó
+
+sino que simplemente, en el momento que aparece, yo la abro
+
+colocó el momento correcto, digamos que 300, y ahí sí registró el pago
+
+correspondiente. Entonces registro
+
+perfecto
+
+y le doy guardar ir atrás. Entonces básicamente ahí tengo mi transacción de gasto que se está repitiendo,
+
+que va a ser
+
+qué fue realmente 300 y que el siguiente mes se va a repetir con 300 y yo sigo el mismo proceso para ajustarla rápidamente.
+
+Si tuviera la cuenta de pago seleccionada, tendría que cambiar dos montos. Con no tener la cuenta seleccionada, solamente tengo que cambiar el monto de la transacción y luego registrar el pago.
+
+Entonces básicamente eso es todo lo necesario para hacer transacciones recurrentes en myAbakus y agilizar la entrada de datos. Espero que esto haya sido útil y muchas gracias por ver este vídeo.
+
