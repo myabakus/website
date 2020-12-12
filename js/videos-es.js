@@ -162,6 +162,6 @@ var data = {
       "icon": "2",
       "tags": "ingresos gastos porcobrar porpagar",
       "trans": "recurring-transactions-es"
-    },
+    }
   ]
 };
