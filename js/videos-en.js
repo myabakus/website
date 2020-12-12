@@ -146,6 +146,6 @@ var data = {
       "icon": "5",
       "tags": "income expenses receivable payable",
       "trans": "recurring-transactions-en"
-    },
+    }
   ]
 };
