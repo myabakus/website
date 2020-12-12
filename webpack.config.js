@@ -244,6 +244,8 @@ module.exports = {
       { from: 'js/gs-en.js', to: 'js/gs-en.js' }, // help use to km
       { from: 'scripts/bienvenido.txt', to: 'scripts/bienvenido.txt' }, // help use to km
       { from: 'scripts/welcome.txt', to: 'scripts/welcome.txt' }, // help use to km
+      { from: 'scripts/recurring-transactions-en.txt', to: 'scripts/recurring-transactions-en.txt' }, // help use to km
+      { from: 'scripts/recurring-transactions-es.txt', to: 'scripts/recurring-transactions-es.txt' }, // help use to km
       { from: 'images/favicon.png', to: 'images/favicon.png' } // other page use this file
     ]),
     new webpack.optimize.UglifyJsPlugin({
