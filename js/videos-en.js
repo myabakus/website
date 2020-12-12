@@ -142,7 +142,7 @@ var data = {
       "title": "Create income and expense recurring transactions",
       "desc": "Speed up data entry by creating income and/or expense recurring transactions",
       "lang": "en",
-      "id": "9jv9bSVy0bc",
+      "id": "I0nqPw8NmuA",
       "icon": "5",
       "tags": "income expenses receivable payable",
       "trans": "recurring-transactions-en"
