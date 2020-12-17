@@ -17,6 +17,19 @@ body {
     padding: 1rem;
 }
 
+section {
+    background-color: #ffffff;
+    max-width: 800px;
+
+    /* box-shadow: rgba(0, 0, 0, 0.498039) 0px 1px 5px */
+    padding: 5.5%;
+    height: auto;
+    min-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+}
+
 h1 {
     text-align: center;
     font-size: 1.75em;
@@ -72,6 +85,7 @@ a {
     background-color: #ffffff;
     padding: 1rem;
     display: flex;
+    flex-direction: column;
 }
 
 .tags {
