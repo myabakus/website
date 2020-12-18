@@ -477,8 +477,9 @@
       var response = _response(data);
       if (response.done) {
         if (hTag()) {
-          gtag('event', 'pageview', {
-            page_path: '/account/created'
+          gtag('event', 'page_view', {
+            page_path: '/account/created',
+            send_to: 'UA-2211383-1'
           });
         }
         if (typeof fbq === 'function') {
