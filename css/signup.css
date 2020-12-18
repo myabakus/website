@@ -457,9 +457,9 @@ select.box {
     font-size: 1.1em;
     padding: 8px 8px 8px 30px;
     position: absolute;
-    bottom: -60px;
-    left: -28px;
-    right: -28px;
+    bottom: -40px;
+    left: 0;
+    right: 0;
 }
 
 .log-error,
