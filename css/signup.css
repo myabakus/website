@@ -149,6 +149,7 @@ h2 {
     box-shadow: rgba(0, 0, 0, 0.247059) 0px 2px 2px 0px;
     padding: 15px 25px;
     align-self: flex-start;
+    position: relative;
 }
 
 .title {
@@ -455,7 +456,10 @@ select.box {
     text-align: left;
     font-size: 1.1em;
     padding: 8px 8px 8px 30px;
-    width: 390px;
+    position: absolute;
+    bottom: -60px;
+    left: -28px;
+    right: -28px;
 }
 
 .log-error,

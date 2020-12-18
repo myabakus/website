@@ -415,7 +415,7 @@
 
     function _getLogger() {
       if (!$('#logger').length) {
-        $('.container').append(
+        $('#signup_form').append(
           '<div id="logger" class="log" style="display:none"/>'
         );
       }
