@@ -391,8 +391,8 @@
           'Por favor acepte nuestras disculpas e inténtelo de nuevo.'
       },
       logins = {
-        en: 'login',
-        es: 'ingrese'
+        en: 'activate',
+        es: 'activar'
       };
 
     function _response(data) {
@@ -451,7 +451,7 @@
         return '';
       }
     }
-
+    /*
     function request (path, params) {
       return $.ajax({
         type: 'POST',
@@ -468,6 +468,7 @@
         location.href = rq.returnPath;
       }, 3000);
     }
+    */
 
     function hTag() {
       return typeof gtag === 'function';
@@ -485,10 +486,12 @@
         if (typeof fbq === 'function') {
             fbq('track', 'CompleteRegistration');
         }
-        var login = '/app/' + (
+        var login = '/' + (
           logins.hasOwnProperty(lang) ? logins[lang] : logins['en']
         );
         const path = $.route(login, true);
+        location.href = path;
+        /*
         request(path, { token: response.token }).done(rq => {
           rq = _response(rq);
           if (hTag()) {
@@ -502,6 +505,7 @@
         }).fail(() => {
           location.href = path;
         });
+        */
       } else {
         _overaly('hide', $.proxy(_logger, null, response));
         if (response.bounce) {
