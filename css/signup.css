@@ -390,7 +390,6 @@ select.box {
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#CC3300', endColorstr='#FF6600' ,GradientType=0)";
     background: linear-gradient(0deg, rgba(204, 51, 0, 1) 0%, rgba(255, 102, 0, 1) 100%);
     max-width: 350px;
-    height: 27px;
     border-radius: 14px;
     -moz-border-radius: 14px;
     -webkit-border-radius: 14px;
@@ -593,7 +592,7 @@ input[type="checkbox"]:disabled {
     .faq2,
     .faq3,
     .faq4 {
-        transform: none;
+        display: none;
     }
 
     .hand {
