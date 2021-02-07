@@ -51,10 +51,10 @@ var app = new Vue({
                 title: 'How does the free trial work?',
                 answer: [
 
-                        "The trial period lasts for 7 days during which you can evaluate the software without any restriction, so that you can see how it fits the needs of your business and determine which functionality is relevant for you."
+                        "The trial period lasts for 14 days during which you can evaluate the software without any restriction, so that you can see how it fits the needs of your business and determine which functionality is relevant for you."
                     ,
 
-                        "Keep in mind that you can extend it to 14 days with just veryfing your email and that during this period you will receive the same level of service we provide to our customers should your request help from us."
+                        "And keep in mind that during this period you will receive the same level of service we provide to our customers should your request help from us."
 
                     ],
                 order: '4',

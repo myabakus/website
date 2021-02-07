@@ -52,10 +52,10 @@ var app = new Vue({
                 title: '¿Cómo funciona el periodo de prueba?',
                 answer: [
 
-                        "El periodo de prueba tiene una duración de 7 días durante los cuales usted podrá evaluar el software sin ninguna restricción, para que pueda ver cómo se adapta a las necesidades de su negocio y determinar que funcionalidad es relevante para usted."
+                        "El periodo de prueba tiene una duración de 14 días durante los cuales usted podrá evaluar el software sin ninguna restricción, para que pueda ver cómo se adapta a las necesidades de su negocio y determinar que funcionalidad es relevante para usted."
                     ,
 
-                        "Tenga presente que puede extenderlo a 14 días con tan solo verificar su email y que durante este periodo usted va a recibir el mismo nivel de servicio que le brindamos a nuestros clientes si nos solicita ayuda."
+                        "Y tenga presente que durante este periodo usted va a recibir el mismo nivel de servicio que le brindamos a nuestros clientes si nos solicita ayuda."
 
                     ],
                 order: '4',
