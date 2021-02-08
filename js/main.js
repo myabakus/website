@@ -482,6 +482,11 @@
             page_path: '/account/created',
             send_to: 'UA-2211383-1'
           });
+          gtag(
+            'event',
+            'conversion',
+            {'send_to': 'AW-1042441796/b37-CJaASRDEzInxAw'}
+          );
         }
         if (typeof fbq === 'function') {
             fbq('track', 'CompleteRegistration');
@@ -491,21 +496,6 @@
         );
         const path = $.route(login, true);
         location.href = path;
-        /*
-        request(path, { token: response.token }).done(rq => {
-          rq = _response(rq);
-          if (hTag()) {
-            gtag(
-              'event',
-              'conversion',
-              {'send_to': 'AW-1042441796/b37-CJaASRDEzInxAw'}
-            );
-          }
-          next(rq);
-        }).fail(() => {
-          location.href = path;
-        });
-        */
       } else {
         _overaly('hide', $.proxy(_logger, null, response));
         if (response.bounce) {
