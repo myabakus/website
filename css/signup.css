@@ -618,9 +618,27 @@ input[type="checkbox"]:disabled {
     }
 }
 
+.faq1::after,
+.faq2::after,
+.faq3:after,
+.faq4::after{
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    position: absolute;
+    height: 75px;
+    width: 75px;
+    content: ' ';
+}
+
 .faq1 {
     grid-area: faq1;
     align-self: flex-end;
+}
+
+.faq1::after {
+    background-image: url(../images/arrow1.svg);
+    top: 98px;
+    left: 93px;
 }
 
 .faq2 {
@@ -628,14 +646,35 @@ input[type="checkbox"]:disabled {
     align-self: flex-end;
 }
 
+.faq2::after {
+    background-image: url(../images/arrow2.svg);
+    top: 75px;
+    left: 10px;
+}
+
+
 .faq3 {
     grid-area: faq3;
     align-self: flex-start;
 }
 
+.faq3::after {
+    background-image: url(../images/arrow3.svg);
+    top: -83px;
+    left: 92px;
+}
+
+
+
 .faq4 {
     grid-area: faq4;
     align-self: flex-start;
+}
+
+.faq4::after {
+    background-image: url(../images/arrow4.svg);
+    top: -37px;
+    left: -104px
 }
 
 .wrapper {
