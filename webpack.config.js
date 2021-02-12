@@ -61,7 +61,7 @@ module.exports = {
                   'js/drift.js',
                   'js/hotjar.js',
                   'js/fullstory.js',
-                  'js/logrocket',
+                  'js/logrocket.js',
                   'js/fb.js',
                   'js/scroll.js',
                 ],
@@ -197,6 +197,7 @@ module.exports = {
                   'js/drift.js',
                   'js/hotjar.js',
                   'js/fullstory.js',
+                  'js/logrocket.js',
                   'js/scroll.js',
                   'js/fb.js'
                 ],
