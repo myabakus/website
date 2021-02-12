@@ -13,6 +13,7 @@
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2211383-1"></script>
         <script type="text/javascript" src="../js/drift.js"></script>
         <script type="text/javascript" src="../js/fullstory.js"></script>
+        <script type="text/javascript" src="../js/logrocket.js"></script>
         <script type="text/javascript" src="../js/fb.js"></script>
     </head>
     <body>

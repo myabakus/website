@@ -3,7 +3,6 @@ const webpack = require('webpack')
 const entry = require('webpack-glob-entry')
 const WebpackCleanPlugin = require('webpack-clean')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const ImageminPlugin = require('imagemin-webpack-plugin').default
 const CompressionWebpackPlugin = require('compression-webpack-plugin')
@@ -62,6 +61,7 @@ module.exports = {
                   'js/drift.js',
                   'js/hotjar.js',
                   'js/fullstory.js',
+                  'js/logrocket',
                   'js/fb.js',
                   'js/scroll.js',
                 ],

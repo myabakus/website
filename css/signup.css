@@ -208,6 +208,7 @@ h2 {
 .password {
     width: 100%;
     padding: 5px 0px;
+    position: relative;
 }
 
 .terms {
@@ -696,4 +697,24 @@ input[type="checkbox"]:disabled {
 
 .logo-grid img {
     width: 350px;
+}
+
+.icon-visibility {
+  width: 24px;
+  height: 28px;
+  color: #a3a3a3;
+  position: absolute;
+  top: 5px;
+  right: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.icon-visibility > svg {
+  width: 24px;
+  height: 24px;
+  min-width: 100%;
 }

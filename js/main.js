@@ -601,11 +601,34 @@
     });
   }
 
+  function handlePassword() {
+    $('.icon-visibility').click(function (event) {
+      let element = event.target;
+      const password = _element('password');
+      const tagName = element.tagName.toLowerCase();
+      const type = password.attr('type');
+      const isPassword = type === 'password';
+      element = $(element);
+      if (tagName === 'path') {
+        element = element.parent();
+      }
+      element.hide();
+      password.attr('type', isPassword ? 'text' : 'password');
+      if (isPassword) {
+        element.next().show();
+      } else {
+        element.prev().show();
+      }
+      setTimeout(() => password.focus(), 100);
+    });
+  }
+
   function Plugin() {
     _element('language').val($('html').attr('lang'));
     _element('country_id').html(_getCountries());
     _observe();
     _element('company_name').focus();
+    handlePassword();
   }
 
 
