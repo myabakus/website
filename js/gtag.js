@@ -5,6 +5,7 @@ if (location.host === 'www.myabakus.com') {
   gtag('js', new Date());
   gtag('config', 'AW-1042441796');
   gtag('config', 'UA-2211383-1');
+  gtag('config', 'G-NGVVQH0Q1V');
   (() => {
     if (document.location.search && sessionStorage !== null) {
       if (getUrlParam('gclid') && sessionStorage.getItem('_ga') === null) {

@@ -470,14 +470,10 @@
     }
     */
 
-    function hTag() {
-      return typeof gtag === 'function';
-    }
-
     function done(data) {
       var response = _response(data);
       if (response.done) {
-        if (hTag()) {
+        if (typeof gtag === 'function') {
           gtag('event', 'page_view', {
             page_path: '/account/created',
             send_to: 'UA-2211383-1'
@@ -487,6 +483,9 @@
             'conversion',
             {'send_to': 'AW-1042441796/b37-CJaASRDEzInxAw'}
           );
+          gtag('event', 'sign_up', {
+            'send_to': 'G-NGVVQH0Q1V'
+          });
         }
         if (typeof fbq === 'function') {
             fbq('track', 'CompleteRegistration');
