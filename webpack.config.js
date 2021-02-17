@@ -57,12 +57,11 @@ module.exports = {
             options: {
               js: {
                 inline: [
-                  'js/km.js',
                   'js/drift.js',
                   'js/hotjar.js',
                   'js/fullstory.js',
                   'js/logrocket.js',
-                  'js/fb.js',
+                  'js/gtag.js',
                   'js/scroll.js',
                 ],
                 'js/app-ie9.js': [
@@ -78,7 +77,6 @@ module.exports = {
                 inlineFooter: [
                   'js/player.js',
                   'js/bento.js',
-                  'js/gtag.js'
                 ]
               },
               css: {
@@ -193,13 +191,12 @@ module.exports = {
             options: {
               js: {
                 inline: [
-                  'js/km.js',
                   'js/drift.js',
                   'js/hotjar.js',
                   'js/fullstory.js',
                   'js/logrocket.js',
                   'js/scroll.js',
-                  'js/fb.js'
+                  'js/gtag.js'
                 ],
                 'js/app-ie9.js': [
                   'js/html5shiv.js',
@@ -213,7 +210,6 @@ module.exports = {
                 inlineFooter: [
                   'js/player.js',
                   'js/bento.js',
-                  'js/gtag.js'
                 ]
               },
               css: {
@@ -234,7 +230,6 @@ module.exports = {
       // { from : 'videos/.htaccess', to : 'videos/.htaccess', toType: 'file' },
       { from : 'videos/routes.json', to : 'videos/routes.json' },
       { from : 'videos/bootstrap.php', to : 'videos/bootstrap.php' },
-      { from: 'js/km.js', to: 'js/km.js' }, // help use to km
       { from: 'js/faqs-es.js', to: 'js/faqs-es.js' }, // help use to km
       { from: 'js/faqs-en.js', to: 'js/faqs-en.js' }, // help use to km
       { from: 'js/videos-es.js', to: 'js/videos-es.js' }, // help use to km

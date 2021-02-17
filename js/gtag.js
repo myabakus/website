@@ -1,11 +1,24 @@
 if (location.host === 'www.myabakus.com') {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-
+  const script =  function(b,e,v,n,t,s){
+    t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)
+  };
+  !function(f,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];}(window);
   gtag('js', new Date());
-  gtag('config', 'AW-1042441796');
-  gtag('config', 'UA-2211383-1');
-  gtag('config', 'G-NGVVQH0Q1V');
+  for (const id of ['AW-1042441796', 'UA-2211383-1', 'G-NGVVQH0Q1V']) {
+    script(document, 'script', 'https://www.googletagmanager.com/gtag/js?id=' + id);
+    gtag('config', id);
+  }
+  script(document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2643049546010302');
+  fbq('track', 'PageView');
   (() => {
     if (document.location.search && sessionStorage !== null) {
       if (getUrlParam('gclid') && sessionStorage.getItem('_ga') === null) {

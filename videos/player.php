@@ -9,13 +9,10 @@
         <title><?= $video['title']; ?></title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:600|Quattrocento+Sans:400">
         <link href="../css/player.css" rel="stylesheet" type="text/css">
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1042441796"></script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2211383-1"></script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-NGVVQH0Q1V"></script>
+        <script type="text/javascript" src="../js/gtag.js"></script>
         <script type="text/javascript" src="../js/drift.js"></script>
         <script type="text/javascript" src="../js/fullstory.js"></script>
         <script type="text/javascript" src="../js/logrocket.js"></script>
-        <script type="text/javascript" src="../js/fb.js"></script>
     </head>
     <body>
         <div class="title">

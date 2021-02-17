@@ -474,21 +474,19 @@
       var response = _response(data);
       if (response.done) {
         if (typeof gtag === 'function') {
-          gtag('event', 'page_view', {
-            page_path: '/account/created',
-            send_to: 'UA-2211383-1'
+          gtag('event', 'sign_up', {
+            'send_to': 'G-NGVVQH0Q1V'
           });
           gtag(
             'event',
             'conversion',
             {'send_to': 'AW-1042441796/b37-CJaASRDEzInxAw'}
           );
-          gtag('event', 'sign_up', {
-            'send_to': 'G-NGVVQH0Q1V'
+          gtag('event', 'page_view', {
+            page_path: '/account/created',
+            send_to: 'UA-2211383-1'
           });
-        }
-        if (typeof fbq === 'function') {
-            fbq('track', 'CompleteRegistration');
+          fbq('track', 'CompleteRegistration');
         }
         var login = '/' + (
           logins.hasOwnProperty(lang) ? logins[lang] : logins['en']
