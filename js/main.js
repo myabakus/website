@@ -492,7 +492,7 @@
           logins.hasOwnProperty(lang) ? logins[lang] : logins['en']
         );
         const path = $.route(login, true);
-        location.href = path;
+        setTimeout(() => { location.href = path; }, 3000);
       } else {
         _overaly('hide', $.proxy(_logger, null, response));
         if (response.bounce) {
