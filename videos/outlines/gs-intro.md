@@ -1,0 +1,11 @@
+- Quickly repeat the objective of the guide and move on
+- Introduce the menu, including quick actions
+- Introduce the financial statements (home)
+  - Balance is a snapshot of your financial position
+  - Income statement is a film of the current month
+  - Show how to use financial statements as a more precise menu
+- Introduce forms, documents and actions
+  - Using the income page
+- Introduce/explain the breadcrumbs
+  - Using price lists
+- Say we are ready for next step and ask for feedback

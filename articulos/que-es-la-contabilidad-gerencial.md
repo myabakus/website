@@ -2,7 +2,7 @@
 
 Si prefiere, usted puede ver este video con la presentación resumida de este artículo.
 
-![slide-1](../slides/slides.001.jpeg)
+![video-image](video-image.png)
 
 Hola, mi nombre es Federico y soy uno de los creadores de myAbakus.
 
@@ -16,7 +16,7 @@ El punto o principio por el que debemos comenzar es que en el mundo hay dos tipo
 
 Alguien podría decir que yo me estoy inventando una división que no existe y que la contabilidad es una sola y se usa tanto para la parte fiscal como gerencial. Ese argumento quizás podría ser válido en una gran empresa, pero usted y yo sabemos que en el mundo real de las empresas pequeñas no aplica. De hecho, la contabilidad gerencial no es obligatoria ni practicada en la mayoría de empresas pequeñas y la contabilidad fiscal no siempre refleja adecuadamente la situación financiera de una empresa pequeña o mediana.
 
-![slide-1](../slides/slides.002.jpeg)
+![slide-1](slide-1.png)
 
 > La contabilidad gerencial no es obligatoria ni practicada en la mayoría de empresas pequeñas y la contabilidad fiscal no siempre refleja adecuadamente la situación financiera de una empresa pequeña o mediana.
 
@@ -40,7 +40,7 @@ La realidad es que es muy difícil crear un producto que va a ser muy satisfacto
 
 No importa si dichos conceptos y procesos solo cubren un 20% del universo contable. Pues al final del día la ley del 80/20 aplica aquí y solamente el 20% más importante es lo que usted necesita entender y poner en práctica para que la contabilidad pase de ser un problema más por resolver a convertirse en una herramienta valiosa para su empresa.
 
-![slide-2](../slides/slides.003.jpeg)
+![slide-2](slide-2.png)
 
 Básicamente, nosotros aspiramos a ser la mejor opción en el mercado para aquellos empresarios que quieren practicar contabilidad gerencial y dejar que el contador se encargue de la parte fiscal. Y no nos importa que el universo de usuarios potenciales para un software de contabilidad gerencial sea mucho más pequeño que el de usuarios potenciales para un software de contabilidad fiscal.
 
@@ -56,7 +56,7 @@ En una empresa pequeña, donde los recursos suelen ser limitados, la función de
 
 Además recuerde que la información que el contador maneja suele estar atrasada, puede no estar ajustada a la realidad y no ser útil o fácil de interpretar para el empresario. Por eso queremos invitarlo a que establezca la función del departamento de finanzas en su empresa implementando nuestro software y usándolo regularmente.
 
-![slide-3](../slides/slides.004.jpeg)
+![slide-3](slide-3.png)
 
 Queremos que con cuentas claras, en orden y al día, nuestro software se convierta en la fuente de la realidad financiera de su empresa. Y que además de ser una herramienta útil en la administración diaria de su empresa, le permita entender claramente su posición financiera y tomar decisiones para mejorarla.
 
@@ -67,3 +67,4 @@ Entonces, si el control financiero de su empresa es importante para usted y la c
 No estamos de pelea con su contador y nuestro software puede exportar su información en el formato que sea más fácil de consumir para él o ella. Pero si lo que usted está tratando de resolver es un problema fiscal, siguiendo las recomendaciones y preferencias de su contador, es claro que nuestro software no va a ser la mejor opción y no vale la pena que gaste tiempo probándolo.
 
 Le agradezco mucho por su atención y por tomarse el tiempo de leer este articulo, y espero que más allá de ser informativo, le haya resultado útil para decidir qué tipo de software contable es el adecuado para su empresa.
+
