@@ -57,7 +57,7 @@ module.exports = {
             options: {
               js: {
                 inline: [
-                  'js/drift.js',
+                  'js/chat.js',
                   'js/hotjar.js',
                   'js/fullstory.js',
                   'js/logrocket.js',
@@ -191,7 +191,7 @@ module.exports = {
             options: {
               js: {
                 inline: [
-                  'js/drift.js',
+                  'js/chat.js',
                   'js/hotjar.js',
                   'js/fullstory.js',
                   'js/logrocket.js',

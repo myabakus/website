@@ -1,3 +1,4 @@
+/*
 const locale = document.querySelector('html').getAttribute('lang') || 'en';
 
 ! function () {
@@ -23,3 +24,28 @@ drift.config({
   locale: locale
 });
 drift.load('33c7h6tzniik');
+*/
+
+(function (lang) {
+  const chats = {
+    es: '9c5a371da42c74916eae026fa650687d',
+    en: '2e23170fcf732bc2cbfb7ad31c323076'
+  }
+  !function(w,d,t,u){
+    let e=d.createElement(t);
+    e.async=!0;
+    e.addEventListener('load', () => {
+      if (typeof bento$ !== 'undefined') {
+        const b = bento$; // no se debe remover esto no se que pasa con la minificacion.
+        b(function() {
+          bento.view();
+          bento.showChat();
+        });
+      }
+    });
+    e.src=u;
+    u=d.getElementsByTagName(t)[0];
+    u.parentNode.insertBefore(e,u);
+  }(window, document,'script','https://app.bentonow.com/' + chats[lang] + '.j');
+
+})(document.querySelector('html').getAttribute('lang') || 'en')
