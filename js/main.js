@@ -6,6 +6,8 @@
 
   'use strict';
 
+  let isTrack = false;
+
   function _element(field) {
     return $('#' + field);
   }
@@ -473,7 +475,7 @@
     function done(data) {
       var response = _response(data);
       if (response.done) {
-        if (typeof gtag === 'function') {
+        if (typeof gtag === 'function' && !isTrack) {
           gtag('event', 'sign_up', {
             'send_to': 'G-NGVVQH0Q1V'
           });
@@ -487,6 +489,7 @@
             send_to: 'UA-2211383-1'
           });
           fbq('track', 'CompleteRegistration');
+          isTrack = true;
         }
         var login = '/' + (
           logins.hasOwnProperty(lang) ? logins[lang] : logins['en']
