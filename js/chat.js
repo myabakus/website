@@ -55,7 +55,7 @@ var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(lang){
   const chats = {
     en: '60479442385de407571e400b/1f0bpm9a0',
-    es: 'i6047a7c91c1c2a130d66b16f/1f0buer15'
+    es: '6047a7c91c1c2a130d66b16f/1f0buer15'
   };
   var s1=document.createElement("script"),
     s0=document.getElementsByTagName("script")[0];

@@ -476,26 +476,14 @@
       var response = _response(data);
       if (response.done) {
         if (typeof gtag === 'function' && !isTrack) {
-          gtag('event', 'sign_up', {
-            'send_to': 'G-NGVVQH0Q1V'
-          });
-          gtag(
-            'event',
-            'conversion',
-            {'send_to': 'AW-1042441796/b37-CJaASRDEzInxAw'}
-          );
-          gtag('event', 'page_view', {
-            page_path: '/account/created',
-            send_to: 'UA-2211383-1'
-          });
-          fbq('track', 'CompleteRegistration');
+          gtag('signup');
           isTrack = true;
         }
         var login = '/' + (
           logins.hasOwnProperty(lang) ? logins[lang] : logins['en']
         );
         const path = $.route(login, true);
-        setTimeout(() => { location.href = path; }, 3000);
+        setTimeout(() => { location.href = path; }, 1500);
       } else {
         _overaly('hide', $.proxy(_logger, null, response));
         if (response.bounce) {
