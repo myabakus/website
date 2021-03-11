@@ -1,4 +1,4 @@
-if (location.host === 'www.myabakus.com') {
+if (true || location.host === 'www.myabakus.com') {
 /*
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -50,7 +50,8 @@ if (location.host === 'www.myabakus.com') {
 
   function gtag(event) {
     if (typeof dataLayer !== 'undefined') {
-      dataLayer.push({ ['event.' + event]: event });
+      event = 'event.'+ event;
+      dataLayer.push({ 'event': event });
     }
   }
 }

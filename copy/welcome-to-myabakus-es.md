@@ -1,6 +1,6 @@
 <header style="font-size: 0.875rem;">
         <div style="border-bottom: 1px dotted #ccc; color: #999;  line-height: 1.5; padding-bottom: 0.3125rem; margin-bottom: 0.3125rem; padding-top: 0.325rem;">Usted está recibiendo este email por qué tiene una cuenta de <a style="text-decoration: none; color: #369;" href="https://www.myabakus.com">myAbakus</a></div>
-        <a href="ttps://www.myabakus.com"><img src="http://www.myabakus.com/images/myabakus.png" alt="Logo" width="250" height="auto"/></a>
+        <a href="https://www.myabakus.com"><img src="http://www.myabakus.com/images/myabakus.png" alt="Logo" width="250" height="auto"/></a>
         <div style="margin-top: 0.3125rem; background: #006e00; background-image: linear-gradient(180deg, #008800 0%, #005500 100%); border-radius: 5px; color: #fff; font-family: Verdana, Geneva, sans-serif; padding: 0.3125rem 0.625rem;">Mantenga el dedo en el pulso financiero de su empresa</div>
       </header>
 ## Bienvenido a myAbakus
@@ -18,5 +18,3 @@ Y una vez lo haga,  le daremos instrucciones y recursos para ayudarlo a comenzar
 <footer style="text-align: center; font-size: 0.875rem; margin-top: 1rem;">
         <div style="border-top: 1px dotted #ccc; color: #999;  line-height: 1.75; padding-top: 0.3125rem; padding-bottom: 0.3125rem;">Para no recibir más emails <a style="text-decoration: none; color: #369;" href="https://www.myabakus.com/app/account/delete/{$company_id}">dese de baja aquí </a>para cancelar su cuenta de <a style="text-decoration: none; color: #369;" href="https://www.myabakus.com">myAbakus</a><br>@Nomad Web Ventures Inc 2021<br>291 Wythe Av #3, Brooklyn NY 11249</div>
       </footer>
-
-
