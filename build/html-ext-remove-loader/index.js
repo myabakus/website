@@ -7,7 +7,7 @@ module.exports = function (source) {
     ignore = [ignore]
   }
   return source.replace(
-    /href="(.+)\.html(\?.+)?"/img,
+    /href="(.+)\.html([#?].+)?"/img,
     (match, p1, p2) => {
       if (ignore.some(evaluate => {
         const isString = typeof evaluate === 'string'

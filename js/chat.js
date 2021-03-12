@@ -25,7 +25,7 @@ drift.config({
 });
 drift.load('33c7h6tzniik');
 */
-// if (location.host === 'www.myabakus.com') {
+if (location.host === 'www.myabakus.com') {
   /*
   (function (lang) {
     const chats = {
@@ -51,18 +51,18 @@ drift.load('33c7h6tzniik');
 
   })(document.querySelector('html').getAttribute('lang') || 'en');
   */
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(lang){
-  const chats = {
-    en: '60479442385de407571e400b/1f0bpm9a0',
-    es: '6047a7c91c1c2a130d66b16f/1f0buer15'
-  };
-  var s1=document.createElement("script"),
-    s0=document.getElementsByTagName("script")[0];
-   s1.async=true;
-  s1.src='https://embed.tawk.to/' + chats[lang];
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-})(document.querySelector('html').getAttribute('lang') || 'en');
-// }
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(lang){
+    const chats = {
+      en: '60479442385de407571e400b/1f0bpm9a0',
+      es: '6047a7c91c1c2a130d66b16f/1f0buer15'
+    };
+    var s1=document.createElement("script"),
+      s0=document.getElementsByTagName("script")[0];
+     s1.async=true;
+    s1.src='https://embed.tawk.to/' + chats[lang];
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+  })(document.querySelector('html').getAttribute('lang') || 'en');
+}
