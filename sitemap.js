@@ -21,7 +21,7 @@ async function crawl(browser, page, url, parent) {
         if (path.includes('#')) {
           path = path.split('#')[0];
         }
-        if (path === host || path.includes('/app/')) {
+        if (path === host || path.includes('/app/') || path.includes('/agende') || path.includes('/schedule')) {
           continue;
         }
         if (!completed.hasOwnProperty(path)) {
