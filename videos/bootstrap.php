@@ -368,7 +368,7 @@ return Session::get($key,$default);
 }
 }
 function dotenv($path){
-Dotenv\Dotenv::create($path)->load();
+Dotenv\Dotenv::createUnsafeMutable($path)->load();
 }
 if(!function_exists('array_except')){
 function array_except($array,$keys){
@@ -566,7 +566,12 @@ return static::logout();
 http_response_code(500);
 throw $e;
 }
+try{
 static::send($controller,$response);
+}catch(Throwable $e){
+http_response_code(500);
+throw $e;
+}
 }
 public static function start($name='app'){
 static::$name=$name;
@@ -794,6 +799,12 @@ return $charsArray=['0'=>['°','₀','۰'],'1'=>['¹','₁','۱'],'2'=>['²','�
 }
 }
 class URL{
+public static function toWithHasCode($path,$message){
+if(is_array($message)){
+$message=implode(',',$message);
+}
+return static::to($path,true).'?hc='.urlencode(SafeEncrypter::encryptUsingEnv($message,'APP_EMAIL_KEY',));
+}
 public static function route($name,$secure=null){
 $path=App::path($name);
 return $secure?self::to($path,$secure):$path;
@@ -802,6 +813,9 @@ public static function to($path,$secure=null){
 $host=Request::host();
 $secure=($secure||($secure===null&&Request::secure()))&&strpos(PHP_SAPI,'apache')!==false&&strpos($host,'myabakus.org')===false;
 return 'http'.($secure?'s':'').'://'.$host.$path;
+}
+public static function mappper(...$types){
+return Url\Mapper::create(...$types);
 }
 public static function current(){
 $path=Request::get('uri');
@@ -865,10 +879,60 @@ public static function fromGlobal(){
 if(Request::isMethod('get')){
 $input=$_GET;
 }else{
-$input=$_POST+$_FILES;
+$files=static::getFiles($_FILES);
+$input=$_POST;
+foreach($files as $name=>$value){
+if(isset($input[$name])){
+$input[$name]=$input[$name]+$value;
+}else{
+$input[$name]=$value;
+}
+}
 unset($input['_method'],$input['_']);
 }
+if(isset($input['company_id'])){
+unset($input['company_id']);
+}
 return static::set($input);
+}
+public static function files($name,$all=true){
+$files=static::get($name);
+if(is_array($files)){
+if($all){
+$files=array_filter($files,function($file){
+return static::isFile($file);
+});
+return $files;
+}
+$file=$files[0];
+return static::isFile($file)?$file:false;
+}
+return false;
+}
+public static function file($name){
+$file=static::get($name);
+if(is_array($file)&&!array_assoc($file)&&count($file)==1){
+$file=$file[0];
+}
+return static::isFile($file)?$file:[];
+}
+private static function isFile($input){
+return is_array($input)&&($input['tmp_name']?? false)!==false;
+}
+private static function getFiles($files){
+$result=[];
+foreach((array)$files as $name=>$fileArray){
+if(is_array($fileArray['name'])){
+foreach($fileArray as $attrib=>$list){
+foreach($list as $index=>$value){
+$result[$name][$index][$attrib]=$value;
+}
+}
+}else{
+$result[$name][]=$fileArray;
+}
+}
+return $result;
 }
 }
 class FileNotFoundException extends \Exception{
@@ -993,6 +1057,9 @@ return $method;
 public static function host(){
 return static::header('host');
 }
+public static function isTest(){
+return static::host()!=='www.myabakus.com';
+}
 public static function query(){
 return static::get('query_string');
 }
@@ -1065,7 +1132,7 @@ return $value;
 }
 ($video=(new class extends ArrayObject{
 const LANGS=['es','en'];
-const HOST_URL=['y'=>'https://www.youtube.com/embed/ID?autoplay=1&cc_load_policy=1&rel=0','s'=>'https://screencast-o-matic.com/embed?sc=ID&v=5&title=0&ff=1&a=1'];
+const HOST_URL='https://www.youtube.com/embed/ID?autoplay=1&cc_load_policy=1&rel=0';
 protected $routes=['slug'=>[],'id'=>[]];
 protected $originalRoutes=[];
 protected $publish=false;
@@ -1080,6 +1147,11 @@ if($this->publish){
 die('El router sea regenerado...');
 }
 if(!($this['id']?? false)){
+$filename=__DIR__.'/'.$this->getSlug().'.html';
+if(file_exists($filename)){
+readfile($filename);
+exit;
+}
 http_response_code(404);
 readfile(__DIR__.'/../notfound.html');
 exit;
@@ -1120,6 +1192,14 @@ return static::TRANSLATE[$this['lang']];
 ;
 }
 }
+protected function findTranscription($video){
+$path=__DIR__.'/scripts/'.$video['trans'].'.txt';
+$content=File::get($path);
+$content=trim(str_replace("\n\n","\n",$content));
+$title=['es'=>'Transcripción','en'=>'Transcription'];
+$title=$title[$video['lang']];
+return ['title'=>$title,'entries'=>explode("\n",$content)];
+}
 protected function findById($id){
 $route=array_get($this->routes['id'],$id);
 return $this->resolve($route);
@@ -1152,7 +1232,7 @@ $this->routes['slug'][$slug]=$video;
 protected function findInTutorials($slug){
 $route=[];
 foreach(static::LANGS as $lang){
-$tutorials=$this->filteToArray($lang,'videos');
+$tutorials=$this->fileToArray($lang,'videos');
 if($route=$this->findInData($slug,$tutorials)){
 return $route;
 }
@@ -1162,7 +1242,7 @@ return $route;
 protected function findInCourses($slug){
 $route=[];
 foreach(static::LANGS as $lang){
-$courses=$this->filteToArray($lang,'course');
+$courses=$this->fileToArray($lang,'course');
 foreach($courses['lessons']as $lesson){
 if($route=$this->findInData($slug,$lesson)){
 return $route;
@@ -1191,7 +1271,7 @@ return __DIR__.'/../js/'.$path.'-'.$lang.'.js';
 protected function getRouter(){
 return __DIR__.'/routes.json';
 }
-protected function filteToArray($lang,$path){
+protected function fileToArray($lang,$path){
 $content=File::get($this->resolveFilename($lang,$path));
 $content=str_replace(['var data = ',';'],'',$content);
 $content=trim($content);
@@ -1201,6 +1281,9 @@ protected function getRoute($slug,$item){
 $route=['slug'=>$slug,'title'=>$item['title'],'desc'=>$item['desc'],'lang'=>$item['lang'],'id'=>$item['id'],];
 if($item['next']?? false){
 $route['next']=$item['next'];
+}
+if($item['trans']?? false){
+$route['trans']=$this->findTranscription($item);
 }
 return $route;
 }
@@ -1215,30 +1298,28 @@ return array_values($this->originalRoutes);
 protected function regenerate(){
 $routes=[];
 foreach(static::LANGS as $lang){
-$tutorials=$this->filteToArray($lang,'videos');
-$gs=$this->filteToArray($lang,'gs');
+$tutorials=$this->fileToArray($lang,'videos');
+$gs=$this->fileToArray($lang,'gs');
 $routes=array_merge($routes,$this->getRoutes($tutorials['videos']));
 $routes=array_merge($routes,$this->getRoutes($gs['videos']));
-$courses=$this->filteToArray($lang,'course');
+$courses=$this->fileToArray($lang,'course');
 foreach($courses['lessons']as $lesson){
 $routes=array_merge($routes,$this->getRoutes($lesson['videos']));
 }
 }
 File::json($this->getRouter(),$routes);
 }
-protected function getRoutes($videos,$host='y'){
+protected function getRoutes($videos){
 $routes=[];
 foreach($videos as $video){
 $slug=str_slug($video['title']);
 $video=$this->getRoute($slug,$video);
-$video['host']=$host;
 $routes[]=$video;
 }
 return $routes;
 }
 protected function resolve($route){
-$path=static::HOST_URL[$route['host']];
-$route['url']=str_replace('ID',$route['id'],$path);
+$route['url']=str_replace('ID',$route['id'],static::HOST_URL);
 return $route;
 }
 }))->dispatch();

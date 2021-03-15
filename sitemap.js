@@ -52,7 +52,7 @@ async function crawl(browser, page, url, parent) {
     }
   }
   sitemap += '</urlset>';
-  fs.writeFileSync('./sitemap.xml', sitemap);
+  fs.writeFileSync('./dist/sitemap.xml', sitemap);
   await browser.close();
 }
 

@@ -241,7 +241,6 @@ module.exports = {
       { from: 'videos/scripts/recurring-transactions-en.txt', to: 'videos/scripts/recurring-transactions-en.txt' }, // help use to km
       { from: 'videos/scripts/recurring-transactions-es.txt', to: 'videos/scripts/recurring-transactions-es.txt' }, // help use to km
       { from: 'images/favicon.png', to: 'images/favicon.png' }, // other page use this file
-      { from: 'sitemap.xml', to: 'sitemap.xml' }
     ]),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
