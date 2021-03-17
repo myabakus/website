@@ -1,12 +1,10 @@
-Opening - 0:00
-
 Hola, mi nombre es Federico y soy uno de los creadores de myAbakus.
 
 Voy a explicarle la posición de nuestro software en el mercado de software contables, para que usted pueda determinar si es lo que necesita y está buscando para su empresa, sin necesidad de crear una cuenta y probar el software. 
 
 Teniendo claro eso, entremos en materia.
 
-Slide 1 - 0:16.40
+---
 
 El punto por el que debemos comenzar es que en el mundo hay dos tipos de contabilidades: contabilidad fiscal y la que yo llamo contabilidad gerencial. 
 
@@ -20,7 +18,7 @@ Y el problema de la contabilidad gerencial es que la mayoría de empresas peque�
 
 Asumiendo que usted está de acuerdo con esto, puedo pasar a explicarle la diferencia entre un software de contabilidad fiscal y un software de contabilidad gerencial.
 
-Slide 2 - 0:56.00
+---
 
 El software de contabilidad fiscal tiene una característica principal que es muy clara y evidente al momento de usarlo: está diseñado para el contador. 
 
@@ -38,7 +36,7 @@ Y esa es la oportunidad que nosotros vemos en el mercado para un software de con
 
 Sin importar que eso nos limite a servir un nicho relativamente pequeño del mercado: los dueños de Pymes que quieren elevar la contabilidad de un problema por resolver (contabilidad fiscal) a una herramienta valiosa para su empresa (contabilidad gerencial).
 
-Slide 3 - 2:11.44
+---
 
 Básicamente queremos ser la mejor opción para quienes quieren algo similar a lo que ocurre en una empresa grande, donde el departamento de contabilidad está al servicio del area de finanzas.
 
@@ -50,7 +48,7 @@ Y la función del area financiera suele no existir por qué el dueño de la empr
 
 Mi invitación, por lo tanto, es a que usted establezca la función del area financiera en su empresa implementando nuestro software y usándolo regularmente.
 
-Closing - 2:55.80
+---
 
 Igual recuerde que crear una cuenta y probar nuestro software no tiene sentido si su realidad y el problema que está tratando de resolver no concuerdan con mi explicación. 
 
