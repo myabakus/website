@@ -76,7 +76,7 @@ function replaceConditionalScript(content, scripts, self) {
 }
 
 function replaceLink(main) {
-  return `<link href="${main}" rel="stylesheet">`
+  return `<link href="${main}" rel="stylesheet preload" as="style">`
 }
 
 function replaceScript(main) {

@@ -29,6 +29,7 @@ module.exports = {
       'node_modules'
     ]
   },
+  devtool: 'source-map',
   module: {
     rules: [
       {
@@ -155,7 +156,12 @@ module.exports = {
             }
           },
           'extract-loader',
-          'css-loader'
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true
+            }
+          }
         ]
       },
       {
