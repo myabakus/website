@@ -3,33 +3,31 @@ const fs = require('fs');
 const URL = require('url');
 const completed = {};
 const pending = [];
+const titles = {};
+const descriptions = {};
 async function crawl(browser, page, url, parent) {
   console.log('OPEN: ' + url);
-  const content = await get(page, url, parent);
-  const matches = [...content.matchAll(/href="([^"]+)"?/gm)];
+  const matches = await links(page, url, parent);
   const { protocol, hostname } = URL.parse(url);
   const host = protocol + '//' + hostname + '/';
-  for (const match of matches) {
-    let path = match[1];
-    if (!path.includes('data:') && !path.includes('css')) {
-      if (path.startsWith('/')) {
-        path = host + path.substr(1);
-      } else if (!path.startsWith('http')) {
-        path = host + path;
+  if (!completed.hasOwnProperty(url)) {
+    completed[url] = 0;
+  }
+  for (let path of matches) {
+    if (path.startsWith(host)) {
+      if (path.includes('#')) {
+        path = path.split('#')[0];
       }
-      if (path.startsWith(host)) {
-        if (path.includes('#')) {
-          path = path.split('#')[0];
-        }
-        if (path === host || path.includes('/app/') || path.includes('/agende') || path.includes('/schedule')) {
-          continue;
-        }
-        if (!completed.hasOwnProperty(path)) {
-          completed[path] = 0;
-          pending.push(path);
-        }
-        completed[path] ++;
+      if (path === host || path.includes('/app/') || path.includes('/agende') || path.includes('/schedule')) {
+        continue;
       }
+      if (!completed.hasOwnProperty(path)) {
+        completed[path] = 0;
+        pending.push(path);
+      }
+      completed[path] ++;
+    } else {
+      console.log('NOT H: ' + path);
     }
   }
   if (pending.length > 0) {
@@ -45,8 +43,7 @@ async function crawl(browser, page, url, parent) {
     paths[priority].push(path);
   }
   sitemap += '\n';
-  for (const [index, entries] of Object.entries(paths).reverse()) {
-    console.log(index);
+  for (const [, entries] of Object.entries(paths).reverse()) {
     for(const path of entries.sort()) {
       sitemap += '  <url>\n  <loc>' + path.replace(hostname, 'www.myabakus.com') + '</loc>\n  </url>\n';
     }
@@ -56,13 +53,31 @@ async function crawl(browser, page, url, parent) {
   await browser.close();
 }
 
-async function get(page, path, parent) {
+async function links(page, path, parent) {
   await page.goto(path);
-  const title = await page.title();
+  const title = (await page.title()).trim();
   if (title  === 'Error 404') {
     throw new Error('Not found: ' + path + ' -> ' + parent);
   }
-  return await page.content();
+  if (titles.hasOwnProperty(title)) {
+    console.log('S: "' + titles[title] + '"');
+    console.log('N: "' + path + '"');
+    throw 'Duplicate title: ' + title;
+  }
+  let description;
+  try {
+    description = await page.$eval('meta[name="description"]', e => e.getAttribute('content').trim());
+  } catch (e) {
+    description = path;
+  }
+  if (descriptions.hasOwnProperty(description)) {
+    console.log('S: "' + descriptions[description] + '"');
+    console.log('N: "' + path + '"');
+    throw 'Duplicate description: ' + description;
+  }
+  titles[title] = path;
+  descriptions[description] = path;
+  return await page.$$eval('a[href]', links => links.map(link => link.href.trim()));
 }
 
 setTimeout(async() => {
