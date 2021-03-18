@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="<?= $video['desc']; ?>">
         <title><?= $video['title']; ?></title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:600|Quattrocento+Sans:400">
+        <link href="https://fonts.googleapis.com/css?family=Cabin:600|Quattrocento+Sans:400&display=swap" rel="stylesheet preload prefetch" as="style">
         <link href="../css/player.css" rel="stylesheet" type="text/css">
         <script type="text/javascript" src="../js/gtag.js"></script>
         <script type="text/javascript" src="../js/chat.js"></script>
