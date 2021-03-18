@@ -117,6 +117,7 @@ p {
     text-align: center;
 }
 
+h1,
 h2 {
     font-family: 'Cabin', Georgia, sans-serif;
     font-size: 18px;
@@ -622,7 +623,7 @@ input[type="checkbox"]:disabled {
 .faq1::after,
 .faq2::after,
 .faq3:after,
-.faq4::after{
+.faq4::after {
     background-repeat: no-repeat;
     background-position: center bottom;
     position: absolute;
@@ -653,7 +654,6 @@ input[type="checkbox"]:disabled {
     left: 10px;
 }
 
-
 .faq3 {
     grid-area: faq3;
     align-self: flex-start;
@@ -665,8 +665,6 @@ input[type="checkbox"]:disabled {
     left: 92px;
 }
 
-
-
 .faq4 {
     grid-area: faq4;
     align-self: flex-start;
@@ -675,7 +673,7 @@ input[type="checkbox"]:disabled {
 .faq4::after {
     background-image: url(../images/arrow4.svg);
     top: -37px;
-    left: -104px
+    left: -104px;
 }
 
 .wrapper {
@@ -700,21 +698,21 @@ input[type="checkbox"]:disabled {
 }
 
 .icon-visibility {
-  width: 24px;
-  height: 28px;
-  color: #a3a3a3;
-  position: absolute;
-  top: 5px;
-  right: 1px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  overflow: hidden;
-  cursor: pointer;
+    width: 24px;
+    height: 28px;
+    color: #a3a3a3;
+    position: absolute;
+    top: 5px;
+    right: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .icon-visibility > svg {
-  width: 24px;
-  height: 24px;
-  min-width: 100%;
+    width: 24px;
+    height: 24px;
+    min-width: 100%;
 }
