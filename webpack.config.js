@@ -77,6 +77,12 @@ module.exports = {
                 ],
                 inlineFooter: [
                   'js/player.js',
+                  'js/v-app.js',
+                  'js/faqs-es.js',
+                  'js/faqs-en.js',
+                  'js/videos-en.js',
+                  'js/videos-es.js',
+                  'js/v-faqs.js'
                 ]
               },
               css: {

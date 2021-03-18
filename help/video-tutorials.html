@@ -11,9 +11,9 @@
         <link href="../css/help.css" rel="stylesheet" type="text/css">
         <link href="../css/videos.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Cabin:600|Quattrocento+Sans&display=swap" rel="stylesheet preload prefetch" as="style">
-        <link href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" rel="stylesheet" type="text/css">
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
-        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+        <link href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" rel="stylesheet preload prefetch" as="style">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.0.7/vue.global.prod.js" integrity="sha512-SQkI+lSIpzqYFNvIbmY/EutPD7x5hU0bwppRywvIR9ymIHudH/P0ECQuc4fyugI0fRlb9b6zKcE3Lq0V//TVpw==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous"></script>
         <script type="text/javascript" src="../js/fullstory.js"></script>
         <script type="text/javascript" src="../js/logrocket.js"></script>
         <script type="text/javascript" src="../js/gtag.js"></script>
@@ -24,7 +24,7 @@
         <div id="app">
             <div class="header">
                 <div class="header-top">
-                    <a href="/"> <img src="../images/logo.svg" alt="Logo"> </a>
+                    <a href="/"><img src="../images/logo.svg" alt="Logo" width="252" height="49"></a>
                     <h1>{{ title }}</h1>
                 </div>
                 <div class="header-bottom">
@@ -43,12 +43,14 @@
             <div class="isotope-gallery-container js-masonry videos" data-masonry='{"itemSelector": ".sheet", "fitWidth": true }'>
                 <div :class="['sheet-img-'+video.icon, video.tags]" class="sheet" v-for="video in videos.slice().reverse()">
                     <h2>{{ video.title }}</h2>
-                    <div id="app1">
-                        <a :href="video.title | slugify" :video-id="video.id"> <div class="sheet-img" :class="'sheet-img-'+video.icon">
+                    <div class="app1">
+                        <a :href="video.title | slugify" :video-id="video.id">
+                            <span class="sheet-img" :class="'sheet-img-'+video.icon">
                                 <i class="fa-3x fa-play-circle fas play-btn"></i>
-                            </div> </a>
+                            </span>
+                            <p>{{ video.desc }}</p>
+                        </a>
                     </div>
-                    <p>{{ video.desc }}</p>
                 </div>
                 <!-- fin del v-for -->
             </div>

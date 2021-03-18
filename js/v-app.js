@@ -1,7 +1,5 @@
-
-var app = new Vue({
-  el: '#app',
-  data: data,
+Vue.createApp({
+  data () { return data },
   filters: {
     slugify: function (value) {
       return '/videos/' + value.toString().toLowerCase()
@@ -18,4 +16,4 @@ var app = new Vue({
         .replace(/-+$/, '');            // Trim -
     }
   }
-});
+}).mount('#app');

@@ -11,8 +11,8 @@
         <link href="../css/help.css" rel="stylesheet" type="text/css">
         <link href="../css/videos.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Cabin:600|Quattrocento+Sans&display=swap" rel="stylesheet preload prefetch" as="style">
-        <link href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" rel="stylesheet" type="text/css">
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
+        <link href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" rel="stylesheet preload prefetch" as="style">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.0.7/vue.global.prod.js" integrity="sha512-SQkI+lSIpzqYFNvIbmY/EutPD7x5hU0bwppRywvIR9ymIHudH/P0ECQuc4fyugI0fRlb9b6zKcE3Lq0V//TVpw==" crossorigin="anonymous"></script>
         <script type="text/javascript" src="../js/fullstory.js"></script>
         <script type="text/javascript" src="../js/logrocket.js"></script>
         <script type="text/javascript" src="../js/gtag.js"></script>
@@ -24,7 +24,7 @@
             <div class="header">
                 <div class="header-top">
                     <div>
-                        <a href="/"> <img src="../images/logo.svg" alt="Logo"> </a>
+                        <a href="/"> <img src="../images/logo.svg" alt="Logo" width="252" height="49"> </a>
                     </div>
                     <div>
                         <h1>{{ title }}</h1>
@@ -38,12 +38,9 @@
             <div class="videos">
                 <div :class="['sheet-img-'+video.icon, video.tags]" class="sheet" v-for="video in videos">
                     <h2>{{ video.title }}</h2>
-                    <div id="app1">
-                        <a :href="video.title | slugify" :video-id="video.id"> <div class="sheet-img" :class="'sheet-img-'+video.icon">
-                                <i class="fa-3x fa-play-circle fas play-btn"></i>
-                            </div> </a>
+                    <div class="app1">
+                        <a :href="video.title | slugify" :video-id="video.id"><span class="sheet-img" :class="'sheet-img-'+video.icon"> <i class="fa-3x fa-play-circle fas play-btn"></i></span><p>{{ video.desc }}</p> </a>
                     </div>
-                    <p>{{ video.desc }}</p>
                 </div>
                 <!-- fin del v-for -->
             </div>

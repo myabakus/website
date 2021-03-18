@@ -5,7 +5,7 @@
 /* -------- Isotope Filtering -------- */
 var $container = $('.isotope-gallery-container');
 var $filter = $('.filter');
-$(window).load(function () {
+$(window).on('load', function () {
     // Initialize Isotope
     $container.isotope({
         itemSelector: '.gallery-item-wrapper'
