@@ -1184,3 +1184,7 @@ footer .row {
 .headroom {
     position: static;
 }
+
+.testimonial-panel h4 {
+    font-size: 18px;
+}
