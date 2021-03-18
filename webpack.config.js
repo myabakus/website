@@ -91,7 +91,6 @@ module.exports = {
                   'css/flag-icon.css'
                 ],
                 'css/app-videos.css': [
-                  'bootstrap/css/bootstrap.css',
                   'css/isotope.css',
                   'css/style.css',
                   'css/videos.css'

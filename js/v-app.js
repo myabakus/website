@@ -1,7 +1,7 @@
 Vue.createApp({
   data () { return data },
-  filters: {
-    slugify: function (value) {
+  methods: {
+    slugify (value) {
       return '/videos/' + value.toString().toLowerCase()
         .replace(/á/gi, 'a')
         .replace(/é/gi, 'e')

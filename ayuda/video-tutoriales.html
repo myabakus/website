@@ -44,7 +44,7 @@
                 <div :class="['sheet-img-'+video.icon, video.tags]" class="sheet" v-for="video in videos.slice().reverse()">
                     <h2>{{ video.title }}</h2>
                     <div class="app1">
-                        <a :href="video.title | slugify" :video-id="video.id">
+                        <a :href="slugify(video.title)" :video-id="video.id">
                             <span class="sheet-img" :class="'sheet-img-'+video.icon">
                                 <i class="fa-3x fa-play-circle fas play-btn"></i>
                             </span>
