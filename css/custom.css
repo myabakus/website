@@ -958,6 +958,7 @@ footer .row {
     font-weight: 700;
     color: #B8B8B8;
     margin-bottom: 15px;
+    margin-top: 10px;
 }
 
 .footer-ul {
@@ -974,7 +975,8 @@ footer .row {
     padding: 0 8px 0 12px;
 }
 
-.footer-ul li a {
+.footer-ul li a,
+.footer-ul li span{
     color: #B8B8B8;
     transition: color 0.2s linear 0s, background 0.2s linear 0s;
     text-decoration: none;
@@ -1023,6 +1025,8 @@ footer .row {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 300;
+    font-size: 27px;
 }
 
 .pricing-table-1 .price {
