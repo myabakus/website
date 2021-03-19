@@ -1,74 +1,70 @@
-## ¿What is management accounting?
-
-\## What is Managerial Accounting?
-
-Si prefiere, usted puede ver este video con la presentación resumida de este artículo.
+## ¿What Is Management Accounting?
 
 If you prefer, you can watch this video with the summary presentation of this article.
 
-![video-image](video-image.png)
+![Video image](video-image-en.png)
 
-Hola, mi nombre es Federico y soy uno de los creadores de myAbakus.
+Hello, my name is Federico and I am one of the creators of myAbakus.
 
-En lugar de tratar de hacerle una demostración del software en 3 minutos (lo cual es imposible) o presentarle una animación gráfica para que usted entienda lo que puede hacer con él (lo cual está de moda), le voy a explicar la razón por la que existe y su posición en el mercado de software contables.
+Instead of trying to demo the software to you in 3 minutes (which is impossible) or present you with a graphical animation so you understand what you can do with it (which is hot), I am going to explain why that exists and its position in the accounting software market.
 
-Decidí hacer esto por qué estoy convencido de que con tan solo esta explicación, usted va a poder determinar si myAbakus está alineado con lo que usted necesita y está buscando para su empresa, sin necesidad de crear una cuenta y probar el software. En otras palabras, crear una cuenta y evaluar el software solo hace sentido, si usted está de acuerdo con nuestro punto de vista en el mercado y tiene el problema que nuestro producto está enfocado en resolver.
+I decided to do this because I am convinced that with just this explanation, you will be able to determine if myAbakus is aligned with what you need and are looking for for your company, without having to create an account and test the software. In other words, creating an account and evaluating the software only makes sense, if you agree with our point of view on the market and have the problem that our product is focused on solving.
 
-Teniendo esto claro, entremos en materia.
+With this clear, let's get down to business.
 
-El punto o principio por el que debemos comenzar es que en el mundo hay dos tipos de contabilidades: contabilidad fiscal y la que yo llamo contabilidad gerencial. La contabilidad fiscal no requiere mucha explicación: todas las empresas están obligadas a hacerla para poder cumplir con sus obligaciones tributarias. La contabilidad gerencial, por el otro lado, es para controlar y entender las finanzas de una empresa y dar soporte en la toma de decisiones.
+The point or principle from which we must begin is that in the world there are two types of accounting: tax accounting and what I call managerial accounting. Tax accounting does not require much explanation: all companies are required to do it in order to meet their tax obligations. Managerial accounting, on the other hand, is to control and understand the finances of a company and to support decision-making.
 
-Alguien podría decir que yo me estoy inventando una división que no existe y que la contabilidad es una sola y se usa tanto para la parte fiscal como gerencial. Ese argumento quizás podría ser válido en una gran empresa, pero usted y yo sabemos que en el mundo real de las empresas pequeñas no aplica. De hecho, la contabilidad gerencial no es obligatoria ni practicada en la mayoría de empresas pequeñas y la contabilidad fiscal no siempre refleja adecuadamente la situación financiera de una empresa pequeña o mediana.
+Someone could say that I am inventing a division that does not exist and that accounting is only one and is used for both the fiscal and managerial part. That argument could perhaps be valid in a large company, but you and I know that in the real world of small companies it does not apply. In fact, managerial accounting is not required or practiced in most small businesses, and tax accounting does not always adequately reflect the financial situation of a small or medium-sized business.
 
-![slide-1](slide-1.png)
+![Slide 1](slide-1-en.png)
 
-> La contabilidad gerencial no es obligatoria ni practicada en la mayoría de empresas pequeñas y la contabilidad fiscal no siempre refleja adecuadamente la situación financiera de una empresa pequeña o mediana.
+> Management accounting is not required or practiced in most small businesses, and tax accounting does not always adequately reflect the financial situation of a small or medium-sized business.
 
-Entonces, el primer punto en el que tenemos que estar de acuerdo para que valga la pena que continúe leyendo este articulo es que hay dos tipos de contabilidad (la fiscal y gerencial) que resuelven problemas diferentes. Asumiendo que ese es el caso y que todavía tengo su atención, el paso lógico a seguir es explicarle la diferencia entre un software de contabilidad fiscal y un software de contabilidad gerencial.
+So, the first point that we have to agree on to make it worthwhile for you to continue reading this article is that there are two types of accounting (fiscal and managerial) that solve different problems. Assuming that's the case and I still have your attention, the logical step to take is to explain the difference between tax accounting software and management accounting software.
 
-El software de contabilidad fiscal tiene una característica principal que es muy clara y evidente al momento de usarlo: está diseñado para el contador. Esto además de ser evidente, va en contra de todos los argumentos que se hacen sobre simplicidad y facilidad de uso en el material de marketing.
+Tax accounting software has one main feature that is very clear and obvious when using it: it is designed for the accountant. This in addition to being evident, goes against all the arguments that are made about simplicity and ease of use in the marketing material.
 
-Ahora bien, esta es sin duda la estrategia correcta para una empresa de software contable que quiere maximizar su alcance y participación en el mercado. Por qué los contadores son el principal canal de distribución para software contables por medio de las recomendaciones que ellos le hacen a sus clientes de que software usar.
+Now this is certainly the right strategy for an accounting software company that wants to maximize its reach and market share. Why accountants are the main distribution channel for accounting software through the recommendations they make to their clients which software to use.
 
-Por lo tanto, la persona más importante para la empresa de software contable no es usted como usuario final, sino el contador como agente y distribuidor. Y eso explica por qué las empresas de software contable suelen regalarle el software a los contadores y facilitarles el manejo de las cuentas de sus clientes.
+Therefore, the most important person to the accounting software company is not you as the end user, but the accountant as agent and distributor. And that explains why accounting software companies often give the software to accountants and make it easier for them to manage their clients' accounts.
 
-> La persona más importante para la empresa de software contable no es usted como usuario final, sino el contador como agente y distribuidor.
+> The most important person to the accounting software company is not you as the end user, but the accountant as agent and distributor.
 
-A pesar de ser muy exitoso, este modelo tiene una debilidad clara que nosotros queremos explotar. Y es que el trabajo, las necesidades y las preferencias del contador son muy diferentes a las del empresario. Por lo cual, nuestra posición en el mercado de software contables es ofrecer un software que está claramente diseñado para el empresario y se enfoque en sus necesidades (no las del contador).
+Despite being very successful, this model has a clear weakness that we want to exploit. And the fact is that the work, the needs and the preferences of the accountant are very different from those of the employer. Therefore, our position in the accounting software market is to offer software that is clearly designed for the entrepreneur and focuses on the needs of him (not those of the accountant).
 
-El contra argumento de cualquier empresa de software contable va a ser que su producto no tiene ese problema por qué tanto los contadores como los usuarios finales lo "aman". No nos convence ese argumento y vemos que la mayoría de usuarios finales simplemente están siguiendo las recomendaciones de su contador sobre qué software deben usar.
+The counterargument of any accounting software company is going to be that their product does not have that problem because both accountants and end users "love" it. We are not convinced by that argument and we see that most end users are simply following their accountant's recommendations on what software to use.
 
-La realidad es que es muy difícil crear un producto que va a ser muy satisfactorio tanto para contadores como para empresarios, por la simple razón de que tienen idiosincrasias y necesidades muy diferentes. Por eso decidimos que nuestro software pusiera las necesidades del empresario como la base para su diseño y funcionalidad. Y se mantuviera enfocado en los conceptos y procesos contables que son valiosos para el empresario.
+The reality is that it is very difficult to create a product that is going to be very satisfactory for both accountants and entrepreneurs, for the simple reason that they have very different idiosyncrasies and needs. That is why we decided that our software would put the needs of the entrepreneur as the basis for its design and functionality. And stay focused on accounting concepts and processes that are valuable to the entrepreneur.
 
-> Es muy difícil crear un producto que va a ser muy satisfactorio tanto para contadores como para empresarios, por la simple razón de que tienen idiosincrasias y necesidades muy diferentes.
+> It is very difficult to create a product that is going to be very satisfactory for both accountants and entrepreneurs, for the simple reason that they have very different idiosyncrasies and needs.
 
-No importa si dichos conceptos y procesos solo cubren un 20% del universo contable. Pues al final del día la ley del 80/20 aplica aquí y solamente el 20% más importante es lo que usted necesita entender y poner en práctica para que la contabilidad pase de ser un problema más por resolver a convertirse en una herramienta valiosa para su empresa.
+It does not matter if these concepts and processes only cover 20% of the accounting universe. Well, at the end of the day the 80/20 law applies here and only the most important 20% is what you need to understand and put into practice so that accounting goes from being another problem to be solved to becoming a valuable tool for your business. 
 
-![slide-2](slide-2.png)
+![Fiscal Accounting Software Vs Management Accounting Soft](slide-2-en.png)
 
-Básicamente, nosotros aspiramos a ser la mejor opción en el mercado para aquellos empresarios que quieren practicar contabilidad gerencial y dejar que el contador se encargue de la parte fiscal. Y no nos importa que el universo de usuarios potenciales para un software de contabilidad gerencial sea mucho más pequeño que el de usuarios potenciales para un software de contabilidad fiscal.
+Basically, we aspire to be the best option in the market for those entrepreneurs who want to practice managerial accounting and let the accountant take care of the tax part. And we do not care that the universe of potential users for a management accounting software is much smaller than that of potential users for a tax accounting software.
 
-Recuerde mi punto anterior de que todas las empresas tienen que hacer contabilidad fiscal, pero son pocas las que realmente practican contabilidad gerencial, especialmente cuando hablamos de empresas pequeñas y medianas. Una buena forma de entender esta realidad es examinar lo que ocurre en una gran empresa, donde suele haber un departamento de contabilidad separado del departamento de finanzas.
+Remember my previous point that all companies have to do tax accounting, but few actually practice managerial accounting, especially when it comes to small and medium-sized businesses. A good way to understand this reality is to examine what happens in a large company, where there is usually an accounting department separate from the finance department.
 
-Es claro que ambos departamentos pertenecen a la misma área organizacional y trabajan en conjunto. Pero el departamento de finanzas en una gran empresa es el que suele planear y tomar decisiones financieras, usando como base la información que produce el departamento de contabilidad.
+It is clear that both departments belong to the same organizational area and work together. But the finance department in a large company is the one that usually plans and makes financial decisions, using as a basis the information produced by the accounting department.
 
-> El departamento de finanzas en una gran empresa es el que suele planear y tomar decisiones financieras, usando como base la información que produce el departamento de contabilidad.
+> The finance department in a large company is the one that usually plans and makes financial decisions, using as a basis the information produced by the accounting department.
 
-En una empresa pequeña, donde los recursos suelen ser limitados, la función del departamento de contabilidad la suple un contador externo. Y la función del departamento de finanzas suele no existir por qué el dueño de la empresa no tiene la voluntad o las herramientas para ponerla en práctica.
+In a small business, where resources are often limited, the accounting department's role is filled by an outside accountant. And the function of the finance department usually does not exist because the owner of the company does not have the will or the tools to put it into practice.
 
-> En una empresa pequeña, la función del departamento de contabilidad la suple un contador externo y la función del departamento de finanzas suele no existir.
+> In a small business, the accounting department role is filled by an external accountant and the finance department role is often non-existent.
 
-Además recuerde que la información que el contador maneja suele estar atrasada, puede no estar ajustada a la realidad y no ser útil o fácil de interpretar para el empresario. Por eso queremos invitarlo a que establezca la función del departamento de finanzas en su empresa implementando nuestro software y usándolo regularmente.
+Also remember that the information that the accountant handles is often out of date, may not be adjusted to reality and may not be useful or easy to interpret for the employer. That is why we want to invite you to establish the role of the finance department in his company by implementing our software and using it regularly. 
 
-![slide-3](slide-3.png)
+![Accounting in large and small bus](slide-3-en.png)
 
-Queremos que con cuentas claras, en orden y al día, nuestro software se convierta en la fuente de la realidad financiera de su empresa. Y que además de ser una herramienta útil en la administración diaria de su empresa, le permita entender claramente su posición financiera y tomar decisiones para mejorarla.
+We want our software to become the source of the financial reality of your company with clear, orderly and up-to-date accounts. And that in addition to being a useful tool in the daily management of your company, it allows you to clearly understand your financial position and make decisions to improve it.
 
-Terminando y volviendo a lo que dije al principio del video, no tiene sentido que usted cree una cuenta y pruebe nuestro software, si su realidad y el problema que está tratando de resolver son diferentes a lo que acabo de explicarle. De hecho, una buena prueba de afinidad entre nuestro software y sus necesidades es que no hay nada nuevo o novedoso en todo lo que le acabo de decir. Es una realidad que hace parte de su propia experiencia y lo único que yo he hecho aquí es articularla para que sea más clara y evidente.
+Finishing and going back to what I said at the beginning of the video, it makes no sense for you to create an account and test our software, if your reality and the problem you are trying to solve are different from what I just explained to you. In fact, a good test of the affinity between our software and your needs is that there is nothing new or novel in everything I just told you. It is a reality that is part of his own experience and the only thing I have done here is articulate it so that it is clearer and more evident.
 
-Entonces, si el control financiero de su empresa es importante para usted y la contabilidad gerencial es más una necesidad que una buena idea, lo invitamos a que cree su cuenta y evalúe nuestro software.  Pero teniendo claro que va a encargar a su contador de lo único que puede y debe hacer:  asegurase que su empresa cumpla con todas las normas y regulaciones pertinentes.
+So if the financial control of your company is important to you and managerial accounting is more of a necessity than a good idea, we invite you to create your account and evaluate our software. But knowing that you are going to entrust your accountant with the only thing he can and should do: make sure that your company complies with all the relevant rules and regulations.
 
-No estamos de pelea con su contador y nuestro software puede exportar su información en el formato que sea más fácil de consumir para él o ella. Pero si lo que usted está tratando de resolver es un problema fiscal, siguiendo las recomendaciones y preferencias de su contador, es claro que nuestro software no va a ser la mejor opción y no vale la pena que gaste tiempo probándolo.
+We are not fighting with your accountant and our software can export your information in the format that is easiest for him or her to consume. But if what you are trying to solve is a tax problem, following the recommendations and preferences of your accountant, it is clear that our software is not going to be the best option and it is not worth spending time trying it.
 
-Le agradezco mucho por su atención y por tomarse el tiempo de leer este articulo, y espero que más allá de ser informativo, le haya resultado útil para decidir qué tipo de software contable es el adecuado para su empresa.
+Thank you very much for your attention and for taking the time to read this article, and I hope that beyond being informative, it has been helpful in deciding what type of accounting software is right for your company. 
 
