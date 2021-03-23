@@ -2,7 +2,7 @@
 
 Si prefiere, usted puede ver este video con la presentación resumida de este artículo.
 
-![video-image](video-image-es.png)
+<a href=../videos/que-es-la-contabilidad-gerencial.html>![Diapositiva ¿Qué es la Contabilidad Gerencial? que enlaza con el video ¿Qué es la Contabilidad Gerencial?](../images/video-image-es.png)</a>
 
 Hola, mi nombre es Federico y soy uno de los creadores de myAbakus.
 
@@ -16,7 +16,7 @@ El punto o principio por el que debemos comenzar es que en el mundo hay dos tipo
 
 Alguien podría decir que yo me estoy inventando una división que no existe y que la contabilidad es una sola y se usa tanto para la parte fiscal como gerencial. Ese argumento quizás podría ser válido en una gran empresa, pero usted y yo sabemos que en el mundo real de las empresas pequeñas no aplica. De hecho, la contabilidad gerencial no es obligatoria ni practicada en la mayoría de empresas pequeñas y la contabilidad fiscal no siempre refleja adecuadamente la situación financiera de una empresa pequeña o mediana.
 
-![slide-1](slide-1-es.png)
+![Diapositiva Contabilidad Fiscal vs Contabilidad Gerencial](../images/slide-1-es.png)
 
 > La contabilidad gerencial no es obligatoria ni practicada en la mayoría de empresas pequeñas y la contabilidad fiscal no siempre refleja adecuadamente la situación financiera de una empresa pequeña o mediana.
 
@@ -40,7 +40,7 @@ La realidad es que es muy difícil crear un producto que va a ser muy satisfacto
 
 No importa si dichos conceptos y procesos solo cubren un 20% del universo contable. Pues al final del día la ley del 80/20 aplica aquí y solamente el 20% más importante es lo que usted necesita entender y poner en práctica para que la contabilidad pase de ser un problema más por resolver a convertirse en una herramienta valiosa para su empresa.
 
-![slide-2](slide-es.png)
+![Diapositiva Software Contabilidad Fiscal vs Software Contabilidad Gerencial](../images/slide-2-es.png)
 
 Básicamente, nosotros aspiramos a ser la mejor opción en el mercado para aquellos empresarios que quieren practicar contabilidad gerencial y dejar que el contador se encargue de la parte fiscal. Y no nos importa que el universo de usuarios potenciales para un software de contabilidad gerencial sea mucho más pequeño que el de usuarios potenciales para un software de contabilidad fiscal.
 
@@ -56,7 +56,7 @@ En una empresa pequeña, donde los recursos suelen ser limitados, la función de
 
 Además recuerde que la información que el contador maneja suele estar atrasada, puede no estar ajustada a la realidad y no ser útil o fácil de interpretar para el empresario. Por eso queremos invitarlo a que establezca la función del departamento de finanzas en su empresa implementando nuestro software y usándolo regularmente.
 
-![slide-3](slide-3-es.png)
+![Diapositiva Comparación de contabilidad en empresas grandes y pequeñas](../images/slide-3-es.png)
 
 Queremos que con cuentas claras, en orden y al día, nuestro software se convierta en la fuente de la realidad financiera de su empresa. Y que además de ser una herramienta útil en la administración diaria de su empresa, le permita entender claramente su posición financiera y tomar decisiones para mejorarla.
 

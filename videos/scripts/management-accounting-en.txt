@@ -1,62 +1,61 @@
-Hola, mi nombre es Federico y soy uno de los creadores de myAbakus.
+Hello, my name is Federico and I'm one of the creators of myAbakus.
 
-Voy a explicarle la posición de nuestro software en el mercado de software contables, para que usted pueda determinar si es lo que necesita y está buscando para su empresa, sin necesidad de crear una cuenta y probar el software. 
+I'm going to explain the position of our software in the accounting software market, so that you can determine if it's what you need and are looking for, without having to create an account and test the software.
 
-Teniendo claro eso, entremos en materia.
-
----
-
-El punto por el que debemos comenzar es que en el mundo hay dos tipos de contabilidades: contabilidad fiscal y la que yo llamo contabilidad gerencial. 
-
-La contabilidad fiscal no requiere mucha explicación: todas las empresas están obligadas a hacerla para poder cumplir con sus obligaciones tributarias. 
-
-La contabilidad gerencial, por el otro lado, es para controlar, entender y mejorar la posición financiera de una empresa.
-
-El problema de la contabilidad fiscal es que no suele reflejar adecuadamente la realidad financiera de una empresa pequeña o mediana.
-
-Y el problema de la contabilidad gerencial es que la mayoría de empresas pequeñas y medianas no la ponen en práctica.
-
-Asumiendo que usted está de acuerdo con esto, puedo pasar a explicarle la diferencia entre un software de contabilidad fiscal y un software de contabilidad gerencial.
+With that clear, let's get into the matter.
 
 ---
 
-El software de contabilidad fiscal tiene una característica principal que es muy clara y evidente al momento de usarlo: está diseñado para el contador. 
+The point from which we must start is that in the world there are two types of accounting: tax accounting and what I call management accounting.
 
-Esto tiene sentido porque los contadores son el principal canal de distribución para software contables por medio de las recomendaciones que hacen a sus clientes.
+Tax accounting doesn't require much explanation: all businesses are required to do it in order to meet their tax obligations.
 
-Por lo tanto, la persona más importante para la empresa de software contable no es usted como empresario, sino el contador como agente y distribuidor.
+Management accounting, on the other hand, is to control, understand and improve the financial position of a company.
 
-Cualquier empresa de software contable va negar esto y afirmar que tanto los contadores como los empresarios "aman su software" y que es "super simple, intuitivo y fácil de usar".
+The problem with tax accounting is that usually it doesn't adequately reflect the financial reality of a small or medium-sized business.
 
-Esto es muy cuestionable, porque como ya dijimos, la mayoría de empresarios deciden qué software contable usar siguiendo las recomendaciones de su contador, no porque se hallan "enamorado" de su simplicidad y facilidad de uso.
+And the problem with management accounting is that most small and medium-sized businesses don't put it into practice.
 
-La realidad es que es muy difícil crear un producto que realmente le "encante" tanto a los contadores como a los empresarios, por la simple razón de que tienen idiosincrasias y necesidades muy diferentes.
-
-Y esa es la oportunidad que nosotros vemos en el mercado para un software de contabilidad realmente simple y enfocado en los conceptos y procesos contables que son útiles y valiosos para el empresario.
-
-Sin importar que eso nos limite a servir un nicho relativamente pequeño del mercado: los dueños de Pymes que quieren elevar la contabilidad de un problema por resolver (contabilidad fiscal) a una herramienta valiosa para su empresa (contabilidad gerencial).
+Assuming you agree with this, I can go on to explain the difference between tax accounting software and management accounting software.
 
 ---
 
-Básicamente queremos ser la mejor opción para quienes quieren algo similar a lo que ocurre en una empresa grande, donde el departamento de contabilidad está al servicio del area de finanzas.
+Tax accounting software has one main feature that is very clear and obvious when using it: it's designed for the accountant.
 
-En una empresa grande, finanzas se encarga de analizar, planear y darle soporte a la toma de decisiones, usando como base la información que produce contabilidad.
+This makes sense because accountants are the main distribution channel for accounting software through the recommendations they make to their clients.
 
-En una empresa pequeña, la función del departamento de contabilidad la suple un contador externo, con información que suele estar atrasada y ser difícil de interpretar. 
+Therefore, the most important person to the accounting software company is not you as business owner, but the accountant as an agent and distributor.
 
-Y la función del area financiera suele no existir por qué el dueño de la empresa no tiene el tiempo, la voluntad o las herramientas para ponerla en práctica.
+Any accounting software company will deny this and claim that both accountants and business owners "love their software" and that it is "super simple, intuitive, and easy to use."
 
-Mi invitación, por lo tanto, es a que usted establezca la función del area financiera en su empresa implementando nuestro software y usándolo regularmente.
+This is highly questionable, because as we said, most business owners decide which accounting software to use based on their accountant's recommendations, not because they are "in love" with its simplicity and ease of use.
+
+The reality is that it is very difficult to create a product that both accountants and business owners really "love" for the simple reason that they have very different idiosyncrasies and needs.
+
+And that is the opportunity that we see in the market for a really simple accounting software focused on accounting concepts and processes that are useful and valuable for the business owner.
+
+It doesn't matter if this limits us to serving a relatively small market niche: small and medium business owners who want to elevate accounting from a problem to solve (tax accounting) to a valuable tool for their business (management accounting).
 
 ---
 
-Igual recuerde que crear una cuenta y probar nuestro software no tiene sentido si su realidad y el problema que está tratando de resolver no concuerdan con mi explicación. 
+Basically we want to be the best option for those who want something similar to what happens in a large company, where the accounting department is at the service of the finance area.
 
-De hecho, una buena prueba de afinidad con nuestro software es que no hay nada nuevo o novedoso en lo que acabo de explicarle. 
+In a large company, finance is responsible for analyzing, planning and supporting decision-making, using the information produced by accounting.
 
-Lo único que yo he hecho aquí es articular un problema que probablemente usted ya tenia claro intuitivamente y por experiencia propia. 
+In a small business, the accounting department's role is filled by an outside accountant, with information that is often out of date and difficult to interpret.
 
-Así que si usted considera que es el momento de poner en práctica la contabilidad gerencial en su empresa, y dejar que su contador se encargue de la parte fiscal, lo invitamos a que cree su cuenta y evalúe nuestro software. 
+And the function of the financial area usually doesn't exist because the owner doesn't have the time, the will or the tools to put it into practice.
 
-En cualquier caso, le agradezco mucho su atención y espero que esta información le haya resultado útil.
+My invitation, therefore, is for you to establish the function of the finance area in your company by implementing our software and using it regularly.
 
+---
+
+Also remember that creating an account and testing our software is pointless if your reality and the problem you are trying to solve do not match my explanation.
+
+In fact, our software is probably a good for you if there is nothing new or novel in what I have just explained to you.
+
+All I have done here is articulate a problem that you already understood intuitively and from your own experience.
+
+So if you think it is time to put management accounting into practice in your business, and let your accountant take care of the taxes, we invite you to create your account and evaluate our software.
+
+In any case, I thank you very much for your attention and I hope that this information was useful to you. 
