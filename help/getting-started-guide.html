@@ -39,7 +39,7 @@
                 <div :class="['sheet-img-'+video.icon, video.tags]" class="sheet" v-for="video in videos">
                     <h2>{{ video.title }}</h2>
                     <div class="app1">
-                        <a :href="slugify(video.title)" :video-id="video.id"><span class="sheet-img" :class="'sheet-img-'+video.icon"> <i class="fa-3x fa-play-circle fas play-btn"></i></span><p>{{ video.desc }}</p> </a>
+                        <a :href="slugify(video.title)" :video-id="video.id"><span class="sheet-img" :class="'sheet-img-'+video.icon"> <i class="fa-3x fa-play-circle fas play-btn"></i></span><p>{{ video.desc }}</p></a>
                     </div>
                 </div>
                 <!-- fin del v-for -->
