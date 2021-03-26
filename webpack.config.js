@@ -295,7 +295,7 @@ module.exports = {
 
 function entries () {
   return Object.entries(
-    entry(entry.basePath(), '*.html', 'help/*.html', 'ayuda/*.html', 'articulos/*.html', 'videos/player.php', 'videos/*.html')
+    entry(entry.basePath(), '*.html', 'help/*.html', 'ayuda/*.html', 'articulos/*.html', 'articles/*.html', 'videos/player.php', 'videos/*.html')
   ).reduce((obj, [key, file]) => {
     if (key.indexOf('master-') === -1) obj[key] = './' + file;
     return obj;
