@@ -1,6 +1,6 @@
-## What Is Management Accounting?
+# What Is Management Accounting?
 
-If you prefer, you can watch this video with the summary presentation of this article.
+### If you prefer, you can watch this video with the summary presentation of this article.
 
 <a href=../videos/what-is-management-accounting.html>![What Is Management Accounting slide that links to the What Is Management Accounting video](../images/video-image-en.png)</a>
 
@@ -67,4 +67,3 @@ So if the financial control of your company is important to you and managerial a
 We are not fighting with your accountant and our software can export your information in the format that is easiest for him or her to consume. But if what you are trying to solve is a tax problem, following the recommendations and preferences of your accountant, it is clear that our software is not going to be the best option and it is not worth spending time trying it.
 
 Thank you very much for your attention and for taking the time to read this article, and I hope that beyond being informative, it has been helpful in deciding what type of accounting software is right for your company. 
-

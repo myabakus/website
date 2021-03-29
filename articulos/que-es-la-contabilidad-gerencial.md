@@ -1,6 +1,6 @@
-## ¿Qué es la Contabilidad Gerencial?
+# ¿Qué es la Contabilidad Gerencial?
 
-Si prefiere, usted puede ver este video con la presentación resumida de este artículo.
+### Si prefiere, usted puede ver este video con la presentación resumida de este artículo.
 
 <a href=../videos/que-es-la-contabilidad-gerencial.html>![Diapositiva ¿Qué es la Contabilidad Gerencial? que enlaza con el video ¿Qué es la Contabilidad Gerencial?](../images/video-image-es.png)</a>
 
@@ -67,4 +67,3 @@ Entonces, si el control financiero de su empresa es importante para usted y la c
 No estamos de pelea con su contador y nuestro software puede exportar su información en el formato que sea más fácil de consumir para él o ella. Pero si lo que usted está tratando de resolver es un problema fiscal, siguiendo las recomendaciones y preferencias de su contador, es claro que nuestro software no va a ser la mejor opción y no vale la pena que gaste tiempo probándolo.
 
 Le agradezco mucho por su atención y por tomarse el tiempo de leer este articulo, y espero que más allá de ser informativo, le haya resultado útil para decidir qué tipo de software contable es el adecuado para su empresa.
-
