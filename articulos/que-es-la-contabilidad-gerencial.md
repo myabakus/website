@@ -1,6 +1,6 @@
 # ¿Qué es la Contabilidad Gerencial?
 
-### Si prefiere, usted puede ver este video con la presentación resumida de este artículo.
+Si prefiere, usted puede ver este video con la presentación resumida de este artículo.
 
 <a href=../videos/que-es-la-contabilidad-gerencial.html>![Diapositiva ¿Qué es la Contabilidad Gerencial? que enlaza con el video ¿Qué es la Contabilidad Gerencial?](../images/video-image-es.png)</a>
 

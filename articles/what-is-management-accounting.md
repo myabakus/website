@@ -1,6 +1,6 @@
 # What Is Management Accounting?
 
-### If you prefer, you can watch this video with the summary presentation of this article.
+If you prefer, you can watch this video with the summary presentation of this article.
 
 <a href=../videos/what-is-management-accounting.html>![What Is Management Accounting slide that links to the What Is Management Accounting video](../images/video-image-en.png)</a>
 
