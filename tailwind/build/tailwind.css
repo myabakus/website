@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One:wght@400&family=Quattrocento+Sans:wght@400&display=swap');
 
 /*! tailwindcss v2.0.4 | MIT License | https://tailwindcss.com */
 
@@ -368,7 +368,7 @@ ul {
  */
 
 html {
-  font-family: Open Sans, sans-serif; /* 1 */
+  font-family: Quattrocento Sans, sans-serif; /* 1 */
   line-height: 1.5; /* 2 */
 }
 
@@ -710,6 +710,7 @@ video {
   margin-top: 0;
   margin-bottom: 0.8888889em;
   line-height: 1.1111111;
+  font-family: Paytone One;
 }
 
 .prose h2{
@@ -840,7 +841,7 @@ video {
 }
 
 .prose{
-  font-size: 1rem;
+  font-size: 1.125rem;
   line-height: 1.75;
 }
 
@@ -12537,7 +12538,7 @@ video {
 }
 
 .font-sans{
-  font-family: Open Sans, sans-serif;
+  font-family: Quattrocento Sans, sans-serif;
 }
 
 .font-serif{
@@ -12546,6 +12547,10 @@ video {
 
 .font-mono{
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-heading{
+  font-family: Paytone One, sans-serif;
 }
 
 .font-thin{
@@ -32496,6 +32501,16 @@ video {
           animation: bounce 1s infinite;
 }
 
+h1 {
+  --tw-border-opacity: 1;
+  border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+  border-style: solid;
+  border-bottom-width: 1px;
+  padding-bottom: 2.5rem;
+  text-align: center;
+  letter-spacing: -0.025em
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
@@ -32654,6 +32669,7 @@ video {
     margin-top: 0;
     margin-bottom: 0.8888889em;
     line-height: 1.1111111;
+    font-family: Paytone One;
   }
 
   .sm\:prose h2{
@@ -32784,7 +32800,7 @@ video {
   }
 
   .sm\:prose{
-    font-size: 1rem;
+    font-size: 1.125rem;
     line-height: 1.75;
   }
 
@@ -44481,7 +44497,7 @@ video {
   }
 
   .sm\:font-sans{
-    font-family: Open Sans, sans-serif;
+    font-family: Quattrocento Sans, sans-serif;
   }
 
   .sm\:font-serif{
@@ -44490,6 +44506,10 @@ video {
 
   .sm\:font-mono{
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .sm\:font-heading{
+    font-family: Paytone One, sans-serif;
   }
 
   .sm\:font-thin{
@@ -64520,6 +64540,7 @@ video {
     margin-top: 0;
     margin-bottom: 0.8888889em;
     line-height: 1.1111111;
+    font-family: Paytone One;
   }
 
   .md\:prose h2{
@@ -64650,7 +64671,7 @@ video {
   }
 
   .md\:prose{
-    font-size: 1rem;
+    font-size: 1.125rem;
     line-height: 1.75;
   }
 
@@ -76347,7 +76368,7 @@ video {
   }
 
   .md\:font-sans{
-    font-family: Open Sans, sans-serif;
+    font-family: Quattrocento Sans, sans-serif;
   }
 
   .md\:font-serif{
@@ -76356,6 +76377,10 @@ video {
 
   .md\:font-mono{
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .md\:font-heading{
+    font-family: Paytone One, sans-serif;
   }
 
   .md\:font-thin{
@@ -96386,6 +96411,7 @@ video {
     margin-top: 0;
     margin-bottom: 0.8888889em;
     line-height: 1.1111111;
+    font-family: Paytone One;
   }
 
   .lg\:prose h2{
@@ -96516,7 +96542,7 @@ video {
   }
 
   .lg\:prose{
-    font-size: 1rem;
+    font-size: 1.125rem;
     line-height: 1.75;
   }
 
@@ -108213,7 +108239,7 @@ video {
   }
 
   .lg\:font-sans{
-    font-family: Open Sans, sans-serif;
+    font-family: Quattrocento Sans, sans-serif;
   }
 
   .lg\:font-serif{
@@ -108222,6 +108248,10 @@ video {
 
   .lg\:font-mono{
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .lg\:font-heading{
+    font-family: Paytone One, sans-serif;
   }
 
   .lg\:font-thin{
@@ -128252,6 +128282,7 @@ video {
     margin-top: 0;
     margin-bottom: 0.8888889em;
     line-height: 1.1111111;
+    font-family: Paytone One;
   }
 
   .xl\:prose h2{
@@ -128382,7 +128413,7 @@ video {
   }
 
   .xl\:prose{
-    font-size: 1rem;
+    font-size: 1.125rem;
     line-height: 1.75;
   }
 
@@ -140079,7 +140110,7 @@ video {
   }
 
   .xl\:font-sans{
-    font-family: Open Sans, sans-serif;
+    font-family: Quattrocento Sans, sans-serif;
   }
 
   .xl\:font-serif{
@@ -140088,6 +140119,10 @@ video {
 
   .xl\:font-mono{
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .xl\:font-heading{
+    font-family: Paytone One, sans-serif;
   }
 
   .xl\:font-thin{
@@ -160118,6 +160153,7 @@ video {
     margin-top: 0;
     margin-bottom: 0.8888889em;
     line-height: 1.1111111;
+    font-family: Paytone One;
   }
 
   .\32xl\:prose h2{
@@ -160248,7 +160284,7 @@ video {
   }
 
   .\32xl\:prose{
-    font-size: 1rem;
+    font-size: 1.125rem;
     line-height: 1.75;
   }
 
@@ -171945,7 +171981,7 @@ video {
   }
 
   .\32xl\:font-sans{
-    font-family: Open Sans, sans-serif;
+    font-family: Quattrocento Sans, sans-serif;
   }
 
   .\32xl\:font-serif{
@@ -171954,6 +171990,10 @@ video {
 
   .\32xl\:font-mono{
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .\32xl\:font-heading{
+    font-family: Paytone One, sans-serif;
   }
 
   .\32xl\:font-thin{

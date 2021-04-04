@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One:wght@400&family=Quattrocento+Sans:wght@400&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1 {
+  @apply text-center tracking-tight border-b border-gray-200 border-solid pb-10
+}
