@@ -2,7 +2,7 @@
 
 If you prefer, you can watch this video with the summary presentation of this article.
 
-<a href=../videos/what-is-management-accounting.html>![What Is Management Accounting slide that links to the What Is Management Accounting video](../images/video-image-en.png)</a>
+<a href=../videos/what-is-management-accounting.html><img src="../images/video-image-en.png" alt="What Is Management Accounting slide that links to the What Is Management Accounting video?" width="672" height="378"></a>
 
 Hello, my name is Federico and I am one of the creators of myAbakus.
 
