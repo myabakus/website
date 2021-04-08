@@ -32501,16 +32501,6 @@ video {
           animation: bounce 1s infinite;
 }
 
-h1 {
-  --tw-border-opacity: 1;
-  border-color: rgba(229, 231, 235, var(--tw-border-opacity));
-  border-style: solid;
-  border-bottom-width: 1px;
-  padding-bottom: 2.5rem;
-  text-align: center;
-  letter-spacing: -0.025em
-}
-
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;

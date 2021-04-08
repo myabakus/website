@@ -2,9 +2,7 @@
 
 Si prefiere, usted puede ver este video con la presentación resumida de este artículo.
 
-<a href="../videos/que-es-la-contabilidad-gerencial.html"><img src="../images/video-image-es.png" alt="Diapositiva ¿Qué es la Contabilidad Gerencial? que enlaza con el video ¿Qué es la Contabilidad Gerencial?" width="672" height="378">
-
-<a href=../videos/que-es-la-contabilidad-gerencial.html>![Diapositiva ¿Qué es la Contabilidad Gerencial? que enlaza con el video ¿Qué es la Contabilidad Gerencial?](../images/video-image-es.png)</a>
+<a href="../videos/que-es-la-contabilidad-gerencial.html"><img src="../images/video-image-es.png" alt="Diapositiva ¿Qué es la Contabilidad Gerencial? que enlaza con el video ¿Qué es la Contabilidad Gerencial?" width="672" height="378"></a>
 
 Hola, mi nombre es Federico y soy uno de los creadores de myAbakus.
 
