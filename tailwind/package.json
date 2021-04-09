@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "postcss css/tailwind.css -o build/tailwind.css",
-    "build-pro": "NODE_ENV=production yarn tailwindcss build ./css/tailwind.css -o ./build/tailwind.css",
+    "build": "postcss css/article.css -o ../css/article.css",
+    "build-pro": "NODE_ENV=production yarn tailwindcss build ./css/article.css -o ../css/article.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

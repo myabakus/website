@@ -2,7 +2,7 @@
 
 If you prefer, you can watch this video with the summary presentation of this article.
 
-<a href=../videos/what-is-management-accounting.html>![What Is Management Accounting slide that links to the What Is Management Accounting video](../images/video-image-en.png)</a>
+<a href=../videos/what-is-management-accounting.html><img src="../images/video-image-en.png" alt="What Is Management Accounting slide that links to the What Is Management Accounting video?" width="672" height="378"></a>
 
 Hello, my name is Federico and I am one of the creators of myAbakus.
 
@@ -16,7 +16,7 @@ The point or principle from which we must begin is that in the world there are t
 
 Someone could say that I am inventing a division that does not exist and that accounting is only one and is used for both the fiscal and managerial part. That argument could perhaps be valid in a large company, but you and I know that in the real world of small companies it does not apply. In fact, managerial accounting is not required or practiced in most small businesses, and tax accounting does not always adequately reflect the financial situation of a small or medium-sized business.
 
-![Tax Accounting vs Management Accounting slide](../images/slide-1-en.png)
+<a href="../images/slide-1-en.png"><img src="../images/slide-1-en.png" alt="What Is Management Accounting slide that links to the What Is Management Accounting video" width="672" height="378"></a>
 
 > Management accounting is not required or practiced in most small businesses, and tax accounting does not always adequately reflect the financial situation of a small or medium-sized business.
 
@@ -40,7 +40,7 @@ The reality is that it is very difficult to create a product that is going to be
 
 It does not matter if these concepts and processes only cover 20% of the accounting universe. Well, at the end of the day the 80/20 law applies here and only the most important 20% is what you need to understand and put into practice so that accounting goes from being another problem to be solved to becoming a valuable tool for your business. 
 
-![Fiscal Accounting Software vs Management Accounting Software slide](../images/slide-2-en.png)
+<a href="../images/slide-2-en.png"><img src="../images/slide-2-en.png" alt="Fiscal Accounting Software vs Management Accounting Software slide" width="672" height="378"></a>
 
 Basically, we aspire to be the best option in the market for those entrepreneurs who want to practice managerial accounting and let the accountant take care of the tax part. And we do not care that the universe of potential users for a management accounting software is much smaller than that of potential users for a tax accounting software.
 
@@ -56,7 +56,7 @@ In a small business, where resources are often limited, the accounting departmen
 
 Also remember that the information that the accountant handles is often out of date, may not be adjusted to reality and may not be useful or easy to interpret for the employer. That is why we want to invite you to establish the role of the finance department in his company by implementing our software and using it regularly. 
 
-![Comparisoon of accounting in large and small businesses slide](../images/slide-3-en.png)
+<a href="../images/slide-3-en.png"><img src="../images/slide-3-en.png" alt="Comparisoon of accounting in large and small businesses slide" width="672" height="378"></a>
 
 We want our software to become the source of the financial reality of your company with clear, orderly and up-to-date accounts. And that in addition to being a useful tool in the daily management of your company, it allows you to clearly understand your financial position and make decisions to improve it.
 
