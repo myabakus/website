@@ -277,6 +277,8 @@ module.exports = {
     }),
     new WebpackCleanPlugin([
       'dist/bundle',
+      'dist/articles/what-is-management-accounting-plain.html',
+      'dist/articulos/que-es-la-contabilidad-gerencial-plain.html',
       'js/app-main.js',
       'js/app-tags.js',
       'js/app-ie9.js',
