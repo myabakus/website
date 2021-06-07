@@ -8,9 +8,9 @@
   </head>
   <body>
     <div id="app">
-      <comp v-for="property in properties" :property="property"></comp>
+      <hero :data="data.body.headline" :page_data="data.body.headline"></hero>
     </div>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js'></script>
+    <script src="https://unpkg.com/vue@next"></script>
     <script src="js/hero-es.js"></script>
     <script src="js/hero.js"></script>
   </body>
