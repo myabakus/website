@@ -866,11 +866,8 @@ video {
 .prose > :last-child{
 	margin-bottom: 0;
 }
-.prose fontFamily{
-	sans: Quattrocento Sans;
-	sans: sans-serif;
-	heading: Paytone One;
-	heading: sans-serif;
+.prose{
+	font-family: Quattrocento Sans;
 }
 .sr-only{
 	position: absolute;
@@ -1047,6 +1044,9 @@ video {
 }
 .font-sans{
 	font-family: Inter, sans-serif;
+}
+.font-heading{
+	font-family: Paytone One, sans-serif;
 }
 .text-3xl{
 	font-size: 1.875rem;

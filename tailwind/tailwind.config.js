@@ -17,6 +17,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
+        heading: ["Paytone One", "sans-serif"],
     },
       backgroundImage: theme => ({
         'line-pattern': "url('../images/background.svg')",
@@ -24,10 +25,7 @@ module.exports = {
       typography: {
         DEFAULT: {
           css: {
-            fontFamily: {
-              sans: ["Quattrocento Sans", "sans-serif"],
-              heading: ["Paytone One", "sans-serif"],
-            },
+            fontFamily: "Quattrocento Sans",
             fontSize: "1.125rem",
             h1: {
               // fontSize: '2.25rem',
