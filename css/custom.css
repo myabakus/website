@@ -265,15 +265,20 @@
 
 .pricing-table-1 .price-figure > h4 {
     display: flex;
+
     justify-content: center;
-    align-items: baseline;
+
+    align-items: flex-end;
+
     padding: 0 !important;
+
     margin: 0 !important;
 }
 
 .price-simb {
     align-self: flex-start;
     margin-top: 10px;
+
     display: iniline-block;
 }
 
@@ -1031,7 +1036,7 @@ footer .row {
 }
 
 .pricing-table-1 .price {
-    min-height: 180px;
+    min-height: 175px;
 }
 
 .form-control.is-invalid {
